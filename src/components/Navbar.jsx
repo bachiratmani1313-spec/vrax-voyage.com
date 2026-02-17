@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Plane, Hotel, Info, Home } from 'lucide-react';
+import { Plane, Hotel, Car, Info, Home } from 'lucide-react';
 
 export default function Navbar() {
     const scrollTo = (id) => {
@@ -11,7 +10,14 @@ export default function Navbar() {
     return (
         <header>
             <div className="container nav-flex">
-                <a className="logo" onClick={() => scrollTo()}>Vrax-<span>Voyage.com</span></a>
+                <a className="logo" onClick={() => scrollTo()} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <div className="logo-icons" style={{ display: 'flex', gap: '4px' }}>
+                        <Plane size={24} color="var(--primary)" />
+                        <Hotel size={24} color="var(--accent)" />
+                        <Car size={24} color="var(--dark)" />
+                    </div>
+                    Vrax-<span>Voyage.com</span>
+                </a>
                 <nav className="nav-menu">
                     <a onClick={() => scrollTo()}><Home size={16} /> Accueil</a>
                     <a onClick={() => scrollTo('vols')}><Plane size={16} /> Vols</a>
