@@ -14,8 +14,20 @@ function Home() {
     <>
       <Navbar />
       <div className="hero">
-        <h1>Comparez les meilleurs tarifs de voyage</h1>
-        <p>Vrax-Voyage est votre comparateur universel. Accédez instantanément aux offres de centaines d'agences en un clic.</p>
+        <div className="hero-content">
+          <div className="hero-logo-large">
+            <div className="hero-icons">
+              <Plane size={64} className="icon-bounce" />
+              <Hotel size={64} className="icon-bounce delay-1" />
+              <Car size={64} className="icon-bounce delay-2" />
+            </div>
+            <h1 className="hero-title">Vrax-<span>Voyage.com</span></h1>
+          </div>
+          <p className="hero-subtitle">Votre passeport pour l'évasion au meilleur prix.</p>
+          <div className="hero-cta">
+            <button className="btn-hero" onClick={() => document.getElementById('vols').scrollIntoView({ behavior: 'smooth' })}>Commencer l'aventure</button>
+          </div>
+        </div>
       </div>
 
       <main className="container">
