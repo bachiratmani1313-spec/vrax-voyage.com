@@ -6,7 +6,7 @@ import Navbar from './components/Navbar';
 import SearchForm from './components/SearchForm';
 import HotelSearchForm from './components/HotelSearchForm';
 import { MentionsLegales, PolitiqueConfidentialite } from './pages/Legal';
-import { Briefcase, Plane, Hotel } from 'lucide-react';
+import { Briefcase, Plane, Hotel, Car } from 'lucide-react';
 import './index.css';
 
 function Home() {
