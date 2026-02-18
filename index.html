@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyages - Comparez les Prix des Vols, Hôtels et Locations de Voiture</title>
-    <meta name="description" content="Vrax Voyages est votre comparateur de voyage pour trouver les meilleurs prix sur les vols, hôtels et locations de voiture. Comparez, économisez et voyagez !">
-    <meta name="keywords" content="voyage, vols pas chers, hôtels, location voiture, comparateur voyage, billets d'avion, séjour, vacances, Vrax Voyages">
+    <title>Vrax Voyages - Comparez les Prix des Vols, Hôtels et Transferts</title>
+    <meta name="description" content="Vrax Voyages - Votre comparateur de voyage pour trouver les meilleurs prix sur les vols et transferts aéroport. Comparez, économisez et voyagez !">
+    <meta name="keywords" content="voyage, vols pas chers, transfert aéroport, comparateur voyage, billets d'avion, taxi aéroport, navette, Vrax Voyages">
     
     <!-- Travelpayouts Affiliate Script - Marker: 499802 -->
     <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
@@ -31,6 +31,7 @@
             line-height: 1.6;
         }
         
+        /* Header */
         .header {
             background: white;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
@@ -112,6 +113,7 @@
             background: #1d4ed8;
         }
         
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #2563eb, #4f46e5);
             color: white;
@@ -132,6 +134,7 @@
             margin: 0 auto;
         }
         
+        /* Search Container */
         .search-container {
             max-width: 1000px;
             margin: -80px auto 40px;
@@ -145,112 +148,42 @@
             border-radius: 12px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.15);
             padding: 24px;
+            margin-bottom: 24px;
         }
         
         .search-title {
             margin-bottom: 20px;
             color: #1e293b;
             font-size: 1.25rem;
-        }
-        
-        .tabs-container {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 24px;
-            flex-wrap: wrap;
-        }
-        
-        .tab-btn {
-            padding: 12px 24px;
-            border: none;
-            background: #f1f5f9;
-            border-radius: 8px;
-            font-weight: 500;
-            cursor: pointer;
             display: flex;
             align-items: center;
             gap: 8px;
         }
         
-        .tab-btn:hover {
-            background: #e2e8f0;
+        .widget-section {
+            margin-bottom: 40px;
         }
         
-        .search-form {
-            display: none;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 16px;
-        }
-        
-        .search-form.active {
-            display: grid;
-        }
-        
-        .form-group label {
-            display: block;
-            font-size: 0.875rem;
-            font-weight: 500;
-            margin-bottom: 8px;
-            color: #374151;
-        }
-        
-        .form-input {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #e2e8f0;
-            border-radius: 8px;
-            font-size: 1rem;
-        }
-        
-        .form-input:focus {
-            outline: none;
-            border-color: #2563eb;
-        }
-        
-        .btn-search {
-            grid-column: 1 / -1;
-            padding: 16px;
-            background: #f97316;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            font-size: 1.125rem;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
-        .btn-search:hover {
-            background: #ea580c;
-        }
-        
-        .destinations {
-            padding: 40px 1rem;
-            background: white;
-        }
-        
-        .section-title {
+        .section-header {
             text-align: center;
-            margin-bottom: 32px;
+            margin-bottom: 24px;
+            padding: 40px 1rem 24px;
         }
         
-        .section-title h2 {
+        .section-header h2 {
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 12px;
+            color: #1e293b;
         }
         
-        .section-title p {
+        .section-header p {
             color: #64748b;
             max-width: 600px;
             margin: 0 auto;
         }
         
-        .destinations-grid {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1rem;
-        }
-        
+        /* Trust Badges */
         .trust-badges {
             background: #f8fafc;
             padding: 32px 1rem;
@@ -296,6 +229,7 @@
             color: #64748b;
         }
         
+        /* Newsletter */
         .newsletter {
             background: linear-gradient(135deg, #2563eb, #4f46e5);
             color: white;
@@ -342,6 +276,7 @@
             cursor: pointer;
         }
         
+        /* Partners */
         .partners {
             padding: 32px 1rem;
             background: #f1f5f9;
@@ -367,6 +302,7 @@
             color: #64748b;
         }
         
+        /* Footer */
         .footer {
             background: #0f172a;
             color: white;
@@ -420,6 +356,7 @@
             font-size: 0.875rem;
         }
         
+        /* Responsive */
         @media (max-width: 768px) {
             .nav {
                 display: none;
@@ -427,9 +364,11 @@
             .hero h2 {
                 font-size: 1.75rem;
             }
-            .search-form {
-                grid-template-columns: 1fr;
-            }
+        }
+        
+        /* Widget Container */
+        .widget-container {
+            min-height: 200px;
         }
     </style>
 </head>
@@ -449,7 +388,8 @@
                 </div>
             </div>
             <nav class="nav">
-                <a href="#search">Recherche</a>
+                <a href="#flights">Vols</a>
+                <a href="#transfers">Transferts</a>
                 <a href="#destinations">Destinations</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -460,73 +400,60 @@
     <!-- Hero Section -->
     <section class="hero">
         <h2>Trouvez les meilleurs prix</h2>
-        <p>Comparez des milliers d'offres de vols. Les meilleurs prix garantis en temps réel !</p>
+        <p>Comparez des milliers d'offres de vols et transferts aéroport. Les meilleurs prix garantis en temps réel !</p>
     </section>
     
-    <!-- KIWI.COM FLIGHTS SEARCH WIDGET - VRAIS PRIX -->
-    <div class="search-container" id="search">
+    <!-- WIDGET 1: FLIGHTS SEARCH (Kiwi.com) -->
+    <div class="search-container" id="flights">
         <div class="search-box">
-            <h3 class="search-title">✈️ Rechercher un vol - Vrais prix</h3>
-            <!-- WIDGET KIWI.COM - NE PAS SUPPRIMER -->
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&stops=any&show_hotels=true&powered_by=true&border_radius=8&plain=true&color_button=%23f97316&color_button_text=%23ffffff&promo_id=3414&campaign_id=111" charset="utf-8"></script>
-            
-            <!-- Tabs for Hotels and Cars -->
-            <div class="tabs-container" style="margin-top: 24px;">
-                <button class="tab-btn" onclick="showForm('hotels')">🏨 Hôtels</button>
-                <button class="tab-btn" onclick="showForm('cars')">🚗 Voitures</button>
+            <h3 class="search-title">✈️ Rechercher un vol</h3>
+            <div class="widget-container">
+                <!-- KIWI.COM FLIGHTS SEARCH WIDGET -->
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&stops=any&show_hotels=true&powered_by=true&border_radius=8&plain=true&color_button=%23f97316&color_button_text=%23ffffff&promo_id=3414&campaign_id=111" charset="utf-8"></script>
             </div>
-            
-            <!-- Hotels Form -->
-            <form id="hotels-form" class="search-form" onsubmit="searchHotels(event)">
-                <div class="form-group">
-                    <label>Destination</label>
-                    <input type="text" class="form-input" id="hotel-dest" placeholder="Paris, Marrakech..." required>
-                </div>
-                <div class="form-group">
-                    <label>Arrivée</label>
-                    <input type="date" class="form-input" id="hotel-checkin" required>
-                </div>
-                <div class="form-group">
-                    <label>Départ</label>
-                    <input type="date" class="form-input" id="hotel-checkout" required>
-                </div>
-                <div class="form-group">
-                    <label>Voyageurs</label>
-                    <input type="number" class="form-input" id="hotel-guests" value="2" min="1" max="10">
-                </div>
-                <button type="submit" class="btn-search">🔍 Rechercher des hôtels</button>
-            </form>
-            
-            <!-- Cars Form -->
-            <form id="cars-form" class="search-form" onsubmit="searchCars(event)">
-                <div class="form-group">
-                    <label>Lieu de prise en charge</label>
-                    <input type="text" class="form-input" id="car-location" placeholder="Paris, Aéroport..." required>
-                </div>
-                <div class="form-group">
-                    <label>Date de prise en charge</label>
-                    <input type="date" class="form-input" id="car-pickup" required>
-                </div>
-                <div class="form-group">
-                    <label>Date de retour</label>
-                    <input type="date" class="form-input" id="car-return" required>
-                </div>
-                <button type="submit" class="btn-search">🔍 Rechercher une voiture</button>
-            </form>
         </div>
     </div>
     
-    <!-- KIWI.COM POPULAR DESTINATIONS WIDGET - VRAIS PRIX -->
-    <section class="destinations" id="destinations">
-        <div class="section-title">
-            <h2>✈️ Destinations populaires - Vrais prix du jour</h2>
-            <p>Les prix sont mis à jour automatiquement en temps réel grâce à Kiwi.com</p>
+    <!-- WIDGET 2: SHUTTLES SEARCH (Kiwitaxi) -->
+    <div class="widget-section" id="transfers">
+        <div class="section-header">
+            <h2>🚕 Transfert Aéroport</h2>
+            <p>Réservez votre taxi ou navette de l'aéroport à votre hôtel aux meilleurs prix !</p>
         </div>
-        <div class="destinations-grid">
-            <!-- WIDGET KIWI.COM DESTINATIONS - NE PAS SUPPRIMER -->
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&powered_by=true&limit=6&primary_color=2563eb&results_background_color=FFFFFF&form_background_color=f8fafc&promo_id=4563&campaign_id=111" charset="utf-8"></script>
+        <div class="search-container" style="margin-top: 0;">
+            <div class="search-box">
+                <h3 class="search-title">🚐 Rechercher un transfert</h3>
+                <div class="widget-container">
+                    <!-- KIWITAXI SHUTTLES SEARCH WIDGET -->
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&from=&to=&country=&powered_by=true&height=&wtype=true&transfers_limit=10&bg_color=%23f5f5f5&button_color=%23239a54&button_font_color=%23ffffff&button_hover_color=%230274da&border_color=%23f9ac1a&input_font_color=%23c8ced4&input_bg_color=%23ffffff&input_label_color=%23c8ced4&icon_bg_color=%23ffffff&icon_arrow_color=%236c7c8c&icon_bg_color_mobile=%23f9ac1a&icon_arrow_color_mobile=%23ffffff&autocomplete_font_color=%23373f47&autocomplete_bg_color=%23ffffff&autocomplete_font_color_active=%23ffffff&autocomplete_bg_color_active=%23239a54&loader_color=%23f9ac1a&empty_color=%23373f47&info_bg_color=%23fff0cc&info_icon_color=%234a4a4a&info_caption_color=%234a4a4a&class_background=%23ffffff&class_font_color=%23373f47&class_header_color=%236c7c8c&class_button_background=%2326a65b&class_button_font_color=%23ffffff&class_button_background_hover=%230274da&class_comment_background=%23bfc0c4&class_comment_font=%23bfc0c4&more_background=&more_background_hover=&more_font_color=%230267c1&notification_background=%23f6f1ec&notification_border_color=%23e37f17&notification_color=%23373f47&transfer_background=%23f6f7f8&transfer_background_hover=%23f6f7f8&transfer_font_color=%23373f47&campaign_id=1&promo_id=2949" charset="utf-8" async></script>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+    
+    <!-- WIDGET 3: POPULAR ROUTES (Kiwi.com) -->
+    <div class="widget-section" style="background: white; padding: 40px 1rem;">
+        <div class="section-header" style="padding-top: 0;">
+            <h2>✈️ Routes Populaires</h2>
+            <p>Les vols les plus recherchés avec les meilleurs prix du jour !</p>
+        </div>
+        <div style="max-width: 1280px; margin: 0 auto;">
+            <!-- KIWI.COM POPULAR ROUTES WIDGET -->
+            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&powered_by=true&limit=6&primary_color=2563eb&results_background_color=FFFFFF&form_background_color=f8fafc&campaign_id=111&promo_id=3411" charset="utf-8"></script>
+        </div>
+    </div>
+    
+    <!-- WIDGET 4: POPULAR DESTINATIONS (Kiwi.com) -->
+    <div class="widget-section" id="destinations" style="background: #f8fafc;">
+        <div class="section-header">
+            <h2>🌍 Destinations Populaires</h2>
+            <p>Découvrez les destinations les plus prisées avec les prix mis à jour en temps réel !</p>
+        </div>
+        <div style="max-width: 1280px; margin: 0 auto; padding: 0 1rem;">
+            <!-- KIWI.COM POPULAR DESTINATIONS WIDGET -->
+            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&powered_by=true&limit=6&primary_color=2563eb&results_background_color=FFFFFF&form_background_color=FFFFFF&promo_id=4563&campaign_id=111" charset="utf-8"></script>
+        </div>
+    </div>
     
     <!-- Trust Badges -->
     <section class="trust-badges">
@@ -566,7 +493,7 @@
     <section class="newsletter">
         <h2>📬 Recevez nos meilleures offres</h2>
         <p>Inscrivez-vous à notre newsletter et recevez en exclusivité les meilleures deals de voyage.</p>
-        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
             <input type="email" placeholder="Votre email..." required>
             <button type="submit">S'inscrire</button>
         </form>
@@ -577,6 +504,7 @@
         <p>Nos partenaires de confiance</p>
         <div class="partners-logos">
             <span>Kiwi.com</span>
+            <span>Kiwitaxi</span>
             <span>Booking.com</span>
             <span>DiscoverCars</span>
         </div>
@@ -597,14 +525,14 @@
                         <p style="color: #94a3b8;">Comparez. Économisez. Voyagez.</p>
                     </div>
                 </div>
-                <p style="margin-top: 16px;">Votre comparateur de voyage avec les VRAIS prix en temps réel.</p>
+                <p style="margin-top: 16px;">Votre comparateur de voyage avec les VRAIS prix en temps réel. Vols, transferts aéroport et plus encore !</p>
             </div>
             <div class="footer-col">
-                <h4>Liens rapides</h4>
+                <h4>Nos Services</h4>
                 <ul>
-                    <li><a href="#search">Vols pas chers</a></li>
-                    <li><a href="#search">Hôtels</a></li>
-                    <li><a href="#search">Location de voiture</a></li>
+                    <li><a href="#flights">Vols pas chers</a></li>
+                    <li><a href="#transfers">Transferts aéroport</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -613,82 +541,19 @@
                     <li><a href="#">À propos</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contact</h4>
                 <p>📧 contact@vrax-voyages.com</p>
+                <p>📞 +33 1 23 45 67 89</p>
             </div>
         </div>
         <div class="footer-bottom">
             <p>© 2024 Vrax Voyages. Tous droits réservés.</p>
-            <p>Partenaire Travelpayouts - Vrais prix fournis par Kiwi.com</p>
+            <p>Partenaire Travelpayouts - Vrais prix fournis par Kiwi.com et Kiwitaxi</p>
         </div>
     </footer>
-    
-    <script>
-        const TP_MARKER = '499802';
-        
-        function showForm(formName) {
-            document.querySelectorAll('.search-form').forEach(form => {
-                form.classList.remove('active');
-            });
-            document.getElementById(formName + '-form').classList.add('active');
-        }
-        
-        function searchHotels(e) {
-            e.preventDefault();
-            const dest = document.getElementById('hotel-dest').value;
-            const checkin = document.getElementById('hotel-checkin').value;
-            const checkout = document.getElementById('hotel-checkout').value;
-            const guests = document.getElementById('hotel-guests').value;
-            
-            const params = new URLSearchParams({
-                marker: TP_MARKER + '.m704469',
-                location: dest,
-                checkIn: checkin,
-                checkOut: checkout,
-                adults: guests,
-                locale: 'fr',
-                currency: 'EUR'
-            });
-            
-            window.open(`https://search.hotellook.com?${params.toString()}`, '_blank');
-        }
-        
-        function searchCars(e) {
-            e.preventDefault();
-            const location = document.getElementById('car-location').value;
-            const pickup = document.getElementById('car-pickup').value;
-            const ret = document.getElementById('car-return').value;
-            
-            const params = new URLSearchParams({
-                marker: TP_MARKER + '.m704469',
-                pickup_location: location,
-                pickup_date: pickup,
-                return_date: ret
-            });
-            
-            window.open(`https://www.discovercars.com/search?${params.toString()}`, '_blank');
-        }
-        
-        function subscribeNewsletter(e) {
-            e.preventDefault();
-            alert('Merci pour votre inscription !');
-        }
-        
-        document.addEventListener('DOMContentLoaded', function() {
-            const today = new Date();
-            const nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
-            const twoWeeks = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000);
-            
-            const formatDate = (d) => d.toISOString().split('T')[0];
-            
-            document.getElementById('hotel-checkin').value = formatDate(nextWeek);
-            document.getElementById('hotel-checkout').value = formatDate(twoWeeks);
-            document.getElementById('car-pickup').value = formatDate(nextWeek);
-            document.getElementById('car-return').value = formatDate(twoWeeks);
-        });
-    </script>
 </body>
 </html>
