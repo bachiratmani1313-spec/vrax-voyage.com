@@ -70,16 +70,36 @@
         .widget h3 { font-size: 0.95rem; color: #1e293b; margin-bottom: 15px; }
         .widget h3 span { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 2px 8px; border-radius: 15px; font-size: 0.7rem; margin-left: 8px; }
         
+        /* Clickable Link Box */
+        .link-box { 
+            background: linear-gradient(135deg, #2563eb, #7c3aed); 
+            color: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: block;
+            margin-top: 15px;
+        }
+        .link-box:hover { 
+            transform: translateY(-2px); 
+            box-shadow: 0 5px 20px rgba(37, 99, 235, 0.3);
+        }
+        .link-box h4 { font-size: 1.1rem; margin-bottom: 5px; }
+        .link-box p { font-size: 0.85rem; opacity: 0.9; }
+        
         /* Destinations */
         .destinations { background: #f1f5f9; padding: 60px 20px; }
         .destinations-inner { max-width: 1400px; margin: 0 auto; }
         .destinations h2 { text-align: center; font-size: 1.8rem; margin-bottom: 30px; }
         .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; }
-        .dest-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s; cursor: pointer; }
+        .dest-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 5px 20px rgba(0,0,0,0.08); transition: transform 0.3s; cursor: pointer; text-decoration: none; display: block; }
         .dest-card:hover { transform: translateY(-5px); }
         .dest-card img { width: 100%; height: 160px; object-fit: cover; }
         .dest-card-content { padding: 15px; }
-        .dest-card h4 { font-size: 1.1rem; margin-bottom: 5px; }
+        .dest-card h4 { font-size: 1.1rem; margin-bottom: 5px; color: #1e293b; }
         .dest-card .price { color: #2563eb; font-weight: 700; }
         
         /* Features */
@@ -117,19 +137,6 @@
         footer p { color: #94a3b8; }
         .footer-bottom { max-width: 1400px; margin: 30px auto 0; padding-top: 20px; border-top: 1px solid #1e293b; text-align: center; color: #64748b; }
         
-        /* Modal */
-        .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 2000; align-items: center; justify-content: center; }
-        .modal.show { display: flex; }
-        .modal-box { background: white; border-radius: 16px; padding: 30px; max-width: 400px; width: 90%; position: relative; }
-        .modal-close { position: absolute; top: 10px; right: 15px; font-size: 1.5rem; cursor: pointer; color: #64748b; background: none; border: none; }
-        .modal-close:hover { color: #1e293b; }
-        .modal h3 { text-align: center; margin-bottom: 20px; }
-        .modal input { width: 100%; padding: 12px; border: 2px solid #e2e8f0; border-radius: 8px; margin-bottom: 12px; font-size: 1rem; }
-        .modal input:focus { outline: none; border-color: #2563eb; }
-        .modal button[type="submit"] { width: 100%; padding: 12px; background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer; }
-        .modal .switch { text-align: center; margin-top: 15px; color: #64748b; }
-        .modal .switch a { color: #2563eb; cursor: pointer; text-decoration: underline; }
-        
         @media (max-width: 768px) {
             nav { display: none; }
             .hero h2 { font-size: 1.8rem; }
@@ -155,10 +162,6 @@
                 <a href="#destinations">Destinations</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <div style="display: flex; gap: 10px;">
-                <button class="btn btn-outline" onclick="openModal('login')">Connexion</button>
-                <button class="btn btn-primary" onclick="openModal('register')">Inscription</button>
-            </div>
         </div>
     </header>
     
@@ -174,125 +177,163 @@
     
     <div class="services" id="services">
         <div class="services-box">
-            <div class="tab-buttons" role="tablist">
-                <button class="tab-btn active" data-tab="vols" type="button" role="tab" aria-selected="true">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="vols" type="button">
                     <span class="icon">✈️</span>Vols
                 </button>
-                <button class="tab-btn" data-tab="transferts" type="button" role="tab" aria-selected="false">
+                <button class="tab-btn" data-tab="transferts" type="button">
                     <span class="icon">🚕</span>Transferts
                 </button>
-                <button class="tab-btn" data-tab="voitures" type="button" role="tab" aria-selected="false">
+                <button class="tab-btn" data-tab="voitures" type="button">
                     <span class="icon">🚗</span>Voitures
                 </button>
-                <button class="tab-btn" data-tab="activites" type="button" role="tab" aria-selected="false">
+                <button class="tab-btn" data-tab="activites" type="button">
                     <span class="icon">🎫</span>Activités
                 </button>
-                <button class="tab-btn" data-tab="billets" type="button" role="tab" aria-selected="false">
+                <button class="tab-btn" data-tab="billets" type="button">
                     <span class="icon">🎪</span>Billets
                 </button>
             </div>
             
-            <div id="vols" class="tab-panel active" role="tabpanel">
+            <!-- VOLS -->
+            <div id="vols" class="tab-panel active">
                 <div class="widgets">
                     <div class="widget">
                         <h3>✈️ Rechercher un vol <span>Kiwi.com 3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&locale=fr&stops=any&show_hotels=true&powered_by=true&border_radius=8&plain=true&color_button=%23f97316&color_button_text=%23ffffff&promo_id=3414&campaign_id=111" charset="utf-8"></script>
+                        <a href="https://www.kiwi.com/fr/?aff_id=499802" target="_blank" class="link-box">
+                            <h4>🔍 Rechercher sur Kiwi.com</h4>
+                            <p>Cliquez ici pour comparer les vols</p>
+                        </a>
                     </div>
                     <div class="widget">
                         <h3>✈️ Rechercher un vol <span>Aviasales 1.3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&show_hotels=true&powered_by=true&locale=fr&searchUrl=www.aviasales.com%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
-                    </div>
-                    <div class="widget">
-                        <h3>🔥 Vols Populaires <span>Kiwi.com 3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&locale=fr&powered_by=true&limit=4&primary_color=2563eb&campaign_id=111&promo_id=3411" charset="utf-8"></script>
-                    </div>
-                    <div class="widget">
-                        <h3>🔥 Itinéraires <span>Aviasales 1.3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=6&powered_by=true&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
-                    </div>
-                    <div class="widget full-width">
-                        <h3>📅 Planification voyage <span>Aviasales 1.3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&color_button=%23f97316&target_host=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
+                        <a href="https://www.aviasales.com/?marker=499802" target="_blank" class="link-box">
+                            <h4>🔍 Rechercher sur Aviasales</h4>
+                            <p>Cliquez ici pour comparer les vols</p>
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div id="transferts" class="tab-panel" role="tabpanel">
+            <!-- TRANSFERTS -->
+            <div id="transferts" class="tab-panel">
                 <div class="widgets">
                     <div class="widget full-width">
                         <h3>🚕 Transfert aéroport <span>Kiwitaxi 9-11%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&powered_by=true&shmarker=499802&language=fr&display_currency=EUR&transfer_type=any&campaign_id=1&promo_id=691" charset="utf-8"></script>
-                    </div>
-                    <div class="widget">
-                        <h3>🚐 Transfert rapide <span>Kiwitaxi 9-11%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&language=fr&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
-                    </div>
-                    <div class="widget">
-                        <h3>🚌 Navettes <span>8-9%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&locale=fr&show_header=true&powered_by=true&campaign_id=627&promo_id=8951" charset="utf-8"></script>
+                        <a href="https://kiwitaxi.com/?pap=499802" target="_blank" class="link-box">
+                            <h4>🚕 Réserver un transfert</h4>
+                            <p>Cliquez ici pour Kiwitaxi</p>
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div id="voitures" class="tab-panel" role="tabpanel">
+            <!-- VOITURES -->
+            <div id="voitures" class="tab-panel">
                 <div class="widgets">
                     <div class="widget full-width">
                         <h3>🚗 Location voiture <span>Localrent 7.5-12%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&locale=fr&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
-                    </div>
-                    <div class="widget">
-                        <h3>🚗 Rechercher voiture <span>Localrent 7.5-12%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&powered_by=true&lang=fr&width=100&background=light&campaign_id=87&promo_id=4322" charset="utf-8"></script>
+                        <a href="https://localrent.com/?partner=499802" target="_blank" class="link-box">
+                            <h4>🚗 Louer une voiture</h4>
+                            <p>Cliquez ici pour Localrent</p>
+                        </a>
                     </div>
                     <div class="widget">
                         <h3>🚙 Location pas chère <span>GetRentacar 10%</span></h3>
                         <script async src="https://tp.media/content?campaign_id=222&promo_id=8813&shmarker=499802&trs=499802" charset="utf-8"></script>
+                        <a href="https://getrentacar.com/?marker=499802" target="_blank" class="link-box">
+                            <h4>🚙Comparer les prix</h4>
+                            <p>Cliquez ici pour GetRentacar</p>
+                        </a>
                     </div>
                 </div>
             </div>
             
-            <div id="activites" class="tab-panel" role="tabpanel">
+            <!-- ACTIVITÉS -->
+            <div id="activites" class="tab-panel">
                 <div class="widgets">
                     <div class="widget">
                         <h3>🎭 Visites et Tours <span>2-5%</span></h3>
                         <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&locale=fr&category=4&amount=3&powered_by=true&campaign_id=137&promo_id=4497" charset="utf-8"></script>
+                        <a href="https://www.tiqets.com/?partner=499802" target="_blank" class="link-box">
+                            <h4>🎭 Réserver une activité</h4>
+                            <p>Cliquez ici pour Tiqets</p>
+                        </a>
                     </div>
                     <div class="widget">
                         <h3>🏛️ Visites guidées <span>Tiqets 3.5-8%</span></h3>
                         <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&product=&language=fr&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948" charset="utf-8"></script>
                     </div>
-                    <div class="widget">
-                        <h3>📅 Calendrier <span>Tiqets 3.5-8%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&language=fr&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3984" charset="utf-8"></script>
-                    </div>
                 </div>
             </div>
             
-            <div id="billets" class="tab-panel" role="tabpanel">
+            <!-- BILLETS -->
+            <div id="billets" class="tab-panel">
                 <div class="widgets">
                     <div class="widget full-width">
                         <h3>🎪 Événements <span>6-12.5%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&keyword=&results=10&powered_by=true&campaign_id=72&promo_id=6086" charset="utf-8"></script>
-                    </div>
-                    <div class="widget full-width">
-                        <h3>🎫 Rechercher billets <span>6-12.5%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&bg_color=%232563eb&title=Cherchez%20des%20billets%20!&title_color=%23ffffff&search_text=Recherchez...&powered_by=true&campaign_id=72&promo_id=8505" charset="utf-8"></script>
+                        <a href="https://www.ticketnetwork.com/?aff_id=499802" target="_blank" class="link-box">
+                            <h4>🎪 Acheter des billets</h4>
+                            <p>Cliquez ici pour les événements</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     
+    <!-- Destinations CLIQUABLES -->
     <section class="destinations" id="destinations">
         <div class="destinations-inner">
             <h2>🌍 Destinations Populaires</h2>
             <div class="dest-grid">
-                <div class="dest-card"><img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="Paris"><div class="dest-card-content"><h4>🗼 Paris</h4><p class="price">Dès 49€</p></div></div>
-                <div class="dest-card"><img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400" alt="NY"><div class="dest-card-content"><h4>🗽 New York</h4><p class="price">Dès 299€</p></div></div>
-                <div class="dest-card"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400" alt="Bali"><div class="dest-card-content"><h4>🏝️ Bali</h4><p class="price">Dès 450€</p></div></div>
-                <div class="dest-card"><img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400" alt="Rome"><div class="dest-card-content"><h4>🏛️ Rome</h4><p class="price">Dès 59€</p></div></div>
-                <div class="dest-card"><img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="Dubai"><div class="dest-card-content"><h4>🏙️ Dubaï</h4><p class="price">Dès 199€</p></div></div>
-                <div class="dest-card"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400" alt="Tokyo"><div class="dest-card-content"><h4>🏯 Tokyo</h4><p class="price">Dès 520€</p></div></div>
+                <a href="https://www.aviasales.com/search?marker=499802&destination_iata=PAR" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="Paris">
+                    <div class="dest-card-content">
+                        <h4>🗼 Paris</h4>
+                        <p class="price">Dès 49€ →</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=499802&destination_iata=NYC" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400" alt="New York">
+                    <div class="dest-card-content">
+                        <h4>🗽 New York</h4>
+                        <p class="price">Dès 299€ →</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=499802&destination_iata=DPS" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400" alt="Bali">
+                    <div class="dest-card-content">
+                        <h4>🏝️ Bali</h4>
+                        <p class="price">Dès 450€ →</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=499802&destination_iata=ROM" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400" alt="Rome">
+                    <div class="dest-card-content">
+                        <h4>🏛️ Rome</h4>
+                        <p class="price">Dès 59€ →</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=499802&destination_iata=DXB" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="Dubaï">
+                    <div class="dest-card-content">
+                        <h4>🏙️ Dubaï</h4>
+                        <p class="price">Dès 199€ →</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=499802&destination_iata=TYO" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400" alt="Tokyo">
+                    <div class="dest-card-content">
+                        <h4>🏯 Tokyo</h4>
+                        <p class="price">Dès 520€ →</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -305,15 +346,6 @@
             <div class="feat"><div class="feat-icon">🔒</div><h4>Sécurisé</h4><p>Paiement 100% sécurisé</p></div>
             <div class="feat"><div class="feat-icon">🎧</div><h4>Support 24/7</h4><p>Assistance permanente</p></div>
         </div>
-    </section>
-    
-    <section class="newsletter">
-        <h2>📧 Recevez nos meilleures offres</h2>
-        <p>Inscrivez-vous à notre newsletter pour recevoir les meilleurs deals en exclusivité.</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription!');">
-            <input type="email" placeholder="Votre email..." required>
-            <button type="submit">S'inscrire</button>
-        </form>
     </section>
     
     <section class="partners">
@@ -330,39 +362,12 @@
     <footer id="contact">
         <div class="footer-inner">
             <div><h4>✈️ Vrax Voyages</h4><p>Votre comparateur complet aux meilleurs prix.</p></div>
-            <div><h4>Services</h4><ul><li><a href="#services">Vols</a></li><li><a href="#services">Transferts</a></li><li><a href="#services">Voitures</a></li><li><a href="#services">Activités</a></li></ul></div>
+            <div><h4>Services</h4><ul><li>Vols</li><li>Transferts</li><li>Voitures</li><li>Activités</li></ul></div>
             <div><h4>Partenaires</h4><ul><li>Kiwi.com</li><li>Kiwitaxi</li><li>Localrent</li><li>Tiqets</li></ul></div>
             <div><h4>Contact</h4><p>📧 contact@vrax-voyages.com</p></div>
         </div>
         <div class="footer-bottom">© 2024 Vrax Voyages - Partenaire Travelpayouts - Marker: 499802</div>
     </footer>
-    
-    <div id="login-modal" class="modal">
-        <div class="modal-box">
-            <button class="modal-close" onclick="closeModal('login')">&times;</button>
-            <h3>🔑 Connexion</h3>
-            <form onsubmit="event.preventDefault(); alert('Bienvenue !'); closeModal('login');">
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Mot de passe" required>
-                <button type="submit">Se connecter</button>
-            </form>
-            <p class="switch">Pas de compte ? <a onclick="closeModal('login'); openModal('register');">S'inscrire</a></p>
-        </div>
-    </div>
-    
-    <div id="register-modal" class="modal">
-        <div class="modal-box">
-            <button class="modal-close" onclick="closeModal('register')">&times;</button>
-            <h3>📝 Inscription</h3>
-            <form onsubmit="event.preventDefault(); alert('Compte créé !'); closeModal('register');">
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <input type="password" placeholder="Mot de passe" required>
-                <button type="submit">Créer</button>
-            </form>
-            <p class="switch">Déjà inscrit ? <a onclick="closeModal('register'); openModal('login');">Connexion</a></p>
-        </div>
-    </div>
     
     <script>
         // TAB SYSTEM
@@ -376,43 +381,16 @@
                     
                     tabButtons.forEach(function(btn) {
                         btn.classList.remove('active');
-                        btn.setAttribute('aria-selected', 'false');
                     });
                     tabPanels.forEach(function(panel) {
                         panel.classList.remove('active');
                     });
                     
                     this.classList.add('active');
-                    this.setAttribute('aria-selected', 'true');
                     document.getElementById(targetTab).classList.add('active');
                 });
             });
         })();
-        
-        // MODALS
-        function openModal(name) {
-            document.getElementById(name + '-modal').classList.add('show');
-        }
-        
-        function closeModal(name) {
-            document.getElementById(name + '-modal').classList.remove('show');
-        }
-        
-        document.querySelectorAll('.modal').forEach(function(modal) {
-            modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    this.classList.remove('show');
-                }
-            });
-        });
-        
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape') {
-                document.querySelectorAll('.modal.show').forEach(function(modal) {
-                    modal.classList.remove('show');
-                });
-            }
-        });
     </script>
 </body>
 </html>
