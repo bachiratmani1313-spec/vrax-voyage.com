@@ -3,8 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyages - Comparez Vols, Transferts, Voitures et Activités</title>
-    <meta name="description" content="Vrax Voyages - Votre comparateur de voyage complet. Vols, transferts aéroport, location de voiture, activités et billets aux meilleurs prix.">
+    <title>Vrax Voyages - Comparez les Prix des Vols, Hôtels et Locations de Voiture</title>
+    <meta name="description" content="Vrax Voyages est votre comparateur de voyage pour trouver les meilleurs prix sur les vols, hôtels et locations de voiture. Comparez, économisez et voyagez !">
+    <meta name="keywords" content="voyage, vols pas chers, hôtels, location voiture, comparateur voyage, billets d'avion, séjour, vacances, Vrax Voyages">
+    
+    <!-- Travelpayouts Affiliate Script - Marker: 499802 -->
+    <script data-noptimize="1" data-cfasync="false" data-wpfc-render="false">
+        (function () {
+            var script = document.createElement("script");
+            script.async = 1;
+            script.src = 'https://tpembars.com/NDk5ODAy.js?t=499802';
+            document.head.appendChild(script);
+        })();
+    </script>
     
     <style>
         * {
@@ -22,50 +33,49 @@
         
         /* Header */
         .header {
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
-            position: fixed;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
             top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
+            z-index: 100;
         }
         
         .header-content {
-            max-width: 1400px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 0 20px;
+            padding: 0 1rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 70px;
+            height: 64px;
         }
         
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 8px;
         }
         
         .logo-icon {
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            border-radius: 12px;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            border-radius: 8px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 26px;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+        
+        .logo-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
         }
         
         .logo-text h1 {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: #1e293b;
         }
         
         .logo-text p {
@@ -75,321 +85,503 @@
         
         .nav {
             display: flex;
-            gap: 25px;
+            gap: 24px;
         }
         
         .nav a {
             text-decoration: none;
-            color: #475569;
+            color: #64748b;
             font-weight: 500;
-            transition: color 0.3s;
-            padding: 8px 12px;
-            border-radius: 8px;
+            transition: color 0.2s;
         }
         
         .nav a:hover {
             color: #2563eb;
-            background: #f1f5f9;
         }
         
-        .auth-buttons {
-            display: flex;
-            gap: 10px;
-        }
-        
-        .btn {
-            padding: 10px 20px;
-            border-radius: 25px;
-            border: none;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .btn-outline {
-            background: transparent;
-            color: #2563eb;
-            border: 2px solid #2563eb;
-        }
-        
-        .btn-outline:hover {
+        .btn-login {
             background: #2563eb;
             color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.2s;
         }
         
-        .btn-primary {
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            color: white;
-            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        .btn-login:hover {
+            background: #1d4ed8;
         }
         
-        .btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
-        }
-        
-        /* Hero */
+        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(37, 99, 235, 0.9), rgba(124, 58, 237, 0.9)),
-                        url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1920') center/cover;
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
             color: white;
-            padding: 120px 20px 80px;
+            padding: 64px 1rem;
             text-align: center;
-            min-height: 400px;
+            position: relative;
         }
         
         .hero h2 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 16px;
         }
         
         .hero p {
-            font-size: 1.2rem;
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto 30px;
-        }
-        
-        .hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 50px;
-            flex-wrap: wrap;
-        }
-        
-        .hero-stat {
-            text-align: center;
-        }
-        
-        .hero-stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-        }
-        
-        .hero-stat-label {
-            font-size: 0.9rem;
+            font-size: 1.25rem;
             opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 32px;
         }
         
-        /* Main Tabs */
-        .main-tabs {
-            max-width: 1400px;
-            margin: -50px auto 30px;
-            padding: 0 20px;
+        /* Search Tabs */
+        .search-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            margin-top: -80px;
             position: relative;
             z-index: 10;
         }
         
-        .tabs-container {
+        .tabs {
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.15);
             overflow: hidden;
         }
         
-        .main-tabs-nav {
+        .tab-buttons {
             display: flex;
-            background: #f8fafc;
-            border-bottom: 1px solid #e2e8f0;
-            overflow-x: auto;
-        }
-        
-        .main-tab {
-            flex: 1;
-            min-width: 150px;
-            padding: 18px 15px;
-            text-align: center;
-            cursor: pointer;
-            font-weight: 600;
-            color: #64748b;
-            transition: all 0.3s;
-            border-bottom: 3px solid transparent;
-            white-space: nowrap;
-            background: none;
-            border-left: none;
-            border-right: none;
-            border-top: none;
-        }
-        
-        .main-tab.active {
-            background: white;
-            color: #2563eb;
-            border-bottom: 3px solid #2563eb;
-        }
-        
-        .main-tab:hover:not(.active) {
-            color: #2563eb;
             background: #f1f5f9;
         }
         
-        .main-tab-icon {
-            font-size: 1.5rem;
-            display: block;
-            margin-bottom: 5px;
-            pointer-events: none;
+        .tab-btn {
+            flex: 1;
+            padding: 16px;
+            border: none;
+            background: transparent;
+            font-size: 1rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #64748b;
+            transition: all 0.2s;
         }
         
-        .main-tab-text {
-            pointer-events: none;
+        .tab-btn.active {
+            background: white;
+            color: #2563eb;
         }
         
-        .main-tab-content {
+        .tab-btn:hover:not(.active) {
+            color: #2563eb;
+        }
+        
+        .tab-content {
             display: none;
-            padding: 30px;
+            padding: 24px;
         }
         
-        .main-tab-content.active {
+        .tab-content.active {
             display: block;
         }
         
-        /* Widget Grid */
-        .widget-grid {
+        .search-form {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
         }
         
-        .widget-card {
-            background: #f8fafc;
-            border-radius: 16px;
-            padding: 20px;
+        .form-group {
+            text-align: left;
+        }
+        
+        .form-group label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: #374151;
+        }
+        
+        .input-wrapper {
+            position: relative;
+        }
+        
+        .input-wrapper svg {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            color: #9ca3af;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 12px 12px 12px 40px;
             border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.2s;
         }
         
-        .widget-card h3 {
-            font-size: 1.1rem;
-            color: #1e293b;
-            margin-bottom: 15px;
+        .form-input:focus {
+            outline: none;
+            border-color: #2563eb;
+        }
+        
+        .form-select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            cursor: pointer;
+        }
+        
+        .btn-search {
+            grid-column: 1 / -1;
+            padding: 16px;
+            background: #f97316;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.125rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: background 0.2s;
+        }
+        
+        .btn-search:hover {
+            background: #ea580c;
+        }
+        
+        /* Trust Badges */
+        .trust-badges {
+            background: white;
+            padding: 32px 1rem;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .badges-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .badge-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .badge-icon.blue { background: #dbeafe; color: #2563eb; }
+        .badge-icon.green { background: #dcfce7; color: #16a34a; }
+        .badge-icon.orange { background: #ffedd5; color: #ea580c; }
+        .badge-icon.purple { background: #f3e8ff; color: #9333ea; }
+        
+        .badge-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .badge h4 {
+            font-weight: 600;
+            margin-bottom: 2px;
+        }
+        
+        .badge p {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        /* Destinations */
+        .destinations {
+            padding: 64px 1rem;
+            background: #f8fafc;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        
+        .section-title h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .section-title p {
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .destinations-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .destination-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .destination-img {
+            height: 180px;
+            display: flex;
+            align-items: flex-end;
+            padding: 16px;
+            position: relative;
+        }
+        
+        .destination-img.paris { background: linear-gradient(135deg, #06b6d4, #3b82f6); }
+        .destination-img.marrakech { background: linear-gradient(135deg, #f97316, #dc2626); }
+        .destination-img.bangkok { background: linear-gradient(135deg, #8b5cf6, #6366f1); }
+        .destination-img.newyork { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .destination-img.dubai { background: linear-gradient(135deg, #fbbf24, #f59e0b); }
+        .destination-img.lisbon { background: linear-gradient(135deg, #10b981, #059669); }
+        
+        .destination-img h3 {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .destination-img span {
+            color: rgba(255,255,255,0.9);
+            font-size: 0.875rem;
+        }
+        
+        .destination-info {
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .destination-info .price-label {
+            font-size: 0.875rem;
+            color: #64748b;
+        }
+        
+        .destination-info .price {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #2563eb;
+        }
+        
+        /* Deals */
+        .deals {
+            padding: 64px 1rem;
+            background: white;
+        }
+        
+        .deals-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+        
+        .deal-card {
+            background: white;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 24px;
+            cursor: pointer;
+            transition: box-shadow 0.2s;
+        }
+        
+        .deal-card:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .deal-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+        
+        .deal-icon.flight { background: #dbeafe; color: #2563eb; }
+        .deal-icon.hotel { background: #dcfce7; color: #16a34a; }
+        .deal-icon.car { background: #ffedd5; color: #ea580c; }
+        
+        .deal-card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .deal-card p {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        
+        .deal-price {
             display: flex;
             align-items: center;
             gap: 8px;
         }
         
-        .widget-card h3 span {
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            color: white;
-            padding: 2px 10px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-        }
-        
-        /* Section */
-        .section {
-            padding: 60px 20px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        
-        .section-title {
-            text-align: center;
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #1e293b;
-        }
-        
-        .section-subtitle {
-            text-align: center;
-            color: #64748b;
-            margin-bottom: 40px;
-            font-size: 1.1rem;
-        }
-        
-        /* Destinations */
-        .destinations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-        }
-        
-        .destination-card {
-            background: white;
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-            cursor: pointer;
-        }
-        
-        .destination-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-        }
-        
-        .destination-card img {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-        }
-        
-        .destination-card-content {
-            padding: 20px;
-        }
-        
-        .destination-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
-        
-        .destination-card .price {
-            color: #2563eb;
+        .deal-price .current {
+            font-size: 1.5rem;
             font-weight: 700;
+            color: #2563eb;
         }
         
-        /* Features */
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
+        .deal-price .original {
+            font-size: 1rem;
+            color: #9ca3af;
+            text-decoration: line-through;
         }
         
-        .feature {
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(135deg, #2563eb, #4f46e5);
+            color: white;
+            padding: 64px 1rem;
             text-align: center;
-            padding: 30px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
         }
         
-        .feature:hover {
-            transform: translateY(-5px);
+        .newsletter h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
         }
         
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 15px;
+        .newsletter p {
+            opacity: 0.9;
+            margin-bottom: 24px;
         }
         
-        .feature h4 {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+        .newsletter-form {
+            display: flex;
+            gap: 12px;
+            max-width: 500px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         
-        .feature p {
+        .newsletter-form input {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+        
+        .newsletter-form input::placeholder {
+            color: rgba(255,255,255,0.7);
+        }
+        
+        .newsletter-form button {
+            padding: 12px 24px;
+            background: #f97316;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        
+        .newsletter-form button:hover {
+            background: #ea580c;
+        }
+        
+        /* Partners */
+        .partners {
+            padding: 32px 1rem;
+            background: #f1f5f9;
+            text-align: center;
+        }
+        
+        .partners p {
+            color: #64748b;
+            margin-bottom: 16px;
+        }
+        
+        .partners-logos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 32px;
+            opacity: 0.6;
+        }
+        
+        .partners-logos span {
+            font-size: 1.25rem;
+            font-weight: 700;
             color: #64748b;
         }
         
         /* Footer */
         .footer {
-            background: linear-gradient(180deg, #0f172a, #020617);
+            background: #0f172a;
             color: white;
-            padding: 60px 20px 30px;
+            padding: 48px 1rem 24px;
         }
         
         .footer-grid {
-            max-width: 1400px;
+            max-width: 1280px;
             margin: 0 auto;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
+            gap: 32px;
+            margin-bottom: 32px;
         }
         
         .footer-col h4 {
-            margin-bottom: 20px;
-            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 16px;
         }
         
         .footer-col ul {
@@ -397,13 +589,14 @@
         }
         
         .footer-col li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         
         .footer-col a {
             color: #94a3b8;
             text-decoration: none;
-            transition: color 0.3s;
+            font-size: 0.875rem;
+            transition: color 0.2s;
         }
         
         .footer-col a:hover {
@@ -412,115 +605,46 @@
         
         .footer-col p {
             color: #94a3b8;
-            line-height: 1.8;
+            font-size: 0.875rem;
         }
         
         .footer-bottom {
-            max-width: 1400px;
+            max-width: 1280px;
             margin: 0 auto;
-            padding-top: 20px;
+            padding-top: 24px;
             border-top: 1px solid #1e293b;
             text-align: center;
             color: #64748b;
+            font-size: 0.875rem;
         }
         
-        /* Modal */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.5);
-            z-index: 2000;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .modal.active {
-            display: flex;
-        }
-        
-        .modal-content {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 450px;
-            width: 90%;
-            position: relative;
-        }
-        
-        .modal-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 1.5rem;
-            cursor: pointer;
-            color: #64748b;
-        }
-        
-        .modal h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .modal form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .modal input {
-            padding: 15px;
-            border: 2px solid #e2e8f0;
-            border-radius: 10px;
-            font-size: 1rem;
-        }
-        
-        .modal input:focus {
-            outline: none;
-            border-color: #2563eb;
-        }
-        
-        .modal button {
-            padding: 15px;
-            background: linear-gradient(135deg, #2563eb, #7c3aed);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        
-        .modal .switch {
-            text-align: center;
-            margin-top: 15px;
-            color: #64748b;
-        }
-        
-        .modal .switch a {
-            color: #2563eb;
-            cursor: pointer;
-            text-decoration: underline;
+        .footer-bottom p {
+            margin-bottom: 8px;
         }
         
         /* Responsive */
         @media (max-width: 768px) {
-            .nav { display: none; }
-            .hero h2 { font-size: 2rem; }
-            .hero-stats { gap: 30px; }
-            .main-tabs-nav { flex-wrap: nowrap; }
-            .main-tab { min-width: 80px; padding: 12px 8px; font-size: 0.8rem; }
-            .main-tab-icon { font-size: 1.2rem; }
-            .widget-grid { grid-template-columns: 1fr; }
-            .auth-buttons { gap: 5px; }
-            .btn { padding: 8px 12px; font-size: 0.85rem; }
+            .nav {
+                display: none;
+            }
+            
+            .hero h2 {
+                font-size: 1.75rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .search-form {
+                grid-template-columns: 1fr;
+            }
         }
         
-        html { scroll-behavior: smooth; }
+        /* Hidden Travelpayouts verification */
+        .tp-verify {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -528,243 +652,436 @@
     <header class="header">
         <div class="header-content">
             <div class="logo">
-                <div class="logo-icon">✈️</div>
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                    </svg>
+                </div>
                 <div class="logo-text">
                     <h1>Vrax Voyages</h1>
                     <p>Comparez. Économisez. Voyagez.</p>
                 </div>
             </div>
             <nav class="nav">
-                <a href="#services">Services</a>
+                <a href="#search">Recherche</a>
                 <a href="#destinations">Destinations</a>
+                <a href="#deals">Offres</a>
                 <a href="#contact">Contact</a>
             </nav>
-            <div class="auth-buttons">
-                <button class="btn btn-outline" onclick="openModal('login')">Connexion</button>
-                <button class="btn btn-primary" onclick="openModal('register')">Inscription</button>
-            </div>
+            <button class="btn-login">Connexion</button>
         </div>
     </header>
     
-    <!-- Hero -->
-    <section class="hero">
-        <h2>🌍 Votre voyage commence ici</h2>
-        <p>Comparez les meilleurs prix pour vos vols, transferts, locations de voiture et activités en temps réel</p>
-        <div class="hero-stats">
-            <div class="hero-stat">
-                <div class="hero-stat-number">500+</div>
-                <div class="hero-stat-label">Compagnies aériennes</div>
-            </div>
-            <div class="hero-stat">
-                <div class="hero-stat-number">50K+</div>
-                <div class="hero-stat-label">Destinations</div>
-            </div>
-            <div class="hero-stat">
-                <div class="hero-stat-number">-70%</div>
-                <div class="hero-stat-label">Économies moyennes</div>
-            </div>
-        </div>
+    <!-- Hero Section -->
+    <section class="hero" id="search">
+        <h2>Trouvez les meilleurs prix</h2>
+        <p>Comparez des milliers d'offres de vols, hôtels et locations de voiture. Économisez sur votre prochain voyage !</p>
     </section>
     
-    <!-- Main Tabs with Widgets -->
-    <div class="main-tabs" id="services">
-        <div class="tabs-container">
-            <div class="main-tabs-nav">
-                <button class="main-tab active" data-tab="vols">
-                    <span class="main-tab-icon">✈️</span>
-                    <span class="main-tab-text">Vols</span>
+    <!-- Search Container -->
+    <div class="search-container">
+        <div class="tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="showTab('flights')">
+                    ✈️ Vols
                 </button>
-                <button class="main-tab" data-tab="transferts">
-                    <span class="main-tab-icon">🚕</span>
-                    <span class="main-tab-text">Transferts</span>
+                <button class="tab-btn" onclick="showTab('hotels')">
+                    🏨 Hôtels
                 </button>
-                <button class="main-tab" data-tab="voitures">
-                    <span class="main-tab-icon">🚗</span>
-                    <span class="main-tab-text">Voitures</span>
-                </button>
-                <button class="main-tab" data-tab="activites">
-                    <span class="main-tab-icon">🎫</span>
-                    <span class="main-tab-text">Activités</span>
-                </button>
-                <button class="main-tab" data-tab="billets">
-                    <span class="main-tab-icon">🎪</span>
-                    <span class="main-tab-text">Billets</span>
+                <button class="tab-btn" onclick="showTab('cars')">
+                    🚗 Voitures
                 </button>
             </div>
             
-            <!-- VOLS TAB -->
-            <div id="vols-tab" class="main-tab-content active">
-                <div class="widget-grid">
-                    <div class="widget-card">
-                        <h3>✈️ Rechercher un vol <span>Kiwi.com - 3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&locale=fr&stops=any&show_hotels=true&powered_by=true&border_radius=8&plain=true&color_button=%23f97316&color_button_text=%23ffffff&promo_id=3414&campaign_id=111" charset="utf-8"></script>
+            <!-- Flights Tab -->
+            <div id="flights" class="tab-content active">
+                <form class="search-form" onsubmit="searchFlights(event)">
+                    <div class="form-group">
+                        <label>Départ</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <input type="text" class="form-input" id="flight-origin" placeholder="Paris, CDG..." required>
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>✈️ Rechercher un vol <span>Aviasales - 1.3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&show_hotels=true&powered_by=true&locale=fr&searchUrl=www.aviasales.com%2Fsearch&primary_override=%232563eb&color_button=%232563eb&color_icons=%232563eb&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%232563eb&border_radius=8&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <input type="text" class="form-input" id="flight-dest" placeholder="Marrakech, NYC..." required>
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>🔥 Vols Populaires <span>Kiwi.com - 3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&locale=fr&powered_by=true&limit=4&primary_color=2563eb&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=3411" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Date de départ</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <input type="date" class="form-input" id="flight-depart" required style="padding-left: 40px;">
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>🔥 Itinéraires Populaires <span>Aviasales - 1.3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=6&powered_by=true&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Date de retour</label>
+                        <div class="input-wrapper">
+                            <input type="date" class="form-input" id="flight-return" style="padding-left: 40px;">
+                        </div>
                     </div>
-                    <div class="widget-card" style="grid-column: 1 / -1;">
-                        <h3>📅 Planifiez votre voyage <span>Aviasales - 1.3%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&color_button=%23f97316&target_host=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&with_fallback=false&non_direct_flights=true&min_lines=5&border_radius=8&color_background=%23FFFFFF&color_text=%231e293b&color_border=%23e2e8f0&promo_id=2811&campaign_id=100" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Passagers</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <input type="number" class="form-input" id="flight-passengers" value="1" min="1" max="9" style="padding-left: 40px;">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>Classe</label>
+                        <select class="form-select" id="flight-class">
+                            <option value="0">Économique</option>
+                            <option value="1">Affaires</option>
+                            <option value="2">Première</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-search">
+                        🔍 Rechercher des vols
+                    </button>
+                </form>
             </div>
             
-            <!-- TRANSFERTS TAB -->
-            <div id="transferts-tab" class="main-tab-content">
-                <div class="widget-grid">
-                    <div class="widget-card" style="grid-column: 1 / -1;">
-                        <h3>🚕 Réserver un transfert aéroport <span>Kiwitaxi - 9-11%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&powered_by=true&shmarker=499802&language=fr&display_currency=EUR&transfer_type=any&hide_form_extras=true&hide_external_links=true&disable_currency_selector=true&campaign_id=1&promo_id=691" charset="utf-8" async></script>
+            <!-- Hotels Tab -->
+            <div id="hotels" class="tab-content">
+                <form class="search-form" onsubmit="searchHotels(event)">
+                    <div class="form-group">
+                        <label>Destination</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <input type="text" class="form-input" id="hotel-dest" placeholder="Paris, Marrakech..." required>
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>🚐 Transfert rapide <span>Kiwitaxi - 9-11%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&language=fr&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Arrivée</label>
+                        <div class="input-wrapper">
+                            <input type="date" class="form-input" id="hotel-checkin" required style="padding-left: 40px;">
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>🚌 Navettes aéroport <span>8-9%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&locale=fr&show_header=true&powered_by=true&campaign_id=627&promo_id=8951" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Départ</label>
+                        <div class="input-wrapper">
+                            <input type="date" class="form-input" id="hotel-checkout" required style="padding-left: 40px;">
+                        </div>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label>Voyageurs</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                            </svg>
+                            <input type="number" class="form-input" id="hotel-guests" value="2" min="1" max="10" style="padding-left: 40px;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Chambres</label>
+                        <div class="input-wrapper">
+                            <input type="number" class="form-input" id="hotel-rooms" value="1" min="1" max="5" style="padding-left: 40px;">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-search">
+                        🔍 Rechercher des hôtels
+                    </button>
+                </form>
             </div>
             
-            <!-- VOITURES TAB -->
-            <div id="voitures-tab" class="main-tab-content">
-                <div class="widget-grid">
-                    <div class="widget-card" style="grid-column: 1 / -1;">
-                        <h3>🚗 Location de voiture <span>Localrent - 7.5-12%</span></h3>
-                        <script async src="//tpemd.com/content?trs=499802&shmarker=499802&locale=fr&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
+            <!-- Cars Tab -->
+            <div id="cars" class="tab-content">
+                <form class="search-form" onsubmit="searchCars(event)">
+                    <div class="form-group">
+                        <label>Lieu de prise en charge</label>
+                        <div class="input-wrapper">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <input type="text" class="form-input" id="car-location" placeholder="Paris, Aéroport..." required>
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>🚗 Rechercher une voiture <span>Localrent - 7.5-12%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&powered_by=true&lang=fr&width=100&background=light&logo=true&header=true&gearbox=false&cars=false&border=true&footer=true&campaign_id=87&promo_id=4322" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Date de prise en charge</label>
+                        <div class="input-wrapper">
+                            <input type="date" class="form-input" id="car-pickup" required style="padding-left: 40px;">
+                        </div>
                     </div>
-                    <div class="widget-card">
-                        <h3>🚙 Location pas chère <span>GetRentacar - 10%</span></h3>
-                        <script src="https://tp.media/content?campaign_id=222&promo_id=8813&shmarker=499802&trs=499802" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Date de retour</label>
+                        <div class="input-wrapper">
+                            <input type="date" class="form-input" id="car-return" required style="padding-left: 40px;">
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <!-- ACTIVITÉS TAB -->
-            <div id="activites-tab" class="main-tab-content">
-                <div class="widget-grid">
-                    <div class="widget-card">
-                        <h3>🎭 Visites et Tours <span>2-5%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&locale=fr&category=4&amount=3&powered_by=true&campaign_id=137&promo_id=4497" charset="utf-8"></script>
+                    <div class="form-group">
+                        <label>Type de véhicule</label>
+                        <select class="form-select" id="car-type">
+                            <option value="economy">Économique</option>
+                            <option value="compact">Compacte</option>
+                            <option value="suv">SUV</option>
+                            <option value="luxury">Luxe</option>
+                        </select>
                     </div>
-                    <div class="widget-card">
-                        <h3>🏛️ Visites guidées <span>Tiqets - 3.5-8%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&product=&language=fr&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948" charset="utf-8"></script>
-                    </div>
-                    <div class="widget-card">
-                        <h3>📅 Calendrier activités <span>Tiqets - 3.5-8%</span></h3>
-                        <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&product%5B0%5D%5Bkey%5D=&product%5B0%5D%5Bvalue%5D=&language=fr&layout=horizontal&orientation=vertical&powered_by=true&campaign_id=89&promo_id=3984" charset="utf-8"></script>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- BILLETS TAB -->
-            <div id="billets-tab" class="main-tab-content">
-                <div class="widget-grid">
-                    <div class="widget-card" style="grid-column: 1 / -1;">
-                        <h3>🎪 Événements à venir <span>6-12.5%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&keyword=&results=10&powered_by=true&campaign_id=72&promo_id=6086" charset="utf-8"></script>
-                    </div>
-                    <div class="widget-card" style="grid-column: 1 / -1;">
-                        <h3>🎫 Rechercher des billets <span>6-12.5%</span></h3>
-                        <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&bg_color=%232563eb&title=Cherchez%20des%20billets%20!&title_color=%23ffffff&icon_color=%23ffffff&search_text=Recherchez%20par%20artiste%2C%20%C3%A9quipe%2C%20%C3%A9v%C3%A9nement...&footer_color=%23ffffff&powered_by=true&campaign_id=72&promo_id=8505" charset="utf-8"></script>
-                    </div>
-                </div>
+                    <button type="submit" class="btn-search">
+                        🔍 Rechercher une voiture
+                    </button>
+                </form>
             </div>
         </div>
     </div>
     
-    <!-- Destinations -->
-    <section class="section" id="destinations" style="background: #f1f5f9; max-width: 100%; padding: 60px 20px;">
-        <div style="max-width: 1400px; margin: 0 auto;">
-            <h2 class="section-title">🌍 Destinations Populaires</h2>
-            <p class="section-subtitle">Découvrez les destinations les plus prisées aux meilleurs prix</p>
-            <div class="destinations-grid">
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris">
-                    <div class="destination-card-content">
-                        <h4>🗼 Paris, France</h4>
-                        <p class="price">Dès 49€ aller simple</p>
-                    </div>
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="badges-grid">
+            <div class="badge">
+                <div class="badge-icon blue">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=600" alt="New York">
-                    <div class="destination-card-content">
-                        <h4>🗽 New York, USA</h4>
-                        <p class="price">Dès 299€ aller simple</p>
-                    </div>
+                <div>
+                    <h4>Sécurisé</h4>
+                    <p>Paiement 100% sécurisé</p>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600" alt="Bali">
-                    <div class="destination-card-content">
-                        <h4>🏝️ Bali, Indonésie</h4>
-                        <p class="price">Dès 450€ aller simple</p>
-                    </div>
+            </div>
+            <div class="badge">
+                <div class="badge-icon green">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=600" alt="Rome">
-                    <div class="destination-card-content">
-                        <h4>🏛️ Rome, Italie</h4>
-                        <p class="price">Dès 59€ aller simple</p>
-                    </div>
+                <div>
+                    <h4>Meilleurs prix</h4>
+                    <p>Comparaison en temps réel</p>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600" alt="Dubaï">
-                    <div class="destination-card-content">
-                        <h4>🏙️ Dubaï, EAU</h4>
-                        <p class="price">Dès 199€ aller simple</p>
-                    </div>
+            </div>
+            <div class="badge">
+                <div class="badge-icon orange">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
                 </div>
-                <div class="destination-card">
-                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=600" alt="Tokyo">
-                    <div class="destination-card-content">
-                        <h4>🏯 Tokyo, Japon</h4>
-                        <p class="price">Dès 520€ aller simple</p>
-                    </div>
+                <div>
+                    <h4>Rapide</h4>
+                    <p>Réservation en 2 minutes</p>
+                </div>
+            </div>
+            <div class="badge">
+                <div class="badge-icon purple">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 18v-6a9 9 0 0 1 18 0v6"></path>
+                        <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path>
+                    </svg>
+                </div>
+                <div>
+                    <h4>Support 24/7</h4>
+                    <p>Assistance permanente</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <!-- Features -->
-    <section class="section">
-        <h2 class="section-title">Pourquoi choisir Vrax Voyages ?</h2>
-        <p class="section-subtitle">Votre partenaire de confiance pour tous vos voyages</p>
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">🔍</div>
-                <h4>Comparaison instantanée</h4>
-                <p>Comparez des centaines de compagnies en un clic</p>
+    <!-- Destinations -->
+    <section class="destinations" id="destinations">
+        <div class="section-title">
+            <h2>Destinations populaires</h2>
+            <p>Découvrez nos destinations les plus recherchées et trouvez les meilleures offres pour votre prochain voyage.</p>
+        </div>
+        <div class="destinations-grid">
+            <div class="destination-card" onclick="searchDestination('PAR', 'Paris')">
+                <div class="destination-img paris">
+                    <div>
+                        <h3>Paris</h3>
+                        <span>France</span>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div>
+                        <p class="price-label">À partir de</p>
+                        <p class="price">99 €</p>
+                    </div>
+                    <span>→</span>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">💰</div>
-                <h4>Prix garantis</h4>
-                <p>Les meilleurs prix sans frais cachés</p>
+            <div class="destination-card" onclick="searchDestination('RAK', 'Marrakech')">
+                <div class="destination-img marrakech">
+                    <div>
+                        <h3>Marrakech</h3>
+                        <span>Maroc</span>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div>
+                        <p class="price-label">À partir de</p>
+                        <p class="price">89 €</p>
+                    </div>
+                    <span>→</span>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">🔒</div>
-                <h4>Paiement sécurisé</h4>
-                <p>100% sécurisé et protégé</p>
+            <div class="destination-card" onclick="searchDestination('BKK', 'Bangkok')">
+                <div class="destination-img bangkok">
+                    <div>
+                        <h3>Bangkok</h3>
+                        <span>Thaïlande</span>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div>
+                        <p class="price-label">À partir de</p>
+                        <p class="price">349 €</p>
+                    </div>
+                    <span>→</span>
+                </div>
             </div>
-            <div class="feature">
-                <div class="feature-icon">🎧</div>
-                <h4>Support 24/7</h4>
-                <p>Assistance à tout moment</p>
+            <div class="destination-card" onclick="searchDestination('NYC', 'New York')">
+                <div class="destination-img newyork">
+                    <div>
+                        <h3>New York</h3>
+                        <span>États-Unis</span>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div>
+                        <p class="price-label">À partir de</p>
+                        <p class="price">299 €</p>
+                    </div>
+                    <span>→</span>
+                </div>
             </div>
+            <div class="destination-card" onclick="searchDestination('DXB', 'Dubaï')">
+                <div class="destination-img dubai">
+                    <div>
+                        <h3>Dubaï</h3>
+                        <span>EAU</span>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div>
+                        <p class="price-label">À partir de</p>
+                        <p class="price">249 €</p>
+                    </div>
+                    <span>→</span>
+                </div>
+            </div>
+            <div class="destination-card" onclick="searchDestination('LIS', 'Lisbonne')">
+                <div class="destination-img lisbon">
+                    <div>
+                        <h3>Lisbonne</h3>
+                        <span>Portugal</span>
+                    </div>
+                </div>
+                <div class="destination-info">
+                    <div>
+                        <p class="price-label">À partir de</p>
+                        <p class="price">79 €</p>
+                    </div>
+                    <span>→</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Deals -->
+    <section class="deals" id="deals">
+        <div class="section-title">
+            <h2>Offres du moment</h2>
+            <p>Ne manquez pas nos meilleures offres sélectionnées pour vous. Prix limités, réservation rapide !</p>
+        </div>
+        <div class="deals-grid">
+            <div class="deal-card">
+                <div class="deal-icon flight">✈️</div>
+                <h3>Paris → Marrakech</h3>
+                <p>Vol aller-retour direct, bagages inclus. Départ cette semaine !</p>
+                <div class="deal-price">
+                    <span class="current">89 €</span>
+                    <span class="original">149 €</span>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-icon hotel">🏨</div>
+                <h3>Hôtel 4★ Marrakech</h3>
+                <p>7 nuits avec petit-déjeuner, proche de la place Jemaa el-Fna.</p>
+                <div class="deal-price">
+                    <span class="current">299 €</span>
+                    <span class="original">450 €</span>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-icon car">🚗</div>
+                <h3>Location Voiture</h3>
+                <p>Économique, kilométrage illimité. Disponible en France.</p>
+                <div class="deal-price">
+                    <span class="current">25 €/jour</span>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-icon flight">✈️</div>
+                <h3>Lyon → Nice</h3>
+                <p>Vol direct pour la Côte d'Azur. Plages et farniente !</p>
+                <div class="deal-price">
+                    <span class="current">49 €</span>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-icon hotel">🏨</div>
+                <h3>Riad de Luxe</h3>
+                <p>5 nuits en demi-pension, spa inclus. Expérience unique.</p>
+                <div class="deal-price">
+                    <span class="current">599 €</span>
+                    <span class="original">800 €</span>
+                </div>
+            </div>
+            <div class="deal-card">
+                <div class="deal-icon flight">✈️</div>
+                <h3>Paris → New York</h3>
+                <p>Vol transatlantique, compagnie régulière. Aventure américaine !</p>
+                <div class="deal-price">
+                    <span class="current">349 €</span>
+                    <span class="original">499 €</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>📬 Recevez nos meilleures offres</h2>
+        <p>Inscrivez-vous à notre newsletter et recevez en exclusivité les meilleures deals de voyage.</p>
+        <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+            <input type="email" placeholder="Votre email..." required>
+            <button type="submit">S'inscrire</button>
+        </form>
+    </section>
+    
+    <!-- Partners -->
+    <section class="partners">
+        <p>Nos partenaires de confiance</p>
+        <div class="partners-logos">
+            <span>Aviasales</span>
+            <span>Hotellook</span>
+            <span>DiscoverCars</span>
+            <span>Booking.com</span>
+            <span>Kiwi.com</span>
         </div>
     </section>
     
@@ -772,118 +1089,179 @@
     <footer class="footer" id="contact">
         <div class="footer-grid">
             <div class="footer-col">
-                <h4>✈️ Vrax Voyages</h4>
-                <p>Votre comparateur de voyage complet. Vols, transferts, voitures, activités et billets aux meilleurs prix.</p>
+                <div class="logo">
+                    <div class="logo-icon" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>
+                        </svg>
+                    </div>
+                    <div class="logo-text" style="color: white;">
+                        <h1>Vrax Voyages</h1>
+                        <p style="color: #94a3b8;">Comparez. Économisez. Voyagez.</p>
+                    </div>
+                </div>
+                <p style="margin-top: 16px;">Votre comparateur de voyage pour trouver les meilleurs prix sur les vols, hôtels et locations de voiture.</p>
             </div>
             <div class="footer-col">
-                <h4>Nos Services</h4>
+                <h4>Liens rapides</h4>
                 <ul>
-                    <li><a href="#services">Vols pas chers</a></li>
-                    <li><a href="#services">Transferts aéroport</a></li>
-                    <li><a href="#services">Location de voiture</a></li>
-                    <li><a href="#services">Activités et billets</a></li>
+                    <li><a href="#">Vols pas chers</a></li>
+                    <li><a href="#">Hôtels</a></li>
+                    <li><a href="#">Location de voiture</a></li>
+                    <li><a href="#">Assurance voyage</a></li>
                 </ul>
             </div>
             <div class="footer-col">
-                <h4>Partenaires</h4>
+                <h4>Informations</h4>
                 <ul>
-                    <li>Kiwi.com</li>
-                    <li>Aviasales</li>
-                    <li>Kiwitaxi</li>
-                    <li>Localrent</li>
-                    <li>Tiqets</li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Contact</h4>
                 <p>📧 contact@vrax-voyages.com</p>
-                <p>🌐 vrax-voyages.com</p>
+                <p>📞 +33 1 23 45 67 89</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>© 2024 Vrax Voyages. Tous droits réservés. | Partenaire Travelpayouts</p>
+            <p>© 2024 Vrax Voyages. Tous droits réservés.</p>
+            <p>Partenaire Travelpayouts - Les prix affichés sont fournis par nos partenaires.</p>
         </div>
     </footer>
     
-    <!-- Login Modal -->
-    <div id="login-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('login')">&times;</span>
-            <h3>🔑 Connexion</h3>
-            <form onsubmit="handleLogin(event)">
-                <input type="email" placeholder="Votre email..." required>
-                <input type="password" placeholder="Mot de passe..." required>
-                <button type="submit">Se connecter</button>
-            </form>
-            <p class="switch">Pas encore inscrit ? <a onclick="switchModal('login', 'register')">Créer un compte</a></p>
-        </div>
-    </div>
-    
-    <!-- Register Modal -->
-    <div id="register-modal" class="modal">
-        <div class="modal-content">
-            <span class="modal-close" onclick="closeModal('register')">&times;</span>
-            <h3>📝 Inscription</h3>
-            <form onsubmit="handleRegister(event)">
-                <input type="text" placeholder="Votre nom..." required>
-                <input type="email" placeholder="Votre email..." required>
-                <input type="password" placeholder="Mot de passe..." required>
-                <input type="password" placeholder="Confirmer le mot de passe..." required>
-                <button type="submit">Créer mon compte</button>
-            </form>
-            <p class="switch">Déjà inscrit ? <a onclick="switchModal('register', 'login')">Se connecter</a></p>
-        </div>
+    <!-- Travelpayouts Verification (hidden) -->
+    <div class="tp-verify" data-travelpayouts-marker="499802">
+        Travelpayouts Affiliate Marker: 499802
     </div>
     
     <script>
-        // Main Tabs - CORRECTED VERSION
-        document.querySelectorAll('.main-tab').forEach(tab => {
-            tab.addEventListener('click', function() {
-                const tabName = this.getAttribute('data-tab');
-                
-                // Remove active from all tabs and contents
-                document.querySelectorAll('.main-tab').forEach(t => t.classList.remove('active'));
-                document.querySelectorAll('.main-tab-content').forEach(c => c.classList.remove('active'));
-                
-                // Add active to clicked tab and corresponding content
-                this.classList.add('active');
-                document.getElementById(tabName + '-tab').classList.add('active');
+        // Travelpayouts Marker ID
+        const TP_MARKER = '499802';
+        
+        // Tab switching
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.classList.remove('active');
             });
-        });
-        
-        // Modals
-        function openModal(type) {
-            document.getElementById(type + '-modal').classList.add('active');
-        }
-        
-        function closeModal(type) {
-            document.getElementById(type + '-modal').classList.remove('active');
-        }
-        
-        function switchModal(from, to) {
-            closeModal(from);
-            openModal(to);
-        }
-        
-        function handleLogin(e) {
-            e.preventDefault();
-            alert('Connexion réussie ! Bienvenue sur Vrax Voyages 🎉');
-            closeModal('login');
-        }
-        
-        function handleRegister(e) {
-            e.preventDefault();
-            alert('Compte créé avec succès ! Bienvenue sur Vrax Voyages 🎉');
-            closeModal('register');
-        }
-        
-        // Close modal on outside click
-        document.querySelectorAll('.modal').forEach(modal => {
-            modal.addEventListener('click', function(e) {
-                if (e.target === this) {
-                    this.classList.remove('active');
-                }
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
             });
+            
+            // Show selected tab
+            document.getElementById(tabName).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        // Search functions with Travelpayouts affiliate links
+        function searchFlights(e) {
+            e.preventDefault();
+            const origin = document.getElementById('flight-origin').value;
+            const dest = document.getElementById('flight-dest').value;
+            const depart = document.getElementById('flight-depart').value;
+            const ret = document.getElementById('flight-return').value;
+            const passengers = document.getElementById('flight-passengers').value;
+            const tripClass = document.getElementById('flight-class').value;
+            
+            // Build Aviasales affiliate link
+            const params = new URLSearchParams({
+                marker: TP_MARKER,
+                origin_iata: origin.toUpperCase(),
+                destination_iata: dest.toUpperCase(),
+                depart_date: depart,
+                with_request: 'true',
+                locale: 'fr',
+                passengers: passengers,
+                trip_class: tripClass
+            });
+            
+            if (ret) params.set('return_date', ret);
+            
+            window.open(`https://www.aviasales.com/search?${params.toString()}`, '_blank');
+        }
+        
+        function searchHotels(e) {
+            e.preventDefault();
+            const dest = document.getElementById('hotel-dest').value;
+            const checkin = document.getElementById('hotel-checkin').value;
+            const checkout = document.getElementById('hotel-checkout').value;
+            const guests = document.getElementById('hotel-guests').value;
+            const rooms = document.getElementById('hotel-rooms').value;
+            
+            // Build Hotellook affiliate link
+            const params = new URLSearchParams({
+                marker: TP_MARKER,
+                location: dest,
+                checkIn: checkin,
+                checkOut: checkout,
+                adults: guests,
+                rooms: rooms,
+                locale: 'fr',
+                currency: 'EUR'
+            });
+            
+            window.open(`https://search.hotellook.com?${params.toString()}`, '_blank');
+        }
+        
+        function searchCars(e) {
+            e.preventDefault();
+            const location = document.getElementById('car-location').value;
+            const pickup = document.getElementById('car-pickup').value;
+            const ret = document.getElementById('car-return').value;
+            const carType = document.getElementById('car-type').value;
+            
+            // Build DiscoverCars affiliate link
+            const params = new URLSearchParams({
+                marker: TP_MARKER,
+                pickup_location: location,
+                pickup_date: pickup,
+                return_date: ret,
+                car_type: carType
+            });
+            
+            window.open(`https://www.discovercars.com/search?${params.toString()}`, '_blank');
+        }
+        
+        function searchDestination(code, name) {
+            const nextWeek = new Date();
+            nextWeek.setDate(nextWeek.getDate() + 7);
+            const dateStr = nextWeek.toISOString().split('T')[0];
+            
+            const params = new URLSearchParams({
+                marker: TP_MARKER,
+                destination_iata: code,
+                depart_date: dateStr,
+                with_request: 'true',
+                locale: 'fr'
+            });
+            
+            window.open(`https://www.aviasales.com/search?${params.toString()}`, '_blank');
+        }
+        
+        function subscribeNewsletter(e) {
+            e.preventDefault();
+            alert('Merci pour votre inscription ! Vous recevrez bientôt nos meilleures offres.');
+        }
+        
+        // Set default dates
+        document.addEventListener('DOMContentLoaded', function() {
+            const today = new Date();
+            const nextWeek = new Date(today.getTime() + 7 * 24 * 60 * 60 * 1000);
+            const twoWeeks = new Date(today.getTime() + 14 * 24 * 60 * 60 * 1000);
+            
+            const formatDate = (d) => d.toISOString().split('T')[0];
+            
+            // Set default dates for forms
+            try {
+                document.getElementById('flight-depart').value = formatDate(nextWeek);
+                document.getElementById('hotel-checkin').value = formatDate(nextWeek);
+                document.getElementById('hotel-checkout').value = formatDate(twoWeeks);
+                document.getElementById('car-pickup').value = formatDate(nextWeek);
+                document.getElementById('car-return').value = formatDate(twoWeeks);
+            } catch(e) {}
         });
     </script>
 </body>
