@@ -207,6 +207,10 @@
             transition: all 0.3s;
             border-bottom: 3px solid transparent;
             white-space: nowrap;
+            background: none;
+            border-left: none;
+            border-right: none;
+            border-top: none;
         }
         
         .main-tab.active {
@@ -224,6 +228,11 @@
             font-size: 1.5rem;
             display: block;
             margin-bottom: 5px;
+            pointer-events: none;
+        }
+        
+        .main-tab-text {
+            pointer-events: none;
         }
         
         .main-tab-content {
@@ -495,6 +504,7 @@
         .modal .switch a {
             color: #2563eb;
             cursor: pointer;
+            text-decoration: underline;
         }
         
         /* Responsive */
@@ -503,8 +513,11 @@
             .hero h2 { font-size: 2rem; }
             .hero-stats { gap: 30px; }
             .main-tabs-nav { flex-wrap: nowrap; }
-            .main-tab { min-width: 100px; padding: 15px 10px; font-size: 0.85rem; }
+            .main-tab { min-width: 80px; padding: 12px 8px; font-size: 0.8rem; }
+            .main-tab-icon { font-size: 1.2rem; }
             .widget-grid { grid-template-columns: 1fr; }
+            .auth-buttons { gap: 5px; }
+            .btn { padding: 8px 12px; font-size: 0.85rem; }
         }
         
         html { scroll-behavior: smooth; }
@@ -557,52 +570,47 @@
     <div class="main-tabs" id="services">
         <div class="tabs-container">
             <div class="main-tabs-nav">
-                <div class="main-tab active" onclick="showMainTab('vols')">
+                <button class="main-tab active" data-tab="vols">
                     <span class="main-tab-icon">✈️</span>
-                    Vols
-                </div>
-                <div class="main-tab" onclick="showMainTab('transferts')">
+                    <span class="main-tab-text">Vols</span>
+                </button>
+                <button class="main-tab" data-tab="transferts">
                     <span class="main-tab-icon">🚕</span>
-                    Transferts
-                </div>
-                <div class="main-tab" onclick="showMainTab('voitures')">
+                    <span class="main-tab-text">Transferts</span>
+                </button>
+                <button class="main-tab" data-tab="voitures">
                     <span class="main-tab-icon">🚗</span>
-                    Voitures
-                </div>
-                <div class="main-tab" onclick="showMainTab('activites')">
+                    <span class="main-tab-text">Voitures</span>
+                </button>
+                <button class="main-tab" data-tab="activites">
                     <span class="main-tab-icon">🎫</span>
-                    Activités
-                </div>
-                <div class="main-tab" onclick="showMainTab('billets')">
+                    <span class="main-tab-text">Activités</span>
+                </button>
+                <button class="main-tab" data-tab="billets">
                     <span class="main-tab-icon">🎪</span>
-                    Billets
-                </div>
+                    <span class="main-tab-text">Billets</span>
+                </button>
             </div>
             
             <!-- VOLS TAB -->
             <div id="vols-tab" class="main-tab-content active">
                 <div class="widget-grid">
-                    <!-- Kiwi.com Formulaire -->
                     <div class="widget-card">
                         <h3>✈️ Rechercher un vol <span>Kiwi.com - 3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&locale=fr&stops=any&show_hotels=true&powered_by=true&border_radius=8&plain=true&color_button=%23f97316&color_button_text=%23ffffff&promo_id=3414&campaign_id=111" charset="utf-8"></script>
                     </div>
-                    <!-- Aviasales Formulaire -->
                     <div class="widget-card">
                         <h3>✈️ Rechercher un vol <span>Aviasales - 1.3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&show_hotels=true&powered_by=true&locale=fr&searchUrl=www.aviasales.com%2Fsearch&primary_override=%232563eb&color_button=%232563eb&color_icons=%232563eb&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%232563eb&border_radius=8&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
                     </div>
-                    <!-- Kiwi Itinéraires Populaires -->
                     <div class="widget-card">
                         <h3>🔥 Vols Populaires <span>Kiwi.com - 3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&locale=fr&powered_by=true&limit=4&primary_color=2563eb&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=3411" charset="utf-8"></script>
                     </div>
-                    <!-- Aviasales Itinéraires -->
                     <div class="widget-card">
                         <h3>🔥 Itinéraires Populaires <span>Aviasales - 1.3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=6&powered_by=true&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
                     </div>
-                    <!-- Aviasales Planification -->
                     <div class="widget-card" style="grid-column: 1 / -1;">
                         <h3>📅 Planifiez votre voyage <span>Aviasales - 1.3%</span></h3>
                         <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=499802&color_button=%23f97316&target_host=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&with_fallback=false&non_direct_flights=true&min_lines=5&border_radius=8&color_background=%23FFFFFF&color_text=%231e293b&color_border=%23e2e8f0&promo_id=2811&campaign_id=100" charset="utf-8"></script>
@@ -613,17 +621,14 @@
             <!-- TRANSFERTS TAB -->
             <div id="transferts-tab" class="main-tab-content">
                 <div class="widget-grid">
-                    <!-- Kiwitaxi White Label -->
                     <div class="widget-card" style="grid-column: 1 / -1;">
                         <h3>🚕 Réserver un transfert aéroport <span>Kiwitaxi - 9-11%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&powered_by=true&shmarker=499802&language=fr&display_currency=EUR&transfer_type=any&hide_form_extras=true&hide_external_links=true&disable_currency_selector=true&campaign_id=1&promo_id=691" charset="utf-8" async></script>
                     </div>
-                    <!-- Kiwitaxi Formulaire court -->
                     <div class="widget-card">
                         <h3>🚐 Transfert rapide <span>Kiwitaxi - 9-11%</span></h3>
                         <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&language=fr&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
                     </div>
-                    <!-- Navettes -->
                     <div class="widget-card">
                         <h3>🚌 Navettes aéroport <span>8-9%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&locale=fr&show_header=true&powered_by=true&campaign_id=627&promo_id=8951" charset="utf-8"></script>
@@ -634,17 +639,14 @@
             <!-- VOITURES TAB -->
             <div id="voitures-tab" class="main-tab-content">
                 <div class="widget-grid">
-                    <!-- Localrent White Label -->
                     <div class="widget-card" style="grid-column: 1 / -1;">
                         <h3>🚗 Location de voiture <span>Localrent - 7.5-12%</span></h3>
                         <script async src="//tpemd.com/content?trs=499802&shmarker=499802&locale=fr&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
                     </div>
-                    <!-- Localrent Search Form -->
                     <div class="widget-card">
                         <h3>🚗 Rechercher une voiture <span>Localrent - 7.5-12%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&powered_by=true&lang=fr&width=100&background=light&logo=true&header=true&gearbox=false&cars=false&border=true&footer=true&campaign_id=87&promo_id=4322" charset="utf-8"></script>
                     </div>
-                    <!-- GetRentacar -->
                     <div class="widget-card">
                         <h3>🚙 Location pas chère <span>GetRentacar - 10%</span></h3>
                         <script src="https://tp.media/content?campaign_id=222&promo_id=8813&shmarker=499802&trs=499802" charset="utf-8"></script>
@@ -655,17 +657,14 @@
             <!-- ACTIVITÉS TAB -->
             <div id="activites-tab" class="main-tab-content">
                 <div class="widget-grid">
-                    <!-- Tours Widget -->
                     <div class="widget-card">
                         <h3>🎭 Visites et Tours <span>2-5%</span></h3>
                         <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&locale=fr&category=4&amount=3&powered_by=true&campaign_id=137&promo_id=4497" charset="utf-8"></script>
                     </div>
-                    <!-- Tiqets Visite -->
                     <div class="widget-card">
                         <h3>🏛️ Visites guidées <span>Tiqets - 3.5-8%</span></h3>
                         <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&product=&language=fr&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948" charset="utf-8"></script>
                     </div>
-                    <!-- Tiqets Calendrier -->
                     <div class="widget-card">
                         <h3>📅 Calendrier activités <span>Tiqets - 3.5-8%</span></h3>
                         <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=499802&product%5B0%5D%5Bkey%5D=&product%5B0%5D%5Bvalue%5D=&language=fr&layout=horizontal&orientation=vertical&powered_by=true&campaign_id=89&promo_id=3984" charset="utf-8"></script>
@@ -676,12 +675,10 @@
             <!-- BILLETS TAB -->
             <div id="billets-tab" class="main-tab-content">
                 <div class="widget-grid">
-                    <!-- TicketNetwork Calendrier -->
                     <div class="widget-card" style="grid-column: 1 / -1;">
                         <h3>🎪 Événements à venir <span>6-12.5%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&keyword=&results=10&powered_by=true&campaign_id=72&promo_id=6086" charset="utf-8"></script>
                     </div>
-                    <!-- TicketNetwork Recherche -->
                     <div class="widget-card" style="grid-column: 1 / -1;">
                         <h3>🎫 Rechercher des billets <span>6-12.5%</span></h3>
                         <script async src="https://tpemd.com/content?trs=499802&shmarker=499802&bg_color=%232563eb&title=Cherchez%20des%20billets%20!&title_color=%23ffffff&icon_color=%23ffffff&search_text=Recherchez%20par%20artiste%2C%20%C3%A9quipe%2C%20%C3%A9v%C3%A9nement...&footer_color=%23ffffff&powered_by=true&campaign_id=72&promo_id=8505" charset="utf-8"></script>
@@ -839,13 +836,20 @@
     </div>
     
     <script>
-        // Main Tabs
-        function showMainTab(tabName) {
-            document.querySelectorAll('.main-tab-content').forEach(tab => tab.classList.remove('active'));
-            document.querySelectorAll('.main-tab').forEach(tab => tab.classList.remove('active'));
-            document.getElementById(tabName + '-tab').classList.add('active');
-            event.target.closest('.main-tab').classList.add('active');
-        }
+        // Main Tabs - CORRECTED VERSION
+        document.querySelectorAll('.main-tab').forEach(tab => {
+            tab.addEventListener('click', function() {
+                const tabName = this.getAttribute('data-tab');
+                
+                // Remove active from all tabs and contents
+                document.querySelectorAll('.main-tab').forEach(t => t.classList.remove('active'));
+                document.querySelectorAll('.main-tab-content').forEach(c => c.classList.remove('active'));
+                
+                // Add active to clicked tab and corresponding content
+                this.classList.add('active');
+                document.getElementById(tabName + '-tab').classList.add('active');
+            });
+        });
         
         // Modals
         function openModal(type) {
