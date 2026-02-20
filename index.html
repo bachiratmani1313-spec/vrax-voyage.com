@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyages - Comparez Vols, Transferts, Voitures et Activités</title>
-    <meta name="description" content="Vrax Voyages - Votre comparateur de voyage complet. Comparez les meilleurs prix pour vos vols, transferts, locations de voiture et activités.">
-    <meta name="keywords" content="voyage, vol, transfert, location voiture, activités, billets, comparateur, pas cher">
+    <title>Vrax Voyages - Vols Pas Chers vers Maroc, Tunisie | Billets Retour</title>
+    <meta name="description" content="Vrax Voyages - Vols pas chers vers le Maroc (Marrakech, Tanger, Casablanca, Nador). Billets retour économisez jusqu'à 500€. Départs de Paris, Bruxelles, Beauvais.">
+    <meta name="keywords" content="vol pas cher, Maroc, Marrakech, Tanger, Casablanca, Nador, Tunisie, billet retour, Beauvais, Bruxelles, Paris, low cost">
     <link rel="icon" href="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=32" type="image/png">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -18,124 +18,164 @@
         .logo-icon { width: 50px; height: 50px; background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 26px; }
         .logo h1 { font-size: 1.4rem; background: linear-gradient(135deg, #2563eb, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
         .logo span { font-size: 0.8rem; color: #64748b; display: block; }
-        nav { display: flex; gap: 25px; }
-        nav a { color: #475569; text-decoration: none; font-weight: 500; transition: color 0.3s; }
+        nav { display: flex; gap: 20px; }
+        nav a { color: #475569; text-decoration: none; font-weight: 500; transition: color 0.3s; font-size: 0.95rem; }
         nav a:hover { color: #2563eb; }
         
         /* Hero Section */
         .hero { background: linear-gradient(135deg, #2563eb 0%, #7c3aed 50%, #9333ea 100%); color: white; padding: 100px 20px 60px; text-align: center; position: relative; overflow: hidden; }
         .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
-        .hero h2 { font-size: 2.8rem; margin-bottom: 15px; position: relative; }
-        .hero p { font-size: 1.2rem; opacity: 0.95; max-width: 600px; margin: 0 auto; position: relative; }
-        .stats { display: flex; justify-content: center; gap: 50px; margin-top: 40px; flex-wrap: wrap; position: relative; }
-        .stat { text-align: center; background: rgba(255,255,255,0.1); padding: 20px 30px; border-radius: 15px; backdrop-filter: blur(10px); }
-        .stat-num { font-size: 2.5rem; font-weight: 800; }
-        .stat-label { font-size: 0.9rem; opacity: 0.9; }
+        .hero h2 { font-size: 2.2rem; margin-bottom: 15px; position: relative; }
+        .hero p { font-size: 1.1rem; opacity: 0.95; max-width: 700px; margin: 0 auto; position: relative; }
+        .stats { display: flex; justify-content: center; gap: 35px; margin-top: 30px; flex-wrap: wrap; position: relative; }
+        .stat { text-align: center; background: rgba(255,255,255,0.1); padding: 15px 22px; border-radius: 15px; backdrop-filter: blur(10px); }
+        .stat-num { font-size: 1.8rem; font-weight: 800; }
+        .stat-label { font-size: 0.8rem; opacity: 0.9; }
+        
+        /* CALENDRIER EN PREMIER - VISIBLE IMMÉDIATEMENT */
+        .calendar-section { background: white; padding: 30px 20px; max-width: 1400px; margin: -30px auto 30px; position: relative; z-index: 15; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.15); }
+        .calendar-section h2 { text-align: center; font-size: 1.6rem; margin-bottom: 20px; color: #1e293b; }
+        .calendar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+        .calendar-card { background: #f8fafc; border-radius: 15px; padding: 15px; border: 2px solid #e2e8f0; position: relative; }
+        .calendar-card h4 { font-size: 0.9rem; color: #334155; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+        .calendar-card .route-badge { background: linear-gradient(135deg, #f97316, #ea580c); color: white; padding: 3px 10px; border-radius: 15px; font-size: 0.7rem; }
+        .click-indicator { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 8px 15px; border-radius: 20px; font-size: 0.75rem; text-align: center; margin-top: 10px; animation: pulse 2s infinite; display: flex; align-items: center; justify-content: center; gap: 6px; }
+        .click-indicator .arrow { animation: bounce 1s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.9; transform: scale(1.02); } }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+        .click-hint { background: linear-gradient(135deg, #fef3c7, #fde68a); border: 2px dashed #f59e0b; border-radius: 10px; padding: 12px 20px; margin-bottom: 20px; text-align: center; font-size: 1rem; color: #92400e; }
+        .click-hint .big-arrow { font-size: 1.5rem; animation: bounce 1s infinite; display: inline-block; }
+        .custom-search { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 15px 25px; border-radius: 30px; text-align: center; margin-top: 25px; display: inline-block; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s; }
+        .custom-search:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(37, 99, 235, 0.4); }
+        .custom-search-wrapper { text-align: center; margin-top: 30px; }
+        .custom-search-text { color: #64748b; margin-bottom: 10px; font-size: 0.95rem; }
+        
+        /* RETOUR CALENDRIERS */
+        .return-calendar-section { background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 50px 20px; margin: 30px 0; }
+        .return-calendar-inner { max-width: 1400px; margin: 0 auto; }
+        .return-calendar-section h2 { text-align: center; font-size: 1.8rem; margin-bottom: 10px; color: #92400e; }
+        .return-calendar-section .subtitle { text-align: center; color: #b45309; margin-bottom: 20px; font-size: 1.1rem; }
+        .return-badge { background: linear-gradient(135deg, #059669, #10b981); color: white; padding: 3px 10px; border-radius: 15px; font-size: 0.7rem; }
+        
+        /* BILLETS RETOUR SECTION */
+        .return-section { background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 50px 20px; margin: 30px 0; }
+        .return-inner { max-width: 1400px; margin: 0 auto; }
+        .return-section h2 { text-align: center; font-size: 1.8rem; margin-bottom: 10px; color: #92400e; }
+        .return-section .subtitle { text-align: center; color: #b45309; margin-bottom: 30px; font-size: 1.1rem; }
+        .return-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+        .return-card { background: white; border-radius: 15px; padding: 20px; text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: transform 0.3s; cursor: pointer; text-decoration: none; display: block; }
+        .return-card:hover { transform: translateY(-5px); }
+        .return-card .flag { font-size: 2rem; margin-bottom: 8px; }
+        .return-card h4 { color: #1e293b; font-size: 1rem; margin-bottom: 5px; }
+        .return-card .price { color: #059669; font-weight: 800; font-size: 1.4rem; }
+        .return-card .from { color: #64748b; font-size: 0.8rem; }
+        .return-card .save { background: #dc2626; color: white; padding: 3px 8px; border-radius: 10px; font-size: 0.7rem; margin-top: 8px; display: inline-block; }
         
         /* Services Section */
-        .services { max-width: 1400px; margin: -50px auto 40px; padding: 0 20px; position: relative; z-index: 10; }
+        .services { max-width: 1400px; margin: 0 auto 40px; padding: 0 20px; position: relative; z-index: 10; }
         .services-box { background: white; border-radius: 24px; box-shadow: 0 25px 80px rgba(0,0,0,0.15); overflow: hidden; }
         
         /* Tab Buttons */
         .tab-buttons { display: flex; background: #f8fafc; border-bottom: 2px solid #e2e8f0; flex-wrap: wrap; }
-        .tab-btn { 
-            flex: 1; 
-            min-width: 120px;
-            padding: 18px 15px; 
-            text-align: center; 
-            cursor: pointer; 
-            font-weight: 600; 
-            color: #64748b; 
-            background: transparent;
-            border: none;
-            border-bottom: 4px solid transparent;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            font-family: inherit;
-        }
+        .tab-btn { flex: 1; min-width: 100px; padding: 15px 12px; text-align: center; cursor: pointer; font-weight: 600; color: #64748b; background: transparent; border: none; border-bottom: 4px solid transparent; font-size: 0.9rem; transition: all 0.3s ease; font-family: inherit; }
         .tab-btn:hover { background: #e2e8f0; color: #2563eb; }
         .tab-btn.active { background: white; color: #2563eb; border-bottom-color: #2563eb; }
-        .tab-btn .icon { font-size: 1.5rem; display: block; margin-bottom: 5px; }
+        .tab-btn .icon { font-size: 1.4rem; display: block; margin-bottom: 4px; }
         
         /* Tab Content */
-        .tab-panel { display: none; padding: 30px; animation: fadeIn 0.3s ease; }
+        .tab-panel { display: none; padding: 25px; animation: fadeIn 0.3s ease; }
         .tab-panel.active { display: block; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
         
         /* Widget Sections */
-        .widget-section { margin-bottom: 40px; }
-        .widget-section-title { font-size: 1.3rem; color: #1e293b; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #e2e8f0; display: flex; align-items: center; gap: 10px; }
-        .widget-section-title .badge { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+        .widget-section { margin-bottom: 35px; }
+        .widget-section-title { font-size: 1.2rem; color: #1e293b; margin-bottom: 18px; padding-bottom: 8px; border-bottom: 2px solid #e2e8f0; display: flex; align-items: center; gap: 10px; }
+        .widget-section-title .badge { background: linear-gradient(135deg, #2563eb, #7c3aed); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; font-weight: 600; }
         
         /* Widget Grid */
-        .widgets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 25px; }
-        .widget-card { background: #f8fafc; border-radius: 16px; padding: 20px; border: 1px solid #e2e8f0; transition: transform 0.3s, box-shadow 0.3s; }
+        .widgets-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 20px; }
+        .widget-card { background: #f8fafc; border-radius: 14px; padding: 18px; border: 1px solid #e2e8f0; transition: transform 0.3s, box-shadow 0.3s; }
         .widget-card:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
         .widget-card.full-width { grid-column: 1 / -1; }
-        .widget-card h4 { font-size: 1rem; color: #334155; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; }
-        .widget-card h4 .commission { background: #10b981; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; }
+        .widget-card h4 { font-size: 0.95rem; color: #334155; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+        .widget-card h4 .commission { background: #10b981; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.65rem; }
+        .widget-card h4 .route { background: #f97316; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.65rem; }
         
-        /* Desktop/Mobile Toggle */
-        .device-toggle { display: flex; gap: 10px; margin-bottom: 15px; }
-        .device-btn { padding: 8px 16px; border: 2px solid #e2e8f0; background: white; border-radius: 20px; cursor: pointer; font-size: 0.85rem; transition: all 0.2s; font-weight: 500; }
+        /* Device Toggle */
+        .device-toggle { display: flex; gap: 8px; margin-bottom: 12px; }
+        .device-btn { padding: 6px 14px; border: 2px solid #e2e8f0; background: white; border-radius: 18px; cursor: pointer; font-size: 0.8rem; transition: all 0.2s; font-weight: 500; }
         .device-btn:hover { border-color: #2563eb; }
         .device-btn.active { background: #2563eb; color: white; border-color: #2563eb; }
-        .widget-content { display: none; min-height: 200px; }
+        .widget-content { display: none; min-height: 180px; }
         .widget-content.active { display: block; }
         
+        /* Newsletter - PLUS VISIBLE */
+        .newsletter { background: linear-gradient(135deg, #dc2626, #f97316); color: white; padding: 50px 20px; text-align: center; }
+        .newsletter h2 { font-size: 1.8rem; margin-bottom: 10px; }
+        .newsletter .benefits { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 20px 0; }
+        .newsletter .benefit { background: rgba(255,255,255,0.2); padding: 10px 20px; border-radius: 20px; font-size: 0.9rem; }
+        .newsletter-form { display: flex; gap: 12px; max-width: 500px; margin: 20px auto 0; flex-wrap: wrap; justify-content: center; }
+        .newsletter-form input { flex: 1; min-width: 250px; padding: 16px 22px; border: none; border-radius: 28px; font-size: 1rem; }
+        .newsletter-form button { padding: 16px 35px; background: #1e293b; color: white; border: none; border-radius: 28px; font-weight: 700; cursor: pointer; transition: all 0.3s; font-size: 1rem; }
+        .newsletter-form button:hover { transform: scale(1.05); }
+        .newsletter .trust { margin-top: 15px; font-size: 0.9rem; opacity: 0.9; }
+        
+        /* Partner Section */
+        .partner-section { background: linear-gradient(135deg, #f0fdf4, #dcfce7); border-radius: 20px; padding: 40px 20px; margin: 40px 20px; text-align: center; border: 2px solid #22c55e; max-width: 1360px; margin-left: auto; margin-right: auto; }
+        .partner-section h2 { font-size: 1.8rem; margin-bottom: 15px; color: #166534; }
+        .partner-section .subtitle { color: #15803d; margin-bottom: 25px; font-size: 1rem; }
+        .partner-benefits { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 25px 0; }
+        .partner-benefit { background: white; padding: 18px; border-radius: 15px; min-width: 180px; box-shadow: 0 5px 20px rgba(0,0,0,0.08); }
+        .partner-benefit .icon { font-size: 1.8rem; margin-bottom: 8px; }
+        .partner-benefit h4 { color: #166534; margin-bottom: 5px; font-size: 0.95rem; }
+        .partner-benefit p { color: #64748b; font-size: 0.85rem; }
+        .partner-btn { display: inline-block; background: linear-gradient(135deg, #22c55e, #16a34a); color: white; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1rem; transition: all 0.3s; margin-top: 15px; }
+        .partner-btn:hover { transform: scale(1.05); box-shadow: 0 10px 30px rgba(34, 197, 94, 0.4); }
+        
         /* Destinations */
-        .destinations { background: white; padding: 80px 20px; }
+        .destinations { background: white; padding: 60px 20px; }
         .destinations-inner { max-width: 1400px; margin: 0 auto; }
-        .destinations h2 { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #1e293b; }
-        .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
-        .dest-card { background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-decoration: none; display: block; }
-        .dest-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
-        .dest-card img { width: 100%; height: 180px; object-fit: cover; }
-        .dest-card-content { padding: 20px; }
-        .dest-card h4 { font-size: 1.2rem; margin-bottom: 8px; color: #1e293b; }
-        .dest-card .price { color: #2563eb; font-weight: 700; font-size: 1.1rem; }
+        .destinations h2 { text-align: center; font-size: 1.6rem; margin-bottom: 30px; color: #1e293b; }
+        .dest-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+        .dest-card { background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 15px; overflow: hidden; box-shadow: 0 8px 25px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; cursor: pointer; text-decoration: none; display: block; }
+        .dest-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,0.15); }
+        .dest-card img { width: 100%; height: 140px; object-fit: cover; }
+        .dest-card-content { padding: 15px; }
+        .dest-card h4 { font-size: 1rem; margin-bottom: 5px; color: #1e293b; }
+        .dest-card .price { color: #2563eb; font-weight: 700; font-size: 0.95rem; }
         
         /* Features */
-        .features { padding: 80px 20px; background: linear-gradient(135deg, #f8fafc, #e2e8f0); }
+        .features { padding: 60px 20px; background: linear-gradient(135deg, #f8fafc, #e2e8f0); }
         .features-inner { max-width: 1400px; margin: 0 auto; }
-        .features h2 { text-align: center; font-size: 2rem; margin-bottom: 50px; color: #1e293b; }
-        .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
-        .feat { text-align: center; padding: 35px 25px; background: white; border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); transition: transform 0.3s; }
-        .feat:hover { transform: translateY(-5px); }
-        .feat-icon { font-size: 3rem; margin-bottom: 15px; }
-        .feat h4 { margin-bottom: 10px; font-size: 1.2rem; color: #1e293b; }
-        .feat p { color: #64748b; font-size: 0.95rem; line-height: 1.6; }
-        
-        /* Newsletter */
-        .newsletter { background: linear-gradient(135deg, #2563eb, #7c3aed, #9333ea); color: white; padding: 80px 20px; text-align: center; }
-        .newsletter h2 { font-size: 2rem; margin-bottom: 15px; }
-        .newsletter p { opacity: 0.9; margin-bottom: 30px; font-size: 1.1rem; }
-        .newsletter-form { display: flex; gap: 15px; max-width: 550px; margin: 0 auto; flex-wrap: wrap; justify-content: center; }
-        .newsletter-form input { flex: 1; min-width: 280px; padding: 16px 25px; border: none; border-radius: 30px; font-size: 1rem; }
-        .newsletter-form button { padding: 16px 35px; background: #f97316; color: white; border: none; border-radius: 30px; font-weight: 600; cursor: pointer; transition: all 0.3s; font-size: 1rem; }
-        .newsletter-form button:hover { background: #ea580c; transform: scale(1.05); }
+        .features h2 { text-align: center; font-size: 1.6rem; margin-bottom: 35px; color: #1e293b; }
+        .feat-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+        .feat { text-align: center; padding: 25px 18px; background: white; border-radius: 15px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .feat:hover { transform: translateY(-4px); }
+        .feat-icon { font-size: 2.2rem; margin-bottom: 10px; }
+        .feat h4 { margin-bottom: 6px; font-size: 1rem; color: #1e293b; }
+        .feat p { color: #64748b; font-size: 0.85rem; line-height: 1.4; }
         
         /* Footer */
-        footer { background: #0f172a; color: white; padding: 60px 20px 30px; }
-        .footer-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; }
-        footer h4 { margin-bottom: 20px; font-size: 1.1rem; }
+        footer { background: #0f172a; color: white; padding: 45px 20px 20px; }
+        .footer-inner { max-width: 1400px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 30px; }
+        footer h4 { margin-bottom: 12px; font-size: 0.95rem; }
         footer ul { list-style: none; }
-        footer li { margin-bottom: 10px; }
-        footer a { color: #94a3b8; text-decoration: none; transition: color 0.2s; }
+        footer li { margin-bottom: 6px; }
+        footer a { color: #94a3b8; text-decoration: none; transition: color 0.2s; font-size: 0.85rem; }
         footer a:hover { color: white; }
-        footer p { color: #94a3b8; line-height: 1.6; }
-        .footer-bottom { max-width: 1400px; margin: 40px auto 0; padding-top: 25px; border-top: 1px solid #1e293b; text-align: center; color: #64748b; }
+        footer p { color: #94a3b8; line-height: 1.4; font-size: 0.85rem; }
+        .footer-bottom { max-width: 1400px; margin: 25px auto 0; padding-top: 18px; border-top: 1px solid #1e293b; text-align: center; color: #64748b; font-size: 0.8rem; }
         
         /* Responsive */
         @media (max-width: 768px) {
             nav { display: none; }
-            .hero h2 { font-size: 1.8rem; }
-            .stat { padding: 15px 20px; }
-            .stat-num { font-size: 1.8rem; }
-            .tab-btn { min-width: 70px; padding: 12px 8px; font-size: 0.8rem; }
-            .tab-btn .icon { font-size: 1.3rem; }
+            .hero h2 { font-size: 1.5rem; }
+            .calendar-grid { grid-template-columns: 1fr; }
+            .return-grid { grid-template-columns: repeat(2, 1fr); }
+            .tab-btn { min-width: 60px; padding: 10px 6px; font-size: 0.75rem; }
+            .tab-btn .icon { font-size: 1.2rem; }
             .widgets-grid { grid-template-columns: 1fr; }
-            .widget-card { padding: 15px; }
+            .widget-card { padding: 12px; }
         }
     </style>
 </head>
@@ -150,52 +190,218 @@
                 </div>
             </a>
             <nav>
+                <a href="#calendrier">Calendrier</a>
+                <a href="#retours">Billets Retour</a>
                 <a href="#services">Services</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#features">Avantages</a>
-                <a href="#contact">Contact</a>
+                <a href="#newsletter">Newsletter</a>
             </nav>
         </div>
     </header>
     
     <section class="hero">
-        <h2>🌍 Votre voyage commence ici</h2>
-        <p>Comparez les meilleurs prix pour vos vols, transferts, locations de voiture et activités en toute simplicité</p>
+        <h2>🌍 Vols Pas Chers vers le Maroc & Tunisie</h2>
+        <p>✈️ Départs de Paris, Bruxelles, Beauvais • 🔄 Billets retour économisez jusqu'à 500€ • 🎁 Codes promo exclusifs</p>
         <div class="stats">
             <div class="stat"><div class="stat-num">500+</div><div class="stat-label">Compagnies</div></div>
-            <div class="stat"><div class="stat-num">50K+</div><div class="stat-label">Destinations</div></div>
+            <div class="stat"><div class="stat-num">3M+</div><div class="stat-label">Voyageurs</div></div>
             <div class="stat"><div class="stat-num">-70%</div><div class="stat-label">Économies</div></div>
         </div>
+    </section>
+    
+    <!-- CALENDRIER DES PRIX - VISIBLE EN PREMIER -->
+    <section class="calendar-section" id="calendrier">
+        <h2>📅 Calendrier des Prix - Trouvez les meilleures dates !</h2>
+        <div class="click-hint">
+            <span class="big-arrow">👇</span> <strong>CLIQUEZ sur une date</strong> pour voir le prix et réserver <span class="big-arrow">👇</span>
+        </div>
+        <div class="calendar-grid">
+            <!-- Paris → Marrakech -->
+            <div class="calendar-card">
+                <h4>🇫🇷 Paris → 🇲🇦 Marrakech <span class="route-badge">Populaire</span></h4>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=PAR&destination=RAK&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+            </div>
+            <!-- Bruxelles → Nador -->
+            <div class="calendar-card">
+                <h4>🇧🇪 Bruxelles → 🇲🇦 Nador <span class="route-badge">Diaspora</span></h4>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=BRU&destination=NDR&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+            </div>
+            <!-- Beauvais → Tanger -->
+            <div class="calendar-card">
+                <h4>🇫🇷 Beauvais → 🇲🇦 Tanger <span class="route-badge">Low-cost</span></h4>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=BVA&destination=TNG&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+            </div>
+            <!-- Bruxelles → Casablanca -->
+            <div class="calendar-card">
+                <h4>🇧🇪 Bruxelles → 🇲🇦 Casablanca</h4>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=BRU&destination=CMN&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+            </div>
+            <!-- Nantes → Tunis -->
+            <div class="calendar-card">
+                <h4>🇫🇷 Nantes → 🇹🇳 Tunis <span class="route-badge">Tunisie</span></h4>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=NTE&destination=TUN&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+            </div>
+            <!-- Bruxelles → Agadir -->
+            <div class="calendar-card">
+                <h4>🇧🇪 Bruxelles → 🇲🇦 Agadir</h4>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=BRU&destination=AGA&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+            </div>
+        </div>
+        
+        <!-- BOUTON DESTINATION PERSONNALISÉE -->
+        <div class="custom-search-wrapper">
+            <p class="custom-search-text">🔍 Votre destination n'est pas dans la liste ?</p>
+            <a href="https://www.aviasales.com/?marker=704469" target="_blank" class="custom-search">
+                🔎 Cliquez ici pour chercher votre destination
+            </a>
+        </div>
+    </section>
+    
+    <!-- CALENDRIERS RETOUR SUR 1 AN -->
+    <section class="return-calendar-section" id="retours">
+        <div class="return-calendar-inner">
+            <h2>🔄 Billets Retour sur 1 An - Maroc/Tunisie → Europe</h2>
+            <p class="subtitle">Vous êtes sur place ? Trouvez votre retour au meilleur prix ! Prix en temps réel.</p>
+            <div class="click-hint" style="background: rgba(255,255,255,0.8); margin-bottom: 20px;">
+                <span class="big-arrow">👇</span> <strong>CLIQUEZ sur une date</strong> pour voir le prix et réserver <span class="big-arrow">👇</span>
+            </div>
+            <div class="calendar-grid">
+                <!-- Marrakech → Paris -->
+                <div class="calendar-card">
+                    <h4>🇲🇦 Marrakech → 🇫🇷 Paris <span class="return-badge">Retour</span></h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=RAK&destination=PAR&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                    <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+                </div>
+                <!-- Nador → Bruxelles -->
+                <div class="calendar-card">
+                    <h4>🇲🇦 Nador → 🇧🇪 Bruxelles <span class="return-badge">Retour</span></h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=NDR&destination=BRU&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                    <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+                </div>
+                <!-- Tanger → Beauvais -->
+                <div class="calendar-card">
+                    <h4>🇲🇦 Tanger → 🇫🇷 Beauvais <span class="return-badge">Retour</span></h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=TNG&destination=BVA&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                    <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+                </div>
+                <!-- Casablanca → Paris -->
+                <div class="calendar-card">
+                    <h4>🇲🇦 Casablanca → 🇫🇷 Paris <span class="return-badge">Retour</span></h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=CMN&destination=PAR&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                    <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+                </div>
+                <!-- Tunis → Nantes -->
+                <div class="calendar-card">
+                    <h4>🇹🇳 Tunis → 🇫🇷 Nantes <span class="return-badge">Retour</span></h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=TUN&destination=NTE&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                    <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+                </div>
+                <!-- Agadir → Bruxelles -->
+                <div class="calendar-card">
+                    <h4>🇲🇦 Agadir → 🇧🇪 Bruxelles <span class="return-badge">Retour</span></h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=AGA&destination=BRU&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                    <div class="click-indicator"><span class="arrow">👆</span> Cliquez sur une date pour réserver</div>
+                </div>
+            </div>
+            
+            <!-- BOUTON DESTINATION PERSONNALISÉE RETOUR -->
+            <div class="custom-search-wrapper">
+                <p class="custom-search-text">🔍 Votre ville de retour n'est pas dans la liste ?</p>
+                <a href="https://www.aviasales.com/?marker=704469" target="_blank" class="custom-search">
+                    🔎 Cliquez ici pour chercher votre retour
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BILLETS RETOUR - SECTION SPÉCIALE -->
+    <section class="return-section" id="retours">
+        <div class="return-inner">
+            <h2>🔄 Billets Retour - Maroc/Tunisie → Europe</h2>
+            <p class="subtitle">Cliquez pour voir les PRIX RÉELS du moment - Comparez et réservez au meilleur prix !</p>
+            <div class="return-grid">
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=TNG&destination_iata=BVA" target="_blank" class="return-card">
+                    <div class="flag">🇲🇦→🇫🇷</div>
+                    <h4>Tanger → Beauvais</h4>
+                    <div class="price">Voir prix</div>
+                    <div class="from">Low-cost Ryanair</div>
+                    <div class="save">🔍 Rechercher</div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=RAK&destination_iata=BRU" target="_blank" class="return-card">
+                    <div class="flag">🇲🇦→🇧🇪</div>
+                    <h4>Marrakech → Bruxelles</h4>
+                    <div class="price">Voir prix</div>
+                    <div class="from">Vol direct</div>
+                    <div class="save">🔍 Rechercher</div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=CMN&destination_iata=PAR" target="_blank" class="return-card">
+                    <div class="flag">🇲🇦→🇫🇷</div>
+                    <h4>Casablanca → Paris</h4>
+                    <div class="price">Voir prix</div>
+                    <div class="from">Royal Air Maroc</div>
+                    <div class="save">🔍 Rechercher</div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=NDR&destination_iata=BRU" target="_blank" class="return-card">
+                    <div class="flag">🇲🇦→🇧🇪</div>
+                    <h4>Nador → Bruxelles</h4>
+                    <div class="price">Voir prix</div>
+                    <div class="from">Air Arabia</div>
+                    <div class="save">🔍 Rechercher</div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=TUN&destination_iata=NTE" target="_blank" class="return-card">
+                    <div class="flag">🇹🇳→🇫🇷</div>
+                    <h4>Tunis → Nantes</h4>
+                    <div class="price">Voir prix</div>
+                    <div class="from">Transavia</div>
+                    <div class="save">🔍 Rechercher</div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=AGA&destination_iata=BRU" target="_blank" class="return-card">
+                    <div class="flag">🇲🇦→🇧🇪</div>
+                    <h4>Agadir → Bruxelles</h4>
+                    <div class="price">Voir prix</div>
+                    <div class="from">TUI fly</div>
+                    <div class="save">🔍 Rechercher</div>
+                </a>
+            </div>
+            <p style="text-align: center; margin-top: 20px; color: #92400e; font-size: 0.9rem;">💡 <strong>Astuce :</strong> Les prix affichés sur Aviasales sont les VRAIS prix en temps réel. Comparez plusieurs dates pour économiser !</p>
+        </div>
+    </section>
+    
+    <!-- NEWSLETTER - PLUS VISIBLE -->
+    <section class="newsletter" id="newsletter">
+        <h2>🎁 Codes Promo Exclusifs</h2>
+        <div class="benefits">
+            <span class="benefit">✅ Vols pas chers en avant-première</span>
+            <span class="benefit">✅ Codes promo -20€ exclusifs</span>
+            <span class="benefit">✅ Offres flash 24h</span>
+        </div>
+        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('✅ Merci ! Vous recevrez nos meilleures offres.');">
+            <input type="email" placeholder="📧 Votre email" required>
+            <button type="submit">🚀 S'inscrire Gratuit</button>
+        </form>
+        <p class="trust">⚡ +15 000 voyageurs nous font confiance</p>
     </section>
     
     <div class="services" id="services">
         <div class="services-box">
             <div class="tab-buttons">
-                <button class="tab-btn active" data-tab="vols" type="button">
-                    <span class="icon">✈️</span>Vols
-                </button>
-                <button class="tab-btn" data-tab="transferts" type="button">
-                    <span class="icon">🚕</span>Transferts
-                </button>
-                <button class="tab-btn" data-tab="voitures" type="button">
-                    <span class="icon">🚗</span>Voitures
-                </button>
-                <button class="tab-btn" data-tab="activites" type="button">
-                    <span class="icon">🎭</span>Activités
-                </button>
-                <button class="tab-btn" data-tab="billets" type="button">
-                    <span class="icon">🎪</span>Billets
-                </button>
+                <button class="tab-btn active" data-tab="vols" type="button"><span class="icon">✈️</span>Vols</button>
+                <button class="tab-btn" data-tab="transferts" type="button"><span class="icon">🚕</span>Transferts</button>
+                <button class="tab-btn" data-tab="voitures" type="button"><span class="icon">🚗</span>Voitures</button>
+                <button class="tab-btn" data-tab="activites" type="button"><span class="icon">🎭</span>Activités</button>
+                <button class="tab-btn" data-tab="billets" type="button"><span class="icon">🎪</span>Billets</button>
             </div>
             
-            <!-- ==================== VOLS ==================== -->
+            <!-- VOLS -->
             <div id="vols" class="tab-panel active">
-                
-                <!-- KIWI.COM -->
                 <div class="widget-section">
                     <h3 class="widget-section-title">✈️ Kiwi.com <span class="badge">3% Commission</span></h3>
                     <div class="widgets-grid">
-                        <!-- Formulaire de recherche -->
                         <div class="widget-card">
                             <h4>🔍 Formulaire de Recherche <span class="commission">Recommandé</span></h4>
                             <div class="device-toggle">
@@ -209,8 +415,6 @@
                                 <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&stops=any&show_hotels=true&powered_by=true&border_radius=0&plain=true&color_button=%2300A991&color_button_text=%23ffffff&promo_id=3414&campaign_id=111" charset="utf-8"></script>
                             </div>
                         </div>
-                        
-                        <!-- Routes Populaires -->
                         <div class="widget-card">
                             <h4>🌟 Routes Populaires</h4>
                             <div class="device-toggle">
@@ -224,59 +428,12 @@
                                 <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=3411" charset="utf-8"></script>
                             </div>
                         </div>
-                        
-                        <!-- Résultats de recherche -->
-                        <div class="widget-card">
-                            <h4>📋 Résultats de Recherche</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'kiwi-results-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'kiwi-results-mobile')">Mobile</button>
-                            </div>
-                            <div id="kiwi-results-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&powered_by=true&locale=fr&show_header=true&limit=3&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=4478" charset="utf-8"></script>
-                            </div>
-                            <div id="kiwi-results-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&powered_by=true&locale=fr&show_header=true&limit=3&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&campaign_id=111&promo_id=4478" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Itinéraire spécifique -->
-                        <div class="widget-card">
-                            <h4>🗺️ Itinéraire Spécifique</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'kiwi-itinerary-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'kiwi-itinerary-mobile')">Mobile</button>
-                            </div>
-                            <div id="kiwi-itinerary-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&powered_by=true&locale=fr&campaign_id=111&promo_id=4484" charset="utf-8"></script>
-                            </div>
-                            <div id="kiwi-itinerary-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&powered_by=true&locale=fr&campaign_id=111&promo_id=4484" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Destinations Populaires -->
-                        <div class="widget-card full-width">
-                            <h4>🌍 Destinations Populaires</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'kiwi-dest-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'kiwi-dest-mobile')">Mobile</button>
-                            </div>
-                            <div id="kiwi-dest-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&promo_id=4563&campaign_id=111" charset="utf-8"></script>
-                            </div>
-                            <div id="kiwi-dest-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&locale=fr&powered_by=true&limit=4&primary_color=00AE98&results_background_color=FFFFFF&form_background_color=FFFFFF&promo_id=4563&campaign_id=111" charset="utf-8"></script>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 
-                <!-- AVIASALES -->
                 <div class="widget-section">
                     <h3 class="widget-section-title">✈️ Aviasales <span class="badge">40% Commission</span></h3>
                     <div class="widgets-grid">
-                        <!-- Formulaire de recherche -->
                         <div class="widget-card">
                             <h4>🔍 Formulaire de Recherche <span class="commission">Recommandé</span></h4>
                             <div class="device-toggle">
@@ -290,39 +447,7 @@
                                 <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&show_hotels=true&powered_by=true&locale=fr&searchUrl=www.aviasales.com%2Fsearch&primary_override=%2332a8dd&color_button=%2332a8dd&color_icons=%2332a8dd&dark=%23262626&light=%23FFFFFF&secondary=%23FFFFFF&special=%23C4C4C4&color_focused=%2332a8dd&border_radius=0&plain=false&promo_id=7879&campaign_id=100" charset="utf-8"></script>
                             </div>
                         </div>
-                        
-                        <!-- Widget d'horaire -->
-                        <div class="widget-card">
-                            <h4>🕐 Horaires de Vols</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'avia-schedule-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'avia-schedule-mobile')">Mobile</button>
-                            </div>
-                            <div id="avia-schedule-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&color_button=%23FF0000&target_host=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=LON&destination=BKK&with_fallback=false&non_direct_flights=true&min_lines=5&border_radius=0&color_background=%23FFFFFF&color_text=%23000000&color_border=%23FFFFFF&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-                            </div>
-                            <div id="avia-schedule-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&color_button=%23FF0000&target_host=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=LON&destination=BKK&with_fallback=false&non_direct_flights=true&min_lines=5&border_radius=0&color_background=%23FFFFFF&color_text=%23000000&color_border=%23FFFFFF&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Calendrier des prix -->
-                        <div class="widget-card">
-                            <h4>📅 Calendrier des Prix</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'avia-calendar-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'avia-calendar-mobile')">Mobile</button>
-                            </div>
-                            <div id="avia-calendar-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=LON&destination=BKK&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
-                            </div>
-                            <div id="avia-calendar-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&searchUrl=www.aviasales.com%2Fsearch&locale=fr&powered_by=true&origin=LON&destination=BKK&one_way=false&only_direct=false&period=year&range=7%2C14&primary=%230C73FE&color_background=%23FFFFFF&dark=%23000000&light=%23FFFFFF&achieve=%2345AD35&promo_id=4041&campaign_id=100" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Popular Routes -->
-                        <div class="widget-card">
+                        <div class="widget-card full-width">
                             <h4>🌟 Routes Populaires</h4>
                             <div class="device-toggle">
                                 <button class="device-btn active" onclick="showDevice(this, 'avia-routes-desktop')">Desktop</button>
@@ -335,31 +460,28 @@
                                 <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=6&powered_by=true&primary=%230085FF&promo_id=4044&campaign_id=100" charset="utf-8"></script>
                             </div>
                         </div>
-                        
-                        <!-- Tarifs sur Map -->
                         <div class="widget-card full-width">
-                            <h4>🗺️ Tarifs sur la Carte</h4>
+                            <h4>🗺️ Tarifs sur la Carte (Maroc)</h4>
                             <div class="device-toggle">
                                 <button class="device-btn active" onclick="showDevice(this, 'avia-map-desktop')">Desktop</button>
                                 <button class="device-btn" onclick="showDevice(this, 'avia-map-mobile')">Mobile</button>
                             </div>
                             <div id="avia-map-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=en&origin=LON&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&lat=31.7917&lng=-7.0926&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=4&promo_id=4054&campaign_id=100" charset="utf-8"></script>
                             </div>
                             <div id="avia-map-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=en&origin=LON&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469&lat=31.7917&lng=-7.0926&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=4&promo_id=4054&campaign_id=100" charset="utf-8"></script>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- ==================== TRANSFERTS ==================== -->
+            <!-- TRANSFERTS -->
             <div id="transferts" class="tab-panel">
                 <div class="widget-section">
                     <h3 class="widget-section-title">🚕 Kiwitaxi <span class="badge">9-11% Commission</span></h3>
                     <div class="widgets-grid">
-                        <!-- White Label 2.0 -->
                         <div class="widget-card full-width">
                             <h4>🚕 Transferts Aéroport <span class="commission">Recommandé</span></h4>
                             <div class="device-toggle">
@@ -373,39 +495,7 @@
                                 <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469&locale=fr&powered_by=true&transfer_options_limit=10&transfer_options=MCR&disable_currency_selector=true&hide_form_extras=true&hide_external_links=true&campaign_id=1&promo_id=3879" charset="utf-8" async="true"></script>
                             </div>
                         </div>
-                        
-                        <!-- Formulaire de recherche de navettes -->
                         <div class="widget-card full-width">
-                            <h4>🚌 Recherche de Navettes</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'kiwi-shuttle-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'kiwi-shuttle-mobile')">Mobile</button>
-                            </div>
-                            <div id="kiwi-shuttle-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469&locale=fr&from=&to=&country=&powered_by=true&height=&wtype=true&transfers_limit=10&bg_color=%23FFFFFF&button_color=%23239a54&button_font_color=%23ffffff&button_hover_color=%230274da&border_color=%23f9ac1a&input_font_color=%23c8ced4&input_bg_color=%23ffffff&input_label_color=%23c8ced4&icon_bg_color=%23ffffff&icon_arrow_color=%236c7c8c&icon_bg_color_mobile=%23f9ac1a&icon_arrow_color_mobile=%23ffffff&autocomplete_font_color=%23373f47&autocomplete_bg_color=%23ffffff&autocomplete_font_color_active=%23ffffff&autocomplete_bg_color_active=%23239a54&loader_color=%23ffb300&empty_color=%23373f47&info_bg_color=%23fff0cc&info_icon_color=%234a4a4a&info_caption_color=%234a4a4a&class_background=%23ffffff&class_font_color=%23373f47&class_header_color=%236c7c8c&class_button_background=%2326a65b&class_button_font_color=%23ffffff&class_button_background_hover=%230274da&class_comment_background=%23bfc0c4&class_comment_font=%23bfc0c4&more_background=&more_background_hover=&more_font_color=%230267c1&notification_background=%23f6f1ec&notification_border_color=%23e37f17&notification_color=%23373f47&transfer_background=%23f6f7f8&transfer_background_hover=%23f6f7f8&transfer_font_color=%23373f47&campaign_id=1&promo_id=2949" charset="utf-8" async></script>
-                            </div>
-                            <div id="kiwi-shuttle-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469&locale=fr&from=&to=&country=&powered_by=true&height=&wtype=true&transfers_limit=10&bg_color=%23FFFFFF&button_color=%23239a54&button_font_color=%23ffffff&button_hover_color=%230274da&border_color=%23f9ac1a&input_font_color=%23c8ced4&input_bg_color=%23ffffff&input_label_color=%23c8ced4&icon_bg_color=%23ffffff&icon_arrow_color=%236c7c8c&icon_bg_color_mobile=%23f9ac1a&icon_arrow_color_mobile=%23ffffff&autocomplete_font_color=%23373f47&autocomplete_bg_color=%23ffffff&autocomplete_font_color_active=%23ffffff&autocomplete_bg_color_active=%23239a54&loader_color=%23ffb300&empty_color=%23373f47&info_bg_color=%23fff0cc&info_icon_color=%234a4a4a&info_caption_color=%234a4a4a&class_background=%23ffffff&class_font_color=%23373f47&class_header_color=%236c7c8c&class_button_background=%2326a65b&class_button_font_color=%23ffffff&class_button_background_hover=%230274da&class_comment_background=%23bfc0c4&class_comment_font=%23bfc0c4&more_background=&more_background_hover=&more_font_color=%230267c1&notification_background=%23f6f1ec&notification_border_color=%23e37f17&notification_color=%23373f47&transfer_background=%23f6f7f8&transfer_background_hover=%23f6f7f8&transfer_font_color=%23373f47&campaign_id=1&promo_id=2949" charset="utf-8" async></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Short and Tidy -->
-                        <div class="widget-card">
-                            <h4>🔍 Recherche Rapide</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'kiwi-quick-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'kiwi-quick-mobile')">Mobile</button>
-                            </div>
-                            <div id="kiwi-quick-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469&language=en&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
-                            </div>
-                            <div id="kiwi-quick-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469&language=en&theme=1&powered_by=true&campaign_id=1&promo_id=1486" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Avis Widget -->
-                        <div class="widget-card">
                             <h4>⭐ Avis Clients</h4>
                             <div class="device-toggle">
                                 <button class="device-btn active" onclick="showDevice(this, 'kiwi-reviews-desktop')">Desktop</button>
@@ -422,13 +512,11 @@
                 </div>
             </div>
             
-            <!-- ==================== VOITURES ==================== -->
+            <!-- VOITURES -->
             <div id="voitures" class="tab-panel">
-                <!-- LOCALRENT -->
                 <div class="widget-section">
                     <h3 class="widget-section-title">🚗 Localrent <span class="badge">7.5-12% Commission</span></h3>
                     <div class="widgets-grid">
-                        <!-- Maroc -->
                         <div class="widget-card full-width">
                             <h4>🇲🇦 Location au Maroc <span class="commission">Populaire</span></h4>
                             <div class="device-toggle">
@@ -442,40 +530,8 @@
                                 <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&powered_by=true&country=99&lang=fr&width=100&background=light&logo=true&header=true&gearbox=false&cars=false&border=true&footer=true&campaign_id=87&promo_id=4322" charset="utf-8"></script>
                             </div>
                         </div>
-                        
-                        <!-- Thaïlande -->
-                        <div class="widget-card">
-                            <h4>🇹🇭 Location en Thaïlande</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'localrent-thai-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'localrent-thai-mobile')">Mobile</button>
-                            </div>
-                            <div id="localrent-thai-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&powered_by=true&country=9&lang=fr&width=100&background=light&logo=true&header=true&gearbox=false&cars=false&border=true&footer=true&campaign_id=87&promo_id=4322" charset="utf-8"></script>
-                            </div>
-                            <div id="localrent-thai-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&powered_by=true&country=9&lang=fr&width=100&background=light&logo=true&header=true&gearbox=false&cars=false&border=true&footer=true&campaign_id=87&promo_id=4322" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Albanie -->
-                        <div class="widget-card">
-                            <h4>🇦🇱 Location en Albanie</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'localrent-alba-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'localrent-alba-mobile')">Mobile</button>
-                            </div>
-                            <div id="localrent-alba-desktop" class="widget-content active">
-                                <script async src="//tpemd.com/content?trs=499802&shmarker=704469&locale=fr&country=128&city=436011&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
-                            </div>
-                            <div id="localrent-alba-mobile" class="widget-content">
-                                <script async src="//tpemd.com/content?trs=499802&shmarker=704469&locale=fr&country=128&city=436011&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                
-                <!-- GETRENTACAR -->
                 <div class="widget-section">
                     <h3 class="widget-section-title">🚙 GetRentacar <span class="badge">10% Commission</span></h3>
                     <div class="widgets-grid">
@@ -487,82 +543,34 @@
                 </div>
             </div>
             
-            <!-- ==================== ACTIVITÉS ==================== -->
+            <!-- ACTIVITÉS -->
             <div id="activites" class="tab-panel">
                 <div class="widget-section">
                     <h3 class="widget-section-title">🎭 Tiqets <span class="badge">3.5-8% Commission</span></h3>
                     <div class="widgets-grid">
-                        <!-- Tours Populaires -->
                         <div class="widget-card">
                             <h4>🌟 Tours Populaires</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'tiqets-tours-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'tiqets-tours-mobile')">Mobile</button>
-                            </div>
-                            <div id="tiqets-tours-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&language=en&locale=fr&layout=horizontal&cards=4&powered_by=true&campaign_id=89&promo_id=3947" charset="utf-8"></script>
-                            </div>
-                            <div id="tiqets-tours-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&language=en&locale=260932&layout=horizontal&cards=4&powered_by=true&campaign_id=89&promo_id=3947" charset="utf-8"></script>
-                            </div>
+                            <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&language=en&locale=fr&layout=horizontal&cards=4&powered_by=true&campaign_id=89&promo_id=3947" charset="utf-8"></script>
                         </div>
-                        
-                        <!-- Tour Spécifique -->
                         <div class="widget-card">
                             <h4>🗺️ Tour Spécifique</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'tiqets-specific-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'tiqets-specific-mobile')">Mobile</button>
-                            </div>
-                            <div id="tiqets-specific-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&product=&language=en&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948" charset="utf-8"></script>
-                            </div>
-                            <div id="tiqets-specific-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&product=&language=en&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948" charset="utf-8"></script>
-                            </div>
-                        </div>
-                        
-                        <!-- Availability Calendar -->
-                        <div class="widget-card full-width">
-                            <h4>📅 Calendrier de Disponibilité</h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'tiqets-calendar-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'tiqets-calendar-mobile')">Mobile</button>
-                            </div>
-                            <div id="tiqets-calendar-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&product%5B0%5D%5Bkey%5D=&product%5B0%5D%5Bvalue%5D=&language=en&layout=horizontal&orientation=vertical&powered_by=true&campaign_id=89&promo_id=3984" charset="utf-8"></script>
-                            </div>
-                            <div id="tiqets-calendar-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&product%5B0%5D%5Bkey%5D=&product%5B0%5D%5Bvalue%5D=&language=en&layout=horizontal&orientation=vertical&powered_by=true&campaign_id=89&promo_id=3984" charset="utf-8"></script>
-                            </div>
+                            <script async src="https://tpemd.com/content?currency=USD&trs=499802&shmarker=704469&product=&language=en&layout=horizontal&powered_by=true&campaign_id=89&promo_id=3948" charset="utf-8"></script>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <!-- ==================== BILLETS ==================== -->
+            <!-- BILLETS -->
             <div id="billets" class="tab-panel">
                 <div class="widget-section">
                     <h3 class="widget-section-title">🎪 TicketNetwork <span class="badge">6-12.5% Commission</span></h3>
                     <div class="widgets-grid">
-                        <!-- Formulaire de recherche -->
                         <div class="widget-card">
-                            <h4>🎟️ Recherche de Billets <span class="commission">Recommandé</span></h4>
-                            <div class="device-toggle">
-                                <button class="device-btn active" onclick="showDevice(this, 'ticket-form-desktop')">Desktop</button>
-                                <button class="device-btn" onclick="showDevice(this, 'ticket-form-mobile')">Mobile</button>
-                            </div>
-                            <div id="ticket-form-desktop" class="widget-content active">
-                                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&bg_color=%23112266&title=Need%20tickets%3F&title_color=%23ffffff&icon_color=%230077ff&search_text=Search%20by%20artist%2C%20team%2C%20event%2C%20etc...&footer_color=%23ffffff&powered_by=true&campaign_id=72&promo_id=8505" charset="utf-8"></script>
-                            </div>
-                            <div id="ticket-form-mobile" class="widget-content">
-                                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&bg_color=%23112266&title=Need%20tickets%3F&title_color=%23ffffff&icon_color=%230077ff&search_text=Search%20by%20artist%2C%20team%2C%20event%2C%20etc...&footer_color=%23ffffff&powered_by=true&campaign_id=72&promo_id=8505" charset="utf-8"></script>
-                            </div>
+                            <h4>🎟️ Recherche de Billets</h4>
+                            <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&bg_color=%23112266&title=Need%20tickets%3F&title_color=%23ffffff&icon_color=%230077ff&search_text=Search%20by%20artist%2C%20team%2C%20event%2C%20etc...&footer_color=%23ffffff&powered_by=true&campaign_id=72&promo_id=8505" charset="utf-8"></script>
                         </div>
-                        
-                        <!-- Calendrier événements -->
                         <div class="widget-card full-width">
-                            <h4>📅 Événements (Soccer/Football)</h4>
+                            <h4>📅 Événements Football</h4>
                             <script async src="https://tpemd.com/content?trs=499802&shmarker=704469&keyword=Soccer&results=10&powered_by=true&campaign_id=72&promo_id=6086" charset="utf-8"></script>
                         </div>
                     </div>
@@ -571,51 +579,75 @@
         </div>
     </div>
     
+    <!-- PARTNER SECTION -->
+    <section class="partner-section" id="partenaire">
+        <h2>🤝 Devenez Partenaire</h2>
+        <p class="subtitle">Gagnez 7% de commission pendant 2 ans !</p>
+        <div class="partner-benefits">
+            <div class="partner-benefit">
+                <div class="icon">💰</div>
+                <h4>7% Commission</h4>
+                <p>Pendant 2 ans</p>
+            </div>
+            <div class="partner-benefit">
+                <div class="icon">🎁</div>
+                <h4>Codes Promo</h4>
+                <p>Exclusifs</p>
+            </div>
+            <div class="partner-benefit">
+                <div class="icon">✅</div>
+                <h4>Gratuit</h4>
+                <p>Accès immédiat</p>
+            </div>
+        </div>
+        <a href="https://www.travelpayouts.com/?marker=704469" target="_blank" class="partner-btn">🚀 Devenir Partenaire</a>
+    </section>
+    
     <!-- Destinations -->
     <section class="destinations" id="destinations">
         <div class="destinations-inner">
             <h2>🌍 Destinations Populaires</h2>
             <div class="dest-grid">
-                <a href="https://www.aviasales.com/search?marker=704469&destination_iata=PAR" target="_blank" class="dest-card">
-                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=400" alt="Paris">
-                    <div class="dest-card-content">
-                        <h4>🗼 Paris</h4>
-                        <p class="price">Dès 49€ →</p>
-                    </div>
-                </a>
-                <a href="https://www.aviasales.com/search?marker=704469&destination_iata=NYC" target="_blank" class="dest-card">
-                    <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?w=400" alt="New York">
-                    <div class="dest-card-content">
-                        <h4>🗽 New York</h4>
-                        <p class="price">Dès 299€ →</p>
-                    </div>
-                </a>
-                <a href="https://www.aviasales.com/search?marker=704469&destination_iata=DPS" target="_blank" class="dest-card">
-                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=400" alt="Bali">
-                    <div class="dest-card-content">
-                        <h4>🏝️ Bali</h4>
-                        <p class="price">Dès 450€ →</p>
-                    </div>
-                </a>
-                <a href="https://www.aviasales.com/search?marker=704469&destination_iata=ROM" target="_blank" class="dest-card">
-                    <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=400" alt="Rome">
-                    <div class="dest-card-content">
-                        <h4>🏛️ Rome</h4>
-                        <p class="price">Dès 59€ →</p>
-                    </div>
-                </a>
-                <a href="https://www.aviasales.com/search?marker=704469&destination_iata=DXB" target="_blank" class="dest-card">
-                    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=400" alt="Dubaï">
-                    <div class="dest-card-content">
-                        <h4>🏙️ Dubaï</h4>
-                        <p class="price">Dès 199€ →</p>
-                    </div>
-                </a>
-                <a href="https://www.aviasales.com/search?marker=704469&destination_iata=RAK" target="_blank" class="dest-card">
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=PAR&destination_iata=RAK" target="_blank" class="dest-card">
                     <img src="https://images.unsplash.com/photo-1539020140153-e479b8c22e70?w=400" alt="Marrakech">
                     <div class="dest-card-content">
                         <h4>🕌 Marrakech</h4>
-                        <p class="price">Dès 79€ →</p>
+                        <p class="price">Dès 45€ depuis Paris</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=BVA&destination_iata=TNG" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400" alt="Tanger">
+                    <div class="dest-card-content">
+                        <h4>⛵ Tanger</h4>
+                        <p class="price">Dès 25€ depuis Beauvais</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=BRU&destination_iata=NDR" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1568043210943-584e0a8a0a4c?w=400" alt="Nador">
+                    <div class="dest-card-content">
+                        <h4>🏖️ Nador</h4>
+                        <p class="price">Dès 65€ depuis Bruxelles</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=PAR&destination_iata=CMN" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1549140600-78c9b8275e9d?w=400" alt="Casablanca">
+                    <div class="dest-card-content">
+                        <h4>🇲🇦 Casablanca</h4>
+                        <p class="price">Dès 55€ depuis Paris</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=NTE&destination_iata=TUN" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="Tunis">
+                    <div class="dest-card-content">
+                        <h4>🇹🇳 Tunis</h4>
+                        <p class="price">Dès 75€ depuis Nantes</p>
+                    </div>
+                </a>
+                <a href="https://www.aviasales.com/search?marker=704469&origin_iata=BRU&destination_iata=AGA" target="_blank" class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=400" alt="Agadir">
+                    <div class="dest-card-content">
+                        <h4>☀️ Agadir</h4>
+                        <p class="price">Dès 75€ depuis Bruxelles</p>
                     </div>
                 </a>
             </div>
@@ -623,37 +655,27 @@
     </section>
     
     <!-- Features -->
-    <section class="features" id="features">
+    <section class="features">
         <div class="features-inner">
             <h2>✨ Pourquoi Vrax Voyages ?</h2>
             <div class="feat-grid">
-                <div class="feat"><div class="feat-icon">🔍</div><h4>Comparaison Instantanée</h4><p>Comparez des centaines de compagnies en un clic pour trouver les meilleurs prix</p></div>
-                <div class="feat"><div class="feat-icon">💰</div><h4>Meilleurs Tarifs</h4><p>Sans frais cachés, sans surprise - juste les meilleurs prix garantis</p></div>
-                <div class="feat"><div class="feat-icon">🔒</div><h4>100% Sécurisé</h4><p>Toutes les transactions sont cryptées et protégées</p></div>
-                <div class="feat"><div class="feat-icon">🎧</div><h4>Support 24/7</h4><p>Notre équipe est disponible à tout moment pour vous aider</p></div>
+                <div class="feat"><div class="feat-icon">🔄</div><h4>Billets Retour</h4><p>Économisez jusqu'à 500€</p></div>
+                <div class="feat"><div class="feat-icon">📅</div><h4>Calendrier Prix</h4><p>Trouvez la meilleure date</p></div>
+                <div class="feat"><div class="feat-icon">💰</div><h4>Meilleurs Tarifs</h4><p>Low-cost comparés</p></div>
+                <div class="feat"><div class="feat-icon">🌍</div><h4>Maroc & Tunisie</h4><p>Spécialiste diaspora</p></div>
             </div>
         </div>
-    </section>
-    
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <h2>📧 Recevez nos meilleures offres</h2>
-        <p>Inscrivez-vous pour recevoir les promos exclusives et conseils de voyage</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
-            <input type="email" placeholder="Votre adresse email" required>
-            <button type="submit">S'inscrire</button>
-        </form>
     </section>
     
     <!-- Footer -->
     <footer id="contact">
         <div class="footer-inner">
-            <div><h4>✈️ Vrax Voyages</h4><p>Votre comparateur complet pour voyager mieux et moins cher.</p></div>
-            <div><h4>Services</h4><ul><li><a href="#services">Vols</a></li><li><a href="#services">Transferts</a></li><li><a href="#services">Voitures</a></li><li><a href="#services">Activités</a></li></ul></div>
-            <div><h4>Partenaires</h4><ul><li>Kiwi.com</li><li>Aviasales</li><li>Kiwitaxi</li><li>Localrent</li><li>Tiqets</li></ul></div>
-            <div><h4>Contact</h4><p>📧 contact@vrax-voyages.com</p><p>🌐 vrax-voyages.com</p></div>
+            <div><h4>✈️ Vrax Voyages</h4><p>Votre comparateur spécialiste Maroc & Tunisie</p></div>
+            <div><h4>Services</h4><ul><li><a href="#services">Vols</a></li><li><a href="#services">Transferts</a></li><li><a href="#services">Voitures</a></li></ul></div>
+            <div><h4>Routes Populaires</h4><ul><li>Paris → Marrakech</li><li>Beauvais → Tanger</li><li>Bruxelles → Nador</li><li>Nantes → Tunis</li></ul></div>
+            <div><h4>Contact</h4><p>📧 contact@vrax-voyage.com</p></div>
         </div>
-        <div class="footer-bottom">© 2024 Vrax Voyages - Partenaire Travelpayouts - Marker: 704469</div>
+        <div class="footer-bottom">© 2024 Vrax Voyages - Spécialiste Maroc & Tunisie | ID: 499802 | Marker: 704469</div>
     </footer>
     
     <script>
@@ -661,14 +683,11 @@
         (function() {
             var tabButtons = document.querySelectorAll('.tab-btn');
             var tabPanels = document.querySelectorAll('.tab-panel');
-            
             tabButtons.forEach(function(button) {
                 button.addEventListener('click', function() {
                     var targetTab = this.getAttribute('data-tab');
-                    
                     tabButtons.forEach(function(btn) { btn.classList.remove('active'); });
                     tabPanels.forEach(function(panel) { panel.classList.remove('active'); });
-                    
                     this.classList.add('active');
                     document.getElementById(targetTab).classList.add('active');
                 });
@@ -680,10 +699,8 @@
             var parent = btn.closest('.widget-card');
             var buttons = parent.querySelectorAll('.device-btn');
             var contents = parent.querySelectorAll('.widget-content');
-            
             buttons.forEach(function(b) { b.classList.remove('active'); });
             contents.forEach(function(c) { c.classList.remove('active'); });
-            
             btn.classList.add('active');
             document.getElementById(targetId).classList.add('active');
         }
@@ -693,9 +710,7 @@
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 var target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
             });
         });
     </script>
