@@ -5,61 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vrax Voyages - Vols, Hajj, Omra au Meilleur Prix</title>
     <meta name="description" content="Comparez les prix des vols, Hajj, Omra. Diaspora - Retours au pays au meilleur prix.">
+    
+    <!-- CSS STYLE -->
     <style>
         /* STYLE GÉNÉRAL */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8fafc;
-            color: #333;
-            line-height: 1.6;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f8fafc; color: #333; line-height: 1.6; }
         
         /* HEADER */
-        header {
-            background: white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 15px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+        header { background: white; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); position: sticky; top: 0; z-index: 1000; }
+        .header-content { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between; }
         .logo-section { display: flex; align-items: center; gap: 12px; cursor: pointer; }
-        .logo-icon {
-            width: 45px; height: 45px;
-            background: linear-gradient(135deg, #10B981, #059669);
-            border-radius: 12px;
-            display: flex; align-items: center; justify-content: center;
-            font-size: 24px; color: white;
-            box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
-        }
+        .logo-icon { width: 45px; height: 45px; background: linear-gradient(135deg, #10B981, #059669); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 24px; color: white; box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3); }
         .logo-text h1 { font-size: 22px; color: #1f2937; font-weight: 700; }
         .logo-text p { font-size: 11px; color: #6b7280; }
         
         /* NAVIGATION */
         nav { display: flex; gap: 20px; }
-        nav a {
-            color: #4b5563; text-decoration: none;
-            font-size: 14px; font-weight: 600;
-            transition: color 0.2s; border-bottom: 2px solid transparent;
-            padding-bottom: 2px;
-        }
+        nav a { color: #4b5563; text-decoration: none; font-size: 14px; font-weight: 600; transition: color 0.2s; border-bottom: 2px solid transparent; padding-bottom: 2px; }
         nav a:hover { color: #10B981; border-bottom: 2px solid #10B981; }
         .menu-toggle { display: none; background: #f3f4f6; border: none; padding: 10px; border-radius: 8px; cursor: pointer; font-size: 20px; }
 
         /* HERO */
-        .hero {
-            background: linear-gradient(135deg, #1e3a8a 0%, #10B981 100%);
-            color: white; padding: 80px 20px; text-align: center;
-            border-radius: 0 0 40px 40px;
-        }
+        .hero { background: linear-gradient(135deg, #1e3a8a 0%, #10B981 100%); color: white; padding: 80px 20px; text-align: center; border-radius: 0 0 40px 40px; }
         .hero h2 { font-size: 36px; margin-bottom: 15px; font-weight: 700; }
         .hero p { font-size: 18px; opacity: 0.9; max-width: 600px; margin: 0 auto; }
 
@@ -68,37 +36,23 @@
         .section-title h2 { font-size: 28px; color: #1f2937; margin-bottom: 10px; position: relative; display: inline-block; }
         .section-title h2::after { content: ''; display: block; width: 60px; height: 4px; background: #10B981; margin: 8px auto 0; border-radius: 2px; }
         .section-title p { color: #6b7280; font-size: 16px; }
-
-        /* CONTENEURS */
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         
         /* RECHERCHE */
-        .main-search {
-            background: white; padding: 50px 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-            margin: -30px auto 40px; border-radius: 20px;
-            position: relative; z-index: 10;
-            max-width: 800px;
-        }
+        .main-search { background: white; padding: 50px 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.08); margin: -30px auto 40px; border-radius: 20px; position: relative; z-index: 10; max-width: 800px; }
         .main-search h3 { text-align: center; font-size: 24px; color: #1f2937; margin-bottom: 25px; font-weight: 700; }
         .search-buttons { max-width: 500px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
         .search-buttons .btn { font-size: 16px; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
 
-        /* CARTE - STYLE FALLBACK */
-        .map-section {
-            background: white; padding: 60px 20px;
-            border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb;
-        }
-        .map-container {
-            max-width: 1200px; margin: 0 auto;
-            background: #f0fdf4; border-radius: 20px; overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 2px solid #10B981;
-            text-align: center;
-            padding: 40px 20px;
-        }
-        .map-container iframe {
-            width: 100%; height: 600px; border: none;
+        /* CARTE */
+        .map-section { background: white; padding: 60px 20px; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; }
+        .map-container { 
+            max-width: 1200px; margin: 0 auto; 
+            background: white; border-radius: 20px; overflow: hidden; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); border: 1px solid #e5e7eb;
+            /* Hack pour s'assurer que le script externe ne dépasse pas */
+            position: relative; 
+            width: 100%;
         }
 
         /* GRILLES ET CARTES */
@@ -121,14 +75,8 @@
         .btn-red { background: linear-gradient(135deg, #ef4444, #DC2626); color: white; }
         .btn-teal { background: linear-gradient(135deg, #14b8a6, #0d9488); color: white; }
 
-        /* OMRA SPECIFIC */
-        .omra-section {
-            background: linear-gradient(135deg, #ecfdf5, #f0fdf4);
-            padding: 40px 0;
-            margin-top: 40px;
-            border-top: 4px solid #10B981;
-            border-bottom: 4px solid #10B981;
-        }
+        /* OMRA */
+        .omra-section { background: linear-gradient(135deg, #ecfdf5, #f0fdf4); padding: 40px 0; margin-top: 40px; border-top: 4px solid #10B981; border-bottom: 4px solid #10B981; }
 
         /* RETOURS */
         .retours-header { background: linear-gradient(135deg, #0f766e, #10B981); color: white; padding: 60px 20px; text-align: center; }
@@ -155,7 +103,6 @@
             nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 20px; gap: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
             nav.active { display: flex; }
             .hero h2 { font-size: 26px; }
-            .hero { padding: 50px 20px; }
             .main-search { margin: -20px 15px 30px; padding: 30px 20px; }
             .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
         }
@@ -174,15 +121,12 @@
                 </div>
             </div>
             <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-            
-            <!-- NAVIGATION -->
             <nav id="mainNav">
                 <a href="#moteur">Recherche</a>
                 <a href="#carte">Carte des Prix</a>
                 <a href="#omra">Hajj & Omra</a>
                 <a href="#allers">Allers</a>
                 <a href="#retours">Retours</a>
-                <a href="#services">Services</a>
             </nav>
         </div>
     </header>
@@ -208,7 +152,7 @@
         </div>
     </section>
 
-    <!-- CARTE INTERACTIVE -->
+    <!-- CARTE INTERACTIVE (WIDGET MAP) - CORRECTION LANGUE FR -->
     <section id="carte" class="map-section">
         <div class="container">
             <div class="section-title" style="padding-top: 0;">
@@ -216,18 +160,15 @@
                 <p>Visualisez les tarifs les plus bas au départ de Paris</p>
             </div>
             <div class="map-container">
-                <!-- SOLUTION ALTERNATIVE : LIEN CLICHABLE (Fonctionne même sans SSL parfait) -->
-                <!-- Si la carte ne se charge pas, le bouton permet d'y accéder -->
-                <p style="color: #047857; font-weight: 600; margin-bottom: 20px;">La carte ne s'affiche pas ici ?<br>Cliquez sur le bouton ci-dessous pour l'ouvrir en plein écran :</p>
-                
-                <a href="https://map.aviasales.com/v2?marker=704469&locale=fr&currency=eur&origin=PAR" target="_blank" class="btn btn-green" style="width: auto; display: inline-block; padding: 15px 40px; font-size: 18px;">
-                    🗺️ Ouvrir la Carte des Vols
-                </a>
-
-                <p style="margin-top: 20px; font-size: 13px; color: #6b7280;">
-                    💡 Astuce : Une fois le SSL activé (cadenas vert), la carte s'affichera directement ici.
-                </p>
+                <!-- 
+                   WIDGET TRAVELPAYOUTS MODIFIE :
+                   J'ai changé locale=en par locale=fr
+                -->
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=48.856614&lng=2.3522219&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
             </div>
+            <p style="text-align: center; margin-top: 15px; font-size: 13px; color: #6b7280;">
+                💡 La carte affiche les prix en Euros au départ de Paris.
+            </p>
         </div>
     </section>
 
@@ -278,9 +219,7 @@
     <div class="cards-grid container" id="maroc">
         <!-- ALLERS MAROC -->
         <div class="card">
-            <div class="card-header">
-                <h3><span class="flag">🇲🇦</span> Vers le Maroc</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇲🇦</span> Vers le Maroc</h3></div>
             <div class="card-body">
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=BVA&destination=RAK" class="btn btn-orange">Beauvais → Marrakech</a>
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=BVA&destination=TNG" class="btn btn-orange">Beauvais → Tanger</a>
@@ -292,9 +231,7 @@
 
         <!-- ALLERS ALGÉRIE -->
         <div class="card" id="algerie">
-            <div class="card-header">
-                <h3><span class="flag">🇩🇿</span> Vers l'Algérie</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇩🇿</span> Vers l'Algérie</h3></div>
             <div class="card-body">
                 <a href="https://www.kiwi.com/fr/search/results/par/alg?marker=704469.704469&sub_id=github" class="btn btn-green">Paris → Alger</a>
                 <a href="https://www.kiwi.com/fr/search/results/bru/alg?marker=704469.704469&sub_id=github" class="btn btn-green">Bruxelles → Alger</a>
@@ -304,9 +241,7 @@
 
         <!-- ALLERS TUNISIE -->
         <div class="card" id="tunisie">
-            <div class="card-header">
-                <h3><span class="flag">🇹🇳</span> Vers la Tunisie</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇹🇳</span> Vers la Tunisie</h3></div>
             <div class="card-body">
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=BVA&destination=TUN" class="btn btn-red">Beauvais → Tunis</a>
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=PAR&destination=TUN" class="btn btn-red">Paris → Tunis</a>
@@ -316,9 +251,7 @@
 
         <!-- ALLERS ÉGYPTE -->
         <div class="card" id="egypte">
-            <div class="card-header">
-                <h3><span class="flag">🇪🇬</span> Vers l'Égypte</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇪🇬</span> Vers l'Égypte</h3></div>
             <div class="card-body">
                 <a href="https://www.kiwi.com/fr/search/results/par/cai?marker=704469.704469&sub_id=github" class="btn btn-green">Paris → Le Caire</a>
                 <a href="https://www.kiwi.com/fr/search/results/bru/cai?marker=704469.704469&sub_id=github" class="btn btn-green">Bruxelles → Le Caire</a>
@@ -335,9 +268,7 @@
     <div class="cards-grid container">
         <!-- RETOURS MAROC -->
         <div class="card">
-            <div class="card-header">
-                <h3><span class="flag">🇲🇦</span> Retours Maroc → Europe</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇲🇦</span> Retours Maroc → Europe</h3></div>
             <div class="card-body">
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=RAK&destination=PAR" class="btn btn-orange">Marrakech → Paris</a>
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=CMN&destination=BRU" class="btn btn-orange">Casablanca → Bruxelles</a>
@@ -346,36 +277,27 @@
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=AGA&destination=PAR" class="btn btn-orange">Agadir → Paris</a>
             </div>
         </div>
-
         <!-- RETOURS ALGÉRIE -->
         <div class="card">
-            <div class="card-header">
-                <h3><span class="flag">🇩🇿</span> Retours Algérie → Europe</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇩🇿</span> Retours Algérie → Europe</h3></div>
             <div class="card-body">
                 <a href="https://www.kiwi.com/fr/search/results/alg/par?marker=704469.704469&sub_id=github" class="btn btn-green">Alger → Paris</a>
                 <a href="https://www.kiwi.com/fr/search/results/alg/bru?marker=704469.704469&sub_id=github" class="btn btn-green">Alger → Bruxelles</a>
                 <a href="https://www.kiwi.com/fr/search/results/orn/par?marker=704469.704469&sub_id=github" class="btn btn-green">Oran → Paris</a>
             </div>
         </div>
-
         <!-- RETOURS TUNISIE -->
         <div class="card">
-            <div class="card-header">
-                <h3><span class="flag">🇹🇳</span> Retours Tunisie → Europe</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇹🇳</span> Retours Tunisie → Europe</h3></div>
             <div class="card-body">
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=TUN&destination=PAR" class="btn btn-red">Tunis → Paris</a>
                 <a href="https://www.kiwi.com/fr/search/results/tun/bru?marker=704469.704469&sub_id=github" class="btn btn-green">Tunis → Bruxelles</a>
                 <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=github&origin=TUN&destination=LIL" class="btn btn-red">Tunis → Lille</a>
             </div>
         </div>
-
         <!-- RETOURS ÉGYPTE -->
         <div class="card">
-            <div class="card-header">
-                <h3><span class="flag">🇪🇬</span> Retours Égypte → Europe</h3>
-            </div>
+            <div class="card-header"><h3><span class="flag">🇪🇬</span> Retours Égypte → Europe</h3></div>
             <div class="card-body">
                 <a href="https://www.kiwi.com/fr/search/results/cai/par?marker=704469.704469&sub_id=github" class="btn btn-green">Le Caire → Paris</a>
                 <a href="https://www.kiwi.com/fr/search/results/cai/bru?marker=704469.704469&sub_id=github" class="btn btn-green">Le Caire → Bruxelles</a>
@@ -384,13 +306,12 @@
     </div>
 
     <!-- SERVICES ANNEXES -->
-    <div id="services" class="section-title">
+    <div class="section-title" id="services">
         <h2>🛎️ Services Annexes</h2>
         <p>Transferts, locations, activités et billets</p>
     </div>
 
     <div class="cards-grid container">
-        <!-- TRANSFERTS -->
         <div class="card">
             <div class="card-header"><h3>🚕 Transferts Aéroport</h3></div>
             <div class="card-body">
@@ -398,7 +319,6 @@
                 <div style="text-align:center; margin-top:10px; font-size:12px; color:#10B981; font-weight:bold;">9-11% Commission</div>
             </div>
         </div>
-        <!-- LOCATION VOITURE -->
         <div class="card">
             <div class="card-header"><h3>🚗 Location de Voiture</h3></div>
             <div class="card-body">
@@ -406,7 +326,6 @@
                 <div style="text-align:center; margin-top:10px; font-size:12px; color:#10B981; font-weight:bold;">7.5-12% Commission</div>
             </div>
         </div>
-        <!-- ACTIVITÉS -->
         <div class="card">
             <div class="card-header"><h3>🎫 Visites & Activités</h3></div>
             <div class="card-body">
@@ -414,7 +333,6 @@
                 <div style="text-align:center; margin-top:10px; font-size:12px; color:#10B981; font-weight:bold;">3.5-8% Commission</div>
             </div>
         </div>
-        <!-- BILLETS -->
         <div class="card">
             <div class="card-header"><h3>🎪 Billets Événements</h3></div>
             <div class="card-body">
