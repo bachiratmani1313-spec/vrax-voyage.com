@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyages - Comparez les Prix des Vols, Hôtels et Locations</title>
-    <meta name="description" content="Vrax Voyages - Vols, Hôtels, Transferts, Locations. Diaspora Maroc, Algérie, Tunisie, Égypte → Europe.">
+    <title>Vrax Voyages - Vols, Hôtels, Activités</title>
+    <meta name="description" content="Vrax Voyages - Comparez vols, hôtels, activités. Maroc, Algérie, Tunisie, Égypte, Monde entier.">
     <meta name="theme-color" content="#2563EB">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -15,7 +15,6 @@
             min-height: 100vh;
         }
         
-        /* HEADER */
         header {
             background: linear-gradient(135deg, #2563EB, #7C3AED);
             box-shadow: 0 4px 20px rgba(37, 99, 235, 0.3);
@@ -31,19 +30,12 @@
             align-items: center;
             justify-content: space-between;
         }
-        .logo-section {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
+        .logo-section { display: flex; align-items: center; gap: 12px; }
         .logo-icon {
-            width: 50px;
-            height: 50px;
+            width: 50px; height: 50px;
             background: white;
             border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             font-size: 26px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
@@ -53,147 +45,140 @@
         nav a {
             color: white;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
-            padding: 8px 16px;
+            padding: 8px 14px;
             border-radius: 20px;
             background: rgba(255,255,255,0.15);
             transition: all 0.3s;
         }
-        nav a:hover { 
-            background: white; 
-            color: #2563EB;
-        }
+        nav a:hover { background: white; color: #2563EB; }
         
-        /* HERO */
         .hero {
             background: linear-gradient(135deg, #1d4ed8, #6d28d9, #7c3aed);
             color: white;
-            padding: 60px 20px;
+            padding: 50px 20px;
             text-align: center;
         }
-        .hero h2 { font-size: 32px; margin-bottom: 12px; }
-        .hero p { font-size: 18px; opacity: 0.95; }
+        .hero h2 { font-size: 30px; margin-bottom: 10px; }
+        .hero p { font-size: 16px; opacity: 0.95; }
         
-        /* PROMO BANNER */
         .promo-banner {
             background: linear-gradient(90deg, #dc2626, #f97316, #fbbf24);
             padding: 25px 20px;
             text-align: center;
             color: white;
         }
-        .promo-banner h3 { font-size: 22px; margin-bottom: 15px; }
-        .promo-destinations {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 15px;
-        }
+        .promo-banner h3 { font-size: 20px; margin-bottom: 15px; }
+        .promo-destinations { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-top: 15px; }
         .promo-btn {
             display: inline-block;
             background: white;
             color: #dc2626;
-            padding: 12px 24px;
+            padding: 10px 20px;
             border-radius: 25px;
             font-weight: bold;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 13px;
             transition: all 0.3s;
         }
-        .promo-btn:hover {
-            transform: scale(1.05);
-        }
+        .promo-btn:hover { transform: scale(1.05); }
         
-        /* SECTION */
-        .section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+        .section { max-width: 1200px; margin: 0 auto; padding: 35px 20px; }
         
-        /* WIDGET CONTAINER */
         .widget-container {
             background: white;
             border-radius: 20px;
-            padding: 30px;
+            padding: 25px;
             margin-bottom: 20px;
             box-shadow: 0 10px 40px rgba(37, 99, 235, 0.1);
             border: 1px solid rgba(37, 99, 235, 0.1);
-            min-height: 250px;
+            min-height: 200px;
         }
         .widget-title {
-            font-size: 18px;
+            font-size: 17px;
             color: #1e40af;
             margin-bottom: 20px;
             text-align: center;
             font-weight: 700;
         }
         
-        /* GRID */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 20px;
-        }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
         
-        /* SECTION HEADERS */
         .section-header {
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
             color: white;
         }
-        .section-header h2 { font-size: 30px; margin-bottom: 10px; }
-        .section-header p { opacity: 0.95; font-size: 16px; }
+        .section-header h2 { font-size: 26px; margin-bottom: 8px; }
+        .section-header p { opacity: 0.95; font-size: 15px; }
         
-        /* FOOTER */
+        .hotel-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .hotel-btn {
+            display: block;
+            padding: 15px 10px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            color: white;
+            transition: all 0.3s;
+        }
+        .hotel-btn:hover { transform: translateY(-3px); box-shadow: 0 5px 20px rgba(0,0,0,0.2); }
+        .hotel-btn.orange { background: linear-gradient(135deg, #f97316, #ea580c); }
+        .hotel-btn.green { background: linear-gradient(135deg, #10b981, #059669); }
+        .hotel-btn.red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+        .hotel-btn.purple { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+        .hotel-btn.blue { background: linear-gradient(135deg, #2563eb, #1d4ed8); }
+        .hotel-btn.teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
+        
+        .main-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #ff6b35, #f7931e);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 16px;
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+            transition: all 0.3s;
+        }
+        .main-btn:hover { transform: scale(1.05); }
+        
         footer {
             background: linear-gradient(135deg, #1e3a8a, #3730a3);
             color: white;
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
         }
-        footer h3 { font-size: 26px; margin-bottom: 20px; }
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
-        }
+        footer h3 { font-size: 24px; margin-bottom: 20px; }
+        .footer-links { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; flex-wrap: wrap; }
         .footer-links a { 
             color: rgba(255,255,255,0.8); 
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 10px 18px;
             border-radius: 20px;
             background: rgba(255,255,255,0.1);
             transition: all 0.3s;
         }
-        .footer-links a:hover { 
-            background: white; 
-            color: #2563EB;
-        }
-        .footer-info {
-            color: rgba(255,255,255,0.6);
-            font-size: 12px;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.2);
-        }
+        .footer-links a:hover { background: white; color: #2563EB; }
+        .footer-info { color: rgba(255,255,255,0.6); font-size: 12px; margin-top: 25px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); }
         
-        /* ANCHOR OFFSET */
-        :target::before {
-            content: "";
-            display: block;
-            height: 80px;
-            margin: -80px 0 0;
-        }
+        :target::before { content: ""; display: block; height: 80px; margin: -80px 0 0; }
         
         @media (max-width: 768px) {
             nav { gap: 5px; }
-            nav a { padding: 6px 12px; font-size: 12px; }
-            .hero h2 { font-size: 24px; }
+            nav a { padding: 6px 10px; font-size: 11px; }
+            .hero h2 { font-size: 22px; }
             .grid { grid-template-columns: 1fr; }
+            .hotel-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -211,10 +196,9 @@
             </div>
             <nav>
                 <a href="#vols">✈️ Vols</a>
-                <a href="#retours">🔄 Retours</a>
                 <a href="#hotels">🏨 Hôtels</a>
-                <a href="#voitures">🚗 Voitures</a>
-                <a href="#transferts">🚕 Transferts</a>
+                <a href="#retours">🔄 Retours</a>
+                <a href="#monde">🌍 Monde</a>
                 <a href="#activites">🎫 Activités</a>
             </nav>
         </div>
@@ -223,188 +207,150 @@
     <!-- HERO -->
     <section class="hero">
         <h2>🌍 Votre voyage commence ici</h2>
-        <p>Comparez les meilleurs prix pour vos vols, hôtels, transferts et activités</p>
+        <p>Vols, Hôtels, Activités - Maroc, Algérie, Tunisie, Égypte & Monde entier</p>
     </section>
 
-    <!-- PROMO BANNER - ALLER SIMPLE -->
+    <!-- PROMO ALLER SIMPLE -->
     <section class="promo-banner">
         <h3>🔥 VOLS ALLER SIMPLE dès 16€ - Départ de Bruxelles 🔥</h3>
-        <p>Choisissez votre destination :</p>
         <div class="promo-destinations">
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=RAK" target="_blank" class="promo-btn">🇲🇦 Marrakech</a>
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=CMN" target="_blank" class="promo-btn">🇲🇦 Casablanca</a>
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=TNG" target="_blank" class="promo-btn">🇲🇦 Tanger</a>
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=NDR" target="_blank" class="promo-btn">🇲🇦 Nador</a>
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=ALG" target="_blank" class="promo-btn">🇩🇿 Alger</a>
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=TUN" target="_blank" class="promo-btn">🇹🇳 Tunis</a>
-            <a href="https://www.aviasales.fr/search?marker=704469.704469&sub_id=promo&origin=BRU&destination=CAI" target="_blank" class="promo-btn">🇪🇬 Le Caire</a>
+            <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=BRU&destination=RAK" target="_blank" class="promo-btn">🇲🇦 Marrakech</a>
+            <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=BRU&destination=CMN" target="_blank" class="promo-btn">🇲🇦 Casablanca</a>
+            <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=BRU&destination=TNG" target="_blank" class="promo-btn">🇲🇦 Tanger</a>
+            <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=BRU&destination=ALG" target="_blank" class="promo-btn">🇩🇿 Alger</a>
+            <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=BRU&destination=TUN" target="_blank" class="promo-btn">🇹🇳 Tunis</a>
         </div>
     </section>
 
     <!-- RECHERCHE VOLS -->
     <section class="section" id="vols">
         <div class="widget-container">
-            <h3 class="widget-title">✈️ Trouvez votre vol DIRECT au meilleur prix</h3>
+            <h3 class="widget-title">✈️ Trouvez votre vol DIRECT</h3>
             <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=true&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563EB&color_button=%232563EB&border_radius=10&promo_id=7879&campaign_id=100" charset="utf-8"></script>
         </div>
     </section>
 
-    <!-- VOLS DIRECTS BEAUVAIS → MARRAKECH -->
-    <section class="section">
-        <div class="widget-container">
-            <h3 class="widget-title">📅 Vols DIRECTS Beauvais → Marrakech</h3>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=BVA&destination=RAK&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&color_background=%23FFFFFF&color_text=%23000000&color_border=%23C4C4C4&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-        </div>
-    </section>
-
-    <!-- CALENDRIER PRIX -->
-    <section class="section">
-        <div class="widget-container">
-            <h3 class="widget-title">📆 Calendrier des prix : Beauvais → Tanger (7-14 jours)</h3>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&searchUrl=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=BVA&destination=TNG&one_way=false&only_direct=true&period=year&range=7%2C14&primary=%232563EB&promo_id=4041&campaign_id=100" charset="utf-8"></script>
-        </div>
-    </section>
-
-    <!-- CARTE PRIX MAROC -->
-    <section class="section">
-        <div class="widget-container">
-            <h3 class="widget-title">🗺️ Carte des prix DIRECTS vers le Maroc (à partir de 80€)</h3>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=31.7917&lng=-7.0926&powered_by=true&search_host=www.aviasales.fr%2Fsearch&locale=fr&origin=PAR&value_min=80&value_max=800&round_trip=true&only_direct=true&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%232563EB&secondary=%232563EB&light=%23ffffff&width=1200&height=500&zoom=4&promo_id=4054&campaign_id=100" charset="utf-8"></script>
-        </div>
-    </section>
-
-    <!-- RETOURS -->
-    <section class="section-header" style="background: linear-gradient(135deg, #059669, #0d9488);" id="retours">
-        <h2>🔄 RETOURS : Afrique du Nord → Europe</h2>
-        <p>Vols DIRECTS de retour - Marrakech, Alger, Tunis, Le Caire → Paris, Bruxelles</p>
-    </section>
-
-    <!-- RETOURS MAROC -->
-    <section class="section">
-        <div class="grid">
-            <div class="widget-container">
-                <h3 class="widget-title">🇲🇦 Marrakech → Paris (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=RAK&destination=PAR&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-            <div class="widget-container">
-                <h3 class="widget-title">🇲🇦 Casablanca → Bruxelles (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=CMN&destination=BRU&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-            <div class="widget-container">
-                <h3 class="widget-title">🇲🇦 Tanger → Bruxelles (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=TNG&destination=BRU&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-            <div class="widget-container">
-                <h3 class="widget-title">🇲🇦 Nador → Bruxelles (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=NDR&destination=BRU&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-        </div>
-    </section>
-
-    <!-- RETOURS ALGERIE -->
-    <section class="section">
-        <div class="grid">
-            <div class="widget-container">
-                <h3 class="widget-title">🇩🇿 Alger → Paris (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=ALG&destination=PAR&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-            <div class="widget-container">
-                <h3 class="widget-title">🇩🇿 Alger → Bruxelles (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=ALG&destination=BRU&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-        </div>
-    </section>
-
-    <!-- RETOURS TUNISIE -->
-    <section class="section">
-        <div class="grid">
-            <div class="widget-container">
-                <h3 class="widget-title">🇹🇳 Tunis → Paris (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=TUN&destination=PAR&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-            <div class="widget-container">
-                <h3 class="widget-title">🇹🇳 Tunis → Bruxelles (DIRECTS)</h3>
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=TUN&destination=BRU&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-            </div>
-        </div>
-    </section>
-
-    <!-- RETOURS EGYPTE -->
-    <section class="section">
-        <div class="widget-container">
-            <h3 class="widget-title">🇪🇬 Le Caire → Paris (DIRECTS)</h3>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=CAI&destination=PAR&with_fallback=false&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
-        </div>
-    </section>
-
-    <!-- HÔTELS KLOOK -->
+    <!-- HÔTELS KLOOK - 8% COMMISSION -->
     <section class="section-header" style="background: linear-gradient(135deg, #f97316, #ef4444);" id="hotels">
-        <h2>🏨 HÔTELS & HÉBERGEMENTS</h2>
-        <p>Voyages aller-retour pension complète avec piscine - 8% commission</p>
+        <h2>🏨 HÔTELS - Klook (8% commission)</h2>
+        <p>Piscine, Pension complète, All-inclusive - Réservez et gagnez !</p>
     </section>
 
     <section class="section">
         <div class="widget-container">
-            <h3 class="widget-title">🏨 Trouvez votre Hôtel - Klook</h3>
+            <h3 class="widget-title">🏨 Réservez votre Hôtel - Commission 8%</h3>
             <p style="text-align: center; margin-bottom: 20px; color: #6b7280;">
-                Hôtels avec piscine, pension complète, all-inclusive
+                Cliquez sur une destination → Vous êtes redirigé vers Klook → Vous touchez 8% sur chaque réservation !
             </p>
-            <div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 20px;">
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Marrakech&aid=704469" target="_blank" class="promo-btn">🇲🇦 Marrakech</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Casablanca&aid=704469" target="_blank" class="promo-btn">🇲🇦 Casablanca</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Agadir&aid=704469" target="_blank" class="promo-btn">🇲🇦 Agadir</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Alger&aid=704469" target="_blank" class="promo-btn">🇲🇦 Casablanca</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Tanger&aid=704469" target="_blank" class="promo-btn">🇲🇦 Tanger</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Agadir&aid=704469" target="_blank" class="promo-btn">🇲🇦 Agadir</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Alger&aid=704469" target="_blank" class="promo-btn">🇩🇿 Alger</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Tunis&aid=704469" target="_blank" class="promo-btn">🇹🇳 Tunis</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Le%20Caire&aid=704469" target="_blank" class="promo-btn">🇪🇬 Le Caire</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Paris&aid=704469" target="_blank" class="promo-btn">🇫🇷 Paris</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Bruxelles&aid=704469" target="_blank" class="promo-btn">🇧🇪 Bruxelles</a>
+            <div class="hotel-grid">
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Marrakech&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn orange">🇲🇦 Marrakech</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Casablanca&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn orange">🇲🇦 Casablanca</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Tanger&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn orange">🇲🇦 Tanger</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Agadir&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn orange">🇲🇦 Agadir</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Alger&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn green">🇩🇿 Alger</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Oran&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn green">🇩🇿 Oran</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Tunis&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn red">🇹🇳 Tunis</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Le%20Caire&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn purple">🇪🇬 Le Caire</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Paris&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn blue">🇫🇷 Paris</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Bruxelles&aid=704469&sub_id=vrax" target="_blank" class="hotel-btn blue">🇧🇪 Bruxelles</a>
             </div>
-            <div style="text-align: center;">
-                <a href="https://www.klook.com/fr-FR/hotels/?aid=704469" target="_blank" class="promo-btn" style="background: #f97316; color: white; padding: 15px 40px; font-size: 16px;">
+            <div style="text-align: center; margin-top: 20px;">
+                <a href="https://www.klook.com/fr-FR/hotels/?aid=704469&sub_id=vrax" target="_blank" class="main-btn">
                     🔍 RECHERCHER UN HÔTEL →
                 </a>
             </div>
         </div>
     </section>
 
+    <!-- RETOURS AFRIQUE → EUROPE -->
+    <section class="section-header" style="background: linear-gradient(135deg, #059669, #0d9488);" id="retours">
+        <h2>🔄 RETOURS : Afrique du Nord → Europe</h2>
+        <p>Vols DIRECTS - Marrakech, Alger, Tunis, Le Caire → Paris, Bruxelles</p>
+    </section>
+
+    <section class="section">
+        <div class="grid">
+            <div class="widget-container">
+                <h3 class="widget-title">🇲🇦 Marrakech → Paris</h3>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=RAK&destination=PAR&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
+            </div>
+            <div class="widget-container">
+                <h3 class="widget-title">🇲🇦 Casablanca → Bruxelles</h3>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=CMN&destination=BRU&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
+            </div>
+            <div class="widget-container">
+                <h3 class="widget-title">🇩🇿 Alger → Paris</h3>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=ALG&destination=PAR&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
+            </div>
+            <div class="widget-container">
+                <h3 class="widget-title">🇹🇳 Tunis → Paris</h3>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&color_button=%23FF0000&target_host=www.aviasales.fr%2Fsearch&locale=fr&powered_by=true&origin=TUN&destination=PAR&non_direct_flights=false&min_lines=5&border_radius=8&promo_id=2811&campaign_id=100" charset="utf-8"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS MONDIALES -->
+    <section class="section-header" style="background: linear-gradient(135deg, #8b5cf6, #6366f1);" id="monde">
+        <h2>🌍 DESTINATIONS MONDIALES</h2>
+        <p>Les plus demandées : Turquie, Dubai, Thaïlande, Grèce, Espagne, Italie</p>
+    </section>
+
+    <section class="section">
+        <div class="widget-container">
+            <h3 class="widget-title">🌍 Vols vers les destinations populaires</h3>
+            <div class="hotel-grid">
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=IST" target="_blank" class="hotel-btn red">🇹🇷 Istanbul</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=DXB" target="_blank" class="hotel-btn teal">🇦🇪 Dubai</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=BKK" target="_blank" class="hotel-btn purple">🇹🇭 Bangkok</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=DPS" target="_blank" class="hotel-btn green">🇮🇩 Bali</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=ATH" target="_blank" class="hotel-btn blue">🇬🇷 Athènes</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=BCN" target="_blank" class="hotel-btn orange">🇪🇸 Barcelone</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=ROM" target="_blank" class="hotel-btn green">🇮🇹 Rome</a>
+                <a href="https://www.aviasales.fr/search?marker=704469.704469&origin=PAR&destination=LIS" target="_blank" class="hotel-btn teal">🇵🇹 Lisbonne</a>
+            </div>
+            <div class="hotel-grid" style="margin-top: 15px;">
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Istanbul&aid=704469" target="_blank" class="hotel-btn red">🏨 Istanbul</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Dubai&aid=704469" target="_blank" class="hotel-btn teal">🏨 Dubai</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Bangkok&aid=704469" target="_blank" class="hotel-btn purple">🏨 Bangkok</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Bali&aid=704469" target="_blank" class="hotel-btn green">🏨 Bali</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITÉS KLOOK - 10% COMMISSION -->
+    <section class="section-header" style="background: linear-gradient(135deg, #ec4899, #f43f5e);" id="activites">
+        <h2>🎫 ACTIVITÉS & TOURS - Klook (10% commission)</h2>
+        <p>Visites guidées, Excursions, Attractions</p>
+    </section>
+
+    <section class="section">
+        <div class="widget-container">
+            <h3 class="widget-title">🎫 Tours & Visites Populaires (10% commission)</h3>
+            <!-- KLOOK TOURS WIDGET - 10% COMMISSION -->
+            <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469.704469&locale=fr&category=1&amount=3&powered_by=true&campaign_id=137&promo_id=4497" charset="utf-8"></script>
+        </div>
+    </section>
+
     <!-- SERVICES -->
     <section class="section-header" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">
-        <h2>🛎️ Services Annexes</h2>
-        <p>Transferts, Location de voiture, Activités</p>
+        <h2>🛎️ Services</h2>
+        <p>Transferts & Location de voiture</p>
     </section>
 
-    <!-- VOITURES -->
-    <section class="section" id="voitures">
-        <div class="widget-container">
-            <h3 class="widget-title">🚗 Location de Voiture</h3>
-            <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
-        </div>
-    </section>
-
-    <!-- TRANSFERTS -->
-    <section class="section" id="transferts">
-        <div class="widget-container">
-            <h3 class="widget-title">🚕 Transferts Aéroport - Kiwitaxi</h3>
-            <p style="text-align: center; margin-bottom: 15px;">
-                <a href="https://kiwitaxi.com/?marker=704469.704469&lang=fr" target="_blank" class="promo-btn" style="background: #2563EB; color: white;">
-                    🚕 Réserver un transfert →
-                </a>
-            </p>
-        </div>
-    </section>
-
-    <!-- ACTIVITES -->
-    <section class="section" id="activites">
-        <div class="widget-container">
-            <h3 class="widget-title">🎫 Activités & Expériences - Klook (5-10%)</h3>
-            <p style="text-align: center; margin-bottom: 15px;">
-                <a href="https://www.klook.com/fr-FR/?aid=704469" target="_blank" class="promo-btn" style="background: #f97316; color: white;">
-                    🎫 Voir les activités →
-                </a>
-            </p>
+    <section class="section">
+        <div class="grid">
+            <div class="widget-container">
+                <h3 class="widget-title">🚗 Location de Voiture</h3>
+                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=true&campaign_id=87&promo_id=2466" charset="utf-8"></script>
+            </div>
+            <div class="widget-container">
+                <h3 class="widget-title">🚕 Transferts Aéroport</h3>
+                <div style="text-align: center; padding: 20px;">
+                    <a href="https://kiwitaxi.com/?marker=704469.704469&lang=fr" target="_blank" class="main-btn" style="background: linear-gradient(135deg, #2563eb, #1d4ed8);">
+                        🚕 Réserver un transfert →
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -417,22 +363,18 @@
             <a href="https://kiwitaxi.com/?marker=704469.704469" target="_blank">Kiwitaxi</a>
         </div>
         <div class="footer-info">
-            <p>© 2024 Vrax Voyages - Partenaire Travelpayouts</p>
+            <p>© 2025 Vrax Voyages - Partenaire Travelpayouts</p>
             <p>Marker ID: 704469 | Project ID: 499802</p>
+            <p>Hôtels: 8% | Tours: 10% | Vols: 40% | Transferts: 9-11%</p>
         </div>
     </footer>
 
-    <!-- Script Travelpayouts -->
     <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
-
-    <!-- Smooth Scroll -->
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
             });
         });
     </script>
