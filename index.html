@@ -3,252 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyage | Comparateur Expert & Boutique</title>
+    <title>Vrax Voyage | L'Excellence du Voyage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary: #2563eb;
-            --accent: #f59e0b;
-            --dark: #0f172a;
-            --bg: #f8fafc;
-            --card: #ffffff;
-            --border: #e2e8f0;
+            --gold: #f59e0b;
+            --gold-light: #fbbf24;
+            --dark-bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --border: rgba(255, 255, 255, 0.1);
+            --text-main: #f8fafc;
         }
 
         body {
             margin: 0;
-            font-family: 'Inter', -apple-system, sans-serif;
-            background: var(--bg);
-            color: var(--dark);
-            line-height: 1.6;
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
+            color: var(--text-main);
+            min-height: 100vh;
             scroll-behavior: smooth;
         }
 
-        /* NAVIGATION PROFESSIONNELLE */
+        /* NAVBAR LUXE */
         .navbar {
-            background: var(--dark);
-            padding: 1rem 5%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 5%;
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
+            border-bottom: 1px solid var(--border);
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
         .logo { 
-            color: white; 
+            font-family: 'Montserrat', sans-serif;
+            color: var(--gold); 
             font-weight: 800; 
-            font-size: 1.4rem; 
+            font-size: 1.6rem; 
             text-decoration: none;
-            letter-spacing: 1px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
-
-        .nav-tabs { display: flex; gap: 20px; }
 
         .nav-tabs a {
             color: #94a3b8;
             text-decoration: none;
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 0.8rem;
+            font-weight: 700;
             text-transform: uppercase;
-            padding: 8px 0;
+            margin-left: 25px;
             transition: 0.3s;
-            border-bottom: 2px solid transparent;
         }
 
-        .nav-tabs a:hover, .nav-tabs a.active {
-            color: white;
-            border-bottom: 2px solid var(--accent);
+        .nav-tabs a:hover { color: var(--gold); }
+
+        /* HERO SECTION DYNAMIQUE */
+        .hero {
+            padding: 80px 20px;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+            background-blend-mode: overlay;
+            background-color: rgba(15, 23, 42, 0.7);
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 2rem auto 4rem;
-            padding: 0 1.5rem;
+        .hero h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
         }
 
-        /* BLOCS DE SECTION */
-        .section-box {
-            background: var(--card);
-            border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        .hero p { color: var(--gold-light); font-weight: 500; font-size: 1.2rem; }
+
+        .container { max-width: 1200px; margin: -50px auto 50px; padding: 0 20px; }
+
+        /* CARTES EFFET VERRE */
+        .glass-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
             border: 1px solid var(--border);
-            overflow: hidden;
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.3);
         }
 
         .section-title {
-            font-size: 1.1rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            color: var(--dark);
+            color: var(--gold);
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 25px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .section-title::before {
-            content: "";
-            width: 4px;
-            height: 20px;
-            background: var(--primary);
-            border-radius: 2px;
-        }
-
-        /* GRILLES DE MISE EN PAGE */
-        .grid-layout {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-            gap: 2rem;
-        }
-
+        /* BOUTIQUE STYLE CATALOGUE LUXE */
         .shop-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
         }
 
-        /* CARTES PRODUITS BOUTIQUE */
         .product-card {
-            background: white;
+            background: rgba(255,255,255,0.03);
             border: 1px solid var(--border);
-            padding: 2rem;
-            border-radius: 8px;
+            border-radius: 15px;
+            padding: 20px;
             text-align: center;
+            transition: 0.4s;
+        }
+
+        .product-card:hover {
+            background: rgba(255,255,255,0.07);
+            border-color: var(--gold);
+            transform: translateY(-10px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn-gold {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--gold), #d97706);
+            color: #000;
+            text-decoration: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 0.8rem;
+            text-transform: uppercase;
             transition: 0.3s;
         }
 
-        .product-card:hover { border-color: var(--accent); transform: translateY(-3px); }
+        .btn-gold:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(245, 158, 11, 0.4); }
 
-        .btn-amazon {
-            display: inline-block;
-            background: var(--accent);
-            color: white;
-            text-decoration: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            font-weight: 700;
-            margin-top: 15px;
-            font-size: 0.8rem;
-            border: none;
-            cursor: pointer;
-        }
+        footer { padding: 50px; text-align: center; border-top: 1px solid var(--border); color: #64748b; font-size: 0.8rem; }
 
-        /* GESTION CARTE RESPONSIVE */
-        .map-desktop { display: block; }
-        .map-mobile { display: none; }
-
-        @media (max-width: 900px) {
-            .grid-layout { grid-template-columns: 1fr; }
-            .nav-tabs { display: none; }
-            .map-desktop { display: none; }
-            .map-mobile { display: block; }
-            .container { padding: 0 1rem; }
-        }
-
-        footer { background: var(--dark); color: #64748b; padding: 4rem 2rem; text-align: center; font-size: 0.8rem; }
+        @media (max-width: 768px) { .nav-tabs { display: none; } }
     </style>
 </head>
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">Vrax Voyage</a>
-            <div class="nav-tabs">
-                <a href="#vols" class="active">Vols</a>
-                <a href="#hotels">Hôtels</a>
-                <a href="#voitures">Voitures & Transferts</a>
-                <a href="#boutique">Boutique</a>
-            </div>
+        <a href="index.html" class="logo">Vrax Voyage</a>
+        <div class="nav-tabs">
+            <a href="#vols">Vols</a>
+            <a href="#hotels">Hôtels</a>
+            <a href="#voitures">Services</a>
+            <a href="#boutique">Boutique</a>
         </div>
     </nav>
 
+    <header class="hero">
+        <h1>L'ART DE VOYAGER</h1>
+        <p>Expertise • Comparaison • Privilège</p>
+    </header>
+
     <div class="container">
 
-        <section class="section-box" id="vols">
-            <div class="section-title">Recherche de vols internationaux</div>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
-            
-            <div style="margin-top: 3rem;">
-                <div class="section-title">Explorez les prix en temps réel</div>
-                <div class="map-desktop">
-                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
-                </div>
-                <div class="map-mobile">
-                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
-                </div>
+        <section class="glass-card" id="vols">
+            <div class="section-title">Réserver un vol Premium</div>
+            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%23f59e0b&color_button=%23f59e0b&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+        </section>
+
+        <section class="glass-card">
+            <div class="section-title">Tarifs Mondiaux</div>
+            <div style="border-radius: 15px; overflow: hidden;">
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23f59e0b&secondary=%23f59e0b&light=%23ffffff&width=1200&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
             </div>
         </section>
 
-        <section class="section-box">
-            <div class="section-title">🔥 Meilleures offres du moment</div>
-            <div class="grid-layout">
-                <div>
-                    <h4 style="font-size:0.85rem; color:var(--primary); margin-bottom:15px; text-transform: uppercase;">Départs de Paris (PAR)</h4>
-                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&origin=PAR&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=3&powered_by=false&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
-                </div>
-                <div>
-                    <h4 style="font-size:0.85rem; color:var(--primary); margin-bottom:15px; text-transform: uppercase;">Départs de Bruxelles (BRU)</h4>
-                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&origin=BRU&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=3&powered_by=false&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-box" id="hotels">
-            <div class="section-title">Sélection d'hôtels & résidences</div>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=true&powered_by=false&locale=fr&campaign_id=121&promo_id=4041" charset="utf-8"></script>
-        </section>
-
-        <div class="grid-layout" id="voitures">
-            <section class="section-box" style="margin-bottom: 0;">
-                <div class="section-title">Location de voitures</div>
-                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&campaign_id=87&promo_id=2466" charset="utf-8"></script>
-            </section>
-
-            <section class="section-box" style="margin-bottom: 0;">
-                <div class="section-title">Transferts Aéroport (VTC/Taxi)</div>
-                <div style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80'); background-size: cover; background-position: center; padding: 40px 20px; border-radius: 10px; text-align: center; color: white;">
-                    <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Service Chauffeur Privé</h3>
-                    <p style="font-size: 0.8rem; color: #cbd5e1; margin-bottom: 25px;">Évitez l'attente. Un chauffeur vous accueille personnellement à l'arrivée.</p>
-                    
-                    <a href="https://kiwitaxi.com/?marker=704469.704469" target="_blank" class="btn-amazon" style="background: var(--primary); padding: 12px 20px;">
-                        DEVIS INSTANTANÉ →
-                    </a>
-                    
-                    <div style="margin-top: 20px; display: flex; justify-content: center; gap: 10px; font-size: 0.65rem; color: #94a3b8;">
-                        <span>✓ Prix fixes</span>
-                        <span>✓ Annulation gratuite</span>
-                        <span>✓ Attente incluse</span>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <section class="section-box" id="boutique" style="margin-top: 2rem;">
-            <div class="section-title">Boutique Officielle Vrax Voyage</div>
+        <section class="glass-card" id="boutique">
+            <div class="section-title">Boutique de l'Explorateur</div>
             <div class="shop-grid">
                 <div class="product-card">
-                    <span style="font-size:0.65rem; color:var(--primary); font-weight:700; text-transform: uppercase;">Essentiels</span>
-                    <h3 style="font-size:1rem; margin:10px 0;">Valises & Bagagerie</h3>
-                    <a href="https://www.amazon.fr/s?k=valise+voyage&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=400&q=80" alt="Valise">
+                    <h3>Bagagerie Luxe</h3>
+                    <p style="font-size: 0.8rem; color: #94a3b8;">Sélection de valises cabines robustes et élégantes.</p>
+                    <a href="https://www.amazon.fr/s?k=valise+voyage+luxe&tag=vrax-21" target="_blank" class="btn-gold">Voir la collection</a>
                 </div>
                 <div class="product-card">
-                    <span style="font-size:0.65rem; color:var(--primary); font-weight:700; text-transform: uppercase;">Électronique</span>
-                    <h3 style="font-size:1rem; margin:10px 0;">Accessoires & Tech</h3>
-                    <a href="https://www.amazon.fr/s?k=accessoires+voyage+electronique&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <img src="https://images.unsplash.com/photo-1525706732602-52592370085e?auto=format&fit=crop&w=400&q=80" alt="Tech">
+                    <h3>Accessoires Tech</h3>
+                    <a href="https://www.amazon.fr/s?k=accessoires+voyage+tech&tag=vrax-21" target="_blank" class="btn-gold">Explorer</a>
                 </div>
                 <div class="product-card">
-                    <span style="font-size:0.65rem; color:var(--primary); font-weight:700; text-transform: uppercase;">Confort</span>
-                    <h3 style="font-size:1rem; margin:10px 0;">Bien-être en Vol</h3>
-                    <a href="https://www.amazon.fr/s?k=oreiller+voyage+confort&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=400&q=80" alt="Confort">
+                    <h3>Confort en vol</h3>
+                    <a href="https://www.amazon.fr/s?k=oreiller+voyage+memoire+forme&tag=vrax-21" target="_blank" class="btn-gold">Découvrir</a>
                 </div>
             </div>
         </section>
@@ -256,8 +210,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Vrax Voyage | Amazon: vrax-21 | Partner ID 704469</p>
-        <p style="font-size: 0.7rem; margin-top: 10px; opacity: 0.5;">Plateforme d'affiliation certifiée Travelpayouts.</p>
+        <p>© 2026 VRAX VOYAGE | PARTNER ID 704469 | AMAZON vrar-21</p>
     </footer>
 
     <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
