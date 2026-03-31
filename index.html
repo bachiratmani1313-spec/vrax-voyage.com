@@ -3,44 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyage | Comparateur & Boutique Officielle</title>
+    <title>Vrax Voyage | Comparateur Premium & Boutique</title>
     <style>
         :root {
             --primary: #2563eb;
-            --accent: #f59e0b; /* Orange pour la boutique/boutons d'action */
+            --accent: #f59e0b;
             --dark: #0f172a;
-            --bg: #f1f5f9;
+            --bg: #f8fafc;
             --card: #ffffff;
+            --border: #e2e8f0;
         }
 
-        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--dark); }
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background: var(--bg);
+            color: var(--dark);
+            line-height: 1.6;
+        }
 
-        /* HEADER AVEC ONGLETS */
-        .navbar { background: var(--dark); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
-        .logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; }
-        .nav-links a { color: #cbd5e1; text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem; font-weight: 600; }
-        .nav-links a.active { color: var(--accent); }
+        /* NAVIGATION BAR */
+        .navbar {
+            background: var(--dark);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+        .logo {
+            color: white;
+            font-weight: 800;
+            font-size: 1.4rem;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
 
-        /* SECTIONS */
-        .section-box { background: var(--card); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
-        .section-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; color: var(--dark); border-left: 4px solid var(--primary); padding-left: 15px; }
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: 0.3s;
+        }
 
-        /* MAP & WIDGETS */
-        .map-container { width: 100%; height: 500px; background: #e2e8f0; border-radius: 10px; overflow: hidden; }
-        
+        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+        .hero p { color: #94a3b8; max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
+
+        .container {
+            max-width: 1200px;
+            margin: -3rem auto 4rem;
+            padding: 0 1.5rem;
+        }
+
+        /* SECTION BOXES */
+        .section-box {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+        }
+
+        /* CARTE INTERACTIVE RESPONSIVE */
+        .map-wrapper {
+            width: 100%;
+            height: 550px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #f1f5f9;
+        }
+
         /* BOUTIQUE AMAZON GRID */
-        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
-        .product-card { background: white; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 12px; text-align: center; transition: 0.3s; }
-        .product-card:hover { transform: translateY(-5px); border-color: var(--accent); }
-        .product-img { width: 100%; height: 150px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #94a3b8; }
-        .btn-amazon { display: block; background: var(--accent); color: var(--dark); text-decoration: none; padding: 10px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; margin-top: 10px; }
+        .shop-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+        }
 
-        /* GRID POUR VOITURES/HOTELS */
-        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .product-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: 0.3s;
+        }
 
-        footer { background: var(--dark); color: #94a3b8; padding: 3rem 1rem; text-align: center; font-size: 0.8rem; margin-top: 4rem; }
+        .product-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .btn-amazon {
+            display: block;
+            background: var(--accent);
+            color: white;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 700;
+            margin-top: 15px;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: #64748b;
+            padding: 4rem 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .map-wrapper { height: 400px; }
+            .nav-links { display: none; } /* On cache les liens sur mobile pour la clarté */
+        }
     </style>
 </head>
 <body>
@@ -50,68 +155,73 @@
         <div class="nav-links">
             <a href="#vols" class="active">Vols</a>
             <a href="#carte">Carte des Prix</a>
-            <a href="#hotels">Hôtels</a>
-            <a href="#boutique">Boutique Voyage</a>
+            <a href="#boutique">Boutique</a>
         </div>
     </nav>
 
-    <div class="container">
+    <header class="hero">
+        <h1>L'intelligence au service de vos voyages</h1>
+        <p>Comparez des millions d'offres en temps réel et équipez-vous pour l'aventure.</p>
+    </header>
+
+    <main class="container">
 
         <section class="section-box" id="vols">
-            <div class="section-title">Rechercher un vol au meilleur prix</div>
+            <div class="section-title">Trouvez votre vol au meilleur prix</div>
             <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
         </section>
 
         <section class="section-box" id="carte">
-            <div class="section-title">Carte interactive des tarifs mondiaux</div>
-            <div class="map-container">
-                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&lat=48.8566&lng=2.3522&zoom=3&campaign_id=100&promo_id=2058" charset="utf-8"></script>
+            <div class="section-title">Explorez les tarifs sur la carte du monde</div>
+            <div class="map-wrapper">
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=false&search_host=www.aviasales.fr%2Fsearch&locale=fr&origin=&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%232563eb&secondary=%232563eb&light=%23ffffff&width=100%&height=550&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
             </div>
         </section>
 
-        <div class="tools-grid">
-            <section class="section-box" id="hotels">
-                <div class="section-title">Hôtels & All-Inclusive</div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <section class="section-box">
+                <div class="section-title">Hôtels (8% Commission)</div>
                 <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=true&powered_by=false&locale=fr&campaign_id=121&promo_id=4041" charset="utf-8"></script>
             </section>
-
-            <section class="section-box" id="voitures">
+            
+            <section class="section-box">
                 <div class="section-title">Location de voiture</div>
                 <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&campaign_id=87&promo_id=2466" charset="utf-8"></script>
             </section>
         </div>
 
         <section class="section-box" id="boutique">
-            <div class="section-title">Boutique de l'Explorateur : Équipement & Accessoires</div>
+            <div class="section-title">Boutique de l'Explorateur - Recommandations Amazon</div>
+            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem;">Sélection d'articles recommandés par Amazon pour vos prochains voyages.</p>
+            
             <div class="shop-grid">
                 <div class="product-card">
-                    <div class="product-img">Image Valise Cabine</div>
-                    <div style="font-weight: 600; font-size: 0.9rem;">Valise Cabine Rigide</div>
-                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <div style="font-size: 40px; margin-bottom: 10px;">🧳</div>
+                    <div style="font-weight: 700;">Valise Cabine Ultra-Légère</div>
+                    <p style="font-size: 0.8rem; color: #64748b;">Le best-seller pour les vols low-cost.</p>
+                    <a href="#" target="_blank" class="btn-amazon">Voir sur Amazon</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">Image Adaptateur Universel</div>
-                    <div style="font-weight: 600; font-size: 0.9rem;">Adaptateur Prise Universel</div>
-                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <div style="font-size: 40px; margin-bottom: 10px;">🔌</div>
+                    <div style="font-weight: 700;">Adaptateur Universel</div>
+                    <p style="font-size: 0.8rem; color: #64748b;">Compatible dans plus de 150 pays.</p>
+                    <a href="#" target="_blank" class="btn-amazon">Voir sur Amazon</a>
                 </div>
                 <div class="product-card">
-                    <div class="product-img">Image Sac à dos</div>
-                    <div style="font-weight: 600; font-size: 0.9rem;">Sac à dos Voyage 40L</div>
-                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
-                </div>
-                <div class="product-card">
-                    <div class="product-img">Image Powerbank</div>
-                    <div style="font-weight: 600; font-size: 0.9rem;">Batterie Externe Solaire</div>
-                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <div style="font-size: 40px; margin-bottom: 10px;">🔋</div>
+                    <div style="font-weight: 700;">Batterie Externe 20000mAh</div>
+                    <p style="font-size: 0.8rem; color: #64748b;">Ne tombez jamais en panne de GPS.</p>
+                    <a href="#" target="_blank" class="btn-amazon">Voir sur Amazon</a>
                 </div>
             </div>
         </section>
 
-    </div>
+    </main>
 
     <footer>
-        <p>© 2026 Vrax Voyage - Comparateur Professionnel & Boutique</p>
-        <p>Marker ID: 704469 | Tous nos partenaires sont certifiés.</p>
+        <p>© 2026 Vrax Voyage - Expert en Comparaison & Affiliation</p>
+        <p>Marker ID: 704469 | Trs: 499802</p>
+        <p style="margin-top: 15px; font-size: 0.7rem;">En tant que partenaire, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
     </footer>
 
     <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
