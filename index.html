@@ -16,16 +16,16 @@
 
         body {
             margin: 0;
-            font-family: 'Inter', sans-serif;
+            font-family: 'Inter', -apple-system, sans-serif;
             background: var(--bg);
             color: var(--dark);
             scroll-behavior: smooth;
         }
 
-        /* NAVIGATION AVEC ONGLETS */
+        /* BARRE DE NAVIGATION */
         .navbar {
             background: var(--dark);
-            padding: 0.5rem 5%;
+            padding: 0.8rem 5%;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -42,31 +42,27 @@
 
         .logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; }
 
-        .nav-tabs {
-            display: flex;
-            gap: 10px;
-        }
+        .nav-tabs { display: flex; gap: 5px; }
 
         .nav-tabs a {
             color: #94a3b8;
             text-decoration: none;
-            padding: 12px 20px;
-            font-size: 0.9rem;
+            padding: 10px 15px;
+            font-size: 0.85rem;
             font-weight: 600;
-            border-bottom: 3px solid transparent;
             transition: 0.3s;
+            border-radius: 8px;
         }
 
         .nav-tabs a:hover, .nav-tabs a.active {
             color: var(--accent);
-            border-bottom: 3px solid var(--accent);
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(255, 255, 255, 0.1);
         }
 
         .container {
             max-width: 1200px;
             margin: 2rem auto 4rem;
-            padding: 0 1rem;
+            padding: 0 1.5rem;
         }
 
         .section-box {
@@ -79,39 +75,36 @@
         }
 
         .section-title {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
             border-left: 4px solid var(--primary);
             padding-left: 15px;
             display: flex;
             align-items: center;
-            gap: 10px;
         }
 
-        /* GESTION CARTES ORIGINELLES */
-        .map-desktop { display: block; }
-        .map-mobile { display: none; }
-
-        @media (max-width: 768px) {
-            .map-desktop { display: none; }
-            .map-mobile { display: block; }
-            .nav-tabs a { padding: 10px 10px; font-size: 0.8rem; }
+        /* GRILLES */
+        .grid-half {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
         }
 
-        /* BOUTIQUE */
         .shop-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.5rem;
         }
 
+        /* CARTES D'AFFILIATION */
         .product-card {
             background: white;
             border: 1px solid var(--border);
             padding: 1.5rem;
             border-radius: 12px;
             text-align: center;
+            transition: 0.3s;
         }
 
         .btn-amazon {
@@ -123,9 +116,21 @@
             border-radius: 8px;
             font-weight: 700;
             margin-top: 15px;
+            font-size: 0.8rem;
         }
 
-        footer { background: var(--dark); color: #64748b; padding: 3rem; text-align: center; }
+        /* RESPONSIVE MAP */
+        .map-desktop { display: block; }
+        .map-mobile { display: none; }
+
+        @media (max-width: 768px) {
+            .map-desktop { display: none; }
+            .map-mobile { display: block; }
+            .nav-tabs { display: none; } /* On cache les onglets sur mobile pour épurer */
+            .section-box { padding: 1.2rem; }
+        }
+
+        footer { background: var(--dark); color: #64748b; padding: 3rem; text-align: center; font-size: 0.8rem; }
     </style>
 </head>
 <body>
@@ -134,7 +139,7 @@
         <div class="nav-container">
             <a href="#" class="logo">Vrax Voyage</a>
             <div class="nav-tabs">
-                <a href="#vols" class="active">✈️ Vols</a>
+                <a href="#vols">✈️ Vols</a>
                 <a href="#hotels">🏨 Hôtels</a>
                 <a href="#voitures">🚗 Voitures</a>
                 <a href="#boutique">🛍️ Boutique</a>
@@ -145,44 +150,63 @@
     <div class="container">
 
         <section class="section-box" id="vols">
-            <div class="section-title">Rechercher un vol</div>
+            <div class="section-title">Comparer les vols</div>
             <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
             
-            <div style="margin-top: 2rem;">
-                <div class="section-title">Tarifs mondiaux en temps réel</div>
+            <div style="margin-top: 2.5rem;">
+                <div class="section-title">Explorez les tarifs mondiaux</div>
                 <div class="map-desktop">
-                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=en&origin=LON&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
                 </div>
                 <div class="map-mobile">
-                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=en&origin=LON&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1500&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%233FABDB&secondary=%233FABDB&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
                 </div>
             </div>
         </section>
 
-        <section class="section-box" id="hotels">
-            <div class="section-title">Hôtels & Hébergements</div>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=true&powered_by=false&locale=fr&campaign_id=121&promo_id=4041" charset="utf-8"></script>
-        </section>
-
-        <section class="section-box" id="voitures">
-            <div class="section-title">Location de voiture au meilleur prix</div>
-            <div id="car-rental-widget">
-                <p style="text-align:center; color:#94a3b8;">Widget Voitures en cours de chargement...</p>
+        <section class="section-box">
+            <div class="section-title">🔥 Meilleures offres au départ de vos villes</div>
+            <div class="grid-half">
+                <div>
+                    <h4 style="margin-bottom:12px; font-size: 0.9rem;">🇫🇷 Depuis Paris</h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&origin=PAR&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=3&powered_by=false&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
+                </div>
+                <div>
+                    <h4 style="margin-bottom:12px; font-size: 0.9rem;">🇧🇪 Depuis Bruxelles</h4>
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&origin=BRU&target_host=www.aviasales.com%2Fsearch&locale=fr&limit=3&powered_by=false&primary=%232563eb&promo_id=4044&campaign_id=100" charset="utf-8"></script>
+                </div>
             </div>
         </section>
+
+        <div class="grid-half">
+            <section class="section-box" id="hotels">
+                <div class="section-title">Hôtels & All-Inclusive</div>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=true&powered_by=false&locale=fr&campaign_id=121&promo_id=4041" charset="utf-8"></script>
+            </section>
+
+            <section class="section-box" id="voitures">
+                <div class="section-title">Location de voiture</div>
+                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&campaign_id=87&promo_id=2466" charset="utf-8"></script>
+            </section>
+        </div>
 
         <section class="section-box" id="boutique">
-            <div class="section-title">Boutique Voyage (vrax-21)</div>
+            <div class="section-title">Boutique de l'Explorateur (Tag: vrax-21)</div>
             <div class="shop-grid">
                 <div class="product-card">
-                    <div style="font-size: 40px;">🧳</div>
-                    <div style="font-weight: 700;">Bagages & Valises</div>
-                    <a href="https://www.amazon.fr/s?k=valise+voyage&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <div style="font-size: 35px;">🧳</div>
+                    <div style="font-weight: 700; margin-top: 10px;">Valises & Sacs</div>
+                    <a href="https://www.amazon.fr/s?k=valise+voyage&tag=vrax-21" target="_blank" class="btn-amazon">Voir la sélection</a>
                 </div>
                 <div class="product-card">
-                    <div style="font-size: 40px;">🔌</div>
-                    <div style="font-weight: 700;">Accessoires Indispensables</div>
-                    <a href="https://www.amazon.fr/s?k=accessoires+voyage&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <div style="font-size: 35px;">🔌</div>
+                    <div style="font-weight: 700; margin-top: 10px;">Accessoires Tech</div>
+                    <a href="https://www.amazon.fr/s?k=accessoires+voyage+electronique&tag=vrax-21" target="_blank" class="btn-amazon">Voir la sélection</a>
+                </div>
+                <div class="product-card">
+                    <div style="font-size: 35px;">🔋</div>
+                    <div style="font-weight: 700; margin-top: 10px;">Batteries & Énergie</div>
+                    <a href="https://www.amazon.fr/s?k=batterie+externe+voyage&tag=vrax-21" target="_blank" class="btn-amazon">Voir la sélection</a>
                 </div>
             </div>
         </section>
@@ -191,6 +215,7 @@
 
     <footer>
         <p>© 2026 Vrax Voyage | Partner ID: 704469 | Amazon: vrax-21</p>
+        <p style="font-size: 10px; margin-top: 10px; opacity: 0.6;">En tant que partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises.</p>
     </footer>
 
     <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
