@@ -3,224 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyage - Comparateur Premium</title>
+    <title>Vrax Voyage | Plateforme de Comparaison</title>
     <style>
-        /* BASE & COLORS (The "Carrosserie") */
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: #fff;
-            scroll-behavior: smooth;
+        :root {
+            --primary: #2563eb;
+            --dark: #0f172a;
+            --bg: #f8fafc;
+            --text: #1e293b;
+            --card-bg: #ffffff;
+            --border: #e2e8f0;
         }
 
-        /* HEADER MODERNISÉ */
-        .header {
-            padding: 20px;
-            text-align: center;
-            background: linear-gradient(180deg, #1a1a1a, #0a0a0a);
-            border-bottom: 2px solid #ffd700;
+        body {
+            margin: 0;
+            font-family: 'Inter', -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        /* NAVIGATION SOBRE */
+        .navbar {
+            background: var(--dark);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
-        .header h1 {
-            color: #ffd700;
-            margin: 0;
-            font-size: 28px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
-
-        nav {
-            margin-top: 15px;
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            color: #ccc;
+        .logo {
+            color: white;
+            font-weight: 800;
+            font-size: 1.25rem;
             text-decoration: none;
-            font-size: 14px;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        nav a:hover {
-            color: #ffd700;
-            background: rgba(255, 215, 0, 0.1);
+        .nav-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s;
         }
 
-        .container {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+        .nav-links a:hover { color: white; }
 
-        /* HERO SECTION */
+        /* HERO CLEAN */
         .hero {
+            background: var(--dark);
+            color: white;
+            padding: 4rem 2rem;
             text-align: center;
-            margin-bottom: 60px;
-            padding: 40px 0;
         }
 
-        .hero h2 {
-            color: #ffd700;
-            font-size: clamp(30px, 5vw, 45px);
-            margin-bottom: 15px;
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            letter-spacing: -0.025em;
         }
 
         .hero p {
-            color: #999;
-            font-size: 18px;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
-        /* GRILLE DE SERVICES (MODERNE) */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-bottom: 60px;
+        .container {
+            max-width: 1100px;
+            margin: -2rem auto 4rem;
+            padding: 0 1rem;
         }
 
-        .card {
-            background: #111;
-            border: 1px solid #222;
-            padding: 30px;
-            border-radius: 15px;
-            text-decoration: none;
-            color: #fff;
-            text-align: center;
-            font-weight: bold;
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        /* WIDGETS D'ACTION (L'aspect Pro) */
+        .search-container {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
             display: flex;
-            flex-direction: column;
             align-items: center;
             gap: 10px;
         }
 
-        .card:hover {
-            border-color: #ffd700;
-            transform: translateY(-10px);
-            background: #1a1a1a;
-            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
-        }
-
-        .card span { font-size: 35px; }
-
-        /* WIDGETS CONTAINERS */
-        .widget-box {
-            background: #111;
-            border-radius: 20px;
-            padding: 25px;
-            margin: 40px 0;
-            border: 1px solid #ffd70033;
-        }
-
-        .widget-title {
-            color: #ffd700;
-            text-align: center;
-            margin-bottom: 25px;
-            font-size: 22px;
-        }
-
-        /* BOUTONS DESTINATIONS */
-        .destinations-grid {
+        /* GRILLE DE DESTINATIONS ÉPURÉE */
+        .dest-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 12px;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
         }
 
-        .dest-btn {
-            background: #1a1a1a;
-            border: 1px solid #333;
-            padding: 15px;
-            border-radius: 10px;
+        .dest-item {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 1rem;
+            border-radius: 8px;
             text-decoration: none;
-            color: #fff;
+            color: var(--text);
+            font-size: 0.85rem;
+            font-weight: 600;
             text-align: center;
-            font-size: 13px;
-            transition: 0.3s;
+            transition: all 0.2s;
         }
 
-        .dest-btn:hover {
-            border-color: #ffd700;
-            color: #ffd700;
-            background: #000;
+        .dest-item:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
         }
 
         .footer {
+            border-top: 1px solid var(--border);
+            padding: 3rem 1rem;
             text-align: center;
-            padding: 60px 20px;
-            background: #050505;
-            border-top: 1px solid #222;
-            color: #666;
-            font-size: 13px;
+            font-size: 0.8rem;
+            color: #64748b;
         }
 
-        @media (max-width: 768px) {
-            .cards-grid { grid-template-columns: 1fr 1fr; }
-        }
+        /* Suppression des styles inutiles qui font "site amateur" */
     </style>
 </head>
 <body>
 
-    <header class="header">
-        <h1>Vrax Voyage</h1>
-        <nav>
+    <nav class="navbar">
+        <a href="#" class="logo">Vrax Voyage</a>
+        <div class="nav-links">
             <a href="#vols">Vols</a>
             <a href="#hotels">Hôtels</a>
-            <a href="#destinations">Destinations</a>
             <a href="#activites">Activités</a>
-            <a href="#voitures">Voitures</a>
-        </nav>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Comparez le monde en un clic</h1>
+        <p>Accédez aux meilleures offres de vols et d'hôtels via notre technologie de comparaison simplifiée.</p>
     </header>
 
     <main class="container">
-        <section class="hero">
-            <h2>L'excellence du voyage</h2>
-            <p>Comparez les meilleures offres mondiales avec une interface premium.</p>
-        </section>
-
-        <div class="cards-grid">
-            <a href="#vols" class="card"><span>✈️</span> Vols Directs</a>
-            <a href="#hotels" class="card"><span>🏨</span> Hôtels (8% OFF)</a>
-            <a href="#activites" class="card"><span>🎟️</span> Activités</a>
-            <a href="#voitures" class="card"><span>🚗</span> Location</a>
+        <div class="search-container" id="vols">
+            <div class="section-title">Recherche de vols directs</div>
+            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
         </div>
 
-        <div class="widget-box" id="vols">
-            <h3 class="widget-title">Trouvez votre prochain vol</h3>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=true&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%23ffd700&color_button=%23ffd700&border_radius=10&promo_id=7879&campaign_id=100" charset="utf-8"></script>
-        </div>
-
-        <div class="widget-box" id="hotels">
-            <h3 class="widget-title">Hôtels & Resorts - Klook</h3>
-            <div class="destinations-grid">
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Marrakech&aid=704469" target="_blank" class="dest-btn">Marrakech</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Casablanca&aid=704469" target="_blank" class="dest-btn">Casablanca</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Alger&aid=704469" target="_blank" class="dest-btn">Alger</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Paris&aid=704469" target="_blank" class="dest-btn">Paris</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Dubai&aid=704469" target="_blank" class="dest-btn">Dubai</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Istanbul&aid=704469" target="_blank" class="dest-btn">Istanbul</a>
+        <div style="margin-top: 3rem;">
+            <div class="section-title">Destinations populaires</div>
+            <div class="dest-grid">
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Marrakech&aid=704469" class="dest-item">Marrakech</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Paris&aid=704469" class="dest-item">Paris</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Dubai&aid=704469" class="dest-item">Dubai</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Istanbul&aid=704469" class="dest-item">Istanbul</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Alger&aid=704469" class="dest-item">Alger</a>
+                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Casablanca&aid=704469" class="dest-item">Casablanca</a>
             </div>
-        </div>
-
-        <div class="widget-box" id="activites">
-            <h3 class="widget-title">Expériences & Tours</h3>
-            <script async src="https://tpemd.com/content?currency=EUR&trs=499802&shmarker=704469.704469&locale=fr&category=1&amount=3&powered_by=true&campaign_id=137&promo_id=4497" charset="utf-8"></script>
         </div>
     </main>
 
     <footer class="footer">
-        <p>© 2026 Vrax Voyage - Design Premium</p>
-        <p>Marker: 704469 | Project: 499802</p>
+        <p>© 2026 Vrax Voyage - Tous droits réservés.</p>
+        <p>Partenaire officiel Travelpayouts | ID 499802</p>
     </footer>
 
-    <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
 </body>
 </html>
