@@ -31,10 +31,9 @@
             position: sticky;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         }
 
-        .logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; letter-spacing: 1px; }
+        .logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; }
 
         .nav-links a {
             color: #94a3b8;
@@ -42,10 +41,9 @@
             margin-left: 1.5rem;
             font-size: 0.9rem;
             font-weight: 600;
-            transition: 0.3s;
         }
 
-        .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+        .nav-links a:hover { color: var(--accent); }
 
         .hero {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
@@ -55,7 +53,7 @@
         }
 
         .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
-        .hero p { color: #94a3b8; max-width: 700px; margin: 0 auto; font-size: 1.1rem; }
+        .hero p { color: #94a3b8; max-width: 700px; margin: 0 auto; }
 
         .container {
             max-width: 1200px;
@@ -76,7 +74,6 @@
             font-size: 1.25rem;
             font-weight: 700;
             margin-bottom: 1.5rem;
-            color: var(--dark);
             border-left: 4px solid var(--primary);
             padding-left: 15px;
         }
@@ -107,7 +104,6 @@
         .product-card:hover {
             transform: translateY(-5px);
             border-color: var(--accent);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
         }
 
         .btn-amazon {
@@ -127,13 +123,6 @@
             color: #64748b;
             padding: 4rem 2rem;
             text-align: center;
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 1.8rem; }
-            .map-wrapper { height: 400px; }
-            .nav-links { display: none; }
         }
     </style>
 </head>
@@ -142,34 +131,34 @@
     <nav class="navbar">
         <a href="#" class="logo">Vrax Voyage</a>
         <div class="nav-links">
-            <a href="#vols" class="active">Vols</a>
-            <a href="#carte">Carte des Prix</a>
+            <a href="#vols">Vols</a>
+            <a href="#carte">Carte</a>
             <a href="#boutique">Boutique</a>
         </div>
     </nav>
 
     <header class="hero">
         <h1>L'intelligence au service de vos voyages</h1>
-        <p>Comparez des millions d'offres en temps réel et équipez-vous comme un pro.</p>
+        <p>Comparez les prix en temps réel et équipez-vous pour l'aventure.</p>
     </header>
 
     <main class="container">
 
         <section class="section-box" id="vols">
-            <div class="section-title">Trouvez votre vol au meilleur prix</div>
+            <div class="section-title">Recherche de vols au meilleur prix</div>
             <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
         </section>
 
         <section class="section-box" id="carte">
-            <div class="section-title">Explorez les tarifs sur la carte du monde</div>
+            <div class="section-title">Carte mondiale des tarifs</div>
             <div class="map-wrapper">
-                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=40.0&lng=10.0&powered_by=false&search_host=www.aviasales.fr%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=true&primary=%232563eb&secondary=%232563eb&light=%23ffffff&width=100%&height=550&zoom=3&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=40.0&lng=5.0&powered_by=false&search_host=www.aviasales.fr%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=2000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=true&primary=%232563eb&secondary=%232563eb&light=%23ffffff&width=100%&height=550&zoom=3&promo_id=4054&campaign_id=100" charset="utf-8"></script>
             </div>
         </section>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
             <section class="section-box">
-                <div class="section-title">Hôtels (Sélection Klook)</div>
+                <div class="section-title">Hôtels (Offres Klook)</div>
                 <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=true&powered_by=false&locale=fr&campaign_id=121&promo_id=4041" charset="utf-8"></script>
             </section>
             
@@ -180,27 +169,25 @@
         </div>
 
         <section class="section-box" id="boutique">
-            <div class="section-title">Boutique Amazon | Sélection Voyage</div>
-            <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1.5rem;">Accessoires indispensables sélectionnés pour vous.</p>
-            
+            <div class="section-title">Boutique Amazon | Accessoires Indispensables</div>
             <div class="shop-grid">
                 <div class="product-card">
-                    <div style="font-size: 40px; margin-bottom: 10px;">🧳</div>
+                    <div style="font-size: 40px;">🧳</div>
                     <div style="font-weight: 700;">Valise Cabine Rigide</div>
-                    <p style="font-size: 0.8rem; color: #64748b;">Format bagage à main standard.</p>
-                    <a href="METS_TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <p style="font-size: 0.8rem; color: #64748b;">Légère et robuste.</p>
+                    <a href="https://www.amazon.fr/s?k=valise+cabine&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
                 </div>
                 <div class="product-card">
-                    <div style="font-size: 40px; margin-bottom: 10px;">🔋</div>
-                    <div style="font-weight: 700;">Batterie Externe Rapide</div>
-                    <p style="font-size: 0.8rem; color: #64748b;">20000mAh pour vos longs trajets.</p>
-                    <a href="METS_TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
-                </div>
-                <div class="product-card">
-                    <div style="font-size: 40px; margin-bottom: 10px;">🔌</div>
+                    <div style="font-size: 40px;">🔌</div>
                     <div style="font-weight: 700;">Adaptateur Monde</div>
-                    <p style="font-size: 0.8rem; color: #64748b;">Pour tous vos voyages à l'étranger.</p>
-                    <a href="METS_TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                    <p style="font-size: 0.8rem; color: #64748b;">Compatible 150 pays.</p>
+                    <a href="https://www.amazon.fr/s?k=adaptateur+voyage+universel&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+                <div class="product-card">
+                    <div style="font-size: 40px;">🔋</div>
+                    <div style="font-weight: 700;">Batterie Externe</div>
+                    <p style="font-size: 0.8rem; color: #64748b;">Puissante (20000mAh).</p>
+                    <a href="https://www.amazon.fr/s?k=batterie+externe+voyage&tag=vrax-21" target="_blank" class="btn-amazon">Voir sur Amazon</a>
                 </div>
             </div>
         </section>
@@ -208,7 +195,7 @@
     </main>
 
     <footer>
-        <p>© 2026 Vrax Voyage - Comparateur Officiel</p>
+        <p>© 2026 Vrax Voyage - Boutique Partenaire Amazon ID: vrax-21</p>
         <p>Marker ID: 704469 | Trs: 499802</p>
     </footer>
 
