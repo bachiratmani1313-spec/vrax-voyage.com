@@ -3,139 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyage | Plateforme de Comparaison</title>
+    <title>Vrax Voyage | Comparateur & Boutique Officielle</title>
     <style>
         :root {
             --primary: #2563eb;
+            --accent: #f59e0b; /* Orange pour la boutique/boutons d'action */
             --dark: #0f172a;
-            --bg: #f8fafc;
-            --text: #1e293b;
-            --card-bg: #ffffff;
-            --border: #e2e8f0;
+            --bg: #f1f5f9;
+            --card: #ffffff;
         }
 
-        body {
-            margin: 0;
-            font-family: 'Inter', -apple-system, sans-serif;
-            background-color: var(--bg);
-            color: var(--text);
-            line-height: 1.5;
-        }
+        body { margin: 0; font-family: 'Inter', sans-serif; background: var(--bg); color: var(--dark); }
 
-        /* NAVIGATION SOBRE */
-        .navbar {
-            background: var(--dark);
-            padding: 1rem 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+        /* HEADER AVEC ONGLETS */
+        .navbar { background: var(--dark); padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; }
+        .logo { color: white; font-weight: 800; font-size: 1.4rem; text-decoration: none; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; margin-left: 1.5rem; font-size: 0.9rem; font-weight: 600; }
+        .nav-links a.active { color: var(--accent); }
 
-        .logo {
-            color: white;
-            font-weight: 800;
-            font-size: 1.25rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
 
-        .nav-links a {
-            color: #94a3b8;
-            text-decoration: none;
-            margin-left: 1.5rem;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
+        /* SECTIONS */
+        .section-box { background: var(--card); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border: 1px solid #e2e8f0; }
+        .section-title { font-size: 1.25rem; font-weight: 700; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px; color: var(--dark); border-left: 4px solid var(--primary); padding-left: 15px; }
 
-        .nav-links a:hover { color: white; }
+        /* MAP & WIDGETS */
+        .map-container { width: 100%; height: 500px; background: #e2e8f0; border-radius: 10px; overflow: hidden; }
+        
+        /* BOUTIQUE AMAZON GRID */
+        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+        .product-card { background: white; border: 1px solid #e2e8f0; padding: 1rem; border-radius: 12px; text-align: center; transition: 0.3s; }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        .product-img { width: 100%; height: 150px; background: #f8fafc; border-radius: 8px; margin-bottom: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.8rem; color: #94a3b8; }
+        .btn-amazon { display: block; background: var(--accent); color: var(--dark); text-decoration: none; padding: 10px; border-radius: 6px; font-weight: 700; font-size: 0.8rem; margin-top: 10px; }
 
-        /* HERO CLEAN */
-        .hero {
-            background: var(--dark);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
+        /* GRID POUR VOITURES/HOTELS */
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
 
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            letter-spacing: -0.025em;
-        }
-
-        .hero p {
-            color: #94a3b8;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: -2rem auto 4rem;
-            padding: 0 1rem;
-        }
-
-        /* WIDGETS D'ACTION (L'aspect Pro) */
-        .search-container {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-            border: 1px solid var(--border);
-        }
-
-        .section-title {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-            color: var(--dark);
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        /* GRILLE DE DESTINATIONS ÉPURÉE */
-        .dest-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 1rem;
-            margin-top: 2rem;
-        }
-
-        .dest-item {
-            background: white;
-            border: 1px solid var(--border);
-            padding: 1rem;
-            border-radius: 8px;
-            text-decoration: none;
-            color: var(--text);
-            font-size: 0.85rem;
-            font-weight: 600;
-            text-align: center;
-            transition: all 0.2s;
-        }
-
-        .dest-item:hover {
-            border-color: var(--primary);
-            color: var(--primary);
-            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
-        }
-
-        .footer {
-            border-top: 1px solid var(--border);
-            padding: 3rem 1rem;
-            text-align: center;
-            font-size: 0.8rem;
-            color: #64748b;
-        }
-
-        /* Suppression des styles inutiles qui font "site amateur" */
+        footer { background: var(--dark); color: #94a3b8; padding: 3rem 1rem; text-align: center; font-size: 0.8rem; margin-top: 4rem; }
     </style>
 </head>
 <body>
@@ -143,40 +48,72 @@
     <nav class="navbar">
         <a href="#" class="logo">Vrax Voyage</a>
         <div class="nav-links">
-            <a href="#vols">Vols</a>
+            <a href="#vols" class="active">Vols</a>
+            <a href="#carte">Carte des Prix</a>
             <a href="#hotels">Hôtels</a>
-            <a href="#activites">Activités</a>
+            <a href="#boutique">Boutique Voyage</a>
         </div>
     </nav>
 
-    <header class="hero">
-        <h1>Comparez le monde en un clic</h1>
-        <p>Accédez aux meilleures offres de vols et d'hôtels via notre technologie de comparaison simplifiée.</p>
-    </header>
+    <div class="container">
 
-    <main class="container">
-        <div class="search-container" id="vols">
-            <div class="section-title">Recherche de vols directs</div>
+        <section class="section-box" id="vols">
+            <div class="section-title">Rechercher un vol au meilleur prix</div>
             <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%232563eb&color_button=%232563eb&border_radius=8&promo_id=7879&campaign_id=100" charset="utf-8"></script>
-        </div>
+        </section>
 
-        <div style="margin-top: 3rem;">
-            <div class="section-title">Destinations populaires</div>
-            <div class="dest-grid">
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Marrakech&aid=704469" class="dest-item">Marrakech</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Paris&aid=704469" class="dest-item">Paris</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Dubai&aid=704469" class="dest-item">Dubai</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Istanbul&aid=704469" class="dest-item">Istanbul</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Alger&aid=704469" class="dest-item">Alger</a>
-                <a href="https://www.klook.com/fr-FR/hotels/search/?destname=Casablanca&aid=704469" class="dest-item">Casablanca</a>
+        <section class="section-box" id="carte">
+            <div class="section-title">Carte interactive des tarifs mondiaux</div>
+            <div class="map-container">
+                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&lat=48.8566&lng=2.3522&zoom=3&campaign_id=100&promo_id=2058" charset="utf-8"></script>
             </div>
-        </div>
-    </main>
+        </section>
 
-    <footer class="footer">
-        <p>© 2026 Vrax Voyage - Tous droits réservés.</p>
-        <p>Partenaire officiel Travelpayouts | ID 499802</p>
+        <div class="tools-grid">
+            <section class="section-box" id="hotels">
+                <div class="section-title">Hôtels & All-Inclusive</div>
+                <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=true&powered_by=false&locale=fr&campaign_id=121&promo_id=4041" charset="utf-8"></script>
+            </section>
+
+            <section class="section-box" id="voitures">
+                <div class="section-title">Location de voiture</div>
+                <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&campaign_id=87&promo_id=2466" charset="utf-8"></script>
+            </section>
+        </div>
+
+        <section class="section-box" id="boutique">
+            <div class="section-title">Boutique de l'Explorateur : Équipement & Accessoires</div>
+            <div class="shop-grid">
+                <div class="product-card">
+                    <div class="product-img">Image Valise Cabine</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Valise Cabine Rigide</div>
+                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image Adaptateur Universel</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Adaptateur Prise Universel</div>
+                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image Sac à dos</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Sac à dos Voyage 40L</div>
+                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">Image Powerbank</div>
+                    <div style="font-weight: 600; font-size: 0.9rem;">Batterie Externe Solaire</div>
+                    <a href="TON_LIEN_AMAZON_ICI" target="_blank" class="btn-amazon">Voir sur Amazon</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Vrax Voyage - Comparateur Professionnel & Boutique</p>
+        <p>Marker ID: 704469 | Tous nos partenaires sont certifiés.</p>
     </footer>
 
+    <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
 </body>
 </html>
