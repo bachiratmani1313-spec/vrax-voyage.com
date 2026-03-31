@@ -41,61 +41,62 @@
         .nav-tabs a:hover { color: var(--gold); }
 
         .hero {
-            padding: 100px 20px; text-align: center;
+            padding: 80px 20px; text-align: center;
             background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
         }
 
-        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; margin-bottom: 10px; text-transform: uppercase; }
-        .hero p { color: var(--gold-light); font-weight: 500; font-size: 1.2rem; letter-spacing: 1px; }
+        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-bottom: 10px; text-transform: uppercase; }
+        .hero p { color: var(--gold-light); font-weight: 500; font-size: 1.1rem; letter-spacing: 1px; }
 
-        .container { max-width: 1200px; margin: -60px auto 60px; padding: 0 20px; }
+        .container { max-width: 1200px; margin: -40px auto 60px; padding: 0 20px; }
 
         .glass-card {
             background: var(--card-bg); backdrop-filter: blur(15px);
             border: 1px solid var(--border); border-radius: 20px;
-            padding: 35px; margin-bottom: 35px; box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+            padding: 30px; margin-bottom: 35px; box-shadow: 0 25px 50px rgba(0,0,0,0.4);
         }
 
-        /* FIX POUR LE DEFILEMENT DES VOITURES */
         .car-scroll-box {
-            max-height: 600px; /* On limite la hauteur à 600px */
-            overflow-y: auto;  /* On ajoute le défilement interne */
-            border-radius: 10px;
+            max-height: 550px; 
+            overflow-y: auto; 
+            border-radius: 12px;
             background: rgba(0,0,0,0.2);
-            padding: 10px;
         }
 
         .section-title {
             color: var(--gold); font-family: 'Montserrat', sans-serif;
-            font-size: 1.1rem; margin-bottom: 25px; text-transform: uppercase;
+            font-size: 1rem; margin-bottom: 20px; text-transform: uppercase;
             letter-spacing: 2px; display: flex; align-items: center; gap: 15px;
         }
 
-        .section-title::before { content: ""; width: 4px; height: 20px; background: var(--gold); border-radius: 2px; }
+        .section-title::before { content: ""; width: 4px; height: 18px; background: var(--gold); border-radius: 2px; }
 
-        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2.5rem; }
-        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; }
+        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
         .product-card {
             background: rgba(255,255,255,0.03); border: 1px solid var(--border);
-            border-radius: 15px; padding: 25px; text-align: center; transition: 0.4s;
+            border-radius: 15px; padding: 20px; text-align: center; transition: 0.4s;
         }
 
-        .product-card:hover { border-color: var(--gold); transform: translateY(-10px); }
-        .product-card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
+        .product-card:hover { border-color: var(--gold); transform: translateY(-8px); }
+        .product-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
 
         .btn-gold {
             display: inline-block; background: linear-gradient(135deg, var(--gold), #d97706);
-            color: #000; text-decoration: none; padding: 12px 25px; border-radius: 8px;
-            font-weight: 800; font-size: 0.75rem; text-transform: uppercase; transition: 0.3s;
+            color: #000; text-decoration: none; padding: 12px 20px; border-radius: 8px;
+            font-weight: 800; font-size: 0.7rem; text-transform: uppercase; transition: 0.3s;
             border: none; cursor: pointer; width: 85%;
         }
 
+        .map-desktop { display: block; } .map-mobile { display: none; }
+
         @media (max-width: 900px) {
             .grid-layout { grid-template-columns: 1fr; } .nav-tabs { display: none; }
+            .map-desktop { display: none; } .map-mobile { display: block; }
         }
 
-        footer { padding: 60px 20px; text-align: center; border-top: 1px solid var(--border); color: #64748b; font-size: 0.8rem; }
+        footer { padding: 40px 20px; text-align: center; border-top: 1px solid var(--border); color: #64748b; font-size: 0.75rem; }
     </style>
 </head>
 <body>
@@ -119,6 +120,16 @@
         <section class="glass-card" id="vols">
             <div class="section-title">Recherche de vols internationaux</div>
             <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%23f59e0b&color_button=%23f59e0b&border_radius=12&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+            
+            <div style="margin-top: 3rem;">
+                <div class="section-title">Tarifs Mondiaux Interactifs</div>
+                <div class="map-desktop">
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23f59e0b&secondary=%23f59e0b&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                </div>
+                <div class="map-mobile">
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23f59e0b&secondary=%23f59e0b&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+                </div>
+            </div>
         </section>
 
         <div class="grid-layout" id="voitures">
@@ -131,9 +142,9 @@
 
             <section class="glass-card" style="margin-bottom: 0;">
                 <div class="section-title">Transferts Aéroport (VIP)</div>
-                <div style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80'); background-size: cover; background-position: center; padding: 40px 20px; border-radius: 15px; text-align: center; color: white; height: 100%; display: flex; flex-direction: column; justify-content: center;">
+                <div style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80'); background-size: cover; background-position: center; padding: 40px 20px; border-radius: 15px; text-align: center; color: white; height: 100%; min-height: 400px; display: flex; flex-direction: column; justify-content: center;">
                     <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Chauffeur Privé</h3>
-                    <p style="font-size: 0.8rem; color: #cbd5e1; margin-bottom: 25px;">Accueil personnalisé à l'arrivée. Tarif fixe sans surprise.</p>
+                    <p style="font-size: 0.8rem; color: #cbd5e1; margin-bottom: 25px;">Évitez l'attente. Votre chauffeur vous accueille avec une pancarte à l'arrivée.</p>
                     <a href="https://kiwitaxi.com/?marker=704469.704469" target="_blank" class="btn-gold" style="width: auto; padding: 12px 30px; align-self: center;">DEVIS KIWITAXI →</a>
                 </div>
             </section>
@@ -142,31 +153,37 @@
         <section class="glass-card" id="boutique" style="margin-top: 2.5rem;">
             <div class="section-title">Boutique Officielle Amazon</div>
             <div class="shop-grid">
+                
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=400&q=80" alt="Valise">
                     <h3>Bagagerie Cabine</h3>
                     <a href="https://www.amazon.fr/s?k=valise+voyage+cabine&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
+
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1525706732602-52592370085e?auto=format&fit=crop&w=400&q=80" alt="Tech">
                     <h3>Tech & Énergie</h3>
                     <a href="https://www.amazon.fr/s?k=accessoires+voyage+tech&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
+
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=400&q=80" alt="Confort">
                     <h3>Repos en vol</h3>
                     <a href="https://www.amazon.fr/s?k=oreiller+voyage+confort&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
+
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1521191083512-96f0c2123ee9?auto=format&fit=crop&w=400&q=80" alt="Organisation">
                     <h3>Organisation</h3>
                     <a href="https://www.amazon.fr/s?k=organisateur+de+voyage+valise&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
+
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1622353326300-34863f694669?auto=format&fit=crop&w=400&q=80" alt="Poids">
                     <h3>Pèse-bagages</h3>
                     <a href="https://www.amazon.fr/s?k=pese+bagage+electronique&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
+
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" alt="Hygiène">
                     <h3>Hygiène Cabine</h3>
