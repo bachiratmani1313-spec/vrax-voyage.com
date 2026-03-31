@@ -56,13 +56,6 @@
             padding: 30px; margin-bottom: 35px; box-shadow: 0 25px 50px rgba(0,0,0,0.4);
         }
 
-        .car-scroll-box {
-            max-height: 550px; 
-            overflow-y: auto; 
-            border-radius: 12px;
-            background: rgba(0,0,0,0.2);
-        }
-
         .section-title {
             color: var(--gold); font-family: 'Montserrat', sans-serif;
             font-size: 1rem; margin-bottom: 20px; text-transform: uppercase;
@@ -71,6 +64,10 @@
 
         .section-title::before { content: ""; width: 4px; height: 18px; background: var(--gold); border-radius: 2px; }
 
+        .car-scroll-box {
+            max-height: 550px; overflow-y: auto; border-radius: 12px; background: rgba(0,0,0,0.2);
+        }
+
         .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; }
         .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
 
@@ -78,7 +75,6 @@
             background: rgba(255,255,255,0.03); border: 1px solid var(--border);
             border-radius: 15px; padding: 20px; text-align: center; transition: 0.4s;
         }
-
         .product-card:hover { border-color: var(--gold); transform: translateY(-8px); }
         .product-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
 
@@ -130,6 +126,17 @@
                     <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.com%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23f59e0b&secondary=%23f59e0b&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
                 </div>
             </div>
+
+            <div style="margin-top: 3rem; background: rgba(245, 158, 11, 0.05); border: 2px dashed var(--gold); border-radius: 15px; padding: 25px; display: flex; gap: 20px; flex-wrap: wrap; align-items: center;">
+                <div style="flex: 1; min-width: 150px;">
+                    <span style="background: red; color: white; padding: 4px 10px; font-weight: 800; border-radius: 5px; font-size: 0.7rem;">COUP DE CŒUR</span>
+                    <h4 style="color: var(--gold); margin: 10px 0 5px 0;">⭐ PARIS ✈️ ESSAOUIRA</h4>
+                    <p style="font-size: 0.8rem; margin: 0; color: #94a3b8;">Comme vu sur ton TikTok : une pépite ! Jetez un œil au calendrier des prix pour vos dates (aller simple).</p>
+                </div>
+                <div style="flex: 2; min-width: 250px;">
+                    <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&origin=PAR&destination=ESU&locale=fr&powered_by=false&primary=%23f59e0b&promo_id=4041&campaign_id=100" charset="utf-8"></script>
+                </div>
+            </div>
         </section>
 
         <div class="grid-layout" id="voitures">
@@ -139,7 +146,6 @@
                     <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&campaign_id=87&promo_id=2466" charset="utf-8"></script>
                 </div>
             </section>
-
             <section class="glass-card" style="margin-bottom: 0;">
                 <div class="section-title">Transferts Aéroport (VIP)</div>
                 <div style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80'); background-size: cover; background-position: center; padding: 40px 20px; border-radius: 15px; text-align: center; color: white; height: 100%; min-height: 400px; display: flex; flex-direction: column; justify-content: center;">
@@ -153,37 +159,31 @@
         <section class="glass-card" id="boutique" style="margin-top: 2.5rem;">
             <div class="section-title">Boutique Officielle Amazon</div>
             <div class="shop-grid">
-                
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=400&q=80" alt="Valise">
                     <h3>Bagagerie Cabine</h3>
                     <a href="https://www.amazon.fr/s?k=valise+voyage+cabine&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
-
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1525706732602-52592370085e?auto=format&fit=crop&w=400&q=80" alt="Tech">
                     <h3>Tech & Énergie</h3>
                     <a href="https://www.amazon.fr/s?k=accessoires+voyage+tech&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
-
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=400&q=80" alt="Confort">
                     <h3>Repos en vol</h3>
                     <a href="https://www.amazon.fr/s?k=oreiller+voyage+confort&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
-
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=400&q=80" alt="Accessoires">
+                    <img src="https://images.unsplash.com/photo-1521191083512-96f0c2123ee9?auto=format&fit=crop&w=400&q=80" alt="Organisation">
                     <h3>Organisation</h3>
                     <a href="https://www.amazon.fr/s?k=organisateur+de+voyage+valise&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
-
                 <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=400&q=80" alt="Poids">
+                    <img src="https://images.unsplash.com/photo-1622353326300-34863f694669?auto=format&fit=crop&w=400&q=80" alt="Poids">
                     <h3>Pèse-bagages</h3>
                     <a href="https://www.amazon.fr/s?k=pese+bagage+electronique&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
                 </div>
-
                 <div class="product-card">
                     <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" alt="Hygiène">
                     <h3>Hygiène Cabine</h3>
@@ -195,7 +195,7 @@
     </div>
 
     <footer>
-        <p>© 2026 Vrax Voyage | Amazon Partner: vrax-21 | Travelpayouts ID 704469</p>
+        <p>© 2026 Vrax Voyage | Amazon vrax-21 | Partner ID 704469</p>
     </footer>
 
     <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
