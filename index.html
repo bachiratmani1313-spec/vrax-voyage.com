@@ -94,14 +94,110 @@
 
         <section class="glass-card" id="vols">
             <div class="section-title">Trouver mon billet d'avion</div>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&show_hotels=false&powered_by=false&locale=fr&searchUrl=www.aviasales.fr%2Fsearch&primary_override=%23f59e0b&color_button=%23f59e0b&border_radius=12&promo_id=7879&campaign_id=100" charset="utf-8"></script>
+            <form id="vrax-flight-form" onsubmit="return vraxSearchFlights(event)" style="margin-top:20px;">
+                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:14px; margin-bottom:16px;">
+                    <div>
+                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">✈️ Départ</label>
+                        <input type="text" id="vsf-origin" placeholder="Paris, Bruxelles..." required
+                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none;">
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">🛬 Destination</label>
+                        <input type="text" id="vsf-dest" placeholder="Casablanca, Dubai..." required
+                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none;">
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">📅 Aller</label>
+                        <input type="date" id="vsf-depart" required
+                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none; color-scheme:dark;">
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">📅 Retour</label>
+                        <input type="date" id="vsf-return"
+                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none; color-scheme:dark;">
+                    </div>
+                    <div>
+                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">👤 Passagers</label>
+                        <select id="vsf-pax" style="width:100%; padding:12px 14px; background:rgba(15,23,42,0.95); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none;">
+                            <option value="1">1 adulte</option>
+                            <option value="2">2 adultes</option>
+                            <option value="3">3 adultes</option>
+                            <option value="4">4 adultes</option>
+                            <option value="5">5 adultes</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit"
+                        style="width:100%; padding:14px; background:linear-gradient(135deg, #f59e0b, #d97706); border:none; border-radius:10px; color:#0f172a; font-size:1rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; cursor:pointer; box-shadow:0 4px 20px rgba(245,158,11,0.3);">
+                    🔍 Rechercher mon vol
+                </button>
+                <p style="text-align:center; font-size:0.75rem; color:#64748b; margin-top:12px;">
+                    Comparaison instantanée des meilleures offres · résultats en français
+                </p>
+            </form>
+            <script>
+                // Conversion ville → code aéroport IATA (sans ça, Aviasales bascule en russe)
+                const VRAX_IATA = {
+                    "paris":"PAR","cdg":"PAR","orly":"PAR",
+                    "marseille":"MRS","lyon":"LYS","nice":"NCE","toulouse":"TLS","bordeaux":"BOD","nantes":"NTE","strasbourg":"SXB",
+                    "bruxelles":"BRU","brussels":"BRU","charleroi":"CRL",
+                    "casablanca":"CMN","casa":"CMN","marrakech":"RAK","nador":"NDR","tanger":"TNG","rabat":"RBA","agadir":"AGA","fes":"FEZ","fès":"FEZ","oujda":"OUD",
+                    "alger":"ALG","algiers":"ALG","tunis":"TUN","tripoli":"TIP",
+                    "barcelone":"BCN","barcelona":"BCN","madrid":"MAD","valence":"VLC","valencia":"VLC","seville":"SVQ","séville":"SVQ","malaga":"AGP","palma":"PMI",
+                    "lisbonne":"LIS","lisbon":"LIS","porto":"OPO",
+                    "londres":"LON","london":"LON","manchester":"MAN","edimbourg":"EDI","édimbourg":"EDI",
+                    "rome":"ROM","milan":"MIL","venise":"VCE","venice":"VCE","naples":"NAP","florence":"FLR",
+                    "amsterdam":"AMS","berlin":"BER","munich":"MUC","francfort":"FRA","frankfurt":"FRA","hambourg":"HAM",
+                    "genève":"GVA","geneve":"GVA","zurich":"ZRH","bale":"BSL","bâle":"BSL",
+                    "vienne":"VIE","vienna":"VIE","prague":"PRG","budapest":"BUD","varsovie":"WAW",
+                    "athènes":"ATH","athenes":"ATH","istanbul":"IST","ankara":"ESB",
+                    "tenerife":"TFS","gran canaria":"LPA","las palmas":"LPA","ibiza":"IBZ",
+                    "dubai":"DXB","dubaï":"DXB","doha":"DOH","abou dabi":"AUH","abu dhabi":"AUH","riyad":"RUH",
+                    "le caire":"CAI","caire":"CAI","cairo":"CAI","beyrouth":"BEY","amman":"AMM",
+                    "bangkok":"BKK","phuket":"HKT","singapour":"SIN","singapore":"SIN","hong kong":"HKG","kuala lumpur":"KUL","bali":"DPS","denpasar":"DPS",
+                    "tokyo":"TYO","séoul":"SEL","seoul":"SEL","pekin":"BJS","pékin":"BJS","shanghai":"SHA","mumbai":"BOM","delhi":"DEL",
+                    "new york":"NYC","newyork":"NYC","ny":"NYC","los angeles":"LAX","miami":"MIA","san francisco":"SFO","chicago":"CHI","boston":"BOS","washington":"WAS",
+                    "montréal":"YMQ","montreal":"YMQ","toronto":"YTO","vancouver":"YVR",
+                    "mexico":"MEX","cancun":"CUN","la havane":"HAV","havana":"HAV","rio":"RIO","rio de janeiro":"RIO","sao paulo":"SAO","buenos aires":"BUE",
+                    "dakar":"DKR","abidjan":"ABJ","nairobi":"NBO","johannesbourg":"JNB","le cap":"CPT","cape town":"CPT","casablanca":"CMN"
+                };
+                function vraxToIata(v) {
+                    if (!v) return "";
+                    const c = String(v).trim().toLowerCase();
+                    if (/^[a-z]{3}$/.test(c)) return c.toUpperCase();
+                    return VRAX_IATA[c] || "";
+                }
+                function vraxToDdMm(d) {
+                    if (!d) return "";
+                    const p = String(d).split("-");
+                    return p.length === 3 ? p[2] + p[1] : "";
+                }
+                function vraxSearchFlights(e) {
+                    e.preventDefault();
+                    const o = vraxToIata(document.getElementById("vsf-origin").value) || "PAR";
+                    const dst = vraxToIata(document.getElementById("vsf-dest").value);
+                    const dep = vraxToDdMm(document.getElementById("vsf-depart").value);
+                    const ret = vraxToDdMm(document.getElementById("vsf-return").value);
+                    const pax = document.getElementById("vsf-pax").value || "1";
+                    let url;
+                    if (dst && dep) {
+                        // Format officiel Aviasales : /search/{ORIGIN}{DDMM}{DEST}{DDMM}{PAX}
+                        url = "https://www.aviasales.fr/search/" + o + dep + dst + ret + pax + "?marker=704469&locale=fr&currency=eur";
+                    } else {
+                        // Destination inconnue ou date manquante → page d'accueil française (jamais russe)
+                        url = "https://www.aviasales.fr/?marker=704469&locale=fr&currency=eur";
+                    }
+                    window.open(url, "_blank", "noopener");
+                    return false;
+                }
+            </script>
         </section>
 
         <section class="glass-card">
             <div class="section-title">Radar des prix TikTok ✈️</div>
-            <p style="font-size: 0.9rem; margin-bottom: 20px; color: #cbd5e1;">Regardez ces pépites ! Cliquez sur l'image pour activer la carte et trouver votre prix.</p>
-            <a href="#map-real">
-                <img src="ton-image.jpg" alt="Carte des prix Vrax Voyage" class="promo-capture">
+            <p style="font-size: 0.9rem; margin-bottom: 20px; color: #cbd5e1;">Découvrez les meilleures offres en temps réel sur la carte interactive ci-dessous.</p>
+            <a href="#map-real" style="display:inline-block; padding:12px 24px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#0f172a; text-decoration:none; border-radius:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">
+                🗺️ Voir la carte des prix
             </a>
         </section>
 
