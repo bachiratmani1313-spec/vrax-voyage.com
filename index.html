@@ -1,271 +1,280 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vrax Voyage | L'Excellence du Voyage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --gold: #f59e0b;
-            --gold-light: #fbbf24;
-            --dark-bg: #0f172a;
-            --card-bg: rgba(30, 41, 59, 0.7);
-            --border: rgba(255, 255, 255, 0.1);
-            --text-main: #f8fafc;
-        }
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Vrax Voyage — Le vol le moins cher, en quelques secondes</title>
+<meta name="description" content="Comparez les vols Belgique ↔ Maghreb et au-delà. Résultats en français, bons plans en temps réel." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#0E1A2B; --ink-2:#16273C; --ink-3:#1E3650;
+    --paper:#FAF7F2; --white:#FFFFFF;
+    --amber:#EE7B33; --amber-soft:#FBE7D4;
+    --teal:#168A7C;
+    --text:#14202E; --muted:#5E6B7A; --line:rgba(20,32,46,.10);
+    --shadow:0 18px 50px -18px rgba(14,26,43,.35);
+    --r:18px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:"Inter",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{width:min(1120px,92vw);margin-inline:auto}
+  a{color:inherit;text-decoration:none}
+  .mono{font-family:"Space Mono",monospace}
+  h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.05;letter-spacing:-.02em}
 
-        body {
-            margin: 0; font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
-            color: var(--text-main); min-height: 100vh; line-height: 1.6; scroll-behavior: smooth;
-        }
+  /* ---------- Header ---------- */
+  header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:20px;letter-spacing:-.01em}
+  .brand .dot{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--amber);color:#fff;font-size:18px;transform:rotate(-8deg)}
+  .nav-links{display:flex;gap:26px;color:#cdd6e2;font-size:14px;font-weight:500}
+  .nav-links a:hover{color:#fff}
+  @media(max-width:680px){.nav-links{display:none}}
 
-        .navbar {
-            background: rgba(15, 23, 42, 0.95); backdrop-filter: blur(10px);
-            padding: 1.2rem 5%; position: sticky; top: 0; z-index: 1000;
-            border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center;
-        }
+  /* ---------- Hero ---------- */
+  .hero{position:relative;background:
+      radial-gradient(1100px 500px at 80% -10%, rgba(238,123,51,.18), transparent 60%),
+      radial-gradient(900px 500px at 0% 0%, rgba(22,138,124,.16), transparent 55%),
+      var(--ink);
+    color:#fff;padding:64px 0 96px;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:100% 38px;opacity:.5;pointer-events:none}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:"Space Mono";font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9fb2c6;border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:100px}
+  .eyebrow b{color:var(--amber);font-weight:700}
+  .hero h1{font-size:clamp(34px,6vw,60px);font-weight:700;margin:22px 0 14px;max-width:14ch}
+  .hero h1 span{color:var(--amber)}
+  .hero p.sub{color:#bccadb;font-size:clamp(15px,2vw,18px);max-width:46ch}
+  .hero-inner{position:relative;z-index:2}
 
-        .logo { font-family: 'Montserrat', sans-serif; color: var(--gold); font-weight: 800; font-size: 1.6rem; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
-        .nav-tabs a { color: #94a3b8; text-decoration: none; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-left: 25px; transition: 0.3s; }
-        .nav-tabs a:hover { color: var(--gold); }
+  /* ---------- Boarding-pass search ---------- */
+  .ticket{margin-top:38px;background:var(--white);color:var(--text);border-radius:var(--r);box-shadow:var(--shadow);position:relative}
+  .ticket-head{display:flex;align-items:center;justify-content:space-between;padding:16px 22px;border-bottom:1px dashed var(--line)}
+  .ticket-head .tag{font-family:"Space Mono";font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+  .seg{display:inline-flex;gap:6px;background:#F1F4F8;border-radius:100px;padding:4px}
+  .seg button{border:0;background:transparent;font-family:"Inter";font-weight:600;font-size:13px;color:var(--muted);padding:7px 16px;border-radius:100px;cursor:pointer}
+  .seg button.on{background:var(--ink);color:#fff}
+  .ticket-body{display:grid;grid-template-columns:1fr 1fr 1fr 1fr auto;gap:14px;padding:22px}
+  @media(max-width:880px){.ticket-body{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.ticket-body{grid-template-columns:1fr}}
+  .field{display:flex;flex-direction:column;gap:6px}
+  .field label{font-family:"Space Mono";font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .field input,.field select{font-family:"Inter";font-size:16px;font-weight:500;border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:#fff;color:var(--text);width:100%}
+  .field input:focus,.field select:focus{outline:2px solid var(--amber);border-color:transparent}
+  .ret-hidden .ret{opacity:.4;pointer-events:none}
+  .search-btn{align-self:end}
+  .search-btn button{height:50px;padding:0 26px;border:0;border-radius:12px;background:var(--amber);color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:16px;cursor:pointer;display:flex;align-items:center;gap:8px;white-space:nowrap;transition:transform .15s,filter .15s}
+  .search-btn button:hover{filter:brightness(1.05);transform:translateY(-1px)}
+  .ticket-foot{padding:12px 22px 18px;font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .ticket-foot .pill{font-family:"Space Mono";font-size:11px;background:var(--amber-soft);color:#b35a1c;padding:3px 9px;border-radius:100px}
 
-        .hero { padding: 80px 20px; text-align: center; background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), url('https://images.unsplash.com/photo-1436491865332-7a61a109c0f3?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat; }
-        .hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; margin-bottom: 10px; text-transform: uppercase; }
-        .hero p { color: var(--gold-light); font-weight: 500; font-size: 1.1rem; letter-spacing: 1px; }
+  /* ---------- Trust row ---------- */
+  .trust{display:flex;flex-wrap:wrap;gap:26px;justify-content:center;padding:26px 0;color:var(--muted);font-size:14px}
+  .trust b{color:var(--text)}
+  .trust .mono{color:var(--teal)}
 
-        .container { max-width: 1200px; margin: -40px auto 60px; padding: 0 20px; }
+  /* ---------- Section heading ---------- */
+  section.block{padding:64px 0}
+  .head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px}
+  .head .eye{font-family:"Space Mono";font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber)}
+  .head h2{font-size:clamp(26px,4vw,38px);margin-top:8px}
+  .head p{color:var(--muted);max-width:40ch;margin-top:8px}
 
-        .glass-card {
-            background: var(--card-bg); backdrop-filter: blur(15px);
-            border: 1px solid var(--border); border-radius: 20px;
-            padding: 30px; margin-bottom: 35px; box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-        }
+  /* ---------- Deals (boarding-pass cards) ---------- */
+  .deals{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+  .deal{position:relative;background:var(--white);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s;cursor:pointer}
+  .deal:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+  .deal .top{display:flex;align-items:center;justify-content:space-between;padding:18px 18px 14px;background:var(--ink);color:#fff}
+  .deal .route{display:flex;align-items:center;gap:10px;font-family:"Space Grotesk";font-weight:700;font-size:22px}
+  .deal .route .pl{color:var(--amber);font-size:16px}
+  .deal .city{font-size:12px;color:#9fb2c6;font-family:"Inter"}
+  .deal .perf{height:14px;background:var(--ink);position:relative}
+  .deal .perf::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 7px 50%, var(--paper) 6px, transparent 7px);background-size:18px 14px;background-position:-2px 0}
+  .deal .bot{padding:14px 18px 18px;display:flex;align-items:flex-end;justify-content:space-between}
+  .deal .price .lbl{font-family:"Space Mono";font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+  .deal .price .val{font-family:"Space Mono";font-weight:700;font-size:26px;color:var(--text)}
+  .deal .price .val small{font-size:14px;color:var(--muted)}
+  .deal .when{text-align:right;font-size:12px;color:var(--muted)}
+  .deal .go{margin-top:4px;font-family:"Space Grotesk";font-weight:600;font-size:13px;color:var(--amber)}
 
-        .section-title {
-            color: var(--gold); font-family: 'Montserrat', sans-serif;
-            font-size: 1rem; margin-bottom: 20px; text-transform: uppercase;
-            letter-spacing: 2px; display: flex; align-items: center; gap: 15px;
-        }
-        .section-title::before { content: ""; width: 4px; height: 18px; background: var(--gold); border-radius: 2px; }
+  /* ---------- Services ---------- */
+  .svc{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  @media(max-width:760px){.svc{grid-template-columns:1fr}}
+  .card{position:relative;border-radius:18px;padding:30px;overflow:hidden;border:1px solid var(--line);background:var(--white)}
+  .card.dark{background:linear-gradient(150deg,var(--ink),var(--ink-3));color:#fff;border:0}
+  .card .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:22px;margin-bottom:16px}
+  .card.dark .ic{background:rgba(255,255,255,.12)}
+  .card.light .ic{background:var(--amber-soft)}
+  .card h3{font-size:22px;margin-bottom:8px}
+  .card p{font-size:14.5px;color:var(--muted);margin-bottom:20px;max-width:34ch}
+  .card.dark p{color:#bccadb}
+  .btn{display:inline-flex;align-items:center;gap:8px;font-family:"Space Grotesk";font-weight:600;font-size:14px;padding:12px 20px;border-radius:100px;cursor:pointer;border:0}
+  .btn.amber{background:var(--amber);color:#fff}
+  .btn.ghost{background:rgba(255,255,255,.1);color:#fff;border:1px solid rgba(255,255,255,.25)}
+  .card.dark .tagline{position:absolute;right:-10px;bottom:-14px;font-family:"Space Grotesk";font-weight:700;font-size:90px;color:rgba(255,255,255,.05)}
 
-        .promo-capture {
-            width: 100%; border-radius: 15px; border: 2px solid var(--gold);
-            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3); transition: 0.3s; cursor: pointer;
-        }
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:#9fb2c6;padding:46px 0 30px;margin-top:30px}
+  .foot-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center;padding-bottom:26px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .foot-top .brand{font-size:22px}
+  .foot-links{display:flex;gap:22px;font-size:14px}
+  .foot-bot{padding-top:20px;font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+  .foot-bot .mono{color:#6f8093}
 
-        .grid-layout { display: grid; grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); gap: 2rem; }
-        .shop-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-
-        .product-card { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 15px; padding: 20px; text-align: center; transition: 0.4s; }
-        .product-card:hover { border-color: var(--gold); transform: translateY(-8px); }
-        .product-card img { width: 100%; height: 160px; object-fit: cover; border-radius: 10px; margin-bottom: 15px; }
-
-        .btn-gold {
-            display: inline-block; background: linear-gradient(135deg, var(--gold), #d97706);
-            color: #000; text-decoration: none; padding: 12px 20px; border-radius: 8px;
-            font-weight: 800; font-size: 0.7rem; text-transform: uppercase; transition: 0.3s; border: none; cursor: pointer; width: 85%;
-        }
-
-        .car-scroll-box { max-height: 550px; overflow-y: auto; border-radius: 12px; background: rgba(0,0,0,0.2); }
-
-        @media (max-width: 900px) { .nav-tabs { display: none; } .grid-layout { grid-template-columns: 1fr; } }
-        footer { padding: 40px 20px; text-align: center; color: #64748b; font-size: 0.75rem; border-top: 1px solid var(--border); }
-    </style>
+  .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+  /* ---------- White Label widget ---------- */
+  .searchpanel{margin-top:38px;background:var(--white);border-radius:var(--r);box-shadow:var(--shadow);padding:14px 16px 8px}
+  .searchpanel .sp-head{font-family:"Space Mono";font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);padding:6px 6px 10px}
+  #tpwl-search{min-height:60px}
+  .results{}
+  #tpwl-tickets:not(:empty){display:block;margin-top:30px}
+</style>
+<!-- White Label Travelpayouts (wl_id=18677) -->
+<script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
+  (function () {
+    var script = document.createElement("script");
+    script.async = 1;
+    script.type = "module";
+    script.src = "https://tpemd.com/wl_web/main.js?wl_id=18677";
+    document.head.appendChild(script);
+  })();
+</script>
 </head>
 <body>
 
-    <nav class="navbar">
-        <a href="index.html" class="logo">Vrax Voyage</a>
-        <div class="nav-tabs">
-            <a href="#vols">Vols</a>
-            <a href="#services">Services</a>
-            <a href="#boutique">Boutique</a>
-        </div>
+<header>
+  <div class="wrap nav">
+    <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
+    <nav class="nav-links">
+      <a href="#recherche">Vols</a>
+      <a href="#bons-plans">Bons plans</a>
+      <a href="#services">Services</a>
     </nav>
+  </div>
+</header>
 
-    <header class="hero">
-        <h1>L'Art de Voyager</h1>
-        <p>Excellence • Comparaison • Privilège</p>
-    </header>
+<section class="hero">
+  <div class="wrap hero-inner">
+    <span class="eyebrow"><b>BRU</b> ✈ <b>MAGHREB</b> · COMPARATEUR DE VOLS</span>
+    <h1>Le vol le moins cher, <span>en quelques secondes.</span></h1>
+    <p class="sub">On compare des centaines de compagnies pour vous. Résultats en français, prix clairs, réservation chez les meilleurs partenaires.</p>
 
-    <div class="container">
-
-        <section class="glass-card" id="vols">
-            <div class="section-title">Trouver mon billet d'avion</div>
-            <form id="vrax-flight-form" onsubmit="return vraxSearchFlights(event)" style="margin-top:20px;">
-                <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:14px; margin-bottom:16px;">
-                    <div>
-                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">✈️ Départ</label>
-                        <input type="text" id="vsf-origin" placeholder="Paris, Bruxelles..." required
-                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none;">
-                    </div>
-                    <div>
-                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">🛬 Destination</label>
-                        <input type="text" id="vsf-dest" placeholder="Casablanca, Dubai..." required
-                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none;">
-                    </div>
-                    <div>
-                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">📅 Aller</label>
-                        <input type="date" id="vsf-depart" required
-                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none; color-scheme:dark;">
-                    </div>
-                    <div>
-                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">📅 Retour</label>
-                        <input type="date" id="vsf-return"
-                               style="width:100%; padding:12px 14px; background:rgba(255,255,255,0.06); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none; color-scheme:dark;">
-                    </div>
-                    <div>
-                        <label style="display:block; font-size:0.75rem; color:#94a3b8; margin-bottom:6px; text-transform:uppercase; letter-spacing:1px;">👤 Passagers</label>
-                        <select id="vsf-pax" style="width:100%; padding:12px 14px; background:rgba(15,23,42,0.95); border:1px solid rgba(245,158,11,0.25); border-radius:10px; color:#fff; font-size:0.95rem; outline:none;">
-                            <option value="1">1 adulte</option>
-                            <option value="2">2 adultes</option>
-                            <option value="3">3 adultes</option>
-                            <option value="4">4 adultes</option>
-                            <option value="5">5 adultes</option>
-                        </select>
-                    </div>
-                </div>
-                <button type="submit"
-                        style="width:100%; padding:14px; background:linear-gradient(135deg, #f59e0b, #d97706); border:none; border-radius:10px; color:#0f172a; font-size:1rem; font-weight:700; text-transform:uppercase; letter-spacing:1.5px; cursor:pointer; box-shadow:0 4px 20px rgba(245,158,11,0.3);">
-                    🔍 Rechercher mon vol
-                </button>
-                <p style="text-align:center; font-size:0.75rem; color:#64748b; margin-top:12px;">
-                    Comparaison instantanée des meilleures offres · résultats en français
-                </p>
-            </form>
-            <script>
-                // Conversion ville → code aéroport IATA (sans ça, Aviasales bascule en russe)
-                const VRAX_IATA = {
-                    "paris":"PAR","cdg":"PAR","orly":"PAR",
-                    "marseille":"MRS","lyon":"LYS","nice":"NCE","toulouse":"TLS","bordeaux":"BOD","nantes":"NTE","strasbourg":"SXB",
-                    "bruxelles":"BRU","brussels":"BRU","charleroi":"CRL",
-                    "casablanca":"CMN","casa":"CMN","marrakech":"RAK","nador":"NDR","tanger":"TNG","rabat":"RBA","agadir":"AGA","fes":"FEZ","fès":"FEZ","oujda":"OUD",
-                    "alger":"ALG","algiers":"ALG","tunis":"TUN","tripoli":"TIP",
-                    "barcelone":"BCN","barcelona":"BCN","madrid":"MAD","valence":"VLC","valencia":"VLC","seville":"SVQ","séville":"SVQ","malaga":"AGP","palma":"PMI",
-                    "lisbonne":"LIS","lisbon":"LIS","porto":"OPO",
-                    "londres":"LON","london":"LON","manchester":"MAN","edimbourg":"EDI","édimbourg":"EDI",
-                    "rome":"ROM","milan":"MIL","venise":"VCE","venice":"VCE","naples":"NAP","florence":"FLR",
-                    "amsterdam":"AMS","berlin":"BER","munich":"MUC","francfort":"FRA","frankfurt":"FRA","hambourg":"HAM",
-                    "genève":"GVA","geneve":"GVA","zurich":"ZRH","bale":"BSL","bâle":"BSL",
-                    "vienne":"VIE","vienna":"VIE","prague":"PRG","budapest":"BUD","varsovie":"WAW",
-                    "athènes":"ATH","athenes":"ATH","istanbul":"IST","ankara":"ESB",
-                    "tenerife":"TFS","gran canaria":"LPA","las palmas":"LPA","ibiza":"IBZ",
-                    "dubai":"DXB","dubaï":"DXB","doha":"DOH","abou dabi":"AUH","abu dhabi":"AUH","riyad":"RUH",
-                    "le caire":"CAI","caire":"CAI","cairo":"CAI","beyrouth":"BEY","amman":"AMM",
-                    "bangkok":"BKK","phuket":"HKT","singapour":"SIN","singapore":"SIN","hong kong":"HKG","kuala lumpur":"KUL","bali":"DPS","denpasar":"DPS",
-                    "tokyo":"TYO","séoul":"SEL","seoul":"SEL","pekin":"BJS","pékin":"BJS","shanghai":"SHA","mumbai":"BOM","delhi":"DEL",
-                    "new york":"NYC","newyork":"NYC","ny":"NYC","los angeles":"LAX","miami":"MIA","san francisco":"SFO","chicago":"CHI","boston":"BOS","washington":"WAS",
-                    "montréal":"YMQ","montreal":"YMQ","toronto":"YTO","vancouver":"YVR",
-                    "mexico":"MEX","cancun":"CUN","la havane":"HAV","havana":"HAV","rio":"RIO","rio de janeiro":"RIO","sao paulo":"SAO","buenos aires":"BUE",
-                    "dakar":"DKR","abidjan":"ABJ","nairobi":"NBO","johannesbourg":"JNB","le cap":"CPT","cape town":"CPT","casablanca":"CMN"
-                };
-                function vraxToIata(v) {
-                    if (!v) return "";
-                    const c = String(v).trim().toLowerCase();
-                    if (/^[a-z]{3}$/.test(c)) return c.toUpperCase();
-                    return VRAX_IATA[c] || "";
-                }
-                function vraxToDdMm(d) {
-                    if (!d) return "";
-                    const p = String(d).split("-");
-                    return p.length === 3 ? p[2] + p[1] : "";
-                }
-                function vraxSearchFlights(e) {
-                    e.preventDefault();
-                    const o = vraxToIata(document.getElementById("vsf-origin").value) || "PAR";
-                    const dst = vraxToIata(document.getElementById("vsf-dest").value);
-                    const dep = vraxToDdMm(document.getElementById("vsf-depart").value);
-                    const ret = vraxToDdMm(document.getElementById("vsf-return").value);
-                    const pax = document.getElementById("vsf-pax").value || "1";
-                    let url;
-                    if (dst && dep) {
-                        // Format officiel Aviasales : /search/{ORIGIN}{DDMM}{DEST}{DDMM}{PAX}
-                        url = "https://www.aviasales.fr/search/" + o + dep + dst + ret + pax + "?marker=704469&locale=fr&currency=eur";
-                    } else {
-                        // Destination inconnue ou date manquante → page d'accueil française (jamais russe)
-                        url = "https://www.aviasales.fr/?marker=704469&locale=fr&currency=eur";
-                    }
-                    window.open(url, "_blank", "noopener");
-                    return false;
-                }
-            </script>
-        </section>
-
-        <section class="glass-card">
-            <div class="section-title">Radar des prix TikTok ✈️</div>
-            <p style="font-size: 0.9rem; margin-bottom: 20px; color: #cbd5e1;">Découvrez les meilleures offres en temps réel sur la carte interactive ci-dessous.</p>
-            <a href="#map-real" style="display:inline-block; padding:12px 24px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#0f172a; text-decoration:none; border-radius:10px; font-weight:700; text-transform:uppercase; letter-spacing:1px; font-size:0.9rem;">
-                🗺️ Voir la carte des prix
-            </a>
-        </section>
-
-        <section class="glass-card" id="map-real">
-            <div class="section-title">Exploration en temps réel</div>
-            <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.fr%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23f59e0b&secondary=%23f59e0b&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
-        </section>
-
-        <div class="grid-layout" id="services" style="margin-bottom: 35px;">
-            <div class="glass-card" style="margin-bottom: 0;">
-                <div class="section-title">Location de véhicules</div>
-                <div class="car-scroll-box">
-                    <script async src="https://tpemd.com/content?trs=499802&shmarker=704469.704469&locale=fr&powered_by=false&campaign_id=87&promo_id=2466" charset="utf-8"></script>
-                </div>
-            </div>
-            <div class="glass-card" style="margin-bottom: 0;">
-                <div class="section-title">Transferts Aéroport (VIP)</div>
-                <div style="background: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.8)), url('https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=500&q=80'); background-size: cover; background-position: center; padding: 40px 20px; border-radius: 15px; text-align: center; color: white; height: 100%; min-height: 400px; display: flex; flex-direction: column; justify-content: center;">
-                    <h3 style="margin-bottom: 10px; font-size: 1.1rem;">Chauffeur Privé</h3>
-                    <a href="https://kiwitaxi.com/?marker=704469.704469" target="_blank" class="btn-gold" style="width: auto; padding: 12px 30px; align-self: center;">DEVIS KIWITAXI →</a>
-                </div>
-            </div>
-        </div>
-
-        <section class="glass-card" id="boutique">
-            <div class="section-title">Boutique Officielle Amazon</div>
-            <div class="shop-grid">
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1565026057447-bc90a3dceb87?auto=format&fit=crop&w=400&q=80" alt="Valise">
-                    <h3>Bagagerie Cabine</h3>
-                    <a href="https://www.amazon.fr/s?k=valise+voyage+cabine&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1525706732602-52592370085e?auto=format&fit=crop&w=400&q=80" alt="Tech">
-                    <h3>Tech & Énergie</h3>
-                    <a href="https://www.amazon.fr/s?k=accessoires+voyage+tech&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
-                </div>
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=400&q=80" alt="Confort">
-                    <h3>Repos en vol</h3>
-                    <a href="https://www.amazon.fr/s?k=oreiller+voyage+confort&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
-                </div>
-                
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=400&q=80" alt="Organisation">
-                    <h3>Organisation</h3>
-                    <a href="https://www.amazon.fr/s?k=organisateur+de+voyage+valise&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=400&q=80" alt="Poids">
-                    <h3>Pèse-bagages</h3>
-                    <a href="https://www.amazon.fr/s?k=pese+bagage+electronique&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80" alt="Hygiène">
-                    <h3>Hygiène Cabine</h3>
-                    <a href="https://www.amazon.fr/s?k=trousse+toilette+cabine+transparente&tag=vrax-21" target="_blank" class="btn-gold">VOIR SUR AMAZON</a>
-                </div>
-            </div>
-        </section>
-
+    <!-- Recherche White Label — résultats affichés directement sur le site -->
+    <div class="searchpanel">
+      <div class="sp-head">✈ Recherchez votre vol — résultats en français, en direct</div>
+      <div id="tpwl-search"></div>
     </div>
+  </div>
+</section>
 
-    <footer>
-        <p>© 2026 Vrax Voyage | Amazon vrax-21 | Partner 704469</p>
-    </footer>
-    <script async src="https://tpembars.com/NDk5ODAy.js?t=499802"></script>
+<!-- Résultats de recherche (le White Label les injecte ici, sur le site) -->
+<section class="results"><div class="wrap"><div id="tpwl-tickets"></div></div></section>
+
+<div class="wrap trust">
+  <span><b class="mono">250&nbsp;000+</b> vols comparés</span>
+  <span><b>0 €</b> de frais ajoutés</span>
+  <span>Résultats <b>en français</b></span>
+  <span>Belgique ↔ <b>Maghreb</b> & monde</span>
+</div>
+
+<!-- Bons plans -->
+<section class="block" id="bons-plans">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eye">// Bons plans du moment</div>
+        <h2>Les meilleurs prix repérés cette semaine</h2>
+      </div>
+      <p>Mis à jour automatiquement. Prix indicatifs aller-retour, à confirmer au clic.</p>
+    </div>
+    <div class="deals" id="deals"></div>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="block" id="services" style="padding-top:10px">
+  <div class="wrap">
+    <div class="head">
+      <div>
+        <div class="eye">// Pour voyager serein</div>
+        <h2>Services partenaires</h2>
+      </div>
+    </div>
+    <div class="svc">
+      <div class="card dark reveal">
+        <div class="ic">🛡️</div>
+        <h3>Protégez vos données en voyage</h3>
+        <p>Un VPN pour utiliser le Wi-Fi des aéroports et hôtels en sécurité, et accéder à vos services où que vous soyez.</p>
+        <a class="btn ghost" id="vpnBtn" href="#">Découvrir le VPN →</a>
+        <div class="tagline">VPN</div>
+      </div>
+      <div class="card light reveal">
+        <div class="ic">🚖</div>
+        <h3>Transfert aéroport privé</h3>
+        <p>Réservez votre chauffeur à l'arrivée, prix fixe connu à l'avance, dans plus de 100 pays.</p>
+        <a class="btn amber" href="https://kiwitaxi.com/?marker=704469.704469" target="_blank" rel="noopener">Réserver un transfert →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
+      <div class="foot-links">
+        <a href="#recherche">Vols</a>
+        <a href="#bons-plans">Bons plans</a>
+        <a href="#services">Services</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Vrax Voyage — Comparateur de vols & bons plans voyage.</span>
+      <span class="mono">Partner 704469 · résultats fournis par nos partenaires</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // --- Sample deals (seront alimentés par l'API Travelpayouts) ---
+  const DEALS=[
+    {o:'BRU',d:'RAK',city:'Marrakech',price:49,when:'Nov · A/R'},
+    {o:'BRU',d:'CMN',city:'Casablanca',price:55,when:'Déc · A/R'},
+    {o:'CRL',d:'TNG',city:'Tanger',price:39,when:'Nov · A/R'},
+    {o:'BRU',d:'NDR',city:'Nador',price:59,when:'Jan · A/R'},
+    {o:'BRU',d:'ALG',city:'Alger',price:79,when:'Déc · A/R'},
+    {o:'CRL',d:'TUN',city:'Tunis',price:89,when:'Fév · A/R'},
+    {o:'BRU',d:'OUD',city:'Oujda',price:65,when:'Nov · A/R'},
+    {o:'BRU',d:'DJE',city:'Djerba',price:99,when:'Mar · A/R'}
+  ];
+  const wrap=document.getElementById('deals');
+  DEALS.forEach(x=>{
+    const a=document.createElement('a');
+    a.className='deal reveal';
+    a.href='https://www.aviasales.com/search/'+x.o+x.d+'?marker=704469';
+    a.target='_blank'; a.rel='noopener';
+    a.innerHTML=`
+      <div class="top">
+        <div>
+          <div class="route">${x.o} <span class="pl">✈</span> ${x.d}</div>
+          <div class="city">vers ${x.city}</div>
+        </div>
+      </div>
+      <div class="perf"></div>
+      <div class="bot">
+        <div class="price"><div class="lbl">dès</div><div class="val">${x.price}<small>€</small></div></div>
+        <div class="when">${x.when}<div class="go">Voir →</div></div>
+      </div>`;
+    wrap.appendChild(a);
+  });
+
+  // --- Scroll reveal ---
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
 </body>
 </html>
