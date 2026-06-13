@@ -1,0 +1,30 @@
+name: Mise à jour des bons plans
+
+on:
+  schedule:
+    - cron: '0 7 * * *'      # tous les jours à 07:00 UTC
+  workflow_dispatch:           # bouton manuel
+
+permissions:
+  contents: write
+
+jobs:
+  deals:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Récupérer les vrais prix Travelpayouts
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+          TP_MARKER: '704469'
+        run: python scripts/update_deals.py
+      - name: Publier deals.json
+        run: |
+          git config user.name "bachiratmani1313-spec"
+          git config user.email "248935756+bachiratmani1313-spec@users.noreply.github.com"
+          git add deals.json
+          git diff --cached --quiet || git commit -m "🔥 Bons plans mis à jour automatiquement"
+          git push

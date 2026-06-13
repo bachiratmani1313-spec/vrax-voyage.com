@@ -240,40 +240,45 @@
 </footer>
 
 <script>
-  // --- Sample deals (seront alimentés par l'API Travelpayouts) ---
-  const DEALS=[
-    {o:'BRU',d:'RAK',city:'Marrakech',price:49,when:'Nov · A/R'},
-    {o:'BRU',d:'CMN',city:'Casablanca',price:55,when:'Déc · A/R'},
-    {o:'CRL',d:'TNG',city:'Tanger',price:39,when:'Nov · A/R'},
-    {o:'BRU',d:'NDR',city:'Nador',price:59,when:'Jan · A/R'},
-    {o:'BRU',d:'ALG',city:'Alger',price:79,when:'Déc · A/R'},
-    {o:'CRL',d:'TUN',city:'Tunis',price:89,when:'Fév · A/R'},
-    {o:'BRU',d:'OUD',city:'Oujda',price:65,when:'Nov · A/R'},
-    {o:'BRU',d:'DJE',city:'Djerba',price:99,when:'Mar · A/R'}
+  // --- Bons plans : vrais prix via /deals.json (repli sur exemples) ---
+  const SAMPLE=[
+    {o:'BRU',d:'RAK',city:'Marrakech',price:49,when:'à venir · A/R'},
+    {o:'CRL',d:'ALG',city:'Alger',price:79,when:'à venir · A/R'},
+    {o:'CRL',d:'CZL',city:'Constantine',price:89,when:'à venir · A/R'},
+    {o:'BRU',d:'CMN',city:'Casablanca',price:55,when:'à venir · A/R'},
+    {o:'CRL',d:'TNG',city:'Tanger',price:39,when:'à venir · A/R'},
+    {o:'BRU',d:'NDR',city:'Nador',price:59,when:'à venir · A/R'},
+    {o:'CRL',d:'ORN',city:'Oran',price:95,when:'à venir · A/R'},
+    {o:'BRU',d:'TUN',city:'Tunis',price:89,when:'à venir · A/R'}
   ];
   const wrap=document.getElementById('deals');
-  DEALS.forEach(x=>{
-    const a=document.createElement('a');
-    a.className='deal reveal';
-    a.href='https://www.aviasales.com/search/'+x.o+x.d+'?marker=704469';
-    a.target='_blank'; a.rel='noopener';
-    a.innerHTML=`
-      <div class="top">
-        <div>
+  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+  function renderDeals(list){
+    wrap.innerHTML='';
+    list.forEach(x=>{
+      const a=document.createElement('a');
+      a.className='deal reveal';
+      a.href=x.link||('https://www.aviasales.com/search/'+x.o+x.d+'?marker=704469');
+      a.target='_blank'; a.rel='noopener sponsored';
+      a.innerHTML=`
+        <div class="top"><div>
           <div class="route">${x.o} <span class="pl">✈</span> ${x.d}</div>
           <div class="city">vers ${x.city}</div>
-        </div>
-      </div>
-      <div class="perf"></div>
-      <div class="bot">
-        <div class="price"><div class="lbl">dès</div><div class="val">${x.price}<small>€</small></div></div>
-        <div class="when">${x.when}<div class="go">Voir →</div></div>
-      </div>`;
-    wrap.appendChild(a);
-  });
+        </div></div>
+        <div class="perf"></div>
+        <div class="bot">
+          <div class="price"><div class="lbl">dès</div><div class="val">${x.price}<small>€</small></div></div>
+          <div class="when">${x.when||''}<div class="go">Voir →</div></div>
+        </div>`;
+      wrap.appendChild(a); io.observe(a);
+    });
+  }
+  fetch('/deals.json?t='+Date.now())
+    .then(r=>r.ok?r.json():Promise.reject())
+    .then(j=>renderDeals(j.deals&&j.deals.length?j.deals:SAMPLE))
+    .catch(()=>renderDeals(SAMPLE));
 
-  // --- Scroll reveal ---
-  const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+  // --- Scroll reveal (autres éléments) ---
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
