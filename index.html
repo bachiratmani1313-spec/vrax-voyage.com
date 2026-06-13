@@ -224,13 +224,22 @@
       </div>
       <p>Chaque jour, nos meilleures offres en quelques secondes. Abonne-toi pour ne rien rater ! 🎬</p>
     </div>
-    <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9">
-      <iframe width="100%" height="100%" style="display:block;border:0"
-        src="https://www.youtube.com/embed/videoseries?list=UUb7QuXnWjRwcMDOuQBWzGmg"
+    <div id="ytwrap" style="border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9;display:none">
+      <iframe id="ytframe" width="100%" height="100%" style="display:block;border:0"
         title="Vrax Voyage — bons plans en vidéo"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
+    <script>
+    (function(){
+      fetch('latest.json?v='+Date.now()).then(function(r){return r.ok?r.json():null;}).then(function(d){
+        if(d&&d.id){
+          document.getElementById('ytframe').src='https://www.youtube.com/embed/'+d.id+'?playsinline=1';
+          document.getElementById('ytwrap').style.display='block';
+        }
+      }).catch(function(){});
+    })();
+    </script>
     <div style="text-align:center;margin-top:14px">
       <a class="btn amber" href="https://www.youtube.com/@VraxVoyage" target="_blank" rel="noopener">S'abonner sur YouTube →</a>
     </div>
