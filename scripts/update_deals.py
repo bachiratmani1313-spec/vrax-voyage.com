@@ -24,6 +24,17 @@ ROUTES = [
     ("CRL", "FEZ", "Fès"),       ("CRL", "OUD", "Oujda"),      ("CRL", "RAK", "Marrakech"),
 ]
 
+# Départs de France (diaspora francophone — plus grand marché) → Maghreb
+_FR_ORIGINS = ["CDG", "ORY", "LYS", "MRS", "TLS", "LIL"]   # Paris, Lyon, Marseille, Toulouse, Lille
+_MAGHREB = [
+    ("RAK", "Marrakech"), ("CMN", "Casablanca"), ("NDR", "Nador"), ("TNG", "Tanger"),
+    ("FEZ", "Fès"), ("OUD", "Oujda"), ("AGA", "Agadir"), ("ALG", "Alger"),
+    ("ORN", "Oran"), ("CZL", "Constantine"), ("TUN", "Tunis"), ("DJE", "Djerba"),
+]
+for _o in _FR_ORIGINS:
+    for _d, _city in _MAGHREB:
+        ROUTES.append((_o, _d, _city))
+
 MOIS = ["", "Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"]
 
 
