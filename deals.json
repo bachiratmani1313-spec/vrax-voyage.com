@@ -1,0 +1,95 @@
+{
+  "updated": "2026-06-13",
+  "deals": [
+    {
+      "o": "BRU",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 100,
+      "depart": "2026-10-01",
+      "ret": "2026-10-18",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/BRU0110TNG18101?t=FR17908740001790881200000180CRLTNG17923032001792317000000170TNGCRL_264f30653d10c4510cd5c2ff7fcb07a8_8301&search_date=10062026&expected_price_uuid=019eb19e-5cea-8010-6301-7fb8b40485fa&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=100&marker=704469"
+    },
+    {
+      "o": "CRL",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 100,
+      "depart": "2026-10-01",
+      "ret": "2026-10-18",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/CRL0110TNG18101?t=FR17908740001790881200000180CRLTNG17923032001792317000000170TNGCRL_264f30653d10c4510cd5c2ff7fcb07a8_8301&search_date=10062026&expected_price_uuid=019eb19e-5cea-8010-6301-7fb8b40485fa&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=100&marker=704469"
+    },
+    {
+      "o": "BRU",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 120,
+      "depart": "2026-08-24",
+      "ret": "2026-09-14",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/BRU2408NDR14091?t=FR17876070001787658300000915CRLBCNNDR17894181001789468500000780NDRMRSCRL_267cb7f6424700547cd82db67c54991e_10000&search_date=11062026&expected_price_uuid=019eb68a-9a3f-8010-66fa-0be415f0b7e7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=120&marker=704469"
+    },
+    {
+      "o": "CRL",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 120,
+      "depart": "2026-08-24",
+      "ret": "2026-09-14",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CRL2408NDR14091?t=FR17876070001787658300000915CRLBCNNDR17894181001789468500000780NDRMRSCRL_267cb7f6424700547cd82db67c54991e_10000&search_date=11062026&expected_price_uuid=019eb68a-9a3f-8010-66fa-0be415f0b7e7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=120&marker=704469"
+    },
+    {
+      "o": "BRU",
+      "d": "FEZ",
+      "city": "Fès",
+      "price": 127,
+      "depart": "2026-06-17",
+      "ret": "2026-07-10",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/BRU1706FEZ10071?t=FR17816892001781769900001405CRLTIAFKBFEZ17836920001783707000000190FEZCRL_5f62d8cac81b6733b86eb9270a100cef_10668&search_date=13062026&expected_price_uuid=019ebf30-e96d-8010-a927-5b36d51ba830&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=127&marker=704469"
+    },
+    {
+      "o": "CRL",
+      "d": "FEZ",
+      "city": "Fès",
+      "price": 127,
+      "depart": "2026-06-17",
+      "ret": "2026-07-10",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/CRL1706FEZ10071?t=FR17816892001781769900001405CRLTIAFKBFEZ17836920001783707000000190FEZCRL_5f62d8cac81b6733b86eb9270a100cef_10668&search_date=13062026&expected_price_uuid=019ebf30-e96d-8010-a927-5b36d51ba830&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=127&marker=704469"
+    },
+    {
+      "o": "BRU",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 134,
+      "depart": "2026-06-28",
+      "ret": "2026-07-05",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/BRU2806RAK05071?t=FR17826291001782750000002075CRLBGYSOFRAK17832309001783247100000210RAKBRU_8cd7d104a9a18d829d1f8cbe6d5d5c7e_11118&search_date=10062026&expected_price_uuid=019eb083-e49c-8010-250d-fffd67dff0f8&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=134&marker=704469"
+    },
+    {
+      "o": "CRL",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 136,
+      "depart": "2026-06-15",
+      "ret": "2026-06-19",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/CRL1506RAK19061?t=FR17815110001781540400000550CRLSOFRAK17819019001781940600000585RAKBGYCRL_70f2ea896eb502540a89098bb03aa589_11361&search_date=12062026&expected_price_uuid=019eba2f-aa8d-8010-6ea0-2601b8fedd19&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=136&marker=704469"
+    },
+    {
+      "o": "BRU",
+      "d": "RBA",
+      "city": "Rabat",
+      "price": 140,
+      "depart": "2026-06-13",
+      "ret": "2026-06-23",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/BRU1306RBA23061?t=RK17813529001781436900001460CRLMANRBA17822004001782215100000185RBACRL_b83644fbdcd563fca9b8b90cee5f61b6_11720&search_date=12062026&expected_price_uuid=019ebd8b-9a53-8010-225d-7df15233a873&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469"
+    }
+  ]
+}
