@@ -5,11 +5,11 @@
       "o": "MRS",
       "d": "FEZ",
       "city": "Fès",
-      "price": 88,
+      "price": 90,
       "depart": "2026-06-22",
       "ret": "2026-06-30",
       "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/MRS2206FEZ30061?t=FR17821515001782228900001350MRSAGPFEZ17828133001782825000000135FEZMRS_7d1c82728d5c5b845ec4ab7af3e3633e_7470&search_date=07062026&expected_price_uuid=019ea1ed-d656-8010-a7e1-4623d2ee2b26&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=88&marker=704469"
+      "link": "https://www.aviasales.com/search/MRS2206FEZ30061?t=FR17821515001782228900001350MRSAGPFEZ17828133001782825000000135FEZMRS_7d1c82728d5c5b845ec4ab7af3e3633e_7536&search_date=13062026&expected_price_uuid=019ebfe9-4ccd-8030-a21e-d5efa2cf882f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=90&marker=704469"
     },
     {
       "o": "ORY",
@@ -112,14 +112,14 @@
       "link": "https://www.aviasales.com/search/ORY0909DJE30091?t=TO17889867001788993300000170ORYDJE17907480001790762400000180DJEORY_ca6d100244eb39fa5387a0b1f8215c30_10953&search_date=06062026&expected_price_uuid=019e9e1d-9753-8010-a8f6-351689d38a62&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=129&marker=704469"
     },
     {
-      "o": "BRU",
-      "d": "RBA",
-      "city": "Rabat",
-      "price": 140,
-      "depart": "2026-06-13",
-      "ret": "2026-06-23",
-      "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/BRU1306RBA23061?t=RK17813529001781436900001460CRLMANRBA17822004001782215100000185RBACRL_b83644fbdcd563fca9b8b90cee5f61b6_11720&search_date=12062026&expected_price_uuid=019ebd8b-9a53-8010-225d-7df15233a873&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469"
+      "o": "ORY",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 148,
+      "depart": "2026-09-12",
+      "ret": "2026-10-06",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/ORY1209CZL06101?t=TO17892294001789234500000145ORYCZL17913024001791315000000150CZLORY_2ba174d8ce0785cf3c02a137f92c34af_12215&search_date=09062026&expected_price_uuid=019eabbc-904b-8010-aee2-863c9d2fe31c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=148&marker=704469"
     }
   ]
 }
