@@ -84,8 +84,12 @@ def main():
         })
         print(f"  ✓ {o}→{d} : {price}€")
 
-    deals.sort(key=lambda x: x["price"])
-    deals = deals[:9]   # les 9 meilleurs prix
+    # un seul vol par destination (le moins cher) → variété, pas de doublons
+    best = {}
+    for x in deals:
+        if x["d"] not in best or x["price"] < best[x["d"]]["price"]:
+            best[x["d"]] = x
+    deals = sorted(best.values(), key=lambda x: x["price"])[:12]
 
     out = {"updated": datetime.date.today().isoformat(), "deals": deals}
     with open("deals.json", "w", encoding="utf-8") as f:
