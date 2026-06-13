@@ -136,6 +136,7 @@
 <!-- White Label Travelpayouts (wl_id=18677) -->
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
   (function () {
+    window.TPWL_CONFIGURATION = { ...window.TPWL_CONFIGURATION, resultsURL: "https://vrax-voyage.com/resultats.html" };
     var script = document.createElement("script");
     script.async = 1;
     script.type = "module";
@@ -172,7 +173,7 @@
 </section>
 
 <!-- Résultats de recherche (le White Label les injecte ici, sur le site) -->
-<section class="results"><div class="wrap"><div id="tpwl-tickets"></div></div></section>
+<!-- Les résultats s'affichent sur resultats.html (accueil toujours vierge) -->
 
 <div class="wrap trust">
   <span><b class="mono">250&nbsp;000+</b> vols comparés</span>
