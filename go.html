@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redirection… — Vrax Voyage</title>
+<style>
+ body{background:#0E1A2B;color:#F5F6F2;font-family:system-ui,-apple-system,sans-serif;
+  margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:24px}
+ a{color:#EE7B33;font-weight:700}
+ .p{opacity:.85}
+</style></head>
+<body><div>
+  <p class="p">✈️ Redirection vers l'offre…</p>
+  <p><a id="fallback" href="https://vrax-voyage.com">Cliquez ici si rien ne se passe</a></p>
+<script>
+(function(){
+  var code=new URLSearchParams(location.search).get('d');
+  function go(u){ location.replace(u); }
+  if(!code){ go('https://vrax-voyage.com'); return; }
+  fetch('links.json?v='+Date.now()).then(function(r){return r.ok?r.json():{};}).then(function(m){
+    var u=m&&m[code];
+    if(u){ document.getElementById('fallback').href=u; go(u); }
+    else { go('https://vrax-voyage.com'); }
+  }).catch(function(){ go('https://vrax-voyage.com'); });
+})();
+</script>
+</div></body></html>
