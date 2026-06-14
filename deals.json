@@ -1,15 +1,15 @@
 {
-  "updated": "2026-06-13",
+  "updated": "2026-06-14",
   "deals": [
     {
       "o": "MRS",
       "d": "FEZ",
       "city": "Fès",
-      "price": 90,
+      "price": 93,
       "depart": "2026-06-22",
       "ret": "2026-06-30",
       "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/MRS2206FEZ30061?t=FR17821515001782228900001350MRSAGPFEZ17828133001782825000000135FEZMRS_7d1c82728d5c5b845ec4ab7af3e3633e_7536&search_date=13062026&expected_price_uuid=019ebfe9-4ccd-8030-a21e-d5efa2cf882f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=90&marker=704469"
+      "link": "https://www.aviasales.com/search/MRS2206FEZ30061?t=FR17821515001782228900001350MRSAGPFEZ17828133001782825000000135FEZMRS_7d1c82728d5c5b845ec4ab7af3e3633e_7826&search_date=13062026&expected_price_uuid=019ec0bc-3762-8030-2c53-430593208e9c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=93&marker=704469"
     },
     {
       "o": "ORY",
@@ -62,14 +62,24 @@
       "link": "https://www.aviasales.com/search/MRS0409TUN19091?t=TO17885430001788545400000100MRSTUN17898522001789862100000105TUNMRS_b0db96bc08d82c50376c6b3494542df6_9177&search_date=12062026&expected_price_uuid=019ebae3-bdfa-8030-e41e-0d40b6325823&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=110&marker=704469"
     },
     {
-      "o": "ORY",
+      "o": "BRU",
       "d": "AGA",
       "city": "Agadir",
-      "price": 115,
-      "depart": "2026-09-25",
-      "ret": "2026-10-02",
+      "price": 111,
+      "depart": "2026-09-19",
+      "ret": "2026-09-24",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY2509AGA02101?t=TO17903661001790375400000215ORYAGA17909208001790936700000205AGAORY_ed291864678b34eb31bbbf451906e851_9590&search_date=10062026&expected_price_uuid=019eb351-cee9-8010-24cc-311965a89df3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=115&marker=704469"
+      "link": "https://www.aviasales.com/search/BRU1909AGA24091?t=HV17898168001789827000000230CRLAGA17902743001790292000000235AGABRU_33b7e405ed70e49387f8649b610c276f_9306&search_date=13062026&expected_price_uuid=019ec1b5-3f6d-8010-2c18-d30b521b672d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=111&marker=704469"
+    },
+    {
+      "o": "ORY",
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 113,
+      "depart": "2026-09-28",
+      "ret": "2026-10-20",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/ORY2809DJE20101?t=TO17906283001790634900000170ORYDJE17924760001792490400000180DJEORY_2141b5dd1df7d19be4927c945f962e88_9473&search_date=13062026&expected_price_uuid=019ec1a4-37e7-8030-aafc-d1f4ebb38a30&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=113&marker=704469"
     },
     {
       "o": "BRU",
@@ -100,16 +110,6 @@
       "ret": "2026-10-01",
       "when": "Sep · A/R",
       "link": "https://www.aviasales.com/search/ORY1309OUD01101?t=TO17892846001789290900000165ORYOUD17908815001790895000000165OUDORY_b92f713644e8b611616f11f3ca694eb3_10956&search_date=07062026&expected_price_uuid=019ea3ee-d7f5-8010-6a79-18764c30e0f8&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=129&marker=704469"
-    },
-    {
-      "o": "ORY",
-      "d": "DJE",
-      "city": "Djerba",
-      "price": 129,
-      "depart": "2026-09-09",
-      "ret": "2026-09-30",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY0909DJE30091?t=TO17889867001788993300000170ORYDJE17907480001790762400000180DJEORY_ca6d100244eb39fa5387a0b1f8215c30_10953&search_date=06062026&expected_price_uuid=019e9e1d-9753-8010-a8f6-351689d38a62&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=129&marker=704469"
     },
     {
       "o": "ORY",
