@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-15",
+  "updated": "2026-06-16",
   "deals": [
     {
       "o": "LYS",
@@ -25,41 +25,31 @@
       "o": "BRU",
       "d": "TNG",
       "city": "Tanger",
-      "price": 100,
+      "price": 99,
       "depart": "2026-10-01",
       "ret": "2026-10-18",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/BRU0110TNG18101?t=FR17908740001790881200000180CRLTNG17923032001792317000000170TNGCRL_264f30653d10c4510cd5c2ff7fcb07a8_8301&search_date=10062026&expected_price_uuid=019eb19e-5cea-8010-6301-7fb8b40485fa&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=100&marker=704469"
+      "link": "https://www.aviasales.com/search/BRU0110TNG18101?t=FR17908740001790881200000180CRLTNG17923032001792317000000170TNGCRL_264f30653d10c4510cd5c2ff7fcb07a8_8332&search_date=16062026&expected_price_uuid=019ece83-3c4e-8030-a57b-f6a1e83eb544&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=99&marker=704469"
     },
     {
-      "o": "ORY",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 110,
-      "depart": "2026-09-11",
-      "ret": "2026-09-18",
+      "o": "CDG",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 107,
+      "depart": "2026-09-03",
+      "ret": "2026-09-12",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY1109ORN18091?t=TO17891073001789113000000155ORYORN17897214001789734300000155ORNORY_1b238d032952235f52d3ba4112969f83_9208&search_date=12062026&expected_price_uuid=019ebc51-995b-8030-e1da-6ec552f60ccf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=110&marker=704469"
+      "link": "https://www.aviasales.com/search/CDG0309ALG12091?t=VY17884515001788468600000345CDGBCNALG17892042001789240800000550ALGBCNCDG_9cf9417706ca56e97f905b00e095450f_8998&search_date=16062026&expected_price_uuid=019ecf51-0c7b-8010-23b0-6543ece26879&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=107&marker=704469"
     },
     {
       "o": "BRU",
       "d": "AGA",
       "city": "Agadir",
-      "price": 111,
+      "price": 110,
       "depart": "2026-09-19",
       "ret": "2026-09-24",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/BRU1909AGA24091?t=HV17898168001789827000000230CRLAGA17902743001790292000000235AGABRU_33b7e405ed70e49387f8649b610c276f_9306&search_date=13062026&expected_price_uuid=019ec1b5-3f6d-8010-2c18-d30b521b672d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=111&marker=704469"
-    },
-    {
-      "o": "MRS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 113,
-      "depart": "2026-06-19",
-      "ret": "2026-06-30",
-      "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/MRS1906ALG30061?t=V717818488001781851200000100MRSALG17828052001782814500000095ALGMRS_fa07cb60f678ca06b09fda0dfd7012db_9473&search_date=13062026&expected_price_uuid=019ec26c-a376-8010-ac40-5869e03df6fb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=113&marker=704469"
+      "link": "https://www.aviasales.com/search/BRU1909AGA24091?t=HV17898168001789827000000230CRLAGA17902743001790292000000235AGABRU_33b7e405ed70e49387f8649b610c276f_9211&search_date=15062026&expected_price_uuid=019ecbf7-c4e3-8010-648a-5944603548eb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=110&marker=704469"
     },
     {
       "o": "ORY",
@@ -73,13 +63,13 @@
     },
     {
       "o": "ORY",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 115,
-      "depart": "2026-06-15",
-      "ret": "2026-06-27",
-      "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/ORY1506TUN27061?t=TU17815602001781565300000145ORYTUN17825412001782553200000140TUNORY_32c33a82148afb759dd05f17fb24cc1c_9581&search_date=11062026&expected_price_uuid=019eb705-1d1b-8010-a11c-ca6d4beca49f&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=115&marker=704469"
+      "d": "ORN",
+      "city": "Oran",
+      "price": 116,
+      "depart": "2026-11-08",
+      "ret": "2026-11-16",
+      "when": "Nov · A/R",
+      "link": "https://www.aviasales.com/search/ORY0811ORN16111?t=TO17941518001794161400000160ORYORN17948562001794866100000165ORNORY_0bb581d8691920129af20c3522ace8f0_9774&search_date=15062026&expected_price_uuid=019ecbc3-3dea-8030-274b-c2670caf5e67&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=116&marker=704469"
     },
     {
       "o": "BRU",
@@ -102,6 +92,16 @@
       "link": "https://www.aviasales.com/search/ORY0110CMN15101?t=TO17908788001790886600000190ORYCMN17920458001792060200000180CMNORY_cd4ad8bba1539ee806669f1e04375aa3_10187&search_date=12062026&expected_price_uuid=019ebaef-23ea-8010-6ca5-6ae025437fb3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=122&marker=704469"
     },
     {
+      "o": "MRS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 123,
+      "depart": "2026-06-18",
+      "ret": "2026-06-27",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/MRS1806TUN27061?t=TO17817822001781784600000100MRSTUN17825946001782604500000105TUNMRS_515d703c552b007f7a9ac8e4a2e08c9b_10354&search_date=15062026&expected_price_uuid=019ecbe9-ff1c-8030-e8d4-f4cbdb56931b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=123&marker=704469"
+    },
+    {
       "o": "ORY",
       "d": "OUD",
       "city": "Oujda",
@@ -115,11 +115,11 @@
       "o": "BRU",
       "d": "RBA",
       "city": "Rabat",
-      "price": 138,
+      "price": 139,
       "depart": "2026-06-18",
       "ret": "2026-07-16",
       "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/BRU1806RBA16071?t=TB17817909001781799900000210BRURBA17842215001784236200000185RBACRL_7582783615e6093288a83ab561474580_11654&search_date=15062026&expected_price_uuid=019ecaf6-b091-8010-a56b-40e984a3d1fc&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=138&marker=704469"
+      "link": "https://www.aviasales.com/search/BRU1806RBA16071?t=TB17817909001781799900000210BRURBA17842215001784236200000185RBACRL_7582783615e6093288a83ab561474580_11638&search_date=16062026&expected_price_uuid=019ed039-6c81-8010-22cd-78374b6a5d5b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&expected_price_source=share&expected_price_currency=eur&expected_price=139&marker=704469"
     }
   ]
 }
