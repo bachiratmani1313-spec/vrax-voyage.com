@@ -1,0 +1,28 @@
+{
+  "headers": [
+    {
+      "source": "/deals.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/price_history.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/videos.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/(.*)\\.html",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, s-maxage=60, must-revalidate" }
+      ]
+    }
+  ]
+}
