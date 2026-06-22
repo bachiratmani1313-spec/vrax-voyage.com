@@ -2,7 +2,7 @@ name: Mise à jour des bons plans
 
 on:
   schedule:
-    - cron: '0 7 * * *'      # tous les jours à 07:00 UTC
+    - cron: '0 */6 * * *'     # toutes les 6 heures (4×/jour) → on attrape les promos vite
   workflow_dispatch:           # bouton manuel
 
 permissions:
@@ -21,10 +21,10 @@ jobs:
           TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
           TP_MARKER: '704469'
         run: python scripts/update_deals.py
-      - name: Publier deals.json
+      - name: Publier deals.json + historique
         run: |
           git config user.name "bachiratmani1313-spec"
           git config user.email "248935756+bachiratmani1313-spec@users.noreply.github.com"
-          git add deals.json
-          git diff --cached --quiet || git commit -m "🔥 Bons plans mis à jour automatiquement"
+          git add deals.json price_history.json
+          git diff --cached --quiet || git commit -m "🔥 Bons plans + historique mis à jour automatiquement"
           git push

@@ -1,30 +1,41 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Récupère les vols les moins chers pour les routes de Vrax Voyage via l'API
-Travelpayouts (Data API) et écrit deals.json à la racine du site.
-Le token vient du secret GitHub TRAVELPAYOUTS_TOKEN — jamais exposé au public.
-"""
-import os, json, datetime, urllib.parse, urllib.request
+Vrax Voyage — moteur de bons plans.
 
-TOKEN  = os.environ.get("TRAVELPAYOUTS_TOKEN", "")
-MARKER = os.environ.get("TP_MARKER", "704469")   # identifiant partenaire (paie Bachir)
+1) Cible les PROCHAINS mois réels de voyage (fini le "tout septembre").
+2) Garde un historique des prix (price_history.json) et détecte les PROMOS :
+   un prix qui chute nettement sous sa moyenne récente est marqué promo=true
+   et remonte en tête. C'est l'avantage de Vrax sur les comparateurs.
+
+Token : secret GitHub TRAVELPAYOUTS_TOKEN — jamais exposé au public.
+"""
+import os, json, time, datetime, statistics, urllib.parse, urllib.request
+
+TOKEN    = os.environ.get("TRAVELPAYOUTS_TOKEN", "")
+MARKER   = os.environ.get("TP_MARKER", "704469")   # identifiant partenaire (paie Bachir)
 CURRENCY = "eur"
 
-# (origine, destination, ville).  Priorité : Belgique ↔ Maghreb, Charleroi ↔ Algérie.
+# --- Réglages que Bachir peut ajuster facilement ---
+WINDOW_MONTHS   = 4      # nb de mois interrogés à partir d'aujourd'hui
+ACTIVE_WINDOW   = 2      # mois "imminents" affichés en priorité (relevance)
+PROMO_DROP      = 0.20   # baisse mini pour qu'un prix devienne une PROMO (20%)
+PROMO_MIN_HIST  = 4      # nb mini de relevés avant de pouvoir crier "promo"
+HIST_MAX        = 40     # longueur max de l'historique par route+mois
+MAX_DEALS       = 12     # nb de cartes affichées sur le site
+HIST_FILE       = "price_history.json"
+
+# (origine, destination, ville). Priorité : Belgique <-> Maghreb, Charleroi <-> Algérie.
 ROUTES = [
     ("BRU", "RAK", "Marrakech"), ("BRU", "CMN", "Casablanca"), ("BRU", "NDR", "Nador"),
     ("BRU", "TNG", "Tanger"),    ("BRU", "FEZ", "Fès"),        ("BRU", "OUD", "Oujda"),
     ("BRU", "AGA", "Agadir"),    ("BRU", "RBA", "Rabat"),
     ("BRU", "ALG", "Alger"),     ("BRU", "ORN", "Oran"),       ("BRU", "TUN", "Tunis"),
     ("BRU", "DJE", "Djerba"),
-    # Charleroi (forte communauté algérienne — priorité)
     ("CRL", "ALG", "Alger"),     ("CRL", "CZL", "Constantine"),("CRL", "ORN", "Oran"),
     ("CRL", "BJA", "Béjaïa"),    ("CRL", "NDR", "Nador"),      ("CRL", "TNG", "Tanger"),
     ("CRL", "FEZ", "Fès"),       ("CRL", "OUD", "Oujda"),      ("CRL", "RAK", "Marrakech"),
 ]
-
-# Départs de France (diaspora francophone — plus grand marché) → Maghreb
 _FR_ORIGINS = ["CDG", "ORY", "LYS", "MRS", "TLS", "LIL"]   # Paris, Lyon, Marseille, Toulouse, Lille
 _MAGHREB = [
     ("RAK", "Marrakech"), ("CMN", "Casablanca"), ("NDR", "Nador"), ("TNG", "Tanger"),
@@ -38,11 +49,24 @@ for _o in _FR_ORIGINS:
 MOIS = ["", "Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"]
 
 
-def cheapest(origin, dest):
+def target_months():
+    """Renvoie les prochains mois 'YYYY-MM' à partir d'aujourd'hui."""
+    today = datetime.date.today()
+    out, y, m = [], today.year, today.month
+    for _ in range(WINDOW_MONTHS):
+        out.append(f"{y:04d}-{m:02d}")
+        m += 1
+        if m > 12:
+            m, y = 1, y + 1
+    return out
+
+
+def cheapest(origin, dest, month):
+    """Vol A/R le moins cher pour un mois donné (departure_at = YYYY-MM)."""
     q = urllib.parse.urlencode({
         "origin": origin, "destination": dest, "currency": CURRENCY,
-        "sorting": "price", "direct": "false", "limit": 1,
-        "one_way": "false", "token": TOKEN,
+        "departure_at": month, "sorting": "price", "direct": "false",
+        "limit": 1, "one_way": "false", "token": TOKEN,
     })
     url = "https://api.travelpayouts.com/aviasales/v3/prices_for_dates?" + q
     try:
@@ -52,7 +76,7 @@ def cheapest(origin, dest):
         data = j.get("data") or []
         return data[0] if data else None
     except Exception as e:
-        print("  ⚠️", origin, dest, "→", e)
+        print("  ⚠️", origin, dest, month, "→", e)
         return None
 
 
@@ -71,41 +95,103 @@ def mois_label(iso):
         return "A/R"
 
 
+def load_history():
+    try:
+        with open(HIST_FILE, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
 def main():
     if not TOKEN:
         print("❌ TRAVELPAYOUTS_TOKEN manquant.")
         return
-    deals = []
+
+    months = target_months()
+    active = set(months[:ACTIVE_WINDOW])      # mois imminents (affichés en priorité)
+    today_iso = datetime.date.today().isoformat()
+    history = load_history()
+    candidates = []
+
     for o, d, ville in ROUTES:
-        item = cheapest(o, d)
-        if not item:
-            continue
-        try:
-            price = round(float(item.get("price", 0)))
-        except Exception:
-            price = 0
-        if price <= 0:
-            continue
-        deals.append({
-            "o": o, "d": d, "city": ville, "price": price,
-            "depart": (item.get("departure_at") or "")[:10],
-            "ret": (item.get("return_at") or "")[:10],
-            "when": mois_label(item.get("departure_at") or ""),
-            "link": aviasales_link(item, o, d),
-        })
-        print(f"  ✓ {o}→{d} : {price}€")
+        for month in months:
+            item = cheapest(o, d, month)
+            time.sleep(0.25)                  # on reste poli avec l'API
+            if not item:
+                continue
+            try:
+                price = round(float(item.get("price", 0)))
+            except Exception:
+                price = 0
+            if price <= 0:
+                continue
 
-    # un seul vol par destination (le moins cher) → variété, pas de doublons
+            key = f"{o}-{d}-{month}"
+            hist = history.get(key, [])
+            past = [h["p"] for h in hist][-14:]     # 14 derniers relevés
+
+            promo, baseline, discount = False, None, 0
+            if len(past) >= PROMO_MIN_HIST:
+                baseline = round(statistics.median(past))
+                if baseline > 0 and price <= baseline * (1 - PROMO_DROP):
+                    promo = True
+                    discount = round((baseline - price) / baseline * 100)
+
+            # on enregistre le relevé du jour (1 par route+mois/jour)
+            if not hist or hist[-1].get("date") != today_iso:
+                hist.append({"date": today_iso, "p": price})
+            else:
+                hist[-1]["p"] = min(hist[-1]["p"], price)
+            history[key] = hist[-HIST_MAX:]
+
+            candidates.append({
+                "o": o, "d": d, "city": ville, "price": price,
+                "depart": (item.get("departure_at") or "")[:10],
+                "ret": (item.get("return_at") or "")[:10],
+                "when": mois_label(item.get("departure_at") or ""),
+                "link": aviasales_link(item, o, d),
+                "month": month, "active": month in active,
+                "promo": promo, "baseline": baseline, "discount": discount,
+            })
+            tag = f" 🔥-{discount}%" if promo else ""
+            print(f"  ✓ {o}→{d} {month} : {price}€{tag}")
+
+    # 1) toutes les PROMOS (n'importe quel mois) — c'est notre force
+    promos = [c for c in candidates if c["promo"]]
+    # 2) sinon, le moins cher par destination dans la fenêtre imminente
+    normal = [c for c in candidates if not c["promo"] and c["active"]]
+    # repli : si aucune date imminente n'a renvoyé de prix, on prend le reste
+    if not normal:
+        normal = [c for c in candidates if not c["promo"]]
+
     best = {}
-    for x in deals:
-        if x["d"] not in best or x["price"] < best[x["d"]]["price"]:
+    for x in sorted(normal, key=lambda c: c["price"]):
+        if x["d"] not in best:
             best[x["d"]] = x
-    deals = sorted(best.values(), key=lambda x: x["price"])[:12]
 
-    out = {"updated": datetime.date.today().isoformat(), "deals": deals}
+    promos_sorted = sorted(promos, key=lambda c: c["discount"], reverse=True)
+    rest_sorted   = sorted(best.values(), key=lambda c: c["price"])
+
+    seen, deals = set(), []
+    for x in promos_sorted + rest_sorted:     # promos d'abord, puis les meilleurs prix
+        sig = (x["o"], x["d"], x["month"])
+        if sig in seen:
+            continue
+        seen.add(sig)
+        deals.append(x)
+        if len(deals) >= MAX_DEALS:
+            break
+
+    out = {"updated": today_iso, "deals": deals}
     with open("deals.json", "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
-    print(f"✅ {len(deals)} bons plans écrits dans deals.json")
+    with open(HIST_FILE, "w", encoding="utf-8") as f:
+        json.dump(history, f, ensure_ascii=False, indent=2)
+
+    n_promo = sum(1 for d in deals if d["promo"])
+    print(f"✅ {len(deals)} bons plans écrits ({n_promo} promo) dans deals.json")
+    print(f"🗂️  historique : {len(history)} routes/mois suivis")
 
 
 if __name__ == "__main__":
