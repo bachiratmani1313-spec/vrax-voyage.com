@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-22",
+  "updated": "2026-06-23",
   "deals": [
     {
       "o": "TLS",
@@ -125,11 +125,11 @@
       "o": "BRU",
       "d": "FEZ",
       "city": "Fès",
-      "price": 195,
+      "price": 192,
       "depart": "2026-07-10",
       "ret": "2026-07-15",
       "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/BRU1007FEZ15071?t=FR17836731001783798200002145CRLMANALCFEZ17840970001784112000000190FEZCRL_ba870a2b5612d56420decfb399b0b892_16440&search_date=22062026&expected_price_uuid=019eef8b-5703-8010-69a5-843043f546c2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=EkxQl-4XINuKeXihloYelg&expected_price_source=share&expected_price_currency=eur&expected_price=195&marker=704469",
+      "link": "https://www.aviasales.com/search/BRU1007FEZ15071?t=FR17836731001783798200002145CRLMANALCFEZ17840970001784112000000190FEZCRL_ba870a2b5612d56420decfb399b0b892_16293&search_date=22062026&expected_price_uuid=019ef15b-da25-8010-2cff-eff1352604e8&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=EkxQl-4XINuKeXihloYelg&expected_price_source=share&expected_price_currency=eur&expected_price=192&marker=704469",
       "month": "2026-07",
       "active": true,
       "promo": false,
