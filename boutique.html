@@ -34,6 +34,7 @@
   .nav-links{display:flex;gap:18px;flex-wrap:wrap}
   .nav-links a{color:#cdd7e3;font-size:14px;font-weight:500}
   .nav-links a:hover,.nav-links a.active{color:#fff}
+  @media(max-width:680px){.nav-links{display:none}}
 
   /* Hero */
   .hero{background:var(--ink);color:#fff;padding:54px 0 46px;text-align:center}
@@ -61,8 +62,12 @@
   /* Bandeau info affiliation */
   .note{background:var(--amber-soft);border:1px solid rgba(238,123,51,.25);border-radius:14px;padding:16px 18px;color:#7a4a25;font-size:13px;margin-top:8px}
 
-  footer{background:var(--ink);color:#9fb2c6;padding:30px 0;text-align:center;font-size:13px;margin-top:20px}
+  footer{background:var(--ink);color:#9fb2c6;padding:34px 0 28px;font-size:13px;margin-top:20px}
   footer a{color:#cdd7e3}
+  .foot-links{display:flex;flex-wrap:wrap;gap:18px;justify-content:center;padding-bottom:16px;border-bottom:1px solid rgba(255,255,255,.08);margin-bottom:14px}
+  .foot-links a{font-weight:600}
+  .foot-links a:hover{color:#fff}
+  .foot-bot{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;text-align:center;color:#7e8da0}
 </style>
 </head>
 <body>
@@ -213,8 +218,16 @@
 
 <footer>
   <div class="wrap">
-    ✈ <strong>Vrax Voyage</strong> — comparateur de vols Belgique &amp; France ↔ Maghreb.<br/>
-    <a href="index.html">Retour à l'accueil</a> · Directeur : Atmani Bachir
+    <div class="foot-links">
+      <a href="index.html#recherche">Vols</a>
+      <a href="index.html#bons-plans">Bons plans</a>
+      <a href="index.html#videos">Vidéos</a>
+      <a href="boutique.html">🛍️ Boutique</a>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span>
+      <span class="mono">Partner 704469 · Directeur : Atmani Bachir</span>
+    </div>
   </div>
 </footer>
 
