@@ -35,6 +35,12 @@
   .nav-links a{color:#cdd7e3;font-size:14px;font-weight:500}
   .nav-links a:hover,.nav-links a.active{color:#fff}
   @media(max-width:680px){.nav-links{display:none}}
+  .menu-btn{display:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:20px;line-height:1;padding:8px 13px;border-radius:10px;cursor:pointer}
+  @media(max-width:680px){.menu-btn{display:block}}
+  .menu-panel{display:none;flex-direction:column;background:var(--ink-2);border-top:1px solid rgba(255,255,255,.08)}
+  .menu-panel.open{display:flex}
+  .menu-panel a{color:#dbe4ef;font-size:16px;font-weight:600;padding:15px 6vw;border-bottom:1px solid rgba(255,255,255,.06)}
+  .menu-panel a:active{background:rgba(255,255,255,.06)}
 
   /* Hero */
   .hero{background:var(--ink);color:#fff;padding:54px 0 46px;text-align:center}
@@ -81,6 +87,13 @@
       <a href="index.html#videos">Vidéos</a>
       <a href="boutique.html" class="active">Boutique</a>
     </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+  </div>
+  <div class="menu-panel" id="menuPanel">
+    <a href="index.html#recherche">✈ Vols</a>
+    <a href="index.html#bons-plans">🔥 Bons plans</a>
+    <a href="index.html#videos">🎬 Vidéos</a>
+    <a href="boutique.html">🛍️ Boutique</a>
   </div>
 </header>
 
@@ -231,5 +244,10 @@
   </div>
 </footer>
 
+<script>
+  document.querySelectorAll('#menuPanel a').forEach(function(a){
+    a.addEventListener('click', function(){ document.getElementById('menuPanel').classList.remove('open'); });
+  });
+</script>
 </body>
 </html>
