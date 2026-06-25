@@ -2,19 +2,34 @@
   "updated": "2026-06-25",
   "deals": [
     {
+      "o": "LYS",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 68,
+      "depart": "2026-09-10",
+      "ret": "2026-09-17",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/LYS1009AGA17091?t=EC17890203001789028700000200LYSAGA17896362001789651800000200AGALYS_97de74649aade1ce93004dc72cc27b62_5856&search_date=25062026&expected_price_uuid=019eff77-60d6-8030-ed97-5004f1b7adb1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bbM7nSOsS1N7bbtAJFbNNQ&expected_price_source=share&expected_price_currency=eur&expected_price=68&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 114,
+      "discount": 40
+    },
+    {
       "o": "TLS",
       "d": "ORN",
       "city": "Oran",
-      "price": 216,
+      "price": 215,
       "depart": "2026-07-15",
       "ret": "2026-07-16",
       "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/TLS1507ORN16071?t=FR17841480001784205900001025TLSALCALGORN17842425001784322600001275ORNALCTLS_f0b61c2c877dc6cd8e71adcb972e3d61_18400&search_date=25062026&expected_price_uuid=019efe1b-a042-8030-6b48-04c4f1750fdf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rYsH67LhnFHgqozyApV9kw&expected_price_source=share&expected_price_currency=eur&expected_price=216&marker=704469",
+      "link": "https://www.aviasales.com/search/TLS1507ORN16071?t=FR17841480001784205900001025TLSALCALGORN17842425001784322600001275ORNALCTLS_f0b61c2c877dc6cd8e71adcb972e3d61_18400&search_date=25062026&expected_price_uuid=019efe1b-a042-8030-6b48-04c4f1750fdf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rYsH67LhnFHgqozyApV9kw&expected_price_source=share&expected_price_currency=eur&expected_price=215&marker=704469",
       "month": "2026-07",
       "active": true,
       "promo": true,
       "baseline": 301,
-      "discount": 28
+      "discount": 29
     },
     {
       "o": "BRU",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": false,
       "baseline": 168,
-      "discount": 0
-    },
-    {
-      "o": "ORY",
-      "d": "FEZ",
-      "city": "Fès",
-      "price": 186,
-      "depart": "2026-07-01",
-      "ret": "2026-07-08",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/ORY0107FEZ08071?t=TO17828904001782897000000170ORYFEZ17835045001783518600000175FEZORY_47ce37fca9bedd74efefcf3e0267239a_15768&search_date=24062026&expected_price_uuid=019ef8a6-a4cd-8030-6be5-efedae2b78fe&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=tqGbFo_tKyxOjvcTF8vOmw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=186&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": false,
-      "baseline": 192,
       "discount": 0
     }
   ]
