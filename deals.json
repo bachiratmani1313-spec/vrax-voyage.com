@@ -1,35 +1,50 @@
 {
-  "updated": "2026-06-25",
+  "updated": "2026-06-26",
   "deals": [
     {
       "o": "LYS",
       "d": "AGA",
       "city": "Agadir",
-      "price": 68,
-      "depart": "2026-09-10",
-      "ret": "2026-09-17",
+      "price": 61,
+      "depart": "2026-09-15",
+      "ret": "2026-09-22",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/LYS1009AGA17091?t=EC17890203001789028700000200LYSAGA17896362001789651800000200AGALYS_97de74649aade1ce93004dc72cc27b62_5856&search_date=25062026&expected_price_uuid=019eff77-60d6-8030-ed97-5004f1b7adb1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bbM7nSOsS1N7bbtAJFbNNQ&expected_price_source=share&expected_price_currency=eur&expected_price=68&marker=704469",
+      "link": "https://www.aviasales.com/search/LYS1509AGA22091?t=EC17894535001789461900000200LYSAGA17900694001790085000000200AGALYS_719fbfb5eedc7edf86de2463be6913cc_5252&search_date=25062026&expected_price_uuid=019f008f-d615-8030-2044-37ddf3ebb9e4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JBG_P6JAO2gVlI6NtDrZMg&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
       "baseline": 114,
-      "discount": 40
+      "discount": 46
+    },
+    {
+      "o": "BRU",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 202,
+      "depart": "2026-08-03",
+      "ret": "2026-08-10",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/BRU0308TNG10081?t=FR17857827001785876900001630BRUAGPTNG17863410001786452600001800TNGAGPMANCRL_563278f97b05d8e8471b3ce5c3aeb795_17411&search_date=25062026&expected_price_uuid=019f0107-7de7-8030-e94b-c4fde49c6459&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=5RZ9-vsFX_WX55jS-p3_bg&expected_price_source=share&expected_price_currency=eur&expected_price=202&marker=704469",
+      "month": "2026-08",
+      "active": false,
+      "promo": true,
+      "baseline": 307,
+      "discount": 34
     },
     {
       "o": "TLS",
       "d": "ORN",
       "city": "Oran",
-      "price": 215,
+      "price": 216,
       "depart": "2026-07-15",
       "ret": "2026-07-16",
       "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/TLS1507ORN16071?t=FR17841480001784205900001025TLSALCALGORN17842425001784322600001275ORNALCTLS_f0b61c2c877dc6cd8e71adcb972e3d61_18400&search_date=25062026&expected_price_uuid=019efe1b-a042-8030-6b48-04c4f1750fdf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rYsH67LhnFHgqozyApV9kw&expected_price_source=share&expected_price_currency=eur&expected_price=215&marker=704469",
+      "link": "https://www.aviasales.com/search/TLS1507ORN16071?t=FR17841480001784205900001025TLSALCALGORN17842425001784322600001275ORNALCTLS_f0b61c2c877dc6cd8e71adcb972e3d61_18400&search_date=25062026&expected_price_uuid=019efe1b-a042-8030-6b48-04c4f1750fdf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rYsH67LhnFHgqozyApV9kw&expected_price_source=share&expected_price_currency=eur&expected_price=216&marker=704469",
       "month": "2026-07",
       "active": true,
       "promo": true,
       "baseline": 301,
-      "discount": 29
+      "discount": 28
     },
     {
       "o": "BRU",
@@ -62,34 +77,19 @@
       "discount": 27
     },
     {
-      "o": "BRU",
+      "o": "CRL",
       "d": "TNG",
       "city": "Tanger",
-      "price": 234,
-      "depart": "2026-08-02",
-      "ret": "2026-08-09",
+      "price": 246,
+      "depart": "2026-08-03",
+      "ret": "2026-08-10",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU0208TNG09081?t=VY17857065001785744300000690BRUAGPTNG17862429001786348200001695TNGMADBGYCRL_08ec7c8a58cab84e22487c34df5fc9d6_19911&search_date=25062026&expected_price_uuid=019efdb7-f66e-8010-2911-5db5b270581b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MwIS43vmWQzsxVbzF4K1cA&expected_price_source=share&expected_price_currency=eur&expected_price=234&marker=704469",
+      "link": "https://www.aviasales.com/search/CRL0308TNG10081?t=FR17857773001785784500000180CRLTNG17863410001786437600001550TNGAGPMANCRL_0dd1253f0ab32c8f5ff1dbad9d1cdc31_21196&search_date=25062026&expected_price_uuid=019f0107-7de7-8030-e94b-c4fde49c6459&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=CkbAnjkXoACFWqndTooYig&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=246&marker=704469",
       "month": "2026-08",
       "active": false,
       "promo": true,
-      "baseline": 307,
-      "discount": 24
-    },
-    {
-      "o": "CDG",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 205,
-      "depart": "2026-07-16",
-      "ret": "2026-07-21",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/CDG1607AGA21071?t=U217842140001784285100001245CDGPMIBCNAGA17846592001784676300000225AGACDG_d7f38dc67c778e49c254153992249894_17440&search_date=24062026&expected_price_uuid=019efba4-8360-8030-6393-f572bb3c3abf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=arBM9bHJWgIjvLR2wZoaNw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=205&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": true,
-      "baseline": 268,
-      "discount": 24
+      "baseline": 309,
+      "discount": 20
     },
     {
       "o": "TLS",
