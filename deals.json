@@ -5,16 +5,16 @@
       "o": "LYS",
       "d": "AGA",
       "city": "Agadir",
-      "price": 62,
+      "price": 61,
       "depart": "2026-09-15",
       "ret": "2026-09-22",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/LYS1509AGA22091?t=EC17894535001789461900000200LYSAGA17900694001790085000000200AGALYS_719fbfb5eedc7edf86de2463be6913cc_5554&search_date=27062026&expected_price_uuid=019f0937-b71f-8010-6077-1e3d3770deea&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JBG_P6JAO2gVlI6NtDrZMg&expected_price_source=share&expected_price_currency=eur&expected_price=62&marker=704469",
+      "link": "https://www.aviasales.com/search/LYS1509AGA22091?t=U217894535001789461900000200LYSAGA17900694001790085000000200AGALYS_719fbfb5eedc7edf86de2463be6913cc_5474&search_date=27062026&expected_price_uuid=019f0a81-4f2e-8010-a05f-27ec2f53550e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=XYbiHX3zFEojsZF3Qpt0PQ&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
       "baseline": 91,
-      "discount": 32
+      "discount": 33
     },
     {
       "o": "MRS",
@@ -44,6 +44,21 @@
       "active": false,
       "promo": true,
       "baseline": 270,
+      "discount": 25
+    },
+    {
+      "o": "LIL",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 285,
+      "depart": "2026-07-08",
+      "ret": "2026-07-10",
+      "when": "Juil · A/R",
+      "link": "https://www.aviasales.com/search/LIL0807AGA10071?t=BY17835378001783637700001725LILMAHMANAGA17836614001783691400000440AGACMNLIL_01fade5e5bd89cb5409bb50a8eab92e2_25619&search_date=27062026&expected_price_uuid=019f0948-6b4b-8010-a0bc-cce6dc232d4c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RnCW4kK32Qh0-bUPEQ0t7A&expected_price_source=share&expected_price_currency=eur&expected_price=285&marker=704469",
+      "month": "2026-07",
+      "active": true,
+      "promo": true,
+      "baseline": 379,
       "discount": 25
     },
     {
@@ -134,21 +149,6 @@
       "active": true,
       "promo": false,
       "baseline": 140,
-      "discount": 0
-    },
-    {
-      "o": "BRU",
-      "d": "RBA",
-      "city": "Rabat",
-      "price": 168,
-      "depart": "2026-07-01",
-      "ret": "2026-07-04",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/BRU0107RBA04071?t=FR17828928001783023600002240CRLMANOPORBA17831595001783174200000185RBACRL_734e4277d8c89981ae81139a683db974_14048&search_date=20062026&expected_price_uuid=019ee5de-9bcd-8010-6cd5-c8b30e2e9e34&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IV4PXR2FIq1qpcg7Sjqq2g&expected_price_source=share&expected_price_currency=eur&expected_price=168&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": false,
-      "baseline": 168,
       "discount": 0
     },
     {
