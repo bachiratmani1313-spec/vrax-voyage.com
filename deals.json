@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-26",
+  "updated": "2026-06-27",
   "deals": [
     {
       "o": "LYS",
@@ -65,16 +65,16 @@
       "o": "CDG",
       "d": "AGA",
       "city": "Agadir",
-      "price": 263,
+      "price": 264,
       "depart": "2026-08-19",
       "ret": "2026-08-26",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG1908AGA26081?t=LS17871309001787158500000520CDGMADAGA17877423001787784300000640AGAGLACDG_74364c756d0221b6dfab56d70426019c_23666&search_date=26062026&expected_price_uuid=019f0496-37ea-8030-23d2-83b308d838e3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2tQKv_B8f1EDZ6dHkC_D9A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=263&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG1908AGA26081?t=LS17871309001787158500000520CDGMADAGA17877423001787784300000640AGAGLACDG_74364c756d0221b6dfab56d70426019c_23666&search_date=26062026&expected_price_uuid=019f0496-37ea-8030-23d2-83b308d838e3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2tQKv_B8f1EDZ6dHkC_D9A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=264&marker=704469",
       "month": "2026-08",
       "active": false,
       "promo": true,
       "baseline": 344,
-      "discount": 24
+      "discount": 23
     },
     {
       "o": "LYS",
