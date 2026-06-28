@@ -1,20 +1,20 @@
 {
-  "updated": "2026-06-27",
+  "updated": "2026-06-28",
   "deals": [
     {
       "o": "LYS",
       "d": "AGA",
       "city": "Agadir",
-      "price": 61,
+      "price": 62,
       "depart": "2026-09-15",
       "ret": "2026-09-22",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/LYS1509AGA22091?t=U217894535001789461900000200LYSAGA17900694001790085000000200AGALYS_719fbfb5eedc7edf86de2463be6913cc_5474&search_date=27062026&expected_price_uuid=019f0a81-4f2e-8010-a05f-27ec2f53550e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=XYbiHX3zFEojsZF3Qpt0PQ&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
+      "link": "https://www.aviasales.com/search/LYS1509AGA22091?t=EC17894535001789461900000200LYSAGA17900694001790085000000200AGALYS_719fbfb5eedc7edf86de2463be6913cc_5554&search_date=28062026&expected_price_uuid=019f0c38-d7e5-8010-ad40-c44d0a60a686&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JBG_P6JAO2gVlI6NtDrZMg&expected_price_source=share&expected_price_currency=eur&expected_price=62&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
       "baseline": 91,
-      "discount": 33
+      "discount": 32
     },
     {
       "o": "MRS",
@@ -107,21 +107,6 @@
       "discount": 0
     },
     {
-      "o": "TLS",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 130,
-      "depart": "2026-07-24",
-      "ret": "2026-07-28",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/TLS2407TNG28071?t=FR17848758001784879700000125TLSTNG17852463001785256800000115TNGTLS_1469d3a8d8c0aa8ec95522c02d00cd12_10903&search_date=20062026&expected_price_uuid=019ee6b0-f26e-8030-6b6a-5720af33b333&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=0GS1dfy1gupbScx9Iz4sqg&expected_price_source=share&expected_price_currency=eur&expected_price=130&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": false,
-      "baseline": 130,
-      "discount": 0
-    },
-    {
       "o": "BRU",
       "d": "AGA",
       "city": "Agadir",
@@ -149,6 +134,21 @@
       "active": true,
       "promo": false,
       "baseline": 140,
+      "discount": 0
+    },
+    {
+      "o": "BRU",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 148,
+      "depart": "2026-07-10",
+      "ret": "2026-07-17",
+      "when": "Juil · A/R",
+      "link": "https://www.aviasales.com/search/BRU1007TNG17071?t=U217837118001783750800000710CRLMANAGPTNG17842707001784284800000175TNGCRL_2e1b17728fa0d5c1b504fbecb28d5428_12594&search_date=24062026&expected_price_uuid=019efac1-3709-8010-6828-14b754272558&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=p3K-dN0uK_QMOkz90BLBNw&expected_price_source=share&expected_price_currency=eur&expected_price=148&marker=704469",
+      "month": "2026-07",
+      "active": true,
+      "promo": false,
+      "baseline": 148,
       "discount": 0
     },
     {
