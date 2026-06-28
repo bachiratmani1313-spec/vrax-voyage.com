@@ -17,6 +17,21 @@
       "discount": 29
     },
     {
+      "o": "CDG",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 148,
+      "depart": "2026-08-25",
+      "ret": "2026-09-05",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CDG2508RAK05091?t=U217876877001787696400000205CDGRAK17885997001788615600000205RAKCDG_51985531fa010c09d8747b2e886c9d19_13293&search_date=28062026&expected_price_uuid=019f0e2c-a89c-8030-e32d-17f102e8e66a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fXTJ86br-V5HMsFS9u0p7w&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=148&marker=704469",
+      "month": "2026-08",
+      "active": false,
+      "promo": true,
+      "baseline": 204,
+      "discount": 27
+    },
+    {
       "o": "LIL",
       "d": "AGA",
       "city": "Agadir",
@@ -77,21 +92,6 @@
       "discount": 0
     },
     {
-      "o": "LYS",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 140,
-      "depart": "2026-06-28",
-      "ret": "2026-07-04",
-      "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/LYS2806TUN04071?t=TU17826447001782648000000115LYSTUN17831703001783180500000110TUNLYS_9ec1eb49556b1ae11d37f6f7f513b8e1_11915&search_date=23062026&expected_price_uuid=019ef3d2-c3aa-8030-6136-50131dc01f47&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=xeRKkE-627CDsT9nlutanA&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469",
-      "month": "2026-06",
-      "active": true,
-      "promo": false,
-      "baseline": 140,
-      "discount": 0
-    },
-    {
       "o": "MRS",
       "d": "ALG",
       "city": "Alger",
@@ -119,6 +119,21 @@
       "active": true,
       "promo": false,
       "baseline": 148,
+      "discount": 0
+    },
+    {
+      "o": "LYS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 154,
+      "depart": "2026-06-29",
+      "ret": "2026-07-04",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/LYS2906TUN04071?t=TU17827509001782753900000110LYSTUN17831493001783159500000110TUNLYS_c90becb3195a770e56050d28e59fcb2d_12918&search_date=21062026&expected_price_uuid=019eeba1-9f35-8030-e95e-84aa9ad3f66b&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=3xh-Fg-WKxa4HCf-OBcMaA&expected_price_source=share&expected_price_currency=eur&expected_price=154&marker=704469",
+      "month": "2026-06",
+      "active": true,
+      "promo": false,
+      "baseline": 140,
       "discount": 0
     },
     {
@@ -164,21 +179,6 @@
       "active": true,
       "promo": false,
       "baseline": 202,
-      "discount": 0
-    },
-    {
-      "o": "MRS",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 215,
-      "depart": "2026-07-02",
-      "ret": "2026-08-01",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/MRS0207CZL01081?t=V717830212001783023600000100MRSCZL17855718001785581100000095CZLMRS_2fc76d1688c1e1ef3adf1e1d47c3a4a3_18232&search_date=23062026&expected_price_uuid=019ef55b-bdbb-8030-2882-6ac2bfac9611&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=8Hwno9o7fcECIaH0KMjK9g&expected_price_source=share&expected_price_currency=eur&expected_price=215&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": false,
-      "baseline": 215,
       "discount": 0
     }
   ]
