@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-28",
+  "updated": "2026-06-29",
   "deals": [
     {
       "o": "MRS",
@@ -122,21 +122,6 @@
       "discount": 0
     },
     {
-      "o": "LYS",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 154,
-      "depart": "2026-06-29",
-      "ret": "2026-07-04",
-      "when": "Juin · A/R",
-      "link": "https://www.aviasales.com/search/LYS2906TUN04071?t=TU17827509001782753900000110LYSTUN17831493001783159500000110TUNLYS_c90becb3195a770e56050d28e59fcb2d_12918&search_date=21062026&expected_price_uuid=019eeba1-9f35-8030-e95e-84aa9ad3f66b&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=3xh-Fg-WKxa4HCf-OBcMaA&expected_price_source=share&expected_price_currency=eur&expected_price=154&marker=704469",
-      "month": "2026-06",
-      "active": true,
-      "promo": false,
-      "baseline": 140,
-      "discount": 0
-    },
-    {
       "o": "MRS",
       "d": "ORN",
       "city": "Oran",
@@ -164,6 +149,21 @@
       "active": true,
       "promo": false,
       "baseline": 186,
+      "discount": 0
+    },
+    {
+      "o": "LYS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 196,
+      "depart": "2026-06-29",
+      "ret": "2026-07-03",
+      "when": "Juin · A/R",
+      "link": "https://www.aviasales.com/search/LYS2906TUN03071?t=TO17827128001782716400000120LYSTUN17831139001783124700000120TUNLYS_a6d75d23a36fc43276dd49e3bb71ae79_16680&search_date=23062026&expected_price_uuid=019ef3d8-65d5-8030-e601-8c2c1f69b5f4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=190Ga9xdo20rHsGku4KNxA&expected_price_source=share&expected_price_currency=eur&expected_price=196&marker=704469",
+      "month": "2026-06",
+      "active": true,
+      "promo": false,
+      "baseline": 140,
       "discount": 0
     },
     {
