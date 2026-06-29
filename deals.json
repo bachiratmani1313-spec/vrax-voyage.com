@@ -80,11 +80,11 @@
       "o": "CDG",
       "d": "NDR",
       "city": "Nador",
-      "price": 278,
+      "price": 277,
       "depart": "2026-07-23",
       "ret": "2026-07-26",
       "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/CDG2307NDR26071?t=VY17848014001784829600000530CDGBCNNDR17851029001785144600000635NDRBCNCDG_0bf74089aa0c412fac7ea1a8557d82c5_24610&search_date=29062026&expected_price_uuid=019f1380-e7f4-8030-ea51-dfe01752ba7b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gK8saTe9IdoqMqVh-O_7Kg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=278&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG2307NDR26071?t=VY17848014001784829600000530CDGBCNNDR17851029001785144600000635NDRBCNCDG_0bf74089aa0c412fac7ea1a8557d82c5_24610&search_date=29062026&expected_price_uuid=019f1380-e7f4-8030-ea51-dfe01752ba7b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gK8saTe9IdoqMqVh-O_7Kg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=277&marker=704469",
       "month": "2026-07",
       "active": true,
       "promo": true,
@@ -137,19 +137,34 @@
       "discount": 33
     },
     {
+      "o": "LYS",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 294,
+      "depart": "2026-07-01",
+      "ret": "2026-07-08",
+      "when": "Juil · A/R",
+      "link": "https://www.aviasales.com/search/LYS0107CMN08071?t=3O17829387001782945300000170LYSCMN17835225001783536000000165CMNLYS_ebab2925baaf9b934e63f16b95f3370c_25910&search_date=29062026&expected_price_uuid=019f14ca-e0f0-8030-e270-0ec5dc942796&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kgEY5IE-6_Uk5L19NUEv4A&expected_price_source=share&expected_price_currency=eur&expected_price=294&marker=704469",
+      "month": "2026-07",
+      "active": true,
+      "promo": true,
+      "baseline": 430,
+      "discount": 32
+    },
+    {
       "o": "LIL",
       "d": "ORN",
       "city": "Oran",
-      "price": 178,
+      "price": 177,
       "depart": "2026-09-15",
       "ret": "2026-10-11",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/LIL1509ORN11101?t=5O17895078001789539900000595LILALCORN17917095001791748200000585ORNALGLIL_d587c3d330531f99dc265627bedb3570_15749&search_date=29062026&expected_price_uuid=019f12f9-111a-8010-aba1-9f42723d5804&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Uir6pZ8mxE2Gn-Gjh9FrkA&expected_price_source=share&expected_price_currency=eur&expected_price=178&marker=704469",
+      "link": "https://www.aviasales.com/search/LIL1509ORN11101?t=5O17895078001789539900000595LILALCORN17917095001791748200000585ORNALGLIL_d587c3d330531f99dc265627bedb3570_15749&search_date=29062026&expected_price_uuid=019f12f9-111a-8010-aba1-9f42723d5804&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Uir6pZ8mxE2Gn-Gjh9FrkA&expected_price_source=share&expected_price_currency=eur&expected_price=177&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
       "baseline": 241,
-      "discount": 26
+      "discount": 27
     },
     {
       "o": "CDG",
@@ -164,21 +179,6 @@
       "active": false,
       "promo": true,
       "baseline": 277,
-      "discount": 25
-    },
-    {
-      "o": "LIL",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 285,
-      "depart": "2026-07-08",
-      "ret": "2026-07-10",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/LIL0807AGA10071?t=BY17835378001783637700001725LILMAHMANAGA17836614001783691400000440AGACMNLIL_01fade5e5bd89cb5409bb50a8eab92e2_25619&search_date=27062026&expected_price_uuid=019f0948-6b4b-8010-a0bc-cce6dc232d4c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RnCW4kK32Qh0-bUPEQ0t7A&expected_price_source=share&expected_price_currency=eur&expected_price=285&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": true,
-      "baseline": 379,
       "discount": 25
     }
   ]
