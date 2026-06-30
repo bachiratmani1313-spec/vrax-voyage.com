@@ -107,21 +107,6 @@
       "discount": 44
     },
     {
-      "o": "TLS",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 244,
-      "depart": "2026-08-18",
-      "ret": "2026-09-02",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/TLS1808TUN02091?t=TU17870793001787082300000110TLSTUN17883102001788357600000730TUNBCNIBZTLS_3ac1105133d733eed0de1fb280f988d4_21726&search_date=30062026&expected_price_uuid=019f18a6-4bd5-8030-ae2d-a037b7b97e16&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=WdsUnuDPeNz6iKkbEahdcA&expected_price_source=share&expected_price_currency=eur&expected_price=244&marker=704469",
-      "month": "2026-08",
-      "active": false,
-      "promo": true,
-      "baseline": 392,
-      "discount": 38
-    },
-    {
       "o": "LYS",
       "d": "ORN",
       "city": "Oran",
@@ -135,6 +120,21 @@
       "promo": true,
       "baseline": 347,
       "discount": 36
+    },
+    {
+      "o": "MRS",
+      "d": "FEZ",
+      "city": "Fès",
+      "price": 154,
+      "depart": "2026-08-05",
+      "ret": "2026-08-08",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS0508FEZ08081?t=FR17859699001786029000001045MRSAGPRAKFEZ17862189001786288200001095FEZALCMRS_9fd54de93962f6765ad614aea20f5108_13811&search_date=30062026&expected_price_uuid=019f195a-dda7-8010-a1c0-e7b7ce020817&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=i8SQTrTzPtR_tqFiDSHJaQ&expected_price_source=share&expected_price_currency=eur&expected_price=154&marker=704469",
+      "month": "2026-08",
+      "active": false,
+      "promo": true,
+      "baseline": 234,
+      "discount": 34
     },
     {
       "o": "MRS",
