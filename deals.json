@@ -2,21 +2,6 @@
   "updated": "2026-06-30",
   "deals": [
     {
-      "o": "CDG",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 153,
-      "depart": "2026-08-28",
-      "ret": "2026-09-25",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG2808CZL25091?t=AH17879400001787944500000135CDGCZL17903430001790355000000140CZLCDG_b256190acceecd6c1aac56c22975d63f_13470&search_date=29062026&expected_price_uuid=019f12d7-5574-8010-ac25-a0f8043cb08d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=izk5jjvlcqzGKvWhFqVbSQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=153&marker=704469",
-      "month": "2026-08",
-      "active": false,
-      "promo": true,
-      "baseline": 415,
-      "discount": 63
-    },
-    {
       "o": "CRL",
       "d": "TNG",
       "city": "Tanger",
@@ -28,23 +13,38 @@
       "month": "2026-08",
       "active": false,
       "promo": true,
-      "baseline": 248,
+      "baseline": 246,
       "discount": 61
     },
     {
-      "o": "BRU",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 96,
+      "o": "CDG",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 153,
       "depart": "2026-08-28",
-      "ret": "2026-09-15",
+      "ret": "2026-09-25",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_8490&search_date=29062026&expected_price_uuid=019f13eb-6090-8010-278d-b3e8a69b2232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG2808CZL25091?t=AH17879400001787944500000135CDGCZL17903430001790355000000140CZLCDG_b256190acceecd6c1aac56c22975d63f_13470&search_date=29062026&expected_price_uuid=019f12d7-5574-8010-ac25-a0f8043cb08d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=izk5jjvlcqzGKvWhFqVbSQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=153&marker=704469",
       "month": "2026-08",
       "active": false,
       "promo": true,
-      "baseline": 218,
-      "discount": 56
+      "baseline": 395,
+      "discount": 61
+    },
+    {
+      "o": "ORY",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 176,
+      "depart": "2026-08-27",
+      "ret": "2026-09-17",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/ORY2708CZL17091?t=TO17878500001787868600000370ORYALGCZL17896536001789685400000470CZLALGORY_763058af6b58d8ca2d8845cae3f40562_15575&search_date=30062026&expected_price_uuid=019f17a3-d8ac-8010-a10b-dc48116cce3e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zv4zMKOazyBru185QMVxLQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=176&marker=704469",
+      "month": "2026-08",
+      "active": false,
+      "promo": true,
+      "baseline": 451,
+      "discount": 61
     },
     {
       "o": "CDG",
@@ -58,22 +58,22 @@
       "month": "2026-08",
       "active": false,
       "promo": true,
-      "baseline": 200,
-      "discount": 56
+      "baseline": 196,
+      "discount": 55
     },
     {
-      "o": "ORY",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 215,
+      "o": "BRU",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 96,
       "depart": "2026-08-28",
-      "ret": "2026-09-25",
+      "ret": "2026-09-15",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/ORY2808CZL25091?t=TO17879010001787945100000795ORYBCNALGCZL17903268001790353800000390CZLALGORY_4bd78ac3a38158d1cc617ccd3b2dda30_18964&search_date=29062026&expected_price_uuid=019f12d7-5574-8010-ac25-a0f8043cb08d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ou-O9vcA_G_qSmiZ1IhI1g&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=215&marker=704469",
+      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_8490&search_date=29062026&expected_price_uuid=019f13eb-6090-8010-278d-b3e8a69b2232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
       "month": "2026-08",
       "active": false,
       "promo": true,
-      "baseline": 451,
+      "baseline": 202,
       "discount": 52
     },
     {
@@ -103,8 +103,8 @@
       "month": "2026-08",
       "active": false,
       "promo": true,
-      "baseline": 178,
-      "discount": 45
+      "baseline": 175,
+      "discount": 44
     },
     {
       "o": "LYS",
