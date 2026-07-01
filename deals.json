@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-30",
+  "updated": "2026-07-01",
   "deals": [
     {
       "o": "CRL",
@@ -11,7 +11,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/CRL2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_8490&search_date=29062026&expected_price_uuid=019f13eb-6090-8010-278d-b3e8a69b2232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 246,
       "discount": 61
@@ -26,7 +26,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/CDG2808CZL25091?t=AH17879400001787944500000135CDGCZL17903430001790355000000140CZLCDG_b256190acceecd6c1aac56c22975d63f_13470&search_date=29062026&expected_price_uuid=019f12d7-5574-8010-ac25-a0f8043cb08d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=izk5jjvlcqzGKvWhFqVbSQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=153&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 395,
       "discount": 61
@@ -41,7 +41,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/ORY2708CZL17091?t=TO17878500001787868600000370ORYALGCZL17896536001789685400000470CZLALGORY_763058af6b58d8ca2d8845cae3f40562_15575&search_date=30062026&expected_price_uuid=019f17a3-d8ac-8010-a10b-dc48116cce3e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zv4zMKOazyBru185QMVxLQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=176&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 451,
       "discount": 61
@@ -56,7 +56,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/CDG2708RAK10091?t=U217878110001787819700000205CDGRAK17890329001789048800000205RAKCDG_66f46801934668aa706d589b338e189d_7871&search_date=29062026&expected_price_uuid=019f13f7-fa92-8030-672f-916612028378&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SrfL_ZNMUtFwZOnE81Rn7Q&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=89&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 196,
       "discount": 55
@@ -71,7 +71,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_8490&search_date=29062026&expected_price_uuid=019f13eb-6090-8010-278d-b3e8a69b2232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 202,
       "discount": 52
@@ -101,7 +101,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/ORY2708RAK10091?t=TO17878116001787820300000205ORYRAK17890218001789037100000195RAKORY_86532d1c9e47d483da1563b5ad1cafb4_8667&search_date=29062026&expected_price_uuid=019f13f7-fa92-8030-672f-916612028378&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=i4meoI63TT7Bq7-TQVQ5hA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=98&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 175,
       "discount": 44
@@ -116,7 +116,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/LYS2208ORN03091?t=TO17873760001787380200000130LYSORN17884656001788477000000130ORNLYS_25766294cd6a0e860d60fe6c2be6c66d_19722&search_date=29062026&expected_price_uuid=019f13d5-e1f9-8010-2f3c-b3963868a0d5&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=Ghh2gf5OEf6dimJ1zc_4WQ&expected_price_source=share&expected_price_currency=eur&expected_price=223&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 347,
       "discount": 36
@@ -131,7 +131,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/MRS0508FEZ08081?t=FR17859699001786029000001045MRSAGPRAKFEZ17862189001786288200001095FEZALCMRS_9fd54de93962f6765ad614aea20f5108_13811&search_date=30062026&expected_price_uuid=019f195a-dda7-8010-a1c0-e7b7ce020817&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=i8SQTrTzPtR_tqFiDSHJaQ&expected_price_source=share&expected_price_currency=eur&expected_price=154&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 234,
       "discount": 34
@@ -146,7 +146,7 @@
       "when": "Aoû · A/R",
       "link": "https://www.aviasales.com/search/MRS1408CMN15081?t=FR17866989001786744200000815MRSTTUCMN17867994001786833000000500CMNMADMRS_edd695e959dfa8adab1a71b7494237eb_29620&search_date=28062026&expected_price_uuid=019f1032-3cf9-8010-633e-0990f42c59d9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=la2ZeGk_A9KcX_mwvQkUNw&expected_price_source=share&expected_price_currency=eur&expected_price=330&marker=704469",
       "month": "2026-08",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 490,
       "discount": 33
