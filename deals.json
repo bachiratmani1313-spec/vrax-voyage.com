@@ -107,6 +107,21 @@
       "discount": 40
     },
     {
+      "o": "BRU",
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 343,
+      "depart": "2026-08-03",
+      "ret": "2026-08-17",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/BRU0308DJE17081?t=U217857845001785843300001040CRLBGYMRSDJE17869683001787042400001175DJEMANCRL_ac5846d81cf7e6c27fa7b3c1a02874a7_30442&search_date=01072026&expected_price_uuid=019f1df2-8930-8030-a087-ce9695dbe5f3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DhimFCuvs8M-eFFSidPO7A&expected_price_source=share&expected_price_currency=eur&expected_price=343&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 550,
+      "discount": 38
+    },
+    {
       "o": "LYS",
       "d": "ORN",
       "city": "Oran",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 144,
-      "discount": 26
-    },
-    {
-      "o": "MRS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 83,
-      "depart": "2026-09-26",
-      "ret": "2026-10-03",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/MRS2609RAK03101?t=FR17904618001790468400000170MRSRAK17910114001791025200000170RAKMRS_921d3c20cf68594f7203643501e1276f_7375&search_date=30062026&expected_price_uuid=019f17a8-68d3-8010-6c81-24a73e9e2e2d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=s3MS7-sab8AqMLxH8XDxbw&expected_price_source=share&expected_price_currency=eur&expected_price=83&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 112,
       "discount": 26
     }
   ]
