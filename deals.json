@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-01",
+  "updated": "2026-07-02",
   "deals": [
     {
       "o": "CRL",
@@ -137,6 +137,21 @@
       "discount": 36
     },
     {
+      "o": "BRU",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 134,
+      "depart": "2026-09-16",
+      "ret": "2026-09-24",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/BRU1609TUN24091?t=BJ17895879001789593600000155BRUTUN17902548001790268300000165TUNBRU_dfa01f578b335df9c57ed760c65f7f62_11780&search_date=01072026&expected_price_uuid=019f1fb9-574d-8030-2a5d-bd83e9906a2d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=l8wAnbobKESjNh640OOVVw&expected_price_source=share&expected_price_currency=eur&expected_price=134&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 207,
+      "discount": 35
+    },
+    {
       "o": "MRS",
       "d": "FEZ",
       "city": "Fès",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 277,
-      "discount": 28
-    },
-    {
-      "o": "ORY",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 137,
-      "depart": "2026-08-18",
-      "ret": "2026-09-21",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/ORY1808TNG21091?t=TO17870343001787040900000170ORYTNG17899755001789988100000150TNGORY_cf667bb059f1ffbd3e9c7ec65bdffb30_12098&search_date=01072026&expected_price_uuid=019f1e6f-eb00-8030-2a7d-efb12b89bcd6&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=Wbd-rA-cUxDmkTukbptW6Q&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=137&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 190,
       "discount": 28
     }
   ]
