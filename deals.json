@@ -170,16 +170,16 @@
       "o": "CDG",
       "d": "TNG",
       "city": "Tanger",
-      "price": 199,
-      "depart": "2026-08-18",
-      "ret": "2026-09-21",
+      "price": 198,
+      "depart": "2026-08-28",
+      "ret": "2026-09-01",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG1808TNG21091?t=U217870922001787130000000690CDGBCNTNG17900013001790027700000380TNGGVACDG_e5a77893ce3a4c342c001c8b48e0d589_17629&search_date=01072026&expected_price_uuid=019f1e6f-eb00-8030-2a7d-efb12b89bcd6&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RtBWYWc1-Vb39PGpYMkEAg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=199&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG2808TNG01091?t=D817879241001787949900000490CDGBCNTNG17882976001788383100001365TNGAGPCPHCDG_f879e50c2b8378a5f2f792709288965f_17540&search_date=02072026&expected_price_uuid=019f2429-f2de-8030-e983-65b6ca526c2d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JNNu-0ZlwPRA2RsAnqVbGw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=198&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 277,
-      "discount": 28
+      "discount": 29
     }
   ]
 }
