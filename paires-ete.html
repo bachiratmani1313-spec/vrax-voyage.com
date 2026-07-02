@@ -88,6 +88,8 @@
   .seg a.go{background:var(--ink);color:#fff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:10px;white-space:nowrap;transition:.2s}
   .seg a.go:hover{background:var(--amber)}
   .gap{padding:10px 18px;background:#F4F7F5;font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:8px}
+  .gap .share{margin-left:auto;background:var(--teal);color:#fff;border:none;border-radius:10px;padding:7px 13px;font-size:12px;font-weight:600;cursor:pointer;font-family:"Inter"}
+  .gap .share:active{transform:scale(.96)}
   .gap b{color:var(--teal)}
 
   /* ---------- Explication ---------- */
@@ -177,7 +179,7 @@
 
   function euro(n){ return n + '€'; }
 
-  function card(p){
+  function card(p, i){
     var hero = p.hero ? '<span class="badge-hero">⭐ Coup de cœur</span>' : '';
     return '<article class="pair' + (p.hero ? ' hero-pick' : '') + '">' +
       '<div class="pair-top"><div class="route">' + hero + p.o_city + ' → ' + p.city +
@@ -191,8 +193,25 @@
           '<span class="px">' + euro(p.retour.price) + '</span>' +
           '<a class="go" href="' + p.retour.link + '" target="_blank" rel="nofollow sponsored noopener">Réserver</a></div>' +
       '</div>' +
-      '<div class="gap">🗓️ Séjour sur place : <b>' + p.gap + ' jours</b></div>' +
+      '<div class="gap">🗓️ Séjour sur place : <b>' + p.gap + ' jours</b>' +
+      '<button class="share" onclick="sharePair(' + i + ')">📤 Partager</button></div>' +
     '</article>';
+  }
+
+  function sharePair(i){
+    var p = (DATA && CUR) ? DATA.communities[CUR].pairs[i] : null;
+    if (!p) return;
+    var txt = '✈️ ' + p.o_city + ' → ' + p.city + ' : ' + euro(p.total) +
+      ' aller + retour (' + p.aller.date_fr + ' → ' + p.retour.date_fr + ', ' + p.gap +
+      ' jours sur place) 🔥 Vu sur Vrax Voyage';
+    var url = 'https://vrax-voyage.com/paires-ete.html';
+    if (navigator.share){
+      navigator.share({ title: 'Paires Été — Vrax Voyage', text: txt, url: url }).catch(function(){});
+    } else {
+      navigator.clipboard.writeText(txt + ' ' + url).then(function(){
+        alert('Lien copié ! Collez-le où vous voulez 👍');
+      });
+    }
   }
 
   function show(key){
@@ -206,7 +225,7 @@
       g.innerHTML = '<div class="empty">Les paires ' + (c ? c.label : '') + ' arrivent très vite — le robot met à jour les prix chaque jour. Revenez demain matin ☀️</div>';
       return;
     }
-    g.innerHTML = c.pairs.map(card).join('');
+    g.innerHTML = c.pairs.map(function(p, i){ return card(p, i); }).join('');
   }
 
   function boot(d){
