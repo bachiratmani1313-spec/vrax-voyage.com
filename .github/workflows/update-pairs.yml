@@ -1,0 +1,31 @@
+name: Mise à jour des Paires Été
+
+on:
+  schedule:
+    - cron: '30 3 * * *'       # 1×/jour à 03:30 UTC (décalé des autres robots)
+  workflow_dispatch:            # bouton manuel
+
+permissions:
+  contents: write
+
+jobs:
+  pairs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Calculer les paires aller + retour (Travelpayouts)
+        env:
+          TRAVELPAYOUTS_TOKEN: ${{ secrets.TRAVELPAYOUTS_TOKEN }}
+          TP_MARKER: '704469'
+        run: python scripts/update_pairs.py
+      - name: Publier pairs.json
+        run: |
+          git config user.name "bachiratmani1313-spec"
+          git config user.email "248935756+bachiratmani1313-spec@users.noreply.github.com"
+          git pull --rebase
+          git add pairs.json
+          git diff --cached --quiet || git commit -m "☀️ Paires Été mises à jour automatiquement"
+          git push
