@@ -25,7 +25,14 @@ jobs:
         run: |
           git config user.name "bachiratmani1313-spec"
           git config user.email "248935756+bachiratmani1313-spec@users.noreply.github.com"
-          git pull --rebase
+          # 1) Enregistrer NOS changements d'abord (sinon git refuse la synchro)
           git add pairs.json
-          git diff --cached --quiet || git commit -m "☀️ Paires Été mises à jour automatiquement"
-          git push
+          if git diff --cached --quiet; then
+            echo "ℹ️ Aucun changement de paires aujourd'hui."
+            exit 0
+          fi
+          git commit -m "☀️ Paires Été mises à jour automatiquement"
+          # 2) Se synchroniser (rejoue notre commit par-dessus les commits des autres robots)
+          git pull --rebase
+          # 3) Publier, avec 2 nouvelles tentatives si un autre robot pousse au même moment
+          git push || (git pull --rebase && git push) || (sleep 10 && git pull --rebase && git push)
