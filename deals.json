@@ -5,16 +5,16 @@
       "o": "CRL",
       "d": "TNG",
       "city": "Tanger",
-      "price": 96,
+      "price": 87,
       "depart": "2026-08-28",
       "ret": "2026-09-15",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CRL2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_8490&search_date=29062026&expected_price_uuid=019f13eb-6090-8010-278d-b3e8a69b2232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
+      "link": "https://www.aviasales.com/search/CRL2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7691&search_date=03072026&expected_price_uuid=019f28fe-33ec-8030-2054-68df7a2a8d01&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 245,
-      "discount": 61
+      "discount": 64
     },
     {
       "o": "CDG",
@@ -65,16 +65,16 @@
       "o": "BRU",
       "d": "TNG",
       "city": "Tanger",
-      "price": 96,
+      "price": 87,
       "depart": "2026-08-28",
       "ret": "2026-09-15",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_8490&search_date=29062026&expected_price_uuid=019f13eb-6090-8010-278d-b3e8a69b2232&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
+      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7691&search_date=03072026&expected_price_uuid=019f28fe-33ec-8030-2054-68df7a2a8d01&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 202,
-      "discount": 52
+      "discount": 57
     },
     {
       "o": "CDG",
@@ -90,21 +90,6 @@
       "promo": true,
       "baseline": 172,
       "discount": 48
-    },
-    {
-      "o": "LYS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 107,
-      "depart": "2026-08-11",
-      "ret": "2026-09-21",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS1108ALG21091?t=TO17864286001786432200000120LYSALG17899989001790009400000115ALGLYS_8e5fb87055260b2a822e84c81ab58fa8_9467&search_date=03072026&expected_price_uuid=019f27ad-6b06-8030-6913-0e3b3a353a43&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ZH_vbe2p29UknZ6hIo7hyg&expected_price_source=share&expected_price_currency=eur&expected_price=107&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 176,
-      "discount": 39
     },
     {
       "o": "BRU",
@@ -179,6 +164,21 @@
       "active": true,
       "promo": true,
       "baseline": 277,
+      "discount": 29
+    },
+    {
+      "o": "LYS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 107,
+      "depart": "2026-08-11",
+      "ret": "2026-09-21",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LYS1108ALG21091?t=TO17864286001786432200000120LYSALG17899989001790009400000115ALGLYS_8e5fb87055260b2a822e84c81ab58fa8_9467&search_date=03072026&expected_price_uuid=019f27ad-6b06-8030-6913-0e3b3a353a43&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ZH_vbe2p29UknZ6hIo7hyg&expected_price_source=share&expected_price_currency=eur&expected_price=107&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 150,
       "discount": 29
     }
   ]
