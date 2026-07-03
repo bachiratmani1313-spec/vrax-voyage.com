@@ -235,20 +235,72 @@
     '</article>';
   }
 
-  function sharePair(i){
+  function drawPairCard(p){
+    var c = document.createElement('canvas'); c.width = 1080; c.height = 1080;
+    var x = c.getContext('2d');
+    // Fond encre + halos
+    x.fillStyle = '#0E1A2B'; x.fillRect(0, 0, 1080, 1080);
+    var g1 = x.createRadialGradient(900, 100, 0, 900, 100, 620);
+    g1.addColorStop(0, 'rgba(238,123,51,.28)'); g1.addColorStop(1, 'rgba(238,123,51,0)');
+    x.fillStyle = g1; x.fillRect(0, 0, 1080, 1080);
+    var g2 = x.createRadialGradient(80, 1020, 0, 80, 1020, 560);
+    g2.addColorStop(0, 'rgba(22,138,124,.25)'); g2.addColorStop(1, 'rgba(22,138,124,0)');
+    x.fillStyle = g2; x.fillRect(0, 0, 1080, 1080);
+    // Marque
+    x.fillStyle = '#EE7B33'; x.font = 'bold 46px "Space Grotesk", Arial, sans-serif';
+    x.fillText('\u2708 VRAX VOYAGE', 60, 96);
+    x.fillStyle = '#9fb2c6'; x.font = '30px "Space Mono", monospace';
+    x.fillText('PAIRES \u00C9T\u00C9 2026 \u00B7 ALLER + RETOUR', 60, 150);
+    // Route
+    x.fillStyle = '#ffffff'; x.font = 'bold 88px "Space Grotesk", Arial, sans-serif';
+    x.fillText(p.o_city, 60, 300);
+    x.fillStyle = '#EE7B33'; x.fillText('\u2192 ' + p.city, 60, 405);
+    x.fillStyle = '#9fb2c6'; x.font = '34px "Space Mono", monospace';
+    x.fillText(p.o + ' \u2192 ' + p.d, 62, 460);
+    // Segments
+    x.fillStyle = 'rgba(255,255,255,.07)';
+    x.fillRect(60, 505, 960, 108); x.fillRect(60, 630, 960, 108);
+    x.fillStyle = '#9fb2c6'; x.font = 'bold 26px "Space Mono", monospace';
+    x.fillText('ALLER', 90, 550); x.fillText('RETOUR', 90, 675);
+    x.fillStyle = '#ffffff'; x.font = 'bold 44px "Space Grotesk", Arial, sans-serif';
+    x.fillText(p.aller.date_fr, 90, 596); x.fillText(p.retour.date_fr, 90, 721);
+    x.fillStyle = '#EE7B33'; x.textAlign = 'right';
+    x.fillText(p.aller.price + '\u20AC', 990, 596); x.fillText(p.retour.price + '\u20AC', 990, 721);
+    x.textAlign = 'left';
+    // Total
+    x.fillStyle = '#EE7B33'; x.font = 'bold 150px "Space Grotesk", Arial, sans-serif';
+    x.fillText(p.total + '\u20AC', 60, 900);
+    x.fillStyle = '#ffffff'; x.font = '36px "Inter", Arial, sans-serif';
+    x.fillText('au total \u00B7 ' + p.gap + ' jours sur place', 60, 950);
+    // Bandeau urgence
+    x.fillStyle = '#EE7B33'; x.fillRect(0, 990, 1080, 90);
+    x.fillStyle = '#ffffff'; x.font = 'bold 32px "Inter", Arial, sans-serif';
+    x.fillText('\u26A1 Prix du jour \u2014 \u00E7a bouge chaque matin \u00B7 vrax-voyage.com/paires-ete.html', 40, 1046);
+    return c;
+  }
+
+  async function sharePair(i){
     var p = (DATA && CUR) ? DATA.communities[CUR].pairs[i] : null;
     if (!p) return;
-    var txt = '✈️ ' + p.o_city + ' → ' + p.city + ' : ' + euro(p.total) +
-      ' aller + retour (' + p.aller.date_fr + ' → ' + p.retour.date_fr + ', ' + p.gap +
-      ' jours sur place) 🔥 Vu sur Vrax Voyage';
     var url = 'https://vrax-voyage.com/paires-ete.html';
-    if (navigator.share){
-      navigator.share({ title: 'Paires Été — Vrax Voyage', text: txt, url: url }).catch(function(){});
-    } else {
-      navigator.clipboard.writeText(txt + ' ' + url).then(function(){
-        alert('Lien copié ! Collez-le où vous voulez 👍');
-      });
-    }
+    var txt = '\u2708\uFE0F ' + p.o_city + ' \u2192 ' + p.city + ' : ' + euro(p.total) +
+      ' aller + retour (' + p.aller.date_fr + ' \u2192 ' + p.retour.date_fr + ', ' + p.gap +
+      ' jours sur place) \u26A1 Prix du jour \u2014 \u00E7a change chaque matin, fonce !\n\uD83D\uDC49 ' + url;
+    try {
+      var canvas = drawPairCard(p);
+      var blob = await new Promise(function(res){ canvas.toBlob(res, 'image/jpeg', 0.92); });
+      if (blob) {
+        var file = new File([blob], 'vrax-paire-ete.jpg', { type: 'image/jpeg' });
+        if (navigator.canShare && navigator.canShare({ files: [file] })) {
+          await navigator.share({ files: [file], text: txt });
+          return;
+        }
+      }
+    } catch (err) {}
+    try {
+      if (navigator.share) { await navigator.share({ title: 'Paires \u00C9t\u00E9 \u2014 Vrax Voyage', text: txt, url: url }); }
+      else { await navigator.clipboard.writeText(txt); alert('Lien copi\u00E9 ! Collez-le o\u00F9 vous voulez \uD83D\uDC4D'); }
+    } catch (err) {}
   }
 
   function show(key){
@@ -268,7 +320,7 @@
   function boot(d){
     DATA = d;
     if (d.updated){
-      document.getElementById('updated').textContent = 'Prix relevés le ' + d.updated.split('-').reverse().join('/');
+      document.getElementById('updated').textContent = 'Prix relevés le ' + d.updated.split('-').reverse().join('/') + '  ·  ⚡ Les prix bougent chaque matin — les meilleures paires partent vite';
     }
     var tabs = document.getElementById('tabs');
     var keys = Object.keys(d.communities || {});
