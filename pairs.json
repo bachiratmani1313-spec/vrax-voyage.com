@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-03",
+  "updated": "2026-07-04",
   "season": "été 2026",
   "communities": {
     "maroc": {
@@ -196,7 +196,7 @@
             "price": 39,
             "date": "2026-09-21",
             "date_fr": "21 septembre",
-            "link": "https://www.aviasales.com/search/ALG2109LYS1?t=TO17899989001790009400000115ALGLYS_fa793ead2b45f5c00e07da4a8aacb16e_3451&search_date=03072026&expected_price_uuid=019f27b5-6dee-8030-ed4b-24c9e8b4661a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=yG8vZtDA2r4AjP1027mWDg&expected_price_source=share&expected_price_currency=eur&expected_price=39&marker=704469"
+            "link": "https://www.aviasales.com/search/ALG2109LYS1?t=TO17899989001790009400000115ALGLYS_fa793ead2b45f5c00e07da4a8aacb16e_3443&search_date=04072026&expected_price_uuid=019f2b41-bb10-8030-aa0a-7797e821a874&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=yG8vZtDA2r4AjP1027mWDg&expected_price_source=share&expected_price_currency=eur&expected_price=39&marker=704469"
           },
           "total": 90,
           "gap": 24,
