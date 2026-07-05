@@ -77,6 +77,21 @@
       "discount": 42
     },
     {
+      "o": "TLS",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 181,
+      "depart": "2026-09-18",
+      "ret": "2026-09-21",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/TLS1809ORN21091?t=TO17897673001789849200001425TLSALCORN17899806001790010900000445ORNORYTLS_b3572dc4dd52fdb4e2e10e8ffd2ac9fd_15962&search_date=05072026&expected_price_uuid=019f31db-186b-8030-643e-75472823c7d7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ovRitzVuCgHtUJlPrd2Mdw&expected_price_source=share&expected_price_currency=eur&expected_price=181&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 288,
+      "discount": 37
+    },
+    {
       "o": "BRU",
       "d": "TUN",
       "city": "Tunis",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 188,
-      "discount": 27
-    },
-    {
-      "o": "LIL",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 324,
-      "depart": "2026-08-14",
-      "ret": "2026-09-04",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LIL1408CZL04091?t=U217867106001786777800001180LILMRSCZL17885595001788622200000985CZLALGALCLIL_2a657eefad94e4c04dc081808e28f366_28758&search_date=01072026&expected_price_uuid=019f1e14-b752-8010-6015-d88920069d22&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wZxf8ooywR5HLleREYnFjg&expected_price_source=share&expected_price_currency=eur&expected_price=324&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 441,
       "discount": 27
     }
   ]
