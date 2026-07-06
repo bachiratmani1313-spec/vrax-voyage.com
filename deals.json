@@ -122,6 +122,21 @@
       "discount": 27
     },
     {
+      "o": "ORY",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 117,
+      "depart": "2026-09-04",
+      "ret": "2026-09-15",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/ORY0409TNG15091?t=TO17885322001788589200001010ORYAGPTNG17895072001789596900001435TNGAGPORY_9462667e457dbbf0f46d07389ca70dd0_10340&search_date=06072026&expected_price_uuid=019f34bd-aa48-8010-a478-e75dc8d873c0&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SQaQV4lgMS3qMXULBlsn5g&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=117&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 158,
+      "discount": 26
+    },
+    {
       "o": "MRS",
       "d": "RAK",
       "city": "Marrakech",
@@ -140,11 +155,11 @@
       "o": "LIL",
       "d": "CMN",
       "city": "Casablanca",
-      "price": 335,
+      "price": 334,
       "depart": "2026-07-14",
       "ret": "2026-07-21",
       "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/LIL1407CMN21071?t=TB17840574001784067600000230LILCMN17846445001784660100000200CMNLIL_33056578e8f4b232097816e25dbfc405_29386&search_date=06072026&expected_price_uuid=019f3635-bdef-8010-65b8-5b62458d01eb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=HC4onlqAlwqKqieV9-iiTg&expected_price_source=share&expected_price_currency=eur&expected_price=335&marker=704469",
+      "link": "https://www.aviasales.com/search/LIL1407CMN21071?t=TB17840574001784067600000230LILCMN17846445001784660100000200CMNLIL_33056578e8f4b232097816e25dbfc405_29386&search_date=06072026&expected_price_uuid=019f3635-bdef-8010-65b8-5b62458d01eb&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=HC4onlqAlwqKqieV9-iiTg&expected_price_source=share&expected_price_currency=eur&expected_price=334&marker=704469",
       "month": "2026-07",
       "active": true,
       "promo": true,
@@ -164,21 +179,6 @@
       "active": false,
       "promo": true,
       "baseline": 154,
-      "discount": 25
-    },
-    {
-      "o": "ORY",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 118,
-      "depart": "2026-09-04",
-      "ret": "2026-09-15",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY0409TNG15091?t=TO17885322001788589200001010ORYAGPTNG17895072001789596900001435TNGAGPORY_9462667e457dbbf0f46d07389ca70dd0_10340&search_date=06072026&expected_price_uuid=019f34bd-aa48-8010-a478-e75dc8d873c0&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=SQaQV4lgMS3qMXULBlsn5g&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=118&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 158,
       "discount": 25
     }
   ]
