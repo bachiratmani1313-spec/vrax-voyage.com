@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-05",
+  "updated": "2026-07-06",
   "deals": [
     {
       "o": "MRS",
@@ -20,16 +20,16 @@
       "o": "CRL",
       "d": "TNG",
       "city": "Tanger",
-      "price": 87,
+      "price": 88,
       "depart": "2026-08-28",
       "ret": "2026-09-15",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CRL2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7691&search_date=03072026&expected_price_uuid=019f28fe-33ec-8030-2054-68df7a2a8d01&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
+      "link": "https://www.aviasales.com/search/CRL2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7776&search_date=05072026&expected_price_uuid=019f33e4-f2f4-8030-6710-8b7da6a49da3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=88&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 170,
-      "discount": 49
+      "discount": 48
     },
     {
       "o": "ORY",
@@ -65,16 +65,16 @@
       "o": "BRU",
       "d": "TNG",
       "city": "Tanger",
-      "price": 87,
+      "price": 88,
       "depart": "2026-08-28",
       "ret": "2026-09-15",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7691&search_date=03072026&expected_price_uuid=019f28fe-33ec-8030-2054-68df7a2a8d01&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
+      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7776&search_date=05072026&expected_price_uuid=019f33e4-f2f4-8030-6710-8b7da6a49da3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=88&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 149,
-      "discount": 42
+      "discount": 41
     },
     {
       "o": "TLS",
