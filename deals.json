@@ -2,6 +2,36 @@
   "updated": "2026-07-09",
   "deals": [
     {
+      "o": "CDG",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 113,
+      "depart": "2026-08-31",
+      "ret": "2026-09-29",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CDG3108AGA29091?t=U217882079001788256500000870CDGBCNAGA17907072001790724300000225AGACDG_293bb569a93b293d733fc39dbff431ff_9824&search_date=09072026&expected_price_uuid=019f482a-734b-8030-6bca-40ce635b73bd&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PvLi3csuuFwAjFkifmnVWw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=113&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 264,
+      "discount": 57
+    },
+    {
+      "o": "CDG",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 85,
+      "depart": "2026-09-01",
+      "ret": "2026-09-29",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/CDG0109AGA29091?t=U217882757001788285000000215CDGAGA17907072001790724300000225AGACDG_c60d102920f50e4950682b0914fac768_7416&search_date=09072026&expected_price_uuid=019f482f-000d-8030-af42-988104296ce9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fMRQJ5iqII2EA7tq2uAXvg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=85&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 198,
+      "discount": 57
+    },
+    {
       "o": "ORY",
       "d": "AGA",
       "city": "Agadir",
@@ -30,21 +60,6 @@
       "promo": true,
       "baseline": 284,
       "discount": 51
-    },
-    {
-      "o": "CDG",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 134,
-      "depart": "2026-08-25",
-      "ret": "2026-09-08",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG2508AGA08091?t=U217876709001787680200000215CDGAGA17888928001788909900000225AGACDG_412f75699b849976d8b061c0e3a4e493_11640&search_date=09072026&expected_price_uuid=019f472c-3197-8030-2000-1dffc1a0f363&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rQ0cGUjJvS7YHvYmQVIldA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=134&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 264,
-      "discount": 49
     },
     {
       "o": "LYS",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 131,
       "discount": 22
-    },
-    {
-      "o": "CRL",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 124,
-      "depart": "2026-08-18",
-      "ret": "2026-09-03",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CRL1808RAK03091?t=FR17870847001787094000000215CRLRAK17884560001788557400001630RAKARNCRL_47b036684fd5cd0b2eabbcc57f5a6e17_10859&search_date=08072026&expected_price_uuid=019f40c8-7a9f-8010-29af-9bf59abe1eac&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gBoB-7lqz_KBKDV_3CLkkA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=124&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 156,
-      "discount": 21
     }
   ]
 }
