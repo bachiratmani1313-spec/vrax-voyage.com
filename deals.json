@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-09",
+  "updated": "2026-07-10",
   "deals": [
     {
       "o": "CDG",
@@ -17,21 +17,6 @@
       "discount": 57
     },
     {
-      "o": "CDG",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 85,
-      "depart": "2026-09-01",
-      "ret": "2026-09-29",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG0109AGA29091?t=U217882757001788285000000215CDGAGA17907072001790724300000225AGACDG_c60d102920f50e4950682b0914fac768_7416&search_date=09072026&expected_price_uuid=019f482f-000d-8030-af42-988104296ce9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fMRQJ5iqII2EA7tq2uAXvg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=85&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 198,
-      "discount": 57
-    },
-    {
       "o": "ORY",
       "d": "AGA",
       "city": "Agadir",
@@ -45,6 +30,21 @@
       "promo": true,
       "baseline": 242,
       "discount": 57
+    },
+    {
+      "o": "CDG",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 85,
+      "depart": "2026-09-01",
+      "ret": "2026-09-29",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/CDG0109AGA29091?t=U217882757001788285000000215CDGAGA17907072001790724300000225AGACDG_c60d102920f50e4950682b0914fac768_7416&search_date=09072026&expected_price_uuid=019f482f-000d-8030-af42-988104296ce9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fMRQJ5iqII2EA7tq2uAXvg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=85&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 172,
+      "discount": 51
     },
     {
       "o": "ORY",
