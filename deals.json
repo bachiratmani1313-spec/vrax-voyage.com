@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-12",
+  "updated": "2026-07-13",
   "deals": [
     {
       "o": "CDG",
@@ -15,6 +15,21 @@
       "promo": true,
       "baseline": 264,
       "discount": 57
+    },
+    {
+      "o": "BRU",
+      "d": "RBA",
+      "city": "Rabat",
+      "price": 97,
+      "depart": "2026-08-31",
+      "ret": "2026-09-27",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/BRU3108RBA27091?t=RK17881788001788264600001490CRLBGYRBA17905104001790545200000520RBAMANCRL_d9d271b4f7dbc456b993a30c8a08af39_8479&search_date=12072026&expected_price_uuid=019f57df-d131-8010-27bc-634e46941fae&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=47YeoXUhsJBd8n6KIpoJLw&expected_price_source=share&expected_price_currency=eur&expected_price=97&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 221,
+      "discount": 56
     },
     {
       "o": "CDG",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 156,
       "discount": 21
-    },
-    {
-      "o": "BRU",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 88,
-      "depart": "2026-08-28",
-      "ret": "2026-09-15",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2808TNG15091?t=FR17879151001787922300000180CRLTNG17894556001789469400000170TNGCRL_15371a552835c3f5a0f3b6c7c0ed1560_7767&search_date=06072026&expected_price_uuid=019f3682-ebed-8030-20df-6fd7f8f30d1b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=icdekJcczUtB3e0pNVzkcg&expected_price_source=share&expected_price_currency=eur&expected_price=88&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": false,
-      "baseline": 88,
-      "discount": 0
     }
   ]
 }
