@@ -28,8 +28,8 @@
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 221,
-      "discount": 56
+      "baseline": 210,
+      "discount": 54
     },
     {
       "o": "CDG",
@@ -88,8 +88,8 @@
       "month": "2026-09",
       "active": false,
       "promo": true,
-      "baseline": 118,
-      "discount": 41
+      "baseline": 117,
+      "discount": 40
     },
     {
       "o": "TLS",
@@ -103,7 +103,7 @@
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 385,
+      "baseline": 384,
       "discount": 39
     },
     {
@@ -120,21 +120,6 @@
       "promo": true,
       "baseline": 111,
       "discount": 37
-    },
-    {
-      "o": "LYS",
-      "d": "DJE",
-      "city": "Djerba",
-      "price": 168,
-      "depart": "2026-08-22",
-      "ret": "2026-09-04",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS2208DJE04091?t=TO17873805001787385600000145LYSDJE17885475001788559800000145DJELYS_261bf98124cde79f1ecabe0fc8484793_14918&search_date=06072026&expected_price_uuid=019f376e-bb8c-8030-6191-f193e6bcd6a6&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=chZuuVw4YlbphEYMEMFTow&expected_price_source=share&expected_price_currency=eur&expected_price=168&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 238,
-      "discount": 29
     },
     {
       "o": "BRU",
@@ -180,6 +165,21 @@
       "promo": true,
       "baseline": 156,
       "discount": 21
+    },
+    {
+      "o": "MRS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 106,
+      "depart": "2026-08-15",
+      "ret": "2026-09-15",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS1508ALG15091?t=V717868228001786825200000100MRSALG17894580001789467300000095ALGMRS_66a636905531e8b55d484fdc362828eb_9185&search_date=07072026&expected_price_uuid=019f3cf1-38fa-8030-ea29-ef8e479d984a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ZseZlcVM8eb7sCxnI-kEpQ&expected_price_source=share&expected_price_currency=eur&expected_price=106&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": false,
+      "baseline": 76,
+      "discount": 0
     }
   ]
 }
