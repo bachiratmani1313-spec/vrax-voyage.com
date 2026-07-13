@@ -5,16 +5,16 @@
       "o": "CDG",
       "d": "AGA",
       "city": "Agadir",
-      "price": 113,
+      "price": 104,
       "depart": "2026-08-31",
       "ret": "2026-09-29",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG3108AGA29091?t=U217882079001788256500000870CDGBCNAGA17907072001790724300000225AGACDG_293bb569a93b293d733fc39dbff431ff_9824&search_date=09072026&expected_price_uuid=019f482a-734b-8030-6bca-40ce635b73bd&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PvLi3csuuFwAjFkifmnVWw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=113&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG3108AGA29091?t=U217882079001788256500000870CDGBCNAGA17907072001790724300000225AGACDG_293bb569a93b293d733fc39dbff431ff_9067&search_date=13072026&expected_price_uuid=019f5ca9-d878-8030-a17d-347746cc4daf&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PvLi3csuuFwAjFkifmnVWw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=104&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 264,
-      "discount": 57
+      "discount": 61
     },
     {
       "o": "BRU",
