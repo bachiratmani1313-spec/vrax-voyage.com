@@ -137,6 +137,21 @@
       "discount": 36
     },
     {
+      "o": "TLS",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 118,
+      "depart": "2026-09-20",
+      "ret": "2026-10-11",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/TLS2009ORN11101?t=AH17899095001789911600000095TLSORN17917110001791720300000095ORNTLS_09cb5dfc1a33845a35df160ea9ffb69f_10480&search_date=14072026&expected_price_uuid=019f6115-4249-8030-2c22-33ca8596036d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dyEUogcOCFesDAvUgOYBww&expected_price_source=share&expected_price_currency=eur&expected_price=118&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 181,
+      "discount": 35
+    },
+    {
       "o": "MRS",
       "d": "RAK",
       "city": "Marrakech",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 142,
       "discount": 27
-    },
-    {
-      "o": "ORY",
-      "d": "DJE",
-      "city": "Djerba",
-      "price": 164,
-      "depart": "2026-10-01",
-      "ret": "2026-10-21",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/ORY0110DJE21101?t=TO17908875001790894100000170ORYDJE17925624001792576800000180DJEORY_2722caf0e22b743159a1b2032eba1ca4_14320&search_date=14072026&expected_price_uuid=019f5f54-5856-8010-acc9-007df5f01953&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ND9zR2b5LyoXWH_QEJmdaw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=164&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 205,
-      "discount": 20
     }
   ]
 }
