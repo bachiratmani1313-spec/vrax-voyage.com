@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-13",
+  "updated": "2026-07-14",
   "deals": [
     {
       "o": "CDG",
@@ -137,6 +137,21 @@
       "discount": 36
     },
     {
+      "o": "MRS",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 116,
+      "depart": "2026-10-15",
+      "ret": "2026-10-19",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/MRS1510RAK19101?t=W417920995001792140000000735MRSAGPRAK17924436001792489200000700RAKPMOMRS_3e9de8248c437b4f0b55db5087bd6793_10093&search_date=13072026&expected_price_uuid=019f5d42-d20d-8030-649b-1d788f5a30ab&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=EtLqu1VwwWFmdUYUZhKr0w&expected_price_source=share&expected_price_currency=eur&expected_price=116&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 171,
+      "discount": 32
+    },
+    {
       "o": "BRU",
       "d": "RAK",
       "city": "Marrakech",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 154,
       "discount": 23
-    },
-    {
-      "o": "CRL",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 124,
-      "depart": "2026-08-18",
-      "ret": "2026-09-03",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CRL1808RAK03091?t=FR17870847001787094000000215CRLRAK17884560001788557400001630RAKARNCRL_47b036684fd5cd0b2eabbcc57f5a6e17_10859&search_date=08072026&expected_price_uuid=019f40c8-7a9f-8010-29af-9bf59abe1eac&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gBoB-7lqz_KBKDV_3CLkkA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=124&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 156,
-      "discount": 21
     }
   ]
 }
