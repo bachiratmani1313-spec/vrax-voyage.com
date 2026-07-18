@@ -2,6 +2,36 @@
   "updated": "2026-07-18",
   "deals": [
     {
+      "o": "MRS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 81,
+      "depart": "2026-10-10",
+      "ret": "2026-10-17",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/MRS1010ALG17101?t=TO17916471001791649800000105MRSALG17922582001792267200000090ALGMRS_62ab890aaca274d39f46ea33951703b4_7238&search_date=18072026&expected_price_uuid=019f7653-44a6-8040-6b50-b056c8c0f9a4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=TberVbYSez5MK5fcUqpn3w&expected_price_source=share&expected_price_currency=eur&expected_price=81&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 197,
+      "discount": 59
+    },
+    {
+      "o": "TLS",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 95,
+      "depart": "2026-08-21",
+      "ret": "2026-09-22",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/TLS2108ORN22091?t=TO17873295001787332800000115TLSORN17900871001790097000000105ORNTLS_2190877f19bdb3bf31ccbf1bf658552f_8489&search_date=18072026&expected_price_uuid=019f7691-9cba-8030-2d6d-d5c2292d1bed&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ay-d_g1mw-i8ahjNjJgrWA&expected_price_source=share&expected_price_currency=eur&expected_price=95&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 226,
+      "discount": 58
+    },
+    {
       "o": "BRU",
       "d": "NDR",
       "city": "Nador",
@@ -15,21 +45,6 @@
       "promo": true,
       "baseline": 227,
       "discount": 57
-    },
-    {
-      "o": "TLS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 104,
-      "depart": "2026-08-21",
-      "ret": "2026-09-22",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/TLS2108ORN22091?t=TO17873295001787332800000115TLSORN17900871001790097000000105ORNTLS_2190877f19bdb3bf31ccbf1bf658552f_9172&search_date=14072026&expected_price_uuid=019f6032-291f-8010-61ae-e3b9fa5dd13d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ay-d_g1mw-i8ahjNjJgrWA&expected_price_source=share&expected_price_currency=eur&expected_price=104&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 226,
-      "discount": 54
     },
     {
       "o": "BRU",
@@ -80,15 +95,30 @@
       "o": "ORY",
       "d": "CMN",
       "city": "Casablanca",
-      "price": 131,
+      "price": 132,
       "depart": "2026-08-27",
       "ret": "2026-09-17",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/ORY2708CMN17091?t=TO17878548001787862600000190ORYCMN17896266001789641000000180CMNORY_af12b3afefe4d8542ba2ba55592a77b4_11743&search_date=17072026&expected_price_uuid=019f709f-0280-8040-6fca-488558380f4c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=8WfdQmlG7T5rxzkTwqvNug&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=131&marker=704469",
+      "link": "https://www.aviasales.com/search/ORY2708CMN17091?t=TO17878389001787846700000190ORYCMN17896266001789641000000180CMNORY_ddcab1f1f96b2d3eeb0b745d45d008be_11797&search_date=18072026&expected_price_uuid=019f7562-91db-8040-a36d-28f8d9aab430&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=dr1_6IY9-6j_dTYvtp2-XQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=132&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 220,
+      "discount": 40
+    },
+    {
+      "o": "ORY",
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 122,
+      "depart": "2026-10-06",
+      "ret": "2026-10-13",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/ORY0610DJE13101?t=TO17913195001791326100000170ORYDJE17918712001791885600000180DJEORY_4f573d4623a822d66e9c9620b8fb12b4_10901&search_date=18072026&expected_price_uuid=019f7684-ea19-8040-a831-771a41b8e033&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=N_Zyj6mhKnTfSAi1G3EsJA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=122&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 205,
       "discount": 40
     },
     {
@@ -105,21 +135,6 @@
       "promo": true,
       "baseline": 533,
       "discount": 36
-    },
-    {
-      "o": "ORY",
-      "d": "DJE",
-      "city": "Djerba",
-      "price": 134,
-      "depart": "2026-10-01",
-      "ret": "2026-10-08",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/ORY0110DJE08101?t=TO17908875001790894100000170ORYDJE17914392001791453600000180DJEORY_b8ef4cbc41a670cfeb73f9ed6ced408d_12015&search_date=17072026&expected_price_uuid=019f70c2-c667-8040-6cd2-3d85a1c20514&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=N_Zyj6mhKnTfSAi1G3EsJA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=134&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 205,
-      "discount": 35
     },
     {
       "o": "TLS",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 102,
       "discount": 31
-    },
-    {
-      "o": "TLS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 117,
-      "depart": "2026-09-18",
-      "ret": "2026-10-09",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/TLS1809ALG09101?t=TO17897691001789771500000100TLSALG17915709001791580200000095ALGTLS_85606cd75b0f81ce588361022d81ab6b_10476&search_date=17072026&expected_price_uuid=019f6f2f-0e5d-8040-ab41-4603600b8ad5&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=5_LL5IY9i3id8bICMwIxVg&expected_price_source=share&expected_price_currency=eur&expected_price=117&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 167,
-      "discount": 30
     }
   ]
 }
