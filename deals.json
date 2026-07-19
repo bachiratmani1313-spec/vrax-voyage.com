@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-18",
+  "updated": "2026-07-19",
   "deals": [
     {
       "o": "MRS",
@@ -92,6 +92,21 @@
       "discount": 48
     },
     {
+      "o": "CDG",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 111,
+      "depart": "2026-10-13",
+      "ret": "2026-11-10",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/CDG1310AGA10111?t=EC17919045001791913800000215CDGAGA17943153001794328500000220AGACDG_d9fda211b60a49da97bb8d8d3695d515_9918&search_date=18072026&expected_price_uuid=019f7787-6997-8040-212c-358a28a0bf12&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=LWVv5bdhqqcSwSP3xJgRfw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=111&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 193,
+      "discount": 42
+    },
+    {
       "o": "ORY",
       "d": "CMN",
       "city": "Casablanca",
@@ -160,21 +175,6 @@
       "ret": "2026-09-30",
       "when": "Sep · A/R",
       "link": "https://www.aviasales.com/search/BRU0109RAK30091?t=FR17882943001788303600000215CRLRAK17907531001790769300000210RAKCRL_40802607ee6ab293820c249f5e7e08bd_6245&search_date=18072026&expected_price_uuid=019f74f4-ac14-8040-a8f1-c8c3ae011d0b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ykuTzgNMKXQ6rYxtSDOxLQ&expected_price_source=share&expected_price_currency=eur&expected_price=70&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 102,
-      "discount": 31
-    },
-    {
-      "o": "CRL",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 70,
-      "depart": "2026-09-01",
-      "ret": "2026-09-30",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CRL0109RAK30091?t=FR17882943001788303600000215CRLRAK17907531001790769300000210RAKCRL_40802607ee6ab293820c249f5e7e08bd_6245&search_date=18072026&expected_price_uuid=019f74f4-ac14-8040-a8f1-c8c3ae011d0b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ykuTzgNMKXQ6rYxtSDOxLQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=70&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
