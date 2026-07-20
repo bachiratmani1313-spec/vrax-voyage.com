@@ -3,6 +3,21 @@
   "deals": [
     {
       "o": "MRS",
+      "d": "OUD",
+      "city": "Oujda",
+      "price": 81,
+      "depart": "2026-08-22",
+      "ret": "2026-09-26",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS2208OUD26091?t=FR17874261001787430300000130MRSOUD17904558001790466600000120OUDMRS_386551ac2613e8f0a38303f831ac4e0a_7254&search_date=20072026&expected_price_uuid=019f7f4a-ce2a-8040-addd-8b6c0a2b62ec&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=d5uBbhy7dcXgM7DkC8vacw&expected_price_source=share&expected_price_currency=eur&expected_price=81&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 399,
+      "discount": 80
+    },
+    {
+      "o": "MRS",
       "d": "ALG",
       "city": "Alger",
       "price": 81,
@@ -160,21 +175,6 @@
       "ret": "2026-09-30",
       "when": "Sep · A/R",
       "link": "https://www.aviasales.com/search/BRU0109RAK30091?t=FR17882943001788303600000215CRLRAK17907531001790769300000210RAKCRL_40802607ee6ab293820c249f5e7e08bd_6245&search_date=18072026&expected_price_uuid=019f74f4-ac14-8040-a8f1-c8c3ae011d0b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ykuTzgNMKXQ6rYxtSDOxLQ&expected_price_source=share&expected_price_currency=eur&expected_price=70&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 102,
-      "discount": 31
-    },
-    {
-      "o": "CRL",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 70,
-      "depart": "2026-09-01",
-      "ret": "2026-09-30",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CRL0109RAK30091?t=FR17882943001788303600000215CRLRAK17907531001790769300000210RAKCRL_40802607ee6ab293820c249f5e7e08bd_6245&search_date=18072026&expected_price_uuid=019f74f4-ac14-8040-a8f1-c8c3ae011d0b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ykuTzgNMKXQ6rYxtSDOxLQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=70&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
