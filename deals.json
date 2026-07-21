@@ -167,19 +167,19 @@
       "discount": 31
     },
     {
-      "o": "MRS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 59,
-      "depart": "2026-09-06",
-      "ret": "2026-09-17",
+      "o": "CRL",
+      "d": "OUD",
+      "city": "Oujda",
+      "price": 93,
+      "depart": "2026-09-18",
+      "ret": "2026-09-25",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/MRS0609RAK17091?t=FR17887317001788738300000170MRSRAK17896347001789648500000170RAKMRS_2ad293236c104fe97802a7a6651924f9_5283&search_date=20072026&expected_price_uuid=019f7fc7-3f63-8030-ac94-d9a5b0d99a9e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PwdQaDpYZpHkh0rPSSL07Q&expected_price_source=share&expected_price_currency=eur&expected_price=59&marker=704469",
+      "link": "https://www.aviasales.com/search/CRL1809OUD25091?t=FR17897478001789755000000180CRLOUD17903613001790375700000180OUDCRL_a1297d3d297b328dc047fba4840c891c_8315&search_date=21072026&expected_price_uuid=019f85b8-7ed2-8040-69c4-0b7757bf2da0&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iE5oI3l45TRJwko6ZhW5vw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=93&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
-      "baseline": 83,
-      "discount": 29
+      "baseline": 133,
+      "discount": 30
     }
   ]
 }
