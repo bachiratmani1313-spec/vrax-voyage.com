@@ -32,6 +32,21 @@
       "discount": 59
     },
     {
+      "o": "LYS",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 61,
+      "depart": "2026-09-10",
+      "ret": "2026-09-17",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/LYS1009RAK17091?t=V717890617001789069800000195LYSRAK17896767001789691400000185RAKLYS_9f91413fff1b33e6cc3b5909a25c5d38_5408&search_date=22072026&expected_price_uuid=019f89e4-87ce-8030-ef05-7c13c4285aa1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6jOFhrpTnJ3bRi1niZGZuQ&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 113,
+      "discount": 46
+    },
+    {
       "o": "CDG",
       "d": "AGA",
       "city": "Agadir",
@@ -77,6 +92,21 @@
       "discount": 38
     },
     {
+      "o": "MRS",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 189,
+      "depart": "2026-08-31",
+      "ret": "2026-09-27",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS3108CMN27091?t=TP17881737001788196200000435MRSAGPCMN17905290001790553000000340CMNLISMRS_a2ad93f06650f04ab32f337abaaec22e_16897&search_date=22072026&expected_price_uuid=019f89ee-a6c2-8040-a511-90607fe18867&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4Knl3o43qZNc6fiBRttPtA&expected_price_source=share&expected_price_currency=eur&expected_price=189&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 301,
+      "discount": 37
+    },
+    {
       "o": "CDG",
       "d": "RAK",
       "city": "Marrakech",
@@ -95,16 +125,16 @@
       "o": "CDG",
       "d": "RAK",
       "city": "Marrakech",
-      "price": 106,
+      "price": 107,
       "depart": "2026-10-12",
       "ret": "2026-10-20",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG1210RAK20101?t=U217917860001791794700000205CDGRAK17924880001792503900000205RAKCDG_a12ba307af4781194deb87e300738a89_9512&search_date=22072026&expected_price_uuid=019f88ac-0b65-8030-e444-ec3b23534106&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sBLr8c-i2SDYj0MiNuyHlQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=106&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG1210RAK20101?t=U217917860001791794700000205CDGRAK17924880001792503900000205RAKCDG_a12ba307af4781194deb87e300738a89_9512&search_date=22072026&expected_price_uuid=019f88ac-0b65-8030-e444-ec3b23534106&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sBLr8c-i2SDYj0MiNuyHlQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=107&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": true,
       "baseline": 158,
-      "discount": 33
+      "discount": 32
     },
     {
       "o": "LYS",
@@ -150,36 +180,6 @@
       "promo": true,
       "baseline": 133,
       "discount": 30
-    },
-    {
-      "o": "LYS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 226,
-      "depart": "2026-08-12",
-      "ret": "2026-09-05",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS1208ORN05091?t=TO17865171001786521300000130LYSORN17885934001788604800000130ORNLYS_c3927e06eef553b15a40d146efb19660_20195&search_date=21072026&expected_price_uuid=019f86ce-ef8c-8030-2a5c-23238b1be706&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=use8Ck4M_YpepCaEfSKNAw&expected_price_source=share&expected_price_currency=eur&expected_price=226&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 318,
-      "discount": 29
-    },
-    {
-      "o": "MRS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 59,
-      "depart": "2026-09-06",
-      "ret": "2026-09-17",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/MRS0609RAK17091?t=FR17887317001788738300000170MRSRAK17896347001789648500000170RAKMRS_2ad293236c104fe97802a7a6651924f9_5283&search_date=20072026&expected_price_uuid=019f7fc7-3f63-8030-ac94-d9a5b0d99a9e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=PwdQaDpYZpHkh0rPSSL07Q&expected_price_source=share&expected_price_currency=eur&expected_price=59&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 83,
-      "discount": 29
     }
   ]
 }
