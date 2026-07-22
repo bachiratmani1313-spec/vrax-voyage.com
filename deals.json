@@ -92,6 +92,21 @@
       "discount": 36
     },
     {
+      "o": "CDG",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 106,
+      "depart": "2026-10-12",
+      "ret": "2026-10-20",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/CDG1210RAK20101?t=U217917860001791794700000205CDGRAK17924880001792503900000205RAKCDG_a12ba307af4781194deb87e300738a89_9512&search_date=22072026&expected_price_uuid=019f88ac-0b65-8030-e444-ec3b23534106&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sBLr8c-i2SDYj0MiNuyHlQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=106&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 158,
+      "discount": 33
+    },
+    {
       "o": "LYS",
       "d": "RAK",
       "city": "Marrakech",
@@ -148,7 +163,7 @@
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 320,
+      "baseline": 318,
       "discount": 29
     },
     {
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 83,
       "discount": 29
-    },
-    {
-      "o": "CDG",
-      "d": "OUD",
-      "city": "Oujda",
-      "price": 256,
-      "depart": "2026-07-30",
-      "ret": "2026-09-09",
-      "when": "Juil · A/R",
-      "link": "https://www.aviasales.com/search/CDG3007OUD09091?t=EC17853975001785456300001040CDGCMNOUD17889612001788996300000525OUDRAKCDG_4dfccfcc843150444801aea51ee2850f_22880&search_date=17072026&expected_price_uuid=019f723a-35b8-8030-e87d-278177d8789e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=91jtQhmySwS8v9gsby825A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=256&marker=704469",
-      "month": "2026-07",
-      "active": true,
-      "promo": true,
-      "baseline": 358,
-      "discount": 28
     }
   ]
 }
