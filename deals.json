@@ -35,16 +35,16 @@
       "o": "LYS",
       "d": "RAK",
       "city": "Marrakech",
-      "price": 61,
+      "price": 60,
       "depart": "2026-09-10",
       "ret": "2026-09-17",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/LYS1009RAK17091?t=V717890617001789069800000195LYSRAK17896767001789691400000185RAKLYS_9f91413fff1b33e6cc3b5909a25c5d38_5408&search_date=22072026&expected_price_uuid=019f89e4-87ce-8030-ef05-7c13c4285aa1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6jOFhrpTnJ3bRi1niZGZuQ&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
+      "link": "https://www.aviasales.com/search/LYS1009RAK17091?t=V717890617001789069800000195LYSRAK17896767001789691400000185RAKLYS_9f91413fff1b33e6cc3b5909a25c5d38_5408&search_date=22072026&expected_price_uuid=019f89e4-87ce-8030-ef05-7c13c4285aa1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6jOFhrpTnJ3bRi1niZGZuQ&expected_price_source=share&expected_price_currency=eur&expected_price=60&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
       "baseline": 113,
-      "discount": 46
+      "discount": 47
     },
     {
       "o": "CDG",
@@ -74,6 +74,21 @@
       "active": true,
       "promo": true,
       "baseline": 220,
+      "discount": 40
+    },
+    {
+      "o": "LYS",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 131,
+      "depart": "2026-08-28",
+      "ret": "2026-09-05",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LYS2808RAK05091?t=TO17879178001787925900000195LYSRAK17885982001788612600000180RAKLYS_330653ba6237edb0722d87e54669991b_11655&search_date=22072026&expected_price_uuid=019f8b32-c963-8040-6c12-c57ac7970254&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=93MHCITgPZ0IeQXqRyxoGQ&expected_price_source=share&expected_price_currency=eur&expected_price=131&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 219,
       "discount": 40
     },
     {
@@ -125,31 +140,16 @@
       "o": "CDG",
       "d": "RAK",
       "city": "Marrakech",
-      "price": 107,
+      "price": 106,
       "depart": "2026-10-12",
       "ret": "2026-10-20",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG1210RAK20101?t=U217917860001791794700000205CDGRAK17924880001792503900000205RAKCDG_a12ba307af4781194deb87e300738a89_9512&search_date=22072026&expected_price_uuid=019f88ac-0b65-8030-e444-ec3b23534106&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sBLr8c-i2SDYj0MiNuyHlQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=107&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG1210RAK20101?t=U217917860001791794700000205CDGRAK17924880001792503900000205RAKCDG_a12ba307af4781194deb87e300738a89_9512&search_date=22072026&expected_price_uuid=019f88ac-0b65-8030-e444-ec3b23534106&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sBLr8c-i2SDYj0MiNuyHlQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=106&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": true,
       "baseline": 158,
-      "discount": 32
-    },
-    {
-      "o": "LYS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 152,
-      "depart": "2026-08-25",
-      "ret": "2026-08-31",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS2508RAK31081?t=KL17876577001787665800000195LYSRAK17882058001788284100001245RAKAMSLYS_6161e3ab152b3c73140c13e00efeabdc_13605&search_date=19072026&expected_price_uuid=019f7a9c-ae33-8030-ef9e-27ace3220711&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2uiPgvouEqWSeXISKq_0_g&expected_price_source=share&expected_price_currency=eur&expected_price=152&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 219,
-      "discount": 31
+      "discount": 33
     },
     {
       "o": "MRS",
