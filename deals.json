@@ -32,6 +32,21 @@
       "discount": 59
     },
     {
+      "o": "LIL",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 176,
+      "depart": "2026-08-29",
+      "ret": "2026-09-29",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LIL2908ORN29091?t=V717880264001788120300001625LILMRSORN17906919001790756400001015ORNTLSLIL_e0e5d0ab73f9aced0d5428e41fabfe7e_15683&search_date=22072026&expected_price_uuid=019f8c19-c838-8040-afd6-dc1640c47559&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Y_MCYDxc9d6aLtQmeHVATw&expected_price_source=share&expected_price_currency=eur&expected_price=176&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 430,
+      "discount": 59
+    },
+    {
       "o": "LYS",
       "d": "RAK",
       "city": "Marrakech",
@@ -59,21 +74,6 @@
       "active": false,
       "promo": true,
       "baseline": 184,
-      "discount": 40
-    },
-    {
-      "o": "ORY",
-      "d": "CMN",
-      "city": "Casablanca",
-      "price": 132,
-      "depart": "2026-08-27",
-      "ret": "2026-09-17",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/ORY2708CMN17091?t=TO17878389001787846700000190ORYCMN17896266001789641000000180CMNORY_ddcab1f1f96b2d3eeb0b745d45d008be_11797&search_date=18072026&expected_price_uuid=019f7562-91db-8040-a36d-28f8d9aab430&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=dr1_6IY9-6j_dTYvtp2-XQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=132&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 220,
       "discount": 40
     },
     {
