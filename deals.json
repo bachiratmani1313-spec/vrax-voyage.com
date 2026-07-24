@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-23",
+  "updated": "2026-07-24",
   "deals": [
     {
       "o": "MRS",
@@ -152,21 +152,6 @@
       "discount": 36
     },
     {
-      "o": "CRL",
-      "d": "OUD",
-      "city": "Oujda",
-      "price": 86,
-      "depart": "2026-09-18",
-      "ret": "2026-09-25",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CRL1809OUD25091?t=FR17897478001789755000000180CRLOUD17903577001790375700000240OUDCRL_2f38ae5e69062fee50af3c363eb4a651_7696&search_date=23072026&expected_price_uuid=019f8e5a-95e2-8040-2ccd-d44e223d799d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2aktz1vyww1MtzB5jNymjw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=86&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 133,
-      "discount": 35
-    },
-    {
       "o": "MRS",
       "d": "AGA",
       "city": "Agadir",
@@ -180,6 +165,21 @@
       "promo": true,
       "baseline": 151,
       "discount": 31
+    },
+    {
+      "o": "BRU",
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 198,
+      "depart": "2026-09-25",
+      "ret": "2026-09-30",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/BRU2509DJE30091?t=LH17903712001790407200000660BRUMUCDJE17907987001790890200001465DJEMRSCRL_7dd6d8036f44c71021756d7cc81e5c30_17703&search_date=23072026&expected_price_uuid=019f8e7e-f625-8030-a084-49e3d23d33b9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=obydpUM1bui7pvkH6gZPpA&expected_price_source=share&expected_price_currency=eur&expected_price=198&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 282,
+      "discount": 30
     }
   ]
 }
