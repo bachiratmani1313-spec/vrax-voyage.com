@@ -17,21 +17,6 @@
       "discount": 76
     },
     {
-      "o": "MRS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 81,
-      "depart": "2026-10-10",
-      "ret": "2026-10-17",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/MRS1010ALG17101?t=TO17916471001791649800000105MRSALG17922582001792267200000090ALGMRS_62ab890aaca274d39f46ea33951703b4_7238&search_date=18072026&expected_price_uuid=019f7653-44a6-8040-6b50-b056c8c0f9a4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=TberVbYSez5MK5fcUqpn3w&expected_price_source=share&expected_price_currency=eur&expected_price=81&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 197,
-      "discount": 59
-    },
-    {
       "o": "LIL",
       "d": "ORN",
       "city": "Oran",
@@ -60,6 +45,21 @@
       "promo": true,
       "baseline": 113,
       "discount": 47
+    },
+    {
+      "o": "MRS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 81,
+      "depart": "2026-10-10",
+      "ret": "2026-10-17",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/MRS1010ALG17101?t=TO17916471001791649800000105MRSALG17922582001792267200000090ALGMRS_62ab890aaca274d39f46ea33951703b4_7238&search_date=18072026&expected_price_uuid=019f7653-44a6-8040-6b50-b056c8c0f9a4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=TberVbYSez5MK5fcUqpn3w&expected_price_source=share&expected_price_currency=eur&expected_price=81&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 139,
+      "discount": 42
     },
     {
       "o": "CDG",
