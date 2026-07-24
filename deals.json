@@ -20,16 +20,16 @@
       "o": "LYS",
       "d": "ORN",
       "city": "Oran",
-      "price": 129,
+      "price": 126,
       "depart": "2026-08-28",
       "ret": "2026-09-08",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS2808ORN08091?t=TO17878968001787901000000130LYSORN17888976001788909000000130ORNLYS_71ae43e677f4714db23f5fa2fe91be68_11461&search_date=24072026&expected_price_uuid=019f943b-47c9-8040-67ed-3886a3b4b237&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=rlaP5hNh9eHklX2ELRG5nA&expected_price_source=share&expected_price_currency=eur&expected_price=129&marker=704469",
+      "link": "https://www.aviasales.com/search/LYS2808ORN08091?t=TO17878968001787901000000130LYSORN17888976001788909000000130ORNLYS_71ae43e677f4714db23f5fa2fe91be68_11164&search_date=24072026&expected_price_uuid=019f945c-2c71-8040-6250-37fb5fe3ff0c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=rlaP5hNh9eHklX2ELRG5nA&expected_price_source=share&expected_price_currency=eur&expected_price=126&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 318,
-      "discount": 59
+      "discount": 60
     },
     {
       "o": "LIL",
@@ -167,19 +167,19 @@
       "discount": 36
     },
     {
-      "o": "MRS",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 104,
-      "depart": "2026-09-07",
-      "ret": "2026-09-14",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/MRS0709AGA14091?t=FR17888067001788892800001495MRSOUDAGA17894223001789477800000865AGAFEZMRS_8472dcadaf4d6377e79899397bcf2376_9345&search_date=20072026&expected_price_uuid=019f8106-b3bc-8030-22f4-1504cb9c1d9e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kMvIG_eSFFRDczeUTQzU3g&expected_price_source=share&expected_price_currency=eur&expected_price=104&marker=704469",
-      "month": "2026-09",
-      "active": false,
+      "o": "LIL",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 174,
+      "depart": "2026-08-14",
+      "ret": "2026-09-02",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LIL1408RAK02091?t=TO17867376001786747200000220LILRAK17883321001788420000001405RAKAGPMRSLIL_e54cb215f8f6365e9b35efff57ebb7b5_15359&search_date=24072026&expected_price_uuid=019f94e9-8ac5-8040-237e-731e909e1aea&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4WiCujUuy4CSI4l7xEfwFw&expected_price_source=share&expected_price_currency=eur&expected_price=174&marker=704469",
+      "month": "2026-08",
+      "active": true,
       "promo": true,
-      "baseline": 151,
-      "discount": 31
+      "baseline": 259,
+      "discount": 33
     }
   ]
 }
