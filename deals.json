@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24",
+  "updated": "2026-07-25",
   "deals": [
     {
       "o": "MRS",
@@ -167,19 +167,19 @@
       "discount": 36
     },
     {
-      "o": "LIL",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 174,
-      "depart": "2026-08-14",
-      "ret": "2026-09-02",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LIL1408RAK02091?t=TO17867376001786747200000220LILRAK17883321001788420000001405RAKAGPMRSLIL_e54cb215f8f6365e9b35efff57ebb7b5_15359&search_date=24072026&expected_price_uuid=019f94e9-8ac5-8040-237e-731e909e1aea&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4WiCujUuy4CSI4l7xEfwFw&expected_price_source=share&expected_price_currency=eur&expected_price=174&marker=704469",
-      "month": "2026-08",
-      "active": true,
+      "o": "MRS",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 104,
+      "depart": "2026-09-07",
+      "ret": "2026-09-14",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/MRS0709AGA14091?t=FR17888067001788892800001495MRSOUDAGA17894223001789477800000865AGAFEZMRS_8472dcadaf4d6377e79899397bcf2376_9345&search_date=20072026&expected_price_uuid=019f8106-b3bc-8030-22f4-1504cb9c1d9e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kMvIG_eSFFRDczeUTQzU3g&expected_price_source=share&expected_price_currency=eur&expected_price=104&marker=704469",
+      "month": "2026-09",
+      "active": false,
       "promo": true,
-      "baseline": 259,
-      "discount": 33
+      "baseline": 151,
+      "discount": 31
     }
   ]
 }
