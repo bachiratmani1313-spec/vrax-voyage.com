@@ -32,6 +32,21 @@
       "discount": 50
     },
     {
+      "o": "BRU",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 141,
+      "depart": "2026-09-08",
+      "ret": "2026-09-29",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/BRU0809TUN29091?t=TU17888703001788876000000155BRUTUN17906682001790681100000155TUNBRU_9de7e132334b6d1c2f405f15e8ddd951_12576&search_date=26072026&expected_price_uuid=019f9e3c-f0ea-8030-a8d7-e32022cb6d8c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=Gu7c9qMts4pg9k0wG1u9pQ&expected_price_source=share&expected_price_currency=eur&expected_price=141&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 262,
+      "discount": 46
+    },
+    {
       "o": "CRL",
       "d": "OUD",
       "city": "Oujda",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 249,
       "discount": 30
-    },
-    {
-      "o": "BRU",
-      "d": "FEZ",
-      "city": "Fès",
-      "price": 202,
-      "depart": "2026-08-15",
-      "ret": "2026-08-29",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU1508FEZ29081?t=FR17868291001786836600000185CRLFEZ17880354001788084900000765FEZVLCBRU_f43e56126ba510225183aae063bf230a_17869&search_date=25072026&expected_price_uuid=019f988f-3d3f-8040-aeff-aae1d30db4d2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pXDsiIpF02TUAsq9z73DQA&expected_price_source=share&expected_price_currency=eur&expected_price=202&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 286,
-      "discount": 29
     }
   ]
 }
