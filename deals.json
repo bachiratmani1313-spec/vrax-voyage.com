@@ -80,11 +80,11 @@
       "o": "CDG",
       "d": "RAK",
       "city": "Marrakech",
-      "price": 97,
+      "price": 96,
       "depart": "2026-10-11",
       "ret": "2026-10-16",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG1110RAK16101?t=U217917317001791740700000210CDGRAK17921421001792158000000205RAKCDG_3db997264db52b4afb29dc7ed7b70ef3_8677&search_date=23072026&expected_price_uuid=019f8e8d-f391-8030-2a72-3a1dc5120b12&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=czL1gemxGG8gnQb5qmtPVQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=97&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG1110RAK16101?t=U217917317001791740700000210CDGRAK17921421001792158000000205RAKCDG_3db997264db52b4afb29dc7ed7b70ef3_8533&search_date=26072026&expected_price_uuid=019f9f65-a940-8030-6e91-e61ac1af7503&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=czL1gemxGG8gnQb5qmtPVQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": true,
@@ -105,21 +105,6 @@
       "promo": true,
       "baseline": 301,
       "discount": 37
-    },
-    {
-      "o": "CDG",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 96,
-      "depart": "2026-08-24",
-      "ret": "2026-09-10",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG2408RAK10091?t=U217875995001787608200000205CDGRAK17890329001789048800000205RAKCDG_bbfc35e55b95c292289a9610d3942bd5_8603&search_date=21072026&expected_price_uuid=019f82a2-30ec-8030-6656-60c230f35c2a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ScP_p_xy4VlC3Dh4xa9M9w&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 150,
-      "discount": 36
     },
     {
       "o": "CRL",
@@ -180,6 +165,21 @@
       "promo": true,
       "baseline": 249,
       "discount": 30
+    },
+    {
+      "o": "BRU",
+      "d": "FEZ",
+      "city": "Fès",
+      "price": 202,
+      "depart": "2026-08-15",
+      "ret": "2026-08-29",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/BRU1508FEZ29081?t=FR17868291001786836600000185CRLFEZ17880354001788084900000765FEZVLCBRU_f43e56126ba510225183aae063bf230a_17869&search_date=25072026&expected_price_uuid=019f988f-3d3f-8040-aeff-aae1d30db4d2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pXDsiIpF02TUAsq9z73DQA&expected_price_source=share&expected_price_currency=eur&expected_price=202&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 286,
+      "discount": 29
     }
   ]
 }
