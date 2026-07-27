@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-26",
+  "updated": "2026-07-27",
   "deals": [
     {
       "o": "MRS",
@@ -30,6 +30,21 @@
       "promo": true,
       "baseline": 251,
       "discount": 50
+    },
+    {
+      "o": "MRS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 94,
+      "depart": "2026-08-30",
+      "ret": "2026-09-18",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS3008ALG18091?t=V717880705001788072900000100MRSALG17897664001789775700000095ALGMRS_66e254b03533ada977aa1da8f7942988_8366&search_date=27072026&expected_price_uuid=019fa12c-2b0f-8030-21e1-17d24543a42a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=olwOW-hkqqbzpDsxUyajoQ&expected_price_source=share&expected_price_currency=eur&expected_price=94&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 183,
+      "discount": 49
     },
     {
       "o": "BRU",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 249,
       "discount": 30
-    },
-    {
-      "o": "BRU",
-      "d": "FEZ",
-      "city": "Fès",
-      "price": 202,
-      "depart": "2026-08-15",
-      "ret": "2026-08-29",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU1508FEZ29081?t=FR17868291001786836600000185CRLFEZ17880354001788084900000765FEZVLCBRU_f43e56126ba510225183aae063bf230a_17869&search_date=25072026&expected_price_uuid=019f988f-3d3f-8040-aeff-aae1d30db4d2&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=pXDsiIpF02TUAsq9z73DQA&expected_price_source=share&expected_price_currency=eur&expected_price=202&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 286,
-      "discount": 29
     }
   ]
 }
