@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-27",
+  "updated": "2026-07-28",
   "deals": [
     {
       "o": "BRU",
@@ -92,36 +92,6 @@
       "discount": 39
     },
     {
-      "o": "BRU",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 135,
-      "depart": "2026-08-29",
-      "ret": "2026-09-12",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2908NDR12091?t=FR17880213001788028200000175CRLNDR17892396001789253700000175NDRCRL_c0986387b7b28a338bd4fde318cc7c6a_11960&search_date=27072026&expected_price_uuid=019fa418-f4af-8030-aa9a-80f52bdcad90&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=D7cqvXnwCdc7bBF6gX3F4A&expected_price_source=share&expected_price_currency=eur&expected_price=135&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 214,
-      "discount": 37
-    },
-    {
-      "o": "CRL",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 135,
-      "depart": "2026-08-29",
-      "ret": "2026-09-12",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CRL2908NDR12091?t=FR17880213001788028200000175CRLNDR17892396001789253700000175NDRCRL_c0986387b7b28a338bd4fde318cc7c6a_11960&search_date=27072026&expected_price_uuid=019fa418-f4af-8030-aa9a-80f52bdcad90&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=D7cqvXnwCdc7bBF6gX3F4A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=135&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 214,
-      "discount": 37
-    },
-    {
       "o": "MRS",
       "d": "CMN",
       "city": "Casablanca",
@@ -138,6 +108,21 @@
     },
     {
       "o": "BRU",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 135,
+      "depart": "2026-08-29",
+      "ret": "2026-09-12",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/BRU2908NDR12091?t=FR17880213001788028200000175CRLNDR17892396001789253700000175NDRCRL_c0986387b7b28a338bd4fde318cc7c6a_11960&search_date=27072026&expected_price_uuid=019fa418-f4af-8030-aa9a-80f52bdcad90&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=D7cqvXnwCdc7bBF6gX3F4A&expected_price_source=share&expected_price_currency=eur&expected_price=135&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 194,
+      "discount": 30
+    },
+    {
+      "o": "BRU",
       "d": "DJE",
       "city": "Djerba",
       "price": 198,
@@ -149,6 +134,21 @@
       "active": false,
       "promo": true,
       "baseline": 282,
+      "discount": 30
+    },
+    {
+      "o": "CRL",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 135,
+      "depart": "2026-08-29",
+      "ret": "2026-09-12",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CRL2908NDR12091?t=FR17880213001788028200000175CRLNDR17892396001789253700000175NDRCRL_c0986387b7b28a338bd4fde318cc7c6a_11960&search_date=27072026&expected_price_uuid=019fa418-f4af-8030-aa9a-80f52bdcad90&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=D7cqvXnwCdc7bBF6gX3F4A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=135&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 194,
       "discount": 30
     },
     {
