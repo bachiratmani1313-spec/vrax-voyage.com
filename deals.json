@@ -122,6 +122,21 @@
       "discount": 39
     },
     {
+      "o": "CDG",
+      "d": "FEZ",
+      "city": "Fès",
+      "price": 181,
+      "depart": "2026-09-04",
+      "ret": "2026-09-20",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/CDG0409FEZ20091?t=U217885586001788594600000660CDGMXPBGYFEZ17899410001789999200000910FEZRAKCDG_53121680b0cff7d63d69e6857f509afe_16453&search_date=29072026&expected_price_uuid=019faec8-3ef8-8040-ac73-bbf53a5dd428&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IH13hQhCWDvIV2EaUIKJVA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=181&marker=704469",
+      "month": "2026-09",
+      "active": false,
+      "promo": true,
+      "baseline": 292,
+      "discount": 38
+    },
+    {
       "o": "CRL",
       "d": "FEZ",
       "city": "Fès",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 244,
       "discount": 31
-    },
-    {
-      "o": "BRU",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 135,
-      "depart": "2026-08-29",
-      "ret": "2026-09-12",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2908NDR12091?t=FR17880213001788028200000175CRLNDR17892396001789253700000175NDRCRL_c0986387b7b28a338bd4fde318cc7c6a_11960&search_date=27072026&expected_price_uuid=019fa418-f4af-8030-aa9a-80f52bdcad90&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=D7cqvXnwCdc7bBF6gX3F4A&expected_price_source=share&expected_price_currency=eur&expected_price=135&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 194,
-      "discount": 30
     }
   ]
 }
