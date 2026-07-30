@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-29",
+  "updated": "2026-07-30",
   "deals": [
     {
       "o": "BRU",
@@ -15,6 +15,21 @@
       "promo": true,
       "baseline": 94,
       "discount": 57
+    },
+    {
+      "o": "LIL",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 141,
+      "depart": "2026-10-09",
+      "ret": "2026-10-14",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/LIL0910ALG14101?t=AH17915754001791580500000145LILALG17919648001791977700000155ALGLIL_cd6637eef1ceeda9079caea1ccaada59_12940&search_date=29072026&expected_price_uuid=019fafe6-768e-8030-2dad-8fa4183131d6&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bFXx7NdLRaDpUxsAPD91QA&expected_price_source=share&expected_price_currency=eur&expected_price=141&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 312,
+      "discount": 55
     },
     {
       "o": "MRS",
@@ -125,11 +140,11 @@
       "o": "CDG",
       "d": "FEZ",
       "city": "Fès",
-      "price": 181,
+      "price": 180,
       "depart": "2026-09-04",
       "ret": "2026-09-20",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG0409FEZ20091?t=U217885586001788594600000660CDGMXPBGYFEZ17899410001789999200000910FEZRAKCDG_53121680b0cff7d63d69e6857f509afe_16453&search_date=29072026&expected_price_uuid=019faec8-3ef8-8040-ac73-bbf53a5dd428&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IH13hQhCWDvIV2EaUIKJVA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=181&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG0409FEZ20091?t=U217885586001788594600000660CDGMXPBGYFEZ17899410001789999200000910FEZRAKCDG_53121680b0cff7d63d69e6857f509afe_16453&search_date=29072026&expected_price_uuid=019faec8-3ef8-8040-ac73-bbf53a5dd428&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IH13hQhCWDvIV2EaUIKJVA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=180&marker=704469",
       "month": "2026-09",
       "active": false,
       "promo": true,
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 113,
       "discount": 35
-    },
-    {
-      "o": "CDG",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 169,
-      "depart": "2026-09-09",
-      "ret": "2026-09-13",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG0909TNG13091?t=W417889927001789026300000620CDGBCNTNG17893326001789423800001460TNGVLCMXPCDG_de55c2c2a7a3b7ddda8884671beaefa6_15117&search_date=28072026&expected_price_uuid=019fa810-6c8a-8040-a574-87c18de743ec&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Li5A4lYWPa9SrKIBFlluIA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=169&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 244,
-      "discount": 31
     }
   ]
 }
