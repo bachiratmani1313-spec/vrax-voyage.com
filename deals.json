@@ -28,8 +28,8 @@
       "month": "2026-10",
       "active": false,
       "promo": true,
-      "baseline": 312,
-      "discount": 55
+      "baseline": 306,
+      "discount": 54
     },
     {
       "o": "MRS",
@@ -77,21 +77,6 @@
       "discount": 46
     },
     {
-      "o": "LYS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 126,
-      "depart": "2026-08-28",
-      "ret": "2026-09-08",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS2808ORN08091?t=TO17878968001787901000000130LYSORN17888976001788909000000130ORNLYS_71ae43e677f4714db23f5fa2fe91be68_11164&search_date=24072026&expected_price_uuid=019f945c-2c71-8040-6250-37fb5fe3ff0c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=rlaP5hNh9eHklX2ELRG5nA&expected_price_source=share&expected_price_currency=eur&expected_price=126&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 226,
-      "discount": 44
-    },
-    {
       "o": "BRU",
       "d": "OUD",
       "city": "Oujda",
@@ -103,8 +88,8 @@
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 267,
-      "discount": 42
+      "baseline": 266,
+      "discount": 41
     },
     {
       "o": "CRL",
@@ -118,8 +103,8 @@
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 267,
-      "discount": 42
+      "baseline": 266,
+      "discount": 41
     },
     {
       "o": "BRU",
@@ -164,6 +149,21 @@
       "active": true,
       "promo": true,
       "baseline": 286,
+      "discount": 37
+    },
+    {
+      "o": "CDG",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 151,
+      "depart": "2026-08-17",
+      "ret": "2026-09-16",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CDG1708ORN16091?t=AH17869953001787000400000145CDGORN17895702001789583100000155ORNCDG_8441f367eaa879c436c759fca3fb6aca_13806&search_date=30072026&expected_price_uuid=019fb15b-2e54-8030-e41a-427955bab07c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ta6bl-pGpcxSWMI2Li7L2A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=151&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 238,
       "discount": 37
     },
     {
