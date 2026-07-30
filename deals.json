@@ -2,6 +2,21 @@
   "updated": "2026-07-30",
   "deals": [
     {
+      "o": "LIL",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 142,
+      "depart": "2026-08-17",
+      "ret": "2026-09-14",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LIL1708ALG14091?t=AH17869737001786978800000145LILALG17893773001789390200000155ALGLIL_0029e9b374a44b4596706f17246384c5_13011&search_date=30072026&expected_price_uuid=019fb3f2-27e8-8040-aeca-00ad1f69ce33&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPFWca4uEGMqsIyb5AOxgg&expected_price_source=share&expected_price_currency=eur&expected_price=142&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 418,
+      "discount": 66
+    },
+    {
       "o": "BRU",
       "d": "RBA",
       "city": "Rabat",
@@ -35,11 +50,11 @@
       "o": "MRS",
       "d": "OUD",
       "city": "Oujda",
-      "price": 181,
+      "price": 180,
       "depart": "2026-10-12",
       "ret": "2026-11-01",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/MRS1210OUD01111?t=FR17918307001791831300000070MRSOUD17935485001793619300001180OUDRBAMRS_01cae9a092f80692e1d350bb4a1cab4d_16655&search_date=30072026&expected_price_uuid=019fb239-b847-8040-ae40-e7d078766515&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=oFZwjRXwcaT9zJ19L84_nw&expected_price_source=share&expected_price_currency=eur&expected_price=181&marker=704469",
+      "link": "https://www.aviasales.com/search/MRS1210OUD01111?t=FR17918307001791831300000070MRSOUD17935485001793619300001180OUDRBAMRS_01cae9a092f80692e1d350bb4a1cab4d_16655&search_date=30072026&expected_price_uuid=019fb239-b847-8040-ae40-e7d078766515&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=oFZwjRXwcaT9zJ19L84_nw&expected_price_source=share&expected_price_currency=eur&expected_price=180&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": true,
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 286,
-      "discount": 37
-    },
-    {
-      "o": "CDG",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 151,
-      "depart": "2026-08-17",
-      "ret": "2026-09-16",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG1708ORN16091?t=AH17869953001787000400000145CDGORN17895702001789583100000155ORNCDG_8441f367eaa879c436c759fca3fb6aca_13806&search_date=30072026&expected_price_uuid=019fb15b-2e54-8030-e41a-427955bab07c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Ta6bl-pGpcxSWMI2Li7L2A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=151&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 238,
       "discount": 37
     }
   ]
