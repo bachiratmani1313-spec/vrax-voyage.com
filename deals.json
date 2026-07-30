@@ -33,6 +33,21 @@
     },
     {
       "o": "MRS",
+      "d": "OUD",
+      "city": "Oujda",
+      "price": 181,
+      "depart": "2026-10-12",
+      "ret": "2026-11-01",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/MRS1210OUD01111?t=FR17918307001791831300000070MRSOUD17935485001793619300001180OUDRBAMRS_01cae9a092f80692e1d350bb4a1cab4d_16655&search_date=30072026&expected_price_uuid=019fb239-b847-8040-ae40-e7d078766515&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=oFZwjRXwcaT9zJ19L84_nw&expected_price_source=share&expected_price_currency=eur&expected_price=181&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 367,
+      "discount": 51
+    },
+    {
+      "o": "MRS",
       "d": "ALG",
       "city": "Alger",
       "price": 94,
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 238,
       "discount": 37
-    },
-    {
-      "o": "TLS",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 73,
-      "depart": "2026-09-09",
-      "ret": "2026-09-13",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/TLS0909TNG13091?t=FR17889792001788983100000125TLSTNG17893326001789411800001260TNGVLCTLS_9992dedc07aa40f4a01c58185871431c_6522&search_date=28072026&expected_price_uuid=019fa80f-75dc-8040-65f5-0db9e02dedbb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jtRlTdtoCK3r3t-s645vuw&expected_price_source=share&expected_price_currency=eur&expected_price=73&marker=704469",
-      "month": "2026-09",
-      "active": false,
-      "promo": true,
-      "baseline": 113,
-      "discount": 35
     }
   ]
 }
