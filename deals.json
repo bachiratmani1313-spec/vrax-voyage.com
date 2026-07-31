@@ -1,20 +1,20 @@
 {
-  "updated": "2026-07-30",
+  "updated": "2026-07-31",
   "deals": [
     {
       "o": "LIL",
       "d": "ALG",
       "city": "Alger",
-      "price": 142,
+      "price": 140,
       "depart": "2026-08-17",
       "ret": "2026-09-14",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LIL1708ALG14091?t=AH17869737001786978800000145LILALG17893773001789390200000155ALGLIL_0029e9b374a44b4596706f17246384c5_13011&search_date=30072026&expected_price_uuid=019fb3f2-27e8-8040-aeca-00ad1f69ce33&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPFWca4uEGMqsIyb5AOxgg&expected_price_source=share&expected_price_currency=eur&expected_price=142&marker=704469",
+      "link": "https://www.aviasales.com/search/LIL1708ALG14091?t=AH17869737001786978800000145LILALG17893773001789390200000155ALGLIL_0029e9b374a44b4596706f17246384c5_12856&search_date=31072026&expected_price_uuid=019fb5ee-c747-8030-664d-e9188f7b9355&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPFWca4uEGMqsIyb5AOxgg&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 418,
-      "discount": 66
+      "discount": 67
     },
     {
       "o": "BRU",
