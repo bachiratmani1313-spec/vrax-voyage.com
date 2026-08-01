@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-31",
+  "updated": "2026-08-01",
   "deals": [
     {
       "o": "LIL",
@@ -101,7 +101,7 @@
       "when": "Sep · A/R",
       "link": "https://www.aviasales.com/search/BRU0809TUN29091?t=TU17888703001788876000000155BRUTUN17906682001790681100000155TUNBRU_9de7e132334b6d1c2f405f15e8ddd951_12576&search_date=26072026&expected_price_uuid=019f9e3c-f0ea-8030-a8d7-e32022cb6d8c&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=Gu7c9qMts4pg9k0wG1u9pQ&expected_price_source=share&expected_price_currency=eur&expected_price=141&marker=704469",
       "month": "2026-09",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 262,
       "discount": 46
@@ -161,7 +161,7 @@
       "when": "Sep · A/R",
       "link": "https://www.aviasales.com/search/CDG0409FEZ20091?t=U217885586001788594600000660CDGMXPBGYFEZ17899410001789999200000910FEZRAKCDG_53121680b0cff7d63d69e6857f509afe_16453&search_date=29072026&expected_price_uuid=019faec8-3ef8-8040-ac73-bbf53a5dd428&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IH13hQhCWDvIV2EaUIKJVA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=180&marker=704469",
       "month": "2026-09",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 292,
       "discount": 38
