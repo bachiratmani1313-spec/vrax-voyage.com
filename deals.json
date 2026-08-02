@@ -122,6 +122,21 @@
       "discount": 45
     },
     {
+      "o": "LIL",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 231,
+      "depart": "2026-08-13",
+      "ret": "2026-09-18",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LIL1308CZL18091?t=AH17866347001786662600000525LILALGCZL17897445001789757400000155CZLLIL_5913838ab401080801472429faceee74_21152&search_date=02082026&expected_price_uuid=019fc1fb-d115-8040-615b-9f15b9054cc9&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=cZMD2mEX6sDofVtLMA_k3g&expected_price_source=share&expected_price_currency=eur&expected_price=231&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 415,
+      "discount": 44
+    },
+    {
       "o": "BRU",
       "d": "RBA",
       "city": "Rabat",
@@ -165,21 +180,6 @@
       "promo": true,
       "baseline": 113,
       "discount": 35
-    },
-    {
-      "o": "LYS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 87,
-      "depart": "2026-08-26",
-      "ret": "2026-09-08",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS2608RAK08091?t=TO17877444001787752500000195LYSRAK17888514001788865800000180RAKLYS_8b62863d94857fb293c26e0c8718e78b_7956&search_date=01082026&expected_price_uuid=019fbd23-9dca-8040-286e-c76dd501eac9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MMOXsg1V6FdMdjUsj0uEdA&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 131,
-      "discount": 34
     }
   ]
 }
