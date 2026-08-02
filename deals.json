@@ -92,6 +92,21 @@
       "discount": 51
     },
     {
+      "o": "MRS",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 56,
+      "depart": "2026-09-12",
+      "ret": "2026-09-19",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/MRS1209TNG19091?t=FR17891970001789201500000135MRSTNG17898078001789819200000130TNGMRS_d39602a258bcf4319d8c0ab0130369f9_5123&search_date=02082026&expected_price_uuid=019fc333-a369-8040-a67e-c05025d1e774&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=YXt7EFi_QRp6caG668vt0g&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 108,
+      "discount": 48
+    },
+    {
       "o": "LYS",
       "d": "ALG",
       "city": "Alger",
@@ -122,21 +137,6 @@
       "discount": 45
     },
     {
-      "o": "LIL",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 231,
-      "depart": "2026-08-13",
-      "ret": "2026-09-18",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LIL1308CZL18091?t=AH17866347001786662600000525LILALGCZL17897445001789757400000155CZLLIL_5913838ab401080801472429faceee74_21152&search_date=02082026&expected_price_uuid=019fc1fb-d115-8040-615b-9f15b9054cc9&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=cZMD2mEX6sDofVtLMA_k3g&expected_price_source=share&expected_price_currency=eur&expected_price=231&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 415,
-      "discount": 44
-    },
-    {
       "o": "BRU",
       "d": "RBA",
       "city": "Rabat",
@@ -152,34 +152,34 @@
       "discount": 42
     },
     {
-      "o": "CDG",
-      "d": "FEZ",
-      "city": "Fès",
-      "price": 172,
-      "depart": "2026-09-20",
-      "ret": "2026-09-28",
+      "o": "MRS",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 72,
+      "depart": "2026-09-12",
+      "ret": "2026-09-19",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG2009FEZ28091?t=RK17899173001789939500000430CDGRAKFEZ17906172001790707800001450FEZSTNLGWCDG_c447ddd7e982ebb4b23d8d9fa8198554_15723&search_date=01082026&expected_price_uuid=019fbeed-d647-8040-26af-fab999148fa1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_SdMN7I0BSAkS2WDDVnEYA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=172&marker=704469",
+      "link": "https://www.aviasales.com/search/MRS1209NDR19091?t=FR17892159001789220100000130MRSNDR17898264001789837200000120NDRMRS_a2623d25e5bc82e8a1371f44b8c0c97b_6586&search_date=02082026&expected_price_uuid=019fc334-96e4-8040-278d-f009d5dd0d77&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Kbl3O70aP0GS-w8wJZjjYw&expected_price_source=share&expected_price_currency=eur&expected_price=72&marker=704469",
       "month": "2026-09",
       "active": true,
       "promo": true,
-      "baseline": 292,
-      "discount": 41
+      "baseline": 125,
+      "discount": 42
     },
     {
-      "o": "TLS",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 73,
-      "depart": "2026-09-09",
-      "ret": "2026-09-13",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/TLS0909TNG13091?t=FR17889792001788983100000125TLSTNG17893326001789411800001260TNGVLCTLS_9992dedc07aa40f4a01c58185871431c_6522&search_date=28072026&expected_price_uuid=019fa80f-75dc-8040-65f5-0db9e02dedbb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jtRlTdtoCK3r3t-s645vuw&expected_price_source=share&expected_price_currency=eur&expected_price=73&marker=704469",
-      "month": "2026-09",
+      "o": "LIL",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 231,
+      "depart": "2026-08-13",
+      "ret": "2026-09-18",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LIL1308CZL18091?t=AH17866347001786662600000525LILALGCZL17897445001789757400000155CZLLIL_5913838ab401080801472429faceee74_21152&search_date=02082026&expected_price_uuid=019fc1fb-d115-8040-615b-9f15b9054cc9&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=cZMD2mEX6sDofVtLMA_k3g&expected_price_source=share&expected_price_currency=eur&expected_price=231&marker=704469",
+      "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 113,
-      "discount": 35
+      "baseline": 401,
+      "discount": 42
     }
   ]
 }
