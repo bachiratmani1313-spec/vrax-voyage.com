@@ -1,20 +1,20 @@
 {
-  "updated": "2026-08-01",
+  "updated": "2026-08-02",
   "deals": [
     {
       "o": "LIL",
       "d": "ALG",
       "city": "Alger",
-      "price": 140,
+      "price": 142,
       "depart": "2026-08-17",
       "ret": "2026-09-14",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LIL1708ALG14091?t=AH17869737001786978800000145LILALG17893773001789390200000155ALGLIL_0029e9b374a44b4596706f17246384c5_12856&search_date=31072026&expected_price_uuid=019fb5ee-c747-8030-664d-e9188f7b9355&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPFWca4uEGMqsIyb5AOxgg&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469",
+      "link": "https://www.aviasales.com/search/LIL1708ALG14091?t=AH17869737001786978800000145LILALG17893773001789390200000155ALGLIL_0029e9b374a44b4596706f17246384c5_12985&search_date=01082026&expected_price_uuid=019fbee5-5d54-8030-2e6e-66675b9fa834&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=lPFWca4uEGMqsIyb5AOxgg&expected_price_source=share&expected_price_currency=eur&expected_price=142&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 418,
-      "discount": 67
+      "discount": 66
     },
     {
       "o": "BRU",
@@ -155,16 +155,16 @@
       "o": "CDG",
       "d": "FEZ",
       "city": "Fès",
-      "price": 180,
-      "depart": "2026-09-04",
-      "ret": "2026-09-20",
+      "price": 172,
+      "depart": "2026-09-20",
+      "ret": "2026-09-28",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG0409FEZ20091?t=U217885586001788594600000660CDGMXPBGYFEZ17899410001789999200000910FEZRAKCDG_53121680b0cff7d63d69e6857f509afe_16453&search_date=29072026&expected_price_uuid=019faec8-3ef8-8040-ac73-bbf53a5dd428&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IH13hQhCWDvIV2EaUIKJVA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=180&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG2009FEZ28091?t=RK17899173001789939500000430CDGRAKFEZ17906172001790707800001450FEZSTNLGWCDG_c447ddd7e982ebb4b23d8d9fa8198554_15723&search_date=01082026&expected_price_uuid=019fbeed-d647-8040-26af-fab999148fa1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_SdMN7I0BSAkS2WDDVnEYA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=172&marker=704469",
       "month": "2026-09",
       "active": true,
       "promo": true,
       "baseline": 292,
-      "discount": 38
+      "discount": 41
     },
     {
       "o": "TLS",
