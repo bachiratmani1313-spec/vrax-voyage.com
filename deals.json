@@ -168,18 +168,18 @@
     },
     {
       "o": "LYS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 87,
-      "depart": "2026-08-26",
-      "ret": "2026-09-08",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS2608RAK08091?t=TO17877444001787752500000195LYSRAK17888514001788865800000180RAKLYS_8b62863d94857fb293c26e0c8718e78b_7956&search_date=01082026&expected_price_uuid=019fbd23-9dca-8040-286e-c76dd501eac9&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MMOXsg1V6FdMdjUsj0uEdA&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
-      "month": "2026-08",
-      "active": true,
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 174,
+      "depart": "2026-10-01",
+      "ret": "2026-10-04",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/LYS0110DJE04101?t=BJ17908965001790901000000135LYSDJE17911422001791154500000145DJELYS_72cfbfc79a97ed5919a9889906437aa0_16233&search_date=04082026&expected_price_uuid=019fcce5-abc5-8040-ae5d-a6772787bba7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bzX7DT695hPRAjX4FPlcsQ&expected_price_source=share&expected_price_currency=eur&expected_price=174&marker=704469",
+      "month": "2026-10",
+      "active": false,
       "promo": true,
-      "baseline": 131,
-      "discount": 34
+      "baseline": 276,
+      "discount": 37
     }
   ]
 }
