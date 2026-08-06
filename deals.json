@@ -47,6 +47,21 @@
       "discount": 55
     },
     {
+      "o": "BRU",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 80,
+      "depart": "2026-10-05",
+      "ret": "2026-10-19",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/BRU0510AGA19101?t=FR17911968001791231600000700CRLFEZAGA17924427001792527300001290AGAFEZCRL_c19809ac100bfa58fe08d21924473589_7537&search_date=06082026&expected_price_uuid=019fd6f5-6432-8040-a262-c87896cd75db&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fxyTw8JEAL8HeQOMlTm8SA&expected_price_source=share&expected_price_currency=eur&expected_price=80&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 159,
+      "discount": 50
+    },
+    {
       "o": "MRS",
       "d": "TNG",
       "city": "Tanger",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 131,
-      "discount": 34
-    },
-    {
-      "o": "MRS",
-      "d": "DJE",
-      "city": "Djerba",
-      "price": 144,
-      "depart": "2026-08-27",
-      "ret": "2026-09-07",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/MRS2708DJE07091?t=TO17878584001787862000000120MRSDJE17888061001788817200000125DJEMRS_db61dcfa7aa8f2cf52df9dffba975d2b_13168&search_date=31072026&expected_price_uuid=019fb811-db99-8030-2227-5bb7866d2f00&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=PdYKFHPnPsMXmHd-WurA-w&expected_price_source=share&expected_price_currency=eur&expected_price=144&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 218,
       "discount": 34
     }
   ]
