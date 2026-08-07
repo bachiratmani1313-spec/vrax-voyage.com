@@ -2,6 +2,21 @@
   "updated": "2026-08-07",
   "deals": [
     {
+      "o": "ORY",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 131,
+      "depart": "2026-08-18",
+      "ret": "2026-09-19",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/ORY1808CZL19091?t=TO17870535001787058600000145ORYCZL17898429001789855500000150CZLORY_2847ed3987a301cddec1416c7c809658_12475&search_date=07082026&expected_price_uuid=019fdcf7-b597-8030-6b49-55eef291da1d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=etI6kIXQeX5MQO-egrg0Vw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=131&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 328,
+      "discount": 60
+    },
+    {
       "o": "MRS",
       "d": "CZL",
       "city": "Constantine",
@@ -44,6 +59,21 @@
       "active": true,
       "promo": true,
       "baseline": 114,
+      "discount": 56
+    },
+    {
+      "o": "CDG",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 190,
+      "depart": "2026-08-18",
+      "ret": "2026-09-19",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CDG1808CZL19091?t=AH17870760001787080500000135CDGCZL17898228001789856100000495CZLALGCDG_6524c0201bb24e257f380b75f3ccf042_18094&search_date=07082026&expected_price_uuid=019fdcf7-b597-8030-6b49-55eef291da1d&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=jduN7LKJAmShbwd9ggBitA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=190&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 431,
       "discount": 56
     },
     {
@@ -150,36 +180,6 @@
       "promo": true,
       "baseline": 154,
       "discount": 38
-    },
-    {
-      "o": "LYS",
-      "d": "DJE",
-      "city": "Djerba",
-      "price": 174,
-      "depart": "2026-10-01",
-      "ret": "2026-10-04",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/LYS0110DJE04101?t=BJ17908965001790901000000135LYSDJE17911422001791154500000145DJELYS_72cfbfc79a97ed5919a9889906437aa0_16233&search_date=04082026&expected_price_uuid=019fcce5-abc5-8040-ae5d-a6772787bba7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bzX7DT695hPRAjX4FPlcsQ&expected_price_source=share&expected_price_currency=eur&expected_price=174&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 276,
-      "discount": 37
-    },
-    {
-      "o": "CDG",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 90,
-      "depart": "2026-10-03",
-      "ret": "2026-10-10",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG0310AGA10101?t=U217910072001791012900000155CDGAGA17916201001791640200000275AGACDG_ed3b42f78c7006a1ee957bab8f8af857_8363&search_date=04082026&expected_price_uuid=019fce28-4f1c-8030-a90d-ef166bfcbe77&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ceum2pAl6rYNxNVSP6pBaw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=90&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 138,
-      "discount": 35
     }
   ]
 }
