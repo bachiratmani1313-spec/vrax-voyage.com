@@ -92,21 +92,6 @@
       "discount": 51
     },
     {
-      "o": "LYS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 121,
-      "depart": "2026-08-31",
-      "ret": "2026-09-10",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS3108ORN10091?t=TO17881764001788180600000130LYSORN17890704001789081800000130ORNLYS_c79957119d982e80e0439e25072f5768_11508&search_date=08082026&expected_price_uuid=019fe160-a821-8040-2853-fe10d80cfe9d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=8DJRo9-yMTka-BtqXLkZew&expected_price_source=share&expected_price_currency=eur&expected_price=121&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 241,
-      "discount": 50
-    },
-    {
       "o": "CRL",
       "d": "NDR",
       "city": "Nador",
@@ -180,6 +165,21 @@
       "promo": true,
       "baseline": 276,
       "discount": 37
+    },
+    {
+      "o": "LYS",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 118,
+      "depart": "2026-08-31",
+      "ret": "2026-09-10",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LYS3108ORN10091?t=TO17881764001788180600000130LYSORN17890704001789081800000130ORNLYS_c79957119d982e80e0439e25072f5768_11222&search_date=08082026&expected_price_uuid=019fe204-1224-8040-2b7a-24cb8cfcd6b7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=8DJRo9-yMTka-BtqXLkZew&expected_price_source=share&expected_price_currency=eur&expected_price=118&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 184,
+      "discount": 36
     }
   ]
 }
