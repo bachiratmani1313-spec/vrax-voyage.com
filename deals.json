@@ -28,8 +28,8 @@
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 260,
-      "discount": 58
+      "baseline": 256,
+      "discount": 57
     },
     {
       "o": "BRU",
@@ -108,21 +108,6 @@
     },
     {
       "o": "BRU",
-      "d": "CMN",
-      "city": "Casablanca",
-      "price": 113,
-      "depart": "2026-09-25",
-      "ret": "2026-10-02",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/BRU2509CMN02101?t=3O17903685001790377200000205BRUCMN17909538001790969100000195CMNBRU_e3e82db5cf0ea70cb0e064db17fea2cb_10455&search_date=04082026&expected_price_uuid=019fcba4-7638-8030-6cc5-24a2ed69159f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=1UCeTbtRh0frb8F8FYiatA&expected_price_source=share&expected_price_currency=eur&expected_price=113&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 186,
-      "discount": 39
-    },
-    {
-      "o": "BRU",
       "d": "OUD",
       "city": "Oujda",
       "price": 78,
@@ -138,18 +123,18 @@
     },
     {
       "o": "BRU",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 80,
-      "depart": "2026-10-05",
-      "ret": "2026-10-19",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/BRU0510AGA19101?t=FR17911968001791231600000700CRLFEZAGA17924427001792527300001290AGAFEZCRL_c19809ac100bfa58fe08d21924473589_7537&search_date=06082026&expected_price_uuid=019fd6f5-6432-8040-a262-c87896cd75db&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fxyTw8JEAL8HeQOMlTm8SA&expected_price_source=share&expected_price_currency=eur&expected_price=80&marker=704469",
-      "month": "2026-10",
-      "active": false,
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 113,
+      "depart": "2026-09-25",
+      "ret": "2026-10-02",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/BRU2509CMN02101?t=3O17903685001790377200000205BRUCMN17909538001790969100000195CMNBRU_e3e82db5cf0ea70cb0e064db17fea2cb_10455&search_date=04082026&expected_price_uuid=019fcba4-7638-8030-6cc5-24a2ed69159f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=1UCeTbtRh0frb8F8FYiatA&expected_price_source=share&expected_price_currency=eur&expected_price=113&marker=704469",
+      "month": "2026-09",
+      "active": true,
       "promo": true,
-      "baseline": 128,
-      "discount": 38
+      "baseline": 179,
+      "discount": 37
     },
     {
       "o": "LYS",
@@ -179,6 +164,21 @@
       "active": true,
       "promo": true,
       "baseline": 184,
+      "discount": 36
+    },
+    {
+      "o": "TLS",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 232,
+      "depart": "2026-08-25",
+      "ret": "2026-08-31",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/TLS2508CMN31081?t=TP17876859001787740500000970TLSLISCMN17881971001788285000001405CMNLISTLS_90978589a22b37d807f73df5bfc84c00_22064&search_date=08082026&expected_price_uuid=019fe1c3-3904-8040-ac55-32df882fad23&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ytkfKTHQprBc2I4QINF3-g&expected_price_source=share&expected_price_currency=eur&expected_price=232&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 361,
       "discount": 36
     }
   ]
