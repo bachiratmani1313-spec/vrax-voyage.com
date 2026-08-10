@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-09",
+  "updated": "2026-08-10",
   "deals": [
     {
       "o": "ORY",
@@ -77,6 +77,36 @@
       "discount": 51
     },
     {
+      "o": "MRS",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 129,
+      "depart": "2026-08-14",
+      "ret": "2026-09-10",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS1408CZL10091?t=AH17867079001786709700000090MRSCZL17890281001789037100000090CZLMRS_fe54894aa0157a7ceb56b60bc42c94b7_12170&search_date=09082026&expected_price_uuid=019fe854-c30e-8040-62a2-84e2edb8a060&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=LlVNwUodRoAuZIQqZ09BJw&expected_price_source=share&expected_price_currency=eur&expected_price=129&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 256,
+      "discount": 50
+    },
+    {
+      "o": "CDG",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 183,
+      "depart": "2026-10-14",
+      "ret": "2026-10-25",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/CDG1410NDR25101?t=FR17919852001791998700000345CDGBCNNDR17929113001793030400001925NDRMADMXPCDG_61e4495116fedd3634aa134986b361ff_17309&search_date=09082026&expected_price_uuid=019fe809-9a47-8040-a213-509c8e954324&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss27jEREvcQbxD150y63zQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=183&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 338,
+      "discount": 46
+    },
+    {
       "o": "CRL",
       "d": "NDR",
       "city": "Nador",
@@ -150,36 +180,6 @@
       "promo": true,
       "baseline": 184,
       "discount": 36
-    },
-    {
-      "o": "TLS",
-      "d": "CMN",
-      "city": "Casablanca",
-      "price": 232,
-      "depart": "2026-08-25",
-      "ret": "2026-08-31",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/TLS2508CMN31081?t=TP17876859001787740500000970TLSLISCMN17881971001788285000001405CMNLISTLS_90978589a22b37d807f73df5bfc84c00_22064&search_date=08082026&expected_price_uuid=019fe1c3-3904-8040-ac55-32df882fad23&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ytkfKTHQprBc2I4QINF3-g&expected_price_source=share&expected_price_currency=eur&expected_price=232&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 361,
-      "discount": 36
-    },
-    {
-      "o": "CDG",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 90,
-      "depart": "2026-10-03",
-      "ret": "2026-10-10",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG0310AGA10101?t=U217910072001791012900000155CDGAGA17916201001791640200000275AGACDG_ed3b42f78c7006a1ee957bab8f8af857_8363&search_date=04082026&expected_price_uuid=019fce28-4f1c-8030-a90d-ef166bfcbe77&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ceum2pAl6rYNxNVSP6pBaw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=90&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 138,
-      "discount": 35
     }
   ]
 }
