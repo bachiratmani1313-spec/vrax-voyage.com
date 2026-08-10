@@ -122,6 +122,21 @@
       "discount": 45
     },
     {
+      "o": "MRS",
+      "d": "ORN",
+      "city": "Oran",
+      "price": 115,
+      "depart": "2026-08-25",
+      "ret": "2026-09-15",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS2508ORN15091?t=V717876832001787686500000115MRSORN17895045001789514700000110ORNMRS_f97c129ccadc5be8a9645df9c14ae94d_10982&search_date=10082026&expected_price_uuid=019fecc5-7661-8040-a00c-ad54e8dee912&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=vll6RcMbXpdAc5IiNimivQ&expected_price_source=share&expected_price_currency=eur&expected_price=115&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 193,
+      "discount": 40
+    },
+    {
       "o": "BRU",
       "d": "OUD",
       "city": "Oujda",
@@ -135,21 +150,6 @@
       "promo": true,
       "baseline": 128,
       "discount": 39
-    },
-    {
-      "o": "LYS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 118,
-      "depart": "2026-08-31",
-      "ret": "2026-09-10",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/LYS3108ORN10091?t=TO17881764001788180600000130LYSORN17890704001789081800000130ORNLYS_c79957119d982e80e0439e25072f5768_11222&search_date=08082026&expected_price_uuid=019fe204-1224-8040-2b7a-24cb8cfcd6b7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=8DJRo9-yMTka-BtqXLkZew&expected_price_source=share&expected_price_currency=eur&expected_price=118&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 184,
-      "discount": 36
     },
     {
       "o": "MRS",
