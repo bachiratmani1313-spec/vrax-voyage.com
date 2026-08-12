@@ -80,16 +80,16 @@
       "o": "CDG",
       "d": "NDR",
       "city": "Nador",
-      "price": 183,
+      "price": 187,
       "depart": "2026-10-14",
       "ret": "2026-10-25",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG1410NDR25101?t=FR17919852001791998700000345CDGBCNNDR17929113001793030400001925NDRMADMXPCDG_61e4495116fedd3634aa134986b361ff_17309&search_date=09082026&expected_price_uuid=019fe809-9a47-8040-a213-509c8e954324&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ss27jEREvcQbxD150y63zQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=183&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG1410NDR25101?t=VY17919852001792007700000495CDGBCNNDR17929125001793030400001905NDRBCNMXPCDG_48c21a0ea53b316bcaa25b0d7893eb42_17865&search_date=12082026&expected_price_uuid=019ff6f9-929c-8040-210f-59392b536dca&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-Y8aphY8LhQeWrM6QmwUsQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=187&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": true,
       "baseline": 338,
-      "discount": 46
+      "discount": 45
     },
     {
       "o": "ORY",
@@ -152,6 +152,21 @@
       "discount": 39
     },
     {
+      "o": "ORY",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 140,
+      "depart": "2026-08-16",
+      "ret": "2026-09-16",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/ORY1608CMN16091?t=TB17869098001786918800000210ORYCMN17895402001789554600000180CMNORY_753eb5298141325bfc7b64663b8730ad_13438&search_date=12082026&expected_price_uuid=019ff74b-f779-8040-a245-552ce62cf600&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sv0K9O4300z99EJ1hu1tPQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 220,
+      "discount": 36
+    },
+    {
       "o": "LYS",
       "d": "ORN",
       "city": "Oran",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 184,
-      "discount": 36
-    },
-    {
-      "o": "MRS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 103,
-      "depart": "2026-10-25",
-      "ret": "2026-11-09",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/MRS2510ORN09111?t=AH17929287001792935300000110MRSORN17942148001794221100000105ORNMRS_bfcfc5f4613b2c51ba322583af57a11d_9829&search_date=10082026&expected_price_uuid=019feba5-7683-8040-a4b9-ec632898bab1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Y-CpE29FgG_iyvNK-KkJlw&expected_price_source=share&expected_price_currency=eur&expected_price=103&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 160,
       "discount": 36
     }
   ]
