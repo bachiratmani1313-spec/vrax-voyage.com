@@ -32,6 +32,21 @@
       "discount": 77
     },
     {
+      "o": "LYS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 108,
+      "depart": "2026-10-01",
+      "ret": "2026-10-14",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/LYS0110TUN14101?t=TO17908344001790838000000120LYSTUN17919636001791974400000120TUNLYS_d313636262e874f2315096790958874f_10519&search_date=15082026&expected_price_uuid=01a00566-19e9-8030-22d0-2651cf56132d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=coVzVMfLq5Bs106DHrdJ7w&expected_price_source=share&expected_price_currency=eur&expected_price=108&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 242,
+      "discount": 55
+    },
+    {
       "o": "ORY",
       "d": "CZL",
       "city": "Constantine",
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 334,
-      "discount": 34
-    },
-    {
-      "o": "CDG",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 126,
-      "depart": "2026-08-24",
-      "ret": "2026-09-23",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG2408CZL23091?t=AH17875944001787598900000135CDGCZL17901705001790182500000140CZLCDG_c34999ec90a962ab89b3667a35ef7ee3_12195&search_date=14082026&expected_price_uuid=019fffa3-9e2a-8030-2fbb-33f751454441&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QQxSz_o2wbW6RyGI4nz2QQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=126&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 190,
       "discount": 34
     }
   ]
