@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-14",
+  "updated": "2026-08-15",
   "season": "été 2026",
   "communities": {
     "maroc": {
@@ -50,6 +50,48 @@
           "month": "2026-08"
         },
         {
+          "o": "BRU",
+          "o_city": "Bruxelles",
+          "d": "NDR",
+          "city": "Nador",
+          "aller": {
+            "price": 29,
+            "date": "2026-09-06",
+            "date_fr": "6 septembre",
+            "link": "https://www.aviasales.com/search/BRU0609NDR1?t=FR17887110001788717900000175CRLNDR_a3282c63aefde7ba5f9f2304fc8145cb_2828&search_date=14082026&expected_price_uuid=01a00181-6981-8030-e8d5-833711918d3a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bKivn9etwNlKCrgt7Ut82w&expected_price_source=share&expected_price_currency=eur&expected_price=29&marker=704469"
+          },
+          "retour": {
+            "price": 29,
+            "date": "2026-10-08",
+            "date_fr": "8 octobre",
+            "link": "https://www.aviasales.com/search/NDR0810BRU1?t=FR17914509001791468600000175NDRCRL_6fa7c6923d68ce44f1d3c81dfcd023da_2804&search_date=11082026&expected_price_uuid=019ff1a1-7d68-8040-a34a-44e12b550b85&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FI9Y1zV7Qh8ouV3ZYEPJ7w&expected_price_source=share&expected_price_currency=eur&expected_price=29&marker=704469"
+          },
+          "total": 58,
+          "gap": 32,
+          "month": "2026-09"
+        },
+        {
+          "o": "CRL",
+          "o_city": "Charleroi",
+          "d": "NDR",
+          "city": "Nador",
+          "aller": {
+            "price": 29,
+            "date": "2026-09-06",
+            "date_fr": "6 septembre",
+            "link": "https://www.aviasales.com/search/CRL0609NDR1?t=FR17887110001788717900000175CRLNDR_a3282c63aefde7ba5f9f2304fc8145cb_2828&search_date=14082026&expected_price_uuid=01a00181-6981-8030-e8d5-833711918d3a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bKivn9etwNlKCrgt7Ut82w&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=29&marker=704469"
+          },
+          "retour": {
+            "price": 29,
+            "date": "2026-10-08",
+            "date_fr": "8 octobre",
+            "link": "https://www.aviasales.com/search/NDR0810CRL1?t=FR17914509001791468600000175NDRCRL_6fa7c6923d68ce44f1d3c81dfcd023da_2804&search_date=11082026&expected_price_uuid=019ff1a1-7d68-8040-a34a-44e12b550b85&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FI9Y1zV7Qh8ouV3ZYEPJ7w&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=29&marker=704469"
+          },
+          "total": 58,
+          "gap": 32,
+          "month": "2026-09"
+        },
+        {
           "o": "TLS",
           "o_city": "Toulouse",
           "d": "RAK",
@@ -69,48 +111,6 @@
           "total": 63,
           "gap": 18,
           "month": "2026-08"
-        },
-        {
-          "o": "BRU",
-          "o_city": "Bruxelles",
-          "d": "OUD",
-          "city": "Oujda",
-          "aller": {
-            "price": 29,
-            "date": "2026-09-09",
-            "date_fr": "9 septembre",
-            "link": "https://www.aviasales.com/search/BRU0909OUD1?t=FR17889582001788965400000180CRLOUD_4231fa313da794114ba656c0af7557c5_2758&search_date=07082026&expected_price_uuid=019fde4b-719e-8040-a5c3-63a97bdd2038&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DNBtjKWzNCam9eVAD-bMjQ&expected_price_source=share&expected_price_currency=eur&expected_price=29&marker=704469"
-          },
-          "retour": {
-            "price": 36,
-            "date": "2026-10-16",
-            "date_fr": "16 octobre",
-            "link": "https://www.aviasales.com/search/OUD1610BRU1?t=FR17921733001792191300000180OUDCRL_8f8bc226c83b73d859b584b082d0fa5c_3399&search_date=08082026&expected_price_uuid=019fe221-b711-8030-6507-804214006747&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=byJpd5laEqpoaUSsy6MDzQ&expected_price_source=share&expected_price_currency=eur&expected_price=36&marker=704469"
-          },
-          "total": 65,
-          "gap": 37,
-          "month": "2026-09"
-        },
-        {
-          "o": "CRL",
-          "o_city": "Charleroi",
-          "d": "OUD",
-          "city": "Oujda",
-          "aller": {
-            "price": 29,
-            "date": "2026-09-09",
-            "date_fr": "9 septembre",
-            "link": "https://www.aviasales.com/search/CRL0909OUD1?t=FR17889582001788965400000180CRLOUD_4231fa313da794114ba656c0af7557c5_2758&search_date=07082026&expected_price_uuid=019fde4b-719e-8040-a5c3-63a97bdd2038&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=DNBtjKWzNCam9eVAD-bMjQ&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=29&marker=704469"
-          },
-          "retour": {
-            "price": 36,
-            "date": "2026-10-16",
-            "date_fr": "16 octobre",
-            "link": "https://www.aviasales.com/search/OUD1610CRL1?t=FR17921733001792191300000180OUDCRL_8f8bc226c83b73d859b584b082d0fa5c_3399&search_date=08082026&expected_price_uuid=019fe221-b711-8030-6507-804214006747&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=byJpd5laEqpoaUSsy6MDzQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=36&marker=704469"
-          },
-          "total": 65,
-          "gap": 37,
-          "month": "2026-09"
         },
         {
           "o": "LYS",
@@ -187,10 +187,10 @@
           "d": "ALG",
           "city": "Alger",
           "aller": {
-            "price": 68,
-            "date": "2026-09-01",
-            "date_fr": "1 septembre",
-            "link": "https://www.aviasales.com/search/ORY0109ALG1?t=TO17882982001788303300000145ORYALG_f5d470515fbf5dccb86c1d11b573252e_6506&search_date=12082026&expected_price_uuid=019ff6f5-24e0-8040-639c-267749539069&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ZSYzxmDDTLlKSNEaiTDDEQ&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=68&marker=704469"
+            "price": 67,
+            "date": "2026-09-06",
+            "date_fr": "6 septembre",
+            "link": "https://www.aviasales.com/search/ORY0609ALG1?t=TO17887296001788734700000145ORYALG_537dadfee67e7e9f9e5e438ea2ac7949_6422&search_date=14082026&expected_price_uuid=019ffee6-9701-8040-a2c9-1595aedc4bc7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=LSb7tzAKna0rGJ1cl1WZtQ&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=67&marker=704469"
           },
           "retour": {
             "price": 39,
@@ -198,10 +198,31 @@
             "date_fr": "18 octobre",
             "link": "https://www.aviasales.com/search/ALG1810ORY1?t=TO17923032001792315800000150ALGORY_a209efe90b15c479944a333f483bb210_3683&search_date=11082026&expected_price_uuid=019feefe-d292-8030-a776-bf2b94884ac7&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=LPALmJGkePvJJekvXu_n0Q&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=39&marker=704469"
           },
-          "total": 107,
-          "gap": 47,
+          "total": 106,
+          "gap": 42,
           "month": "2026-09",
           "hero": true
+        },
+        {
+          "o": "ORY",
+          "o_city": "Paris Orly",
+          "d": "ORN",
+          "city": "Oran",
+          "aller": {
+            "price": 66,
+            "date": "2026-09-01",
+            "date_fr": "1 septembre",
+            "link": "https://www.aviasales.com/search/ORY0109ORN1?t=TO17882490001788254700000155ORYORN_70e93e9cc12e79f83c1e18eb64785480_6303&search_date=12082026&expected_price_uuid=019ff5a7-3fae-8030-e271-0234bbdeb429&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=S1UOzT-velgyuSj-zPjbmw&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=66&marker=704469"
+          },
+          "retour": {
+            "price": 43,
+            "date": "2026-10-15",
+            "date_fr": "15 octobre",
+            "link": "https://www.aviasales.com/search/ORN1510ORY1?t=TO17920893001792102200000155ORNORY_6254191bb222d89e60cb2d78aa9c884c_4115&search_date=12082026&expected_price_uuid=019ff617-e305-8040-251e-e185e6e00e3f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=CQLf5jLd3EDqsmzdb3RDnA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=43&marker=704469"
+          },
+          "total": 109,
+          "gap": 44,
+          "month": "2026-09"
         },
         {
           "o": "MRS",
@@ -222,48 +243,6 @@
           },
           "total": 109,
           "gap": 18,
-          "month": "2026-08"
-        },
-        {
-          "o": "ORY",
-          "o_city": "Paris Orly",
-          "d": "ORN",
-          "city": "Oran",
-          "aller": {
-            "price": 67,
-            "date": "2026-09-01",
-            "date_fr": "1 septembre",
-            "link": "https://www.aviasales.com/search/ORY0109ORN1?t=TO17882490001788254700000155ORYORN_70e93e9cc12e79f83c1e18eb64785480_6394&search_date=07082026&expected_price_uuid=019fde1b-242e-8030-274e-9bab124ec590&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=S1UOzT-velgyuSj-zPjbmw&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=67&marker=704469"
-          },
-          "retour": {
-            "price": 43,
-            "date": "2026-10-15",
-            "date_fr": "15 octobre",
-            "link": "https://www.aviasales.com/search/ORN1510ORY1?t=TO17920893001792102200000155ORNORY_6254191bb222d89e60cb2d78aa9c884c_4115&search_date=12082026&expected_price_uuid=019ff617-e305-8040-251e-e185e6e00e3f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=CQLf5jLd3EDqsmzdb3RDnA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=43&marker=704469"
-          },
-          "total": 110,
-          "gap": 44,
-          "month": "2026-09"
-        },
-        {
-          "o": "LYS",
-          "o_city": "Lyon",
-          "d": "ALG",
-          "city": "Alger",
-          "aller": {
-            "price": 53,
-            "date": "2026-08-24",
-            "date_fr": "24 août",
-            "link": "https://www.aviasales.com/search/LYS2408ALG1?t=TO17875512001787554800000120LYSALG_996f48393bb0a6d5b7e4f31050181471_5084&search_date=10082026&expected_price_uuid=019fedfd-345f-8030-2367-f0992d58cb8d&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=bze8mK6pm4Pt9QDYV6OmoA&expected_price_source=share&expected_price_currency=eur&expected_price=53&marker=704469"
-          },
-          "retour": {
-            "price": 62,
-            "date": "2026-09-10",
-            "date_fr": "10 septembre",
-            "link": "https://www.aviasales.com/search/ALG1009LYS1?t=TO17890299001789040400000115ALGLYS_f93ed5855411173401e1339867c99aa2_5937&search_date=10082026&expected_price_uuid=019fec81-92cb-8040-2342-9b6b759d129b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=uFujqHPqzw0tyfQkM1f73Q&expected_price_source=share&expected_price_currency=eur&expected_price=62&marker=704469"
-          },
-          "total": 115,
-          "gap": 17,
           "month": "2026-08"
         },
         {
@@ -309,6 +288,27 @@
           "month": "2026-08"
         },
         {
+          "o": "CDG",
+          "o_city": "Paris CDG",
+          "d": "ALG",
+          "city": "Alger",
+          "aller": {
+            "price": 81,
+            "date": "2026-09-06",
+            "date_fr": "6 septembre",
+            "link": "https://www.aviasales.com/search/CDG0609ALG1?t=5O17886816001788686700000145CDGALG_1b2e5248bceab5a83e61b296b0fba831_7764&search_date=14082026&expected_price_uuid=019ffee6-9701-8040-a2c9-1595aedc4bc7&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=WI4YmTGXGyiwaV87AVdrPg&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=81&marker=704469"
+          },
+          "retour": {
+            "price": 56,
+            "date": "2026-10-18",
+            "date_fr": "18 octobre",
+            "link": "https://www.aviasales.com/search/ALG1810CDG1?t=5O17923440001792356900000155ALGCDG_7a85a91054a897d4ab64df9358730f75_5321&search_date=11082026&expected_price_uuid=019feefe-d292-8030-a776-bf2b94884ac7&static_fare_key=TY%7CP1%7CH1%7CL1_1_0%7CCH0%7CR0%7CTBC1&itinerary_key=STC8M8439n4xGOourGoleQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469"
+          },
+          "total": 137,
+          "gap": 42,
+          "month": "2026-09"
+        },
+        {
           "o": "TLS",
           "o_city": "Toulouse",
           "d": "ORN",
@@ -330,25 +330,25 @@
           "month": "2026-08"
         },
         {
-          "o": "CDG",
-          "o_city": "Paris CDG",
-          "d": "ALG",
-          "city": "Alger",
+          "o": "ORY",
+          "o_city": "Paris Orly",
+          "d": "CZL",
+          "city": "Constantine",
           "aller": {
-            "price": 85,
-            "date": "2026-09-02",
-            "date_fr": "2 septembre",
-            "link": "https://www.aviasales.com/search/CDG0209ALG1?t=5O17883678001788372900000145CDGALG_1f56e6b6177adbaaaeebb8bf3945e428_8019&search_date=09082026&expected_price_uuid=019fe86c-408d-8040-6197-97158a2d84db&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Q-WIGdQ6sz8mBzOiapfwDA&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=85&marker=704469"
+            "price": 77,
+            "date": "2026-08-18",
+            "date_fr": "18 août",
+            "link": "https://www.aviasales.com/search/ORY1808CZL1?t=TO17870535001787058600000145ORYCZL_22520323907092873348362910a5fe47_7503&search_date=14082026&expected_price_uuid=01a001b5-c179-8040-a907-1653193f5e80&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=68iRWTZzHzPV1fce9TFIJg&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=77&marker=704469"
           },
           "retour": {
-            "price": 56,
-            "date": "2026-10-18",
-            "date_fr": "18 octobre",
-            "link": "https://www.aviasales.com/search/ALG1810CDG1?t=5O17923440001792356900000155ALGCDG_7a85a91054a897d4ab64df9358730f75_5321&search_date=11082026&expected_price_uuid=019feefe-d292-8030-a776-bf2b94884ac7&static_fare_key=TY%7CP1%7CH1%7CL1_1_0%7CCH0%7CR0%7CTBC1&itinerary_key=STC8M8439n4xGOourGoleQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469"
+            "price": 86,
+            "date": "2026-09-12",
+            "date_fr": "12 septembre",
+            "link": "https://www.aviasales.com/search/CZL1209ORY1?t=TO17892516001789378200002050CZLALGORY_c4c8718bc26cb5e1d9a627de959d2ac9_8182&search_date=12082026&expected_price_uuid=019ff6e7-bd25-8040-6de8-14c188baa912&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=LV5hrmg8_d7-HlHaroroWA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=86&marker=704469"
           },
-          "total": 141,
-          "gap": 46,
-          "month": "2026-09"
+          "total": 163,
+          "gap": 25,
+          "month": "2026-08"
         }
       ]
     },
@@ -362,10 +362,10 @@
           "d": "TUN",
           "city": "Tunis",
           "aller": {
-            "price": 67,
-            "date": "2026-08-25",
-            "date_fr": "25 août",
-            "link": "https://www.aviasales.com/search/LYS2508TUN1?t=TO17876397001787643300000120LYSTUN_2e15db6150c3402f44cc1ed39db137cc_6374&search_date=07082026&expected_price_uuid=019fdda9-5588-8040-2561-0c466b5ad18c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=yXruNBDv8dLdOUlTxYWs2Q&expected_price_source=share&expected_price_currency=eur&expected_price=67&marker=704469"
+            "price": 71,
+            "date": "2026-08-29",
+            "date_fr": "29 août",
+            "link": "https://www.aviasales.com/search/LYS2908TUN1?t=TO17880246001788028200000120LYSTUN_990263d36045df0087f6d042df0c3d90_6753&search_date=08082026&expected_price_uuid=019fe301-38e0-8040-2fb8-f3c0a57aec2d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=IUvAjiimwV3p5_sNLwbSXA&expected_price_source=share&expected_price_currency=eur&expected_price=71&marker=704469"
           },
           "retour": {
             "price": 41,
@@ -373,8 +373,8 @@
             "date_fr": "18 septembre",
             "link": "https://www.aviasales.com/search/TUN1809LYS1?t=TO17897667001789777500000120TUNLYS_d1041bf522add6a079e0e2fa2083751f_3951&search_date=11082026&expected_price_uuid=019fef00-f4a4-8030-60c3-a703446a7c23&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=IRKFyljAPy5U0WU9Hwb3iQ&expected_price_source=share&expected_price_currency=eur&expected_price=41&marker=704469"
           },
-          "total": 108,
-          "gap": 24,
+          "total": 112,
+          "gap": 20,
           "month": "2026-08",
           "hero": true
         },
@@ -384,10 +384,10 @@
           "d": "TUN",
           "city": "Tunis",
           "aller": {
-            "price": 83,
-            "date": "2026-08-23",
-            "date_fr": "23 août",
-            "link": "https://www.aviasales.com/search/ORY2308TUN1?t=TO17875161001787521800000155ORYTUN_3d413523e3934ad0dd13a5446170c1cf_7904&search_date=11082026&expected_price_uuid=019fef4d-71f1-8030-a66a-bac2527b180e&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=Ulg5Qv_IKYjUToJDvdy9dA&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=83&marker=704469"
+            "price": 85,
+            "date": "2026-08-21",
+            "date_fr": "21 août",
+            "link": "https://www.aviasales.com/search/ORY2108TUN1?t=TO17872947001787300100000150ORYTUN_ba7ad6318816510f9902ccd79a508c6d_8084&search_date=08082026&expected_price_uuid=019fe300-91f7-8030-e54c-a45eb15d48ae&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=c7TaVbpgHS08XqgnDN-IUw&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=85&marker=704469"
           },
           "retour": {
             "price": 36,
@@ -395,8 +395,8 @@
             "date_fr": "29 septembre",
             "link": "https://www.aviasales.com/search/TUN2909ORY1?t=TO17906580001790670900000155TUNORY_db1d92f20fa1e853697d23dc4f8683c1_3410&search_date=12082026&expected_price_uuid=019ff848-6704-8040-29c8-13d23d9aadbb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=2Vfm_K1Aixa8_bI-vpfDyQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=36&marker=704469"
           },
-          "total": 119,
-          "gap": 37,
+          "total": 121,
+          "gap": 39,
           "month": "2026-08"
         },
         {
@@ -411,13 +411,13 @@
             "link": "https://www.aviasales.com/search/MRS0109TUN1?t=TO17882880001788290400000100MRSTUN_f53afde64a05caacc0b9610d3be8484a_6858&search_date=10082026&expected_price_uuid=019fede8-fa16-8030-e91b-69738dc89a82&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=GPaK-PahmdJvfaVxvciyhQ&expected_price_source=share&expected_price_currency=eur&expected_price=72&marker=704469"
           },
           "retour": {
-            "price": 53,
-            "date": "2026-10-10",
-            "date_fr": "10 octobre",
-            "link": "https://www.aviasales.com/search/TUN1010MRS1?t=TO17916666001791676500000105TUNMRS_e44201e130e393433ded0116fc0af735_5077&search_date=13082026&expected_price_uuid=019ffc11-90de-8040-a7b5-383a3057588c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=p5WH-zgQDxAOjbTgXB1qRg&expected_price_source=share&expected_price_currency=eur&expected_price=53&marker=704469"
+            "price": 57,
+            "date": "2026-10-12",
+            "date_fr": "12 octobre",
+            "link": "https://www.aviasales.com/search/TUN1210MRS1?t=BJ17918127001791822300000100TUNMRS_55f70ce1131ff167479e27ab42cdea68_5418&search_date=08082026&expected_price_uuid=019fe2c4-f9ab-8040-ac98-3f0f8045d5d7&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=6pnuwizPqtTtgLygsrepCw&expected_price_source=share&expected_price_currency=eur&expected_price=57&marker=704469"
           },
-          "total": 125,
-          "gap": 39,
+          "total": 129,
+          "gap": 41,
           "month": "2026-09"
         },
         {
@@ -463,27 +463,6 @@
           "month": "2026-09"
         },
         {
-          "o": "CDG",
-          "o_city": "Paris CDG",
-          "d": "DJE",
-          "city": "Djerba",
-          "aller": {
-            "price": 99,
-            "date": "2026-08-28",
-            "date_fr": "28 août",
-            "link": "https://www.aviasales.com/search/CDG2808DJE1?t=E417879277001787934600000175CDGDJE_7c93a7f4ca6643b1ba1505358674abb3_9459&search_date=10082026&expected_price_uuid=019feb6f-119b-8030-a81c-b26d5150a6f6&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JY8zjd46zBl66GtqZqgtNw&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=99&marker=704469"
-          },
-          "retour": {
-            "price": 56,
-            "date": "2026-09-23",
-            "date_fr": "23 septembre",
-            "link": "https://www.aviasales.com/search/DJE2309CDG1?t=BJ17901468001790161200000180DJECDG_fcb02a8b7b5845cfc2f1fb68868a0ed1_5359&search_date=07082026&expected_price_uuid=019fdda1-15af-8030-208f-4cc1a0088a1d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=KDi3u6BdxYV62X0KwZlazA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469"
-          },
-          "total": 155,
-          "gap": 26,
-          "month": "2026-08"
-        },
-        {
           "o": "BRU",
           "o_city": "Bruxelles",
           "d": "TUN",
@@ -510,19 +489,40 @@
           "d": "TUN",
           "city": "Tunis",
           "aller": {
-            "price": 104,
-            "date": "2026-08-15",
-            "date_fr": "15 août",
-            "link": "https://www.aviasales.com/search/CDG1508TUN1?t=TU17868330001786838100000145CDGTUN_1f9089002c45d4a1fc482e9cf3bcd5a7_9938&search_date=13082026&expected_price_uuid=019ff9f3-403c-8040-6400-456dd6f679bd&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=1PE3BQN3AUVQkeBcpj0F9w&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=104&marker=704469"
+            "price": 103,
+            "date": "2026-09-11",
+            "date_fr": "11 septembre",
+            "link": "https://www.aviasales.com/search/CDG1109TUN1?t=TU17891634001789168500000145CDGTUN_45b71cb5d19b89c70cf765343c2fc3dd_10043&search_date=14082026&expected_price_uuid=01a0020f-3f84-8030-eed1-faa08d1c2027&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=hYBC-l_Z6Y1ffsP9IlfJoA&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=103&marker=704469"
           },
           "retour": {
-            "price": 54,
-            "date": "2026-09-25",
-            "date_fr": "25 septembre",
-            "link": "https://www.aviasales.com/search/TUN2509CDG1?t=BJ17903196001790332500000155TUNCDG_3b3f40a7b69b55c7487663f3f7f1a338_5200&search_date=07082026&expected_price_uuid=019fdab2-d2fb-8030-2fb0-bf3b7f6c8af0&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wk0XgaKgeBtnPbkoCg7PaQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=54&marker=704469"
+            "price": 56,
+            "date": "2026-10-01",
+            "date_fr": "1 octobre",
+            "link": "https://www.aviasales.com/search/TUN0110CDG1?t=BJ17908380001790850900000155TUNCDG_44a2da0c96ab3917e4d0e3a7260bc7b7_5446&search_date=13082026&expected_price_uuid=019ffbe8-2c98-8030-2ebc-9c48a59e5915&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=wk0XgaKgeBtnPbkoCg7PaQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469"
           },
-          "total": 158,
-          "gap": 41,
+          "total": 159,
+          "gap": 20,
+          "month": "2026-09"
+        },
+        {
+          "o": "CDG",
+          "o_city": "Paris CDG",
+          "d": "DJE",
+          "city": "Djerba",
+          "aller": {
+            "price": 99,
+            "date": "2026-08-28",
+            "date_fr": "28 août",
+            "link": "https://www.aviasales.com/search/CDG2808DJE1?t=E417879277001787934600000175CDGDJE_7c93a7f4ca6643b1ba1505358674abb3_9459&search_date=10082026&expected_price_uuid=019feb6f-119b-8030-a81c-b26d5150a6f6&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JY8zjd46zBl66GtqZqgtNw&origin_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=99&marker=704469"
+          },
+          "retour": {
+            "price": 69,
+            "date": "2026-09-19",
+            "date_fr": "19 septembre",
+            "link": "https://www.aviasales.com/search/DJE1909CDG1?t=BJ17898021001789816500000180DJECDG_bc0495b7938fa03dbc4a05dbbdf5d7ae_6562&search_date=08082026&expected_price_uuid=019fe234-de06-8030-e8f3-970e03898e5a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=YT6Iwm6RfyNPBAYCoWbI7Q&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=69&marker=704469"
+          },
+          "total": 168,
+          "gap": 22,
           "month": "2026-08"
         }
       ]
