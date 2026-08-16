@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-15",
+  "updated": "2026-08-16",
   "deals": [
     {
       "o": "CRL",
@@ -77,21 +77,6 @@
       "discount": 49
     },
     {
-      "o": "LIL",
-      "d": "AGA",
-      "city": "Agadir",
-      "price": 215,
-      "depart": "2026-10-15",
-      "ret": "2026-10-27",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/LIL1510AGA27101?t=FR17920965001792185900001610LILFEZAGA17931171001793219100001640AGAMRSLIL_12aac4ded38cae7d346ef956b9bd5ad1_20609&search_date=13082026&expected_price_uuid=019ffcae-bc84-8030-e158-552d8605ae67&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bDD0GeCNrU3YGjS5xXgHrw&expected_price_source=share&expected_price_currency=eur&expected_price=215&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 398,
-      "discount": 46
-    },
-    {
       "o": "CDG",
       "d": "NDR",
       "city": "Nador",
@@ -105,6 +90,21 @@
       "promo": true,
       "baseline": 338,
       "discount": 45
+    },
+    {
+      "o": "LIL",
+      "d": "AGA",
+      "city": "Agadir",
+      "price": 226,
+      "depart": "2026-10-15",
+      "ret": "2026-10-27",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/LIL1510AGA27101?t=FR17920965001792185900001610LILFEZAGA17931171001793219100001640AGAMRSLIL_12aac4ded38cae7d346ef956b9bd5ad1_22015&search_date=15082026&expected_price_uuid=01a00753-0248-8030-eb8a-168dd4a15595&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bDD0GeCNrU3YGjS5xXgHrw&expected_price_source=share&expected_price_currency=eur&expected_price=226&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 398,
+      "discount": 43
     },
     {
       "o": "LYS",
