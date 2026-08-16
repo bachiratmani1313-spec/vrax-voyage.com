@@ -77,21 +77,6 @@
       "discount": 49
     },
     {
-      "o": "CDG",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 187,
-      "depart": "2026-10-14",
-      "ret": "2026-10-25",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/CDG1410NDR25101?t=VY17919852001792007700000495CDGBCNNDR17929125001793030400001905NDRBCNMXPCDG_48c21a0ea53b316bcaa25b0d7893eb42_17865&search_date=12082026&expected_price_uuid=019ff6f9-929c-8040-210f-59392b536dca&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=-Y8aphY8LhQeWrM6QmwUsQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=187&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 338,
-      "discount": 45
-    },
-    {
       "o": "LIL",
       "d": "AGA",
       "city": "Agadir",
@@ -107,49 +92,19 @@
       "discount": 43
     },
     {
-      "o": "LYS",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 101,
-      "depart": "2026-09-10",
-      "ret": "2026-10-10",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/LYS1009CZL10101?t=AH17890446001789047600000110LYSCZL17916228001791633000000110CZLLYS_747d686f4935ce8a70c0bebf1ddccc04_9681&search_date=14082026&expected_price_uuid=019ffea0-07a6-8030-ab4f-a712b610062a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=AyAbHQCKUJbeeAViYhN_PQ&expected_price_source=share&expected_price_currency=eur&expected_price=101&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 169,
-      "discount": 40
-    },
-    {
       "o": "MRS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 115,
-      "depart": "2026-08-25",
-      "ret": "2026-09-15",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 138,
+      "depart": "2026-08-28",
+      "ret": "2026-09-20",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/MRS2508ORN15091?t=V717876832001787686500000115MRSORN17895045001789514700000110ORNMRS_f97c129ccadc5be8a9645df9c14ae94d_10982&search_date=10082026&expected_price_uuid=019fecc5-7661-8040-a00c-ad54e8dee912&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=vll6RcMbXpdAc5IiNimivQ&expected_price_source=share&expected_price_currency=eur&expected_price=115&marker=704469",
+      "link": "https://www.aviasales.com/search/MRS2808TUN20091?t=TO17879352001787937300000095MRSTUN17899002001789910100000105TUNMRS_b4042e511e5c390a521d9c6a8c94ffee_13483&search_date=16082026&expected_price_uuid=01a00836-6f65-8030-6ad9-478063483e08&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QJfXFD_pplFolpXWUNDnMQ&expected_price_source=share&expected_price_currency=eur&expected_price=138&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 193,
-      "discount": 40
-    },
-    {
-      "o": "MRS",
-      "d": "ORN",
-      "city": "Oran",
-      "price": 103,
-      "depart": "2026-10-25",
-      "ret": "2026-11-09",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/MRS2510ORN09111?t=AH17929287001792935300000110MRSORN17942148001794221100000105ORNMRS_bfcfc5f4613b2c51ba322583af57a11d_9829&search_date=10082026&expected_price_uuid=019feba5-7683-8040-a4b9-ec632898bab1&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Y-CpE29FgG_iyvNK-KkJlw&expected_price_source=share&expected_price_currency=eur&expected_price=103&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 160,
-      "discount": 36
+      "baseline": 220,
+      "discount": 37
     },
     {
       "o": "LIL",
@@ -180,6 +135,51 @@
       "promo": true,
       "baseline": 334,
       "discount": 34
+    },
+    {
+      "o": "CDG",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 126,
+      "depart": "2026-08-24",
+      "ret": "2026-09-23",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CDG2408CZL23091?t=AH17875944001787598900000135CDGCZL17901705001790182500000140CZLCDG_c34999ec90a962ab89b3667a35ef7ee3_12195&search_date=14082026&expected_price_uuid=019fffa3-9e2a-8030-2fbb-33f751454441&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QQxSz_o2wbW6RyGI4nz2QQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=126&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 190,
+      "discount": 34
+    },
+    {
+      "o": "ORY",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 141,
+      "depart": "2026-08-16",
+      "ret": "2026-09-16",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/ORY1608CMN16091?t=TB17869098001786918800000210ORYCMN17895402001789554600000180CMNORY_753eb5298141325bfc7b64663b8730ad_13438&search_date=12082026&expected_price_uuid=019ff75b-2653-8040-6f95-096c895553db&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sv0K9O4300z99EJ1hu1tPQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=141&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 213,
+      "discount": 34
+    },
+    {
+      "o": "CRL",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 110,
+      "depart": "2026-09-10",
+      "ret": "2026-09-22",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/CRL1009NDR22091?t=FR17890269001789033800000175CRLNDR17900769001790174100001500NDRBCNCRL_a923a21be6b2655b72e784df13fcbb5b_10729&search_date=15082026&expected_price_uuid=01a005ef-37af-8030-6d19-dda4918e77a1&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=hzJsZefVT89zfvO6mo3sfw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=110&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 159,
+      "discount": 31
     }
   ]
 }
