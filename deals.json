@@ -43,8 +43,8 @@
       "month": "2026-09",
       "active": true,
       "promo": true,
-      "baseline": 159,
-      "discount": 62
+      "baseline": 154,
+      "discount": 60
     },
     {
       "o": "LYS",
@@ -60,36 +60,6 @@
       "promo": true,
       "baseline": 242,
       "discount": 55
-    },
-    {
-      "o": "ORY",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 150,
-      "depart": "2026-09-17",
-      "ret": "2026-10-03",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY1709CZL03101?t=TO17896644001789719000000970ORYALGCZL17910525001791065100000150CZLORY_9c68d30ca9893562ba39f93a897431b0_14243&search_date=10082026&expected_price_uuid=019fed08-7f56-8030-eb9e-5975c3370009&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rNyA921hDpN-8fVJV9RlGA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=150&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 309,
-      "discount": 51
-    },
-    {
-      "o": "CDG",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 192,
-      "depart": "2026-09-17",
-      "ret": "2026-10-03",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG1709CZL03101?t=AH17896680001789672500000135CDGCZL17910072001791036000000420CZLALGCDG_184c053181070d20ac0182374adc2136_18284&search_date=10082026&expected_price_uuid=019fed08-7f56-8030-eb9e-5975c3370009&static_fare_key=TY%7CP0%7CH1%7CL1_1_23%7CCH0%7CR0%7CTBC1&itinerary_key=2cnzBI3-YF93iqjnUB-gFA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=192&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 377,
-      "discount": 49
     },
     {
       "o": "LIL",
@@ -167,19 +137,49 @@
       "discount": 36
     },
     {
-      "o": "CDG",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 141,
-      "depart": "2026-08-21",
-      "ret": "2026-10-01",
+      "o": "ORY",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 150,
+      "depart": "2026-09-17",
+      "ret": "2026-10-03",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/ORY1709CZL03101?t=TO17896644001789719000000970ORYALGCZL17910525001791065100000150CZLORY_9c68d30ca9893562ba39f93a897431b0_14243&search_date=10082026&expected_price_uuid=019fed08-7f56-8030-eb9e-5975c3370009&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rNyA921hDpN-8fVJV9RlGA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=150&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 230,
+      "discount": 35
+    },
+    {
+      "o": "BRU",
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 219,
+      "depart": "2026-08-26",
+      "ret": "2026-09-05",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG2108TNG01101?t=AF17873199001787326800000175CDGTNG17908644001790881200000160TNGCDG_543d424eed08e8972e027ec00a926d74_13684&search_date=16082026&expected_price_uuid=01a00bcb-2d51-8040-699c-08596d43b77d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RU8JRbt2JZ_6GEcdT8VGtA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=141&marker=704469",
+      "link": "https://www.aviasales.com/search/BRU2608DJE05091?t=TB17877246001787733000000200BRUDJE17886213001788636300000190DJEBRU_7834bc1ac16e8bf03024415920d3dafe_21249&search_date=14082026&expected_price_uuid=019fff98-4dab-8040-a040-c1498d47f213&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=zI4QzVraqP-DoV0TOBNb7Q&expected_price_source=share&expected_price_currency=eur&expected_price=219&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
-      "baseline": 216,
-      "discount": 35
+      "baseline": 334,
+      "discount": 34
+    },
+    {
+      "o": "CDG",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 126,
+      "depart": "2026-08-24",
+      "ret": "2026-09-23",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/CDG2408CZL23091?t=AH17875944001787598900000135CDGCZL17901705001790182500000140CZLCDG_c34999ec90a962ab89b3667a35ef7ee3_12195&search_date=14082026&expected_price_uuid=019fffa3-9e2a-8030-2fbb-33f751454441&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QQxSz_o2wbW6RyGI4nz2QQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=126&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 190,
+      "discount": 34
     }
   ]
 }
