@@ -95,16 +95,16 @@
       "o": "ORY",
       "d": "TNG",
       "city": "Tanger",
-      "price": 109,
+      "price": 112,
       "depart": "2026-08-21",
       "ret": "2026-10-01",
       "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/ORY2108TNG01101?t=TO17872980001787304600000170ORYTNG17908473001790860500000100TNGORY_7f915acc0fe21f5b200778a47353d20c_10600&search_date=16082026&expected_price_uuid=01a00bcb-2d51-8040-699c-08596d43b77d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=iWoE43z7gmxw1R6rom91NQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=109&marker=704469",
+      "link": "https://www.aviasales.com/search/ORY2108TNG01101?t=TO17873232001787329800000170ORYTNG17908473001790860500000100TNGORY_c920f4aea9d69b00b5421f70f7e54bc1_11054&search_date=17082026&expected_price_uuid=01a00f4d-4638-8040-6eb1-ae615efc4f7d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=q9fG0nRPDnm2XR_Nxyiilw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=112&marker=704469",
       "month": "2026-08",
       "active": true,
       "promo": true,
       "baseline": 183,
-      "discount": 40
+      "discount": 39
     },
     {
       "o": "MRS",
