@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17",
+  "updated": "2026-08-18",
   "deals": [
     {
       "o": "CRL",
@@ -137,21 +137,6 @@
       "discount": 36
     },
     {
-      "o": "ORY",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 150,
-      "depart": "2026-09-17",
-      "ret": "2026-10-03",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY1709CZL03101?t=TO17896644001789719000000970ORYALGCZL17910525001791065100000150CZLORY_9c68d30ca9893562ba39f93a897431b0_14243&search_date=10082026&expected_price_uuid=019fed08-7f56-8030-eb9e-5975c3370009&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rNyA921hDpN-8fVJV9RlGA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=150&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 230,
-      "discount": 35
-    },
-    {
       "o": "BRU",
       "d": "DJE",
       "city": "Djerba",
@@ -179,6 +164,21 @@
       "active": true,
       "promo": true,
       "baseline": 190,
+      "discount": 34
+    },
+    {
+      "o": "TLS",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 105,
+      "depart": "2026-10-02",
+      "ret": "2026-10-04",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/TLS0210RAK04101?t=FR17909238001790977800001020TLSTNGRAK17911452001791192900000675RAKFEZTLS_82d2b03626c410af4f22a12e86b87f14_10375&search_date=17082026&expected_price_uuid=01a0116b-e60c-8030-ac72-5c7884f06726&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bJyBRTvSfINSlDI1B1Lfag&expected_price_source=share&expected_price_currency=eur&expected_price=105&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 159,
       "discount": 34
     }
   ]
