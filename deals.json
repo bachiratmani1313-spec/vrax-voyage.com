@@ -155,16 +155,16 @@
       "o": "BRU",
       "d": "DJE",
       "city": "Djerba",
-      "price": 210,
+      "price": 207,
       "depart": "2026-09-12",
       "ret": "2026-09-26",
       "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/BRU1209DJE26091?t=SN17892300001789236900000175BRUDJE17904495001790464200000185DJEBRU_40e18208a0fa8282a53ba0b2b04a87a3_20678&search_date=18082026&expected_price_uuid=01a015ba-3fb4-8040-2f7d-15c4636e3ae4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fedbpZ1IRJbPlx4mgDSftg&expected_price_source=share&expected_price_currency=eur&expected_price=210&marker=704469",
+      "link": "https://www.aviasales.com/search/BRU1209DJE26091?t=SN17892300001789236900000175BRUDJE17904495001790464200000185DJEBRU_40e18208a0fa8282a53ba0b2b04a87a3_20501&search_date=19082026&expected_price_uuid=01a019c7-8652-8040-ac0f-304882ea586e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fedbpZ1IRJbPlx4mgDSftg&expected_price_source=share&expected_price_currency=eur&expected_price=207&marker=704469",
       "month": "2026-09",
       "active": true,
       "promo": true,
       "baseline": 282,
-      "discount": 26
+      "discount": 27
     },
     {
       "o": "MRS",
