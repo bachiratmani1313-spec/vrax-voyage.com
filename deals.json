@@ -137,21 +137,6 @@
       "discount": 31
     },
     {
-      "o": "MRS",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 140,
-      "depart": "2026-08-28",
-      "ret": "2026-09-20",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/MRS2808TUN20091?t=TO17879127001787914800000095MRSTUN17899002001789910100000105TUNMRS_fd7d173766d8150c1e5c94c8cf30b299_13605&search_date=16082026&expected_price_uuid=01a00b53-5c6f-8030-26c4-9e810033df41&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=--lVNSjAX5fY6NK6lgRHIQ&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 199,
-      "discount": 30
-    },
-    {
       "o": "TLS",
       "d": "ALG",
       "city": "Alger",
@@ -167,19 +152,34 @@
       "discount": 28
     },
     {
-      "o": "ORY",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 119,
-      "depart": "2026-10-09",
-      "ret": "2026-10-12",
+      "o": "BRU",
+      "d": "DJE",
+      "city": "Djerba",
+      "price": 210,
+      "depart": "2026-09-12",
+      "ret": "2026-09-26",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/BRU1209DJE26091?t=SN17892300001789236900000175BRUDJE17904495001790464200000185DJEBRU_40e18208a0fa8282a53ba0b2b04a87a3_20678&search_date=18082026&expected_price_uuid=01a015ba-3fb4-8040-2f7d-15c4636e3ae4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=fedbpZ1IRJbPlx4mgDSftg&expected_price_source=share&expected_price_currency=eur&expected_price=210&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 282,
+      "discount": 26
+    },
+    {
+      "o": "MRS",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 112,
+      "depart": "2026-10-10",
+      "ret": "2026-10-18",
       "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/ORY0910TUN12101?t=TO17915766001791582000000150ORYTUN17917812001791793800000150TUNORY_0d4f4234dc975a8ade91fe28e5e6e03f_11406&search_date=12082026&expected_price_uuid=019ff77f-2668-8030-2a99-3433b78b09c4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=cyWVnNoZ9gLhiDL3GdQs1A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=119&marker=704469",
+      "link": "https://www.aviasales.com/search/MRS1010RAK18101?t=FR17916162001791670500001025MRSTNGRAK17923548001792421100000985RAKFEZMRS_184842bb552e1d405e09fb9c4a8630f5_10993&search_date=18082026&expected_price_uuid=01a01559-104c-8030-2d7a-df0cd4e60065&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Huk7C5tbUiyRFxAyNgGIYA&expected_price_source=share&expected_price_currency=eur&expected_price=112&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": true,
-      "baseline": 162,
-      "discount": 27
+      "baseline": 152,
+      "discount": 26
     }
   ]
 }
