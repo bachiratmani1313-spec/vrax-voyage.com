@@ -1,36 +1,6 @@
 {
-  "updated": "2026-08-18",
+  "updated": "2026-08-19",
   "deals": [
-    {
-      "o": "CRL",
-      "d": "FEZ",
-      "city": "Fès",
-      "price": 51,
-      "depart": "2026-08-25",
-      "ret": "2026-09-22",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CRL2508FEZ22091?t=FR17876904001787697900000185CRLFEZ17900895001790108100000190FEZCRL_71da77cd147da01df7a6da5199a03047_4855&search_date=11082026&expected_price_uuid=019ff2dc-7671-8040-aed7-96c3845f4230&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qErQAEWeoQIlz9vYXNnN0w&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=51&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 147,
-      "discount": 65
-    },
-    {
-      "o": "BRU",
-      "d": "FEZ",
-      "city": "Fès",
-      "price": 51,
-      "depart": "2026-08-25",
-      "ret": "2026-09-22",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/BRU2508FEZ22091?t=FR17876904001787697900000185CRLFEZ17900895001790108100000190FEZCRL_71da77cd147da01df7a6da5199a03047_4855&search_date=11082026&expected_price_uuid=019ff2dc-7671-8040-aed7-96c3845f4230&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=qErQAEWeoQIlz9vYXNnN0w&expected_price_source=share&expected_price_currency=eur&expected_price=51&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 138,
-      "discount": 63
-    },
     {
       "o": "CRL",
       "d": "NDR",
@@ -153,21 +123,6 @@
     },
     {
       "o": "CDG",
-      "d": "CZL",
-      "city": "Constantine",
-      "price": 189,
-      "depart": "2026-09-18",
-      "ret": "2026-10-19",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CDG1809CZL19101?t=AH17897337001789770600000675CDGALGCZL17924169001792428900000140CZLCDG_967068dde650e15996ff9bf2632f13ff_18580&search_date=18082026&expected_price_uuid=01a015d4-774b-8040-66dc-50424e153eea&static_fare_key=TY%7CP0%7CH1%7CL1_1_20%7CCH0%7CR0%7CTBC1&itinerary_key=NNGaPy3ZfqY4l5qrn-ZKMQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=189&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 284,
-      "discount": 33
-    },
-    {
-      "o": "CDG",
       "d": "TNG",
       "city": "Tanger",
       "price": 145,
@@ -180,6 +135,51 @@
       "promo": true,
       "baseline": 211,
       "discount": 31
+    },
+    {
+      "o": "MRS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 140,
+      "depart": "2026-08-28",
+      "ret": "2026-09-20",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/MRS2808TUN20091?t=TO17879127001787914800000095MRSTUN17899002001789910100000105TUNMRS_fd7d173766d8150c1e5c94c8cf30b299_13605&search_date=16082026&expected_price_uuid=01a00b53-5c6f-8030-26c4-9e810033df41&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=--lVNSjAX5fY6NK6lgRHIQ&expected_price_source=share&expected_price_currency=eur&expected_price=140&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 199,
+      "discount": 30
+    },
+    {
+      "o": "TLS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 155,
+      "depart": "2026-10-12",
+      "ret": "2026-11-21",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/TLS1210ALG21111?t=AH17918106001791812400000090TLSALG17952480001795254000000100ALGTLS_c113d7df1aeb14e86f6bc5eb00381f70_15275&search_date=17082026&expected_price_uuid=01a01066-7428-8040-a89a-0aca3f02eb9f&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OfTG5FWOBXqbeZS8boKYCw&expected_price_source=share&expected_price_currency=eur&expected_price=155&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 215,
+      "discount": 28
+    },
+    {
+      "o": "ORY",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 119,
+      "depart": "2026-10-09",
+      "ret": "2026-10-12",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/ORY0910TUN12101?t=TO17915766001791582000000150ORYTUN17917812001791793800000150TUNORY_0d4f4234dc975a8ade91fe28e5e6e03f_11406&search_date=12082026&expected_price_uuid=019ff77f-2668-8030-2a99-3433b78b09c4&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=cyWVnNoZ9gLhiDL3GdQs1A&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=119&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 162,
+      "discount": 27
     }
   ]
 }
