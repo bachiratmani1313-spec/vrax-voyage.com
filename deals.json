@@ -32,6 +32,21 @@
       "discount": 55
     },
     {
+      "o": "TLS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 119,
+      "depart": "2026-10-12",
+      "ret": "2026-11-21",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/TLS1210ALG21111?t=AH17918106001791812400000090TLSALG17952480001795254000000100ALGTLS_c113d7df1aeb14e86f6bc5eb00381f70_11591&search_date=20082026&expected_price_uuid=01a01ed4-821e-8040-a899-7be7587569c0&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OfTG5FWOBXqbeZS8boKYCw&expected_price_source=share&expected_price_currency=eur&expected_price=119&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 215,
+      "discount": 45
+    },
+    {
       "o": "BRU",
       "d": "NDR",
       "city": "Nador",
@@ -120,21 +135,6 @@
       "promo": true,
       "baseline": 211,
       "discount": 31
-    },
-    {
-      "o": "TLS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 155,
-      "depart": "2026-10-12",
-      "ret": "2026-11-21",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/TLS1210ALG21111?t=AH17918106001791812400000090TLSALG17952480001795254000000100ALGTLS_c113d7df1aeb14e86f6bc5eb00381f70_15275&search_date=17082026&expected_price_uuid=01a01066-7428-8040-a89a-0aca3f02eb9f&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=OfTG5FWOBXqbeZS8boKYCw&expected_price_source=share&expected_price_currency=eur&expected_price=155&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 215,
-      "discount": 28
     },
     {
       "o": "LIL",
