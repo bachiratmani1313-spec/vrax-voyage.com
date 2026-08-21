@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-20",
+  "updated": "2026-08-21",
   "deals": [
     {
       "o": "CRL",
@@ -92,6 +92,21 @@
       "discount": 35
     },
     {
+      "o": "CDG",
+      "d": "CZL",
+      "city": "Constantine",
+      "price": 125,
+      "depart": "2026-09-01",
+      "ret": "2026-09-21",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/CDG0109CZL21091?t=AH17882856001788290100000135CDGCZL17899977001790009700000140CZLCDG_d5a36a7117ca00959d1f2007ab32b57f_12082&search_date=20082026&expected_price_uuid=01a02149-1740-8030-e4b2-2152fca24c50&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=d2WTgQgpWGcUiqFVTUvk1w&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=125&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 192,
+      "discount": 35
+    },
+    {
       "o": "TLS",
       "d": "RAK",
       "city": "Marrakech",
@@ -164,21 +179,6 @@
       "active": false,
       "promo": true,
       "baseline": 126,
-      "discount": 28
-    },
-    {
-      "o": "ORY",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 215,
-      "depart": "2026-09-11",
-      "ret": "2026-09-13",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/ORY1109NDR13091?t=TO17891064001789147200000740ORYBCNNDR17893365001789373400000555NDRBCNORY_f1f67a1942c9a519dc4d0b1a3b5df40b_20963&search_date=20082026&expected_price_uuid=01a01f94-8bb4-8030-64be-7b17ca54696c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=JbtCEa1mDJPdotmpWwh5AA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=215&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 300,
       "discount": 28
     }
   ]
