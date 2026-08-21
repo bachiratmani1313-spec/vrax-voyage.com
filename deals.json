@@ -167,19 +167,19 @@
       "discount": 31
     },
     {
-      "o": "CDG",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 145,
-      "depart": "2026-08-21",
-      "ret": "2026-10-01",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/CDG2108TNG01101?t=AF17873199001787326800000175CDGTNG17908644001790881200000160TNGCDG_543d424eed08e8972e027ec00a926d74_14311&search_date=17082026&expected_price_uuid=01a00f4d-4638-8040-6eb1-ae615efc4f7d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RU8JRbt2JZ_6GEcdT8VGtA&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=145&marker=704469",
-      "month": "2026-08",
-      "active": true,
+      "o": "ORY",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 91,
+      "depart": "2026-11-12",
+      "ret": "2026-11-19",
+      "when": "Nov · A/R",
+      "link": "https://www.aviasales.com/search/ORY1211RAK19111?t=TO17944650001794477300000265ORYRAK17950698001795082100000145RAKORY_e50dbab6d83b2769a43184eeabe3850c_8852&search_date=20082026&expected_price_uuid=01a01ffc-f208-8040-aaca-7529e967ff67&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=HCX-W7DgZR2UelfpP6M0bw&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=91&marker=704469",
+      "month": "2026-11",
+      "active": false,
       "promo": true,
-      "baseline": 211,
-      "discount": 31
+      "baseline": 126,
+      "discount": 28
     }
   ]
 }
