@@ -2,21 +2,6 @@
   "updated": "2026-08-22",
   "deals": [
     {
-      "o": "CRL",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 61,
-      "depart": "2026-09-10",
-      "ret": "2026-10-10",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/CRL1009NDR10101?t=FR17890269001789033800000175CRLNDR17916552001791672900000175NDRCRL_de60c7952be0826479072c8b2bd3f064_6053&search_date=18082026&expected_price_uuid=01a013e5-7b1d-8030-a1b2-7846962592bb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cDF-RtUr5t-n9PyBxHUENg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 130,
-      "discount": 53
-    },
-    {
       "o": "TLS",
       "d": "ALG",
       "city": "Alger",
@@ -30,36 +15,6 @@
       "promo": true,
       "baseline": 215,
       "discount": 45
-    },
-    {
-      "o": "BRU",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 61,
-      "depart": "2026-09-10",
-      "ret": "2026-10-10",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/BRU1009NDR10101?t=FR17890269001789033800000175CRLNDR17916552001791672900000175NDRCRL_de60c7952be0826479072c8b2bd3f064_6053&search_date=18082026&expected_price_uuid=01a013e5-7b1d-8030-a1b2-7846962592bb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cDF-RtUr5t-n9PyBxHUENg&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 106,
-      "discount": 42
-    },
-    {
-      "o": "LYS",
-      "d": "TUN",
-      "city": "Tunis",
-      "price": 108,
-      "depart": "2026-10-01",
-      "ret": "2026-10-14",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/LYS0110TUN14101?t=TO17908344001790838000000120LYSTUN17919636001791974400000120TUNLYS_d313636262e874f2315096790958874f_10519&search_date=15082026&expected_price_uuid=01a00566-19e9-8030-22d0-2651cf56132d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=coVzVMfLq5Bs106DHrdJ7w&expected_price_source=share&expected_price_currency=eur&expected_price=108&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 175,
-      "discount": 38
     },
     {
       "o": "LYS",
@@ -152,6 +107,21 @@
       "discount": 31
     },
     {
+      "o": "CRL",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 61,
+      "depart": "2026-09-10",
+      "ret": "2026-10-10",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/CRL1009NDR10101?t=FR17890269001789033800000175CRLNDR17916552001791672900000175NDRCRL_de60c7952be0826479072c8b2bd3f064_6053&search_date=18082026&expected_price_uuid=01a013e5-7b1d-8030-a1b2-7846962592bb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cDF-RtUr5t-n9PyBxHUENg&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 86,
+      "discount": 29
+    },
+    {
       "o": "ORY",
       "d": "RAK",
       "city": "Marrakech",
@@ -180,6 +150,36 @@
       "promo": true,
       "baseline": 300,
       "discount": 28
+    },
+    {
+      "o": "BRU",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 61,
+      "depart": "2026-09-10",
+      "ret": "2026-10-10",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/BRU1009NDR10101?t=FR17890269001789033800000175CRLNDR17916552001791672900000175NDRCRL_de60c7952be0826479072c8b2bd3f064_6053&search_date=18082026&expected_price_uuid=01a013e5-7b1d-8030-a1b2-7846962592bb&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=cDF-RtUr5t-n9PyBxHUENg&expected_price_source=share&expected_price_currency=eur&expected_price=61&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 84,
+      "discount": 27
+    },
+    {
+      "o": "MRS",
+      "d": "RAK",
+      "city": "Marrakech",
+      "price": 112,
+      "depart": "2026-10-10",
+      "ret": "2026-10-18",
+      "when": "Oct · A/R",
+      "link": "https://www.aviasales.com/search/MRS1010RAK18101?t=FR17916162001791670500001025MRSTNGRAK17923548001792421100000985RAKFEZMRS_184842bb552e1d405e09fb9c4a8630f5_10993&search_date=18082026&expected_price_uuid=01a01559-104c-8030-2d7a-df0cd4e60065&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=Huk7C5tbUiyRFxAyNgGIYA&expected_price_source=share&expected_price_currency=eur&expected_price=112&marker=704469",
+      "month": "2026-10",
+      "active": false,
+      "promo": true,
+      "baseline": 152,
+      "discount": 26
     }
   ]
 }
