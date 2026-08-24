@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-23",
+  "updated": "2026-08-24",
   "deals": [
     {
       "o": "LYS",
@@ -14,6 +14,21 @@
       "active": true,
       "promo": true,
       "baseline": 129,
+      "discount": 36
+    },
+    {
+      "o": "LYS",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 238,
+      "depart": "2026-08-26",
+      "ret": "2026-09-03",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LYS2608CMN03091?t=3O17877771001787783700000170LYSCMN17884431001788481800000585CMNAGPLYS_53babc1e68980348d14d1c29870599cc_22938&search_date=23082026&expected_price_uuid=01a03027-f9c1-8040-ac0c-891bf3c64873&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=QAAnjWEOTqcQujR9EtMzEw&expected_price_source=share&expected_price_currency=eur&expected_price=238&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 369,
       "discount": 36
     },
     {
@@ -164,21 +179,6 @@
       "active": true,
       "promo": true,
       "baseline": 300,
-      "discount": 28
-    },
-    {
-      "o": "LYS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 111,
-      "depart": "2026-10-12",
-      "ret": "2026-10-20",
-      "when": "Oct · A/R",
-      "link": "https://www.aviasales.com/search/LYS1210ALG20101?t=AH17918289001791831900000110LYSALG17924886001792498800000110ALGLYS_fbf14dfcfa5d58df9b8169c6b5047eac_10719&search_date=22082026&expected_price_uuid=01a02a48-ee55-8030-e132-8a3bd5344602&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yADC2n5MIO6gwxR-A2AXsw&expected_price_source=share&expected_price_currency=eur&expected_price=111&marker=704469",
-      "month": "2026-10",
-      "active": false,
-      "promo": true,
-      "baseline": 155,
       "discount": 28
     }
   ]
