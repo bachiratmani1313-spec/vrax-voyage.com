@@ -62,6 +62,21 @@
       "discount": 34
     },
     {
+      "o": "LYS",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 75,
+      "depart": "2026-09-08",
+      "ret": "2026-09-17",
+      "when": "Sep · A/R",
+      "link": "https://www.aviasales.com/search/LYS0809TNG17091?t=EC17888472001788852600000150LYSTNG17896704001789682400000140TNGLYS_7ebaed68205664ef9a61334d4d042f85_7434&search_date=25082026&expected_price_uuid=01a03922-96eb-8030-e4cb-8e58adbb38cc&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rmyuuMaYQXRXJCWh40Bzmg&expected_price_source=share&expected_price_currency=eur&expected_price=75&marker=704469",
+      "month": "2026-09",
+      "active": true,
+      "promo": true,
+      "baseline": 109,
+      "discount": 31
+    },
+    {
       "o": "CDG",
       "d": "AGA",
       "city": "Agadir",
@@ -137,6 +152,21 @@
       "discount": 26
     },
     {
+      "o": "LYS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 128,
+      "depart": "2026-08-29",
+      "ret": "2026-09-15",
+      "when": "Aoû · A/R",
+      "link": "https://www.aviasales.com/search/LYS2908TUN15091?t=TO17880246001788028200000120LYSTUN17894604001789471200000120TUNLYS_d93ce8741a39529ac82a9e7076929cf3_12511&search_date=25082026&expected_price_uuid=01a03994-7b22-8030-609f-48896f78e773&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=blvYEMOyNbJWyPMjGyOzhA&expected_price_source=share&expected_price_currency=eur&expected_price=128&marker=704469",
+      "month": "2026-08",
+      "active": true,
+      "promo": true,
+      "baseline": 174,
+      "discount": 26
+    },
+    {
       "o": "LIL",
       "d": "ALG",
       "city": "Alger",
@@ -150,36 +180,6 @@
       "promo": true,
       "baseline": 178,
       "discount": 25
-    },
-    {
-      "o": "TLS",
-      "d": "RAK",
-      "city": "Marrakech",
-      "price": 71,
-      "depart": "2026-09-15",
-      "ret": "2026-09-18",
-      "when": "Sep · A/R",
-      "link": "https://www.aviasales.com/search/TLS1509RAK18091?t=FR17894532001789458900000155TLSRAK17897160001789728600000150RAKTLS_de2a383bd74279d6193632779dd4705f_6884&search_date=23082026&expected_price_uuid=01a030af-08c6-8030-6d03-0baf7e8de4fa&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=8vPgKQIKt1Y8Xo6FjlkXYQ&expected_price_source=share&expected_price_currency=eur&expected_price=71&marker=704469",
-      "month": "2026-09",
-      "active": true,
-      "promo": true,
-      "baseline": 93,
-      "discount": 24
-    },
-    {
-      "o": "TLS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 268,
-      "depart": "2026-08-27",
-      "ret": "2026-09-05",
-      "when": "Aoû · A/R",
-      "link": "https://www.aviasales.com/search/TLS2708ALG05091?t=TO17878539001787874000000395TLSORNALG17886252001788647100000305ALGPMITLS_55126f66bb0aea144d6699b566dfe8b9_26273&search_date=19082026&expected_price_uuid=01a01b88-1859-8030-211b-4f8a63000daa&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=va46swFmF1VUoEaiA-mMiQ&expected_price_source=share&expected_price_currency=eur&expected_price=268&marker=704469",
-      "month": "2026-08",
-      "active": true,
-      "promo": true,
-      "baseline": 352,
-      "discount": 24
     }
   ]
 }
