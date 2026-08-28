@@ -22,7 +22,7 @@ ACTIVE_WINDOW   = 2      # mois "imminents" affichés en priorité (relevance)
 PROMO_DROP      = 0.20   # baisse mini pour qu'un prix devienne une PROMO (20%)
 PROMO_MIN_HIST  = 4      # nb mini de relevés avant de pouvoir crier "promo"
 HIST_MAX        = 40     # longueur max de l'historique par route+mois
-MAX_DEALS       = 12     # nb de cartes affichées sur le site
+MAX_DEALS       = 16     # nb de cartes affichées sur le site (allers + retours)
 HIST_FILE       = "price_history.json"
 
 # (origine, destination, ville). Priorité : Belgique <-> Maghreb, Charleroi <-> Algérie.
@@ -46,6 +46,20 @@ for _o in _FR_ORIGINS:
     for _d, _city in _MAGHREB:
         ROUTES.append((_o, _d, _city))
 
+# --- RETOURS (Maghreb -> Europe), ALLER SIMPLE — vague fin de vacances ---
+_RETURN_EU = [
+    ("BRU", "Bruxelles"), ("CRL", "Charleroi"), ("CDG", "Paris"),
+    ("ORY", "Paris"),     ("LYS", "Lyon"),
+]
+REVERSE_ROUTES = []
+_seen_rev = set()
+for _mg, _mgcity in _MAGHREB:
+    for _eu, _eucity in _RETURN_EU:
+        if (_mg, _eu) in _seen_rev:
+            continue
+        _seen_rev.add((_mg, _eu))
+        REVERSE_ROUTES.append((_mg, _eu, _eucity))
+
 MOIS = ["", "Jan", "Fév", "Mar", "Avr", "Mai", "Juin", "Juil", "Aoû", "Sep", "Oct", "Nov", "Déc"]
 
 
@@ -61,12 +75,14 @@ def target_months():
     return out
 
 
-def cheapest(origin, dest, month):
-    """Vol A/R le moins cher pour un mois donné (departure_at = YYYY-MM)."""
+def cheapest(origin, dest, month, one_way="false", prefer_direct=True):
+    """Vol le moins cher pour un mois (departure_at = YYYY-MM).
+    Si prefer_direct : on privilégie un vol SANS ESCALE quand il en existe un,
+    et on ne retombe sur un vol avec escale que si aucun direct n'est dispo."""
     q = urllib.parse.urlencode({
         "origin": origin, "destination": dest, "currency": CURRENCY,
         "departure_at": month, "sorting": "price", "direct": "false",
-        "limit": 1, "one_way": "false", "token": TOKEN,
+        "limit": 30, "one_way": one_way, "token": TOKEN,
     })
     url = "https://api.travelpayouts.com/aviasales/v3/prices_for_dates?" + q
     try:
@@ -74,7 +90,18 @@ def cheapest(origin, dest, month):
         with urllib.request.urlopen(req, timeout=25) as r:
             j = json.load(r)
         data = j.get("data") or []
-        return data[0] if data else None
+        if not data:
+            return None
+        data.sort(key=lambda x: x.get("price", 10**9))
+        if prefer_direct:
+            def _is_direct(x):
+                out  = int(x.get("transfers", 0) or 0) == 0
+                back = (one_way == "true") or int(x.get("return_transfers", 0) or 0) == 0
+                return out and back
+            directs = [x for x in data if _is_direct(x)]
+            if directs:
+                return directs[0]        # le moins cher SANS escale
+        return data[0]                   # sinon, le moins cher tout court
     except Exception as e:
         print("  ⚠️", origin, dest, month, "→", e)
         return None
@@ -88,11 +115,11 @@ def aviasales_link(item, o, d):
     return url
 
 
-def mois_label(iso):
+def mois_label(iso, suffix=" · A/R"):
     try:
-        return MOIS[int(iso[5:7])] + " · A/R"
+        return MOIS[int(iso[5:7])] + suffix
     except Exception:
-        return "A/R"
+        return suffix.strip()
 
 
 def load_history():
@@ -114,9 +141,11 @@ def main():
     history = load_history()
     candidates = []
 
-    for o, d, ville in ROUTES:
+    _JOBS = [(o, d, ville, "false", "aller",  True) for (o, d, ville) in ROUTES] + \
+            [(o, d, ville, "true",  "retour", True) for (o, d, ville) in REVERSE_ROUTES]
+    for o, d, ville, _ow, _dir, _pd in _JOBS:
         for month in months:
-            item = cheapest(o, d, month)
+            item = cheapest(o, d, month, _ow, _pd)
             time.sleep(0.25)                  # on reste poli avec l'API
             if not item:
                 continue
@@ -145,36 +174,48 @@ def main():
                 hist[-1]["p"] = min(hist[-1]["p"], price)
             history[key] = hist[-HIST_MAX:]
 
+            _tr = int(item.get("transfers", 0) or 0)
+            _stops = "direct" if _tr == 0 else (str(_tr) + " escale" + ("s" if _tr > 1 else ""))
+            _suf = " · aller simple" if _dir == "retour" else " · A/R"
             candidates.append({
                 "o": o, "d": d, "city": ville, "price": price,
                 "depart": (item.get("departure_at") or "")[:10],
                 "ret": (item.get("return_at") or "")[:10],
-                "when": mois_label(item.get("departure_at") or ""),
+                "when": mois_label(item.get("departure_at") or "", _suf) + " · " + _stops,
                 "link": aviasales_link(item, o, d),
                 "month": month, "active": month in active,
                 "promo": promo, "baseline": baseline, "discount": discount,
+                "dir": _dir, "stops": _tr,
             })
             tag = f" 🔥-{discount}%" if promo else ""
             print(f"  ✓ {o}→{d} {month} : {price}€{tag}")
 
+    def _mkey(x):
+        return x["d"] if x.get("dir", "aller") == "aller" else x["o"]
+
     # 1) toutes les PROMOS (n'importe quel mois) — c'est notre force
     promos = [c for c in candidates if c["promo"]]
-    # 2) sinon, le moins cher par destination dans la fenêtre imminente
+    # 2) sinon, le moins cher par ville dans la fenêtre imminente
     normal = [c for c in candidates if not c["promo"] and c["active"]]
-    # repli : si aucune date imminente n'a renvoyé de prix, on prend le reste
     if not normal:
         normal = [c for c in candidates if not c["promo"]]
 
-    best = {}
+    best_a, best_r = {}, {}
     for x in sorted(normal, key=lambda c: c["price"]):
-        if x["d"] not in best:
-            best[x["d"]] = x
+        b = best_a if x.get("dir", "aller") == "aller" else best_r
+        if _mkey(x) not in b:
+            b[_mkey(x)] = x
 
     promos_sorted = sorted(promos, key=lambda c: c["discount"], reverse=True)
-    rest_sorted   = sorted(best.values(), key=lambda c: c["price"])
+    allers  = sorted(best_a.values(), key=lambda c: c["price"])
+    retours = sorted(best_r.values(), key=lambda c: c["price"])
+    mixed = []
+    while allers or retours:
+        if allers:  mixed.append(allers.pop(0))
+        if retours: mixed.append(retours.pop(0))
 
     seen, deals = set(), []
-    for x in promos_sorted + rest_sorted:     # promos d'abord, puis les meilleurs prix
+    for x in promos_sorted + mixed:           # promos d'abord, puis mix allers/retours
         sig = (x["o"], x["d"], x["month"])
         if sig in seen:
             continue
