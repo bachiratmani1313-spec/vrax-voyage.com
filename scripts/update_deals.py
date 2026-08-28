@@ -193,36 +193,50 @@ def main():
     def _mkey(x):
         return x["d"] if x.get("dir", "aller") == "aller" else x["o"]
 
-    # 1) toutes les PROMOS (n'importe quel mois) — c'est notre force
-    promos = [c for c in candidates if c["promo"]]
-    # 2) sinon, le moins cher par ville dans la fenêtre imminente
-    normal = [c for c in candidates if not c["promo"] and c["active"]]
-    if not normal:
-        normal = [c for c in candidates if not c["promo"]]
+    # promos par sens (les retours neufs n'en ont pas encore, c'est normal)
+    promos_a = sorted([c for c in candidates if c["promo"] and c.get("dir", "aller") == "aller"],
+                      key=lambda c: c["discount"], reverse=True)
+    promos_r = sorted([c for c in candidates if c["promo"] and c.get("dir", "aller") == "retour"],
+                      key=lambda c: c["discount"], reverse=True)
 
-    best_a, best_r = {}, {}
-    for x in sorted(normal, key=lambda c: c["price"]):
-        b = best_a if x.get("dir", "aller") == "aller" else best_r
-        if _mkey(x) not in b:
-            b[_mkey(x)] = x
+    # meilleurs prix, un par ville (dédoublonné côté Maghreb)
+    def _best(pred):
+        b = {}
+        for x in sorted([c for c in candidates if not c["promo"] and pred(c)], key=lambda c: c["price"]):
+            if _mkey(x) not in b:
+                b[_mkey(x)] = x
+        return list(b.values())
+    norm_a = _best(lambda c: c.get("dir", "aller") == "aller" and c["active"]) \
+             or _best(lambda c: c.get("dir", "aller") == "aller")
+    norm_r = sorted(_best(lambda c: c.get("dir", "aller") == "retour"), key=lambda c: c["price"])
 
-    promos_sorted = sorted(promos, key=lambda c: c["discount"], reverse=True)
-    allers  = sorted(best_a.values(), key=lambda c: c["price"])
-    retours = sorted(best_r.values(), key=lambda c: c["price"])
-    mixed = []
-    while allers or retours:
-        if allers:  mixed.append(allers.pop(0))
-        if retours: mixed.append(retours.pop(0))
+    # file d'attente par sens : promos d'abord, puis meilleurs prix (dédoublonnées)
+    def _queue(pr, no):
+        q, seen = [], set()
+        for x in pr + no:
+            sig = (x["o"], x["d"], x["month"])
+            if sig in seen:
+                continue
+            seen.add(sig); q.append(x)
+        return q
+    q_a = _queue(promos_a, norm_a)
+    q_r = _queue(promos_r, norm_r)
 
-    seen, deals = set(), []
-    for x in promos_sorted + mixed:           # promos d'abord, puis mix allers/retours
-        sig = (x["o"], x["d"], x["month"])
-        if sig in seen:
-            continue
-        seen.add(sig)
-        deals.append(x)
+    # ENTRELACEMENT 1 aller / 1 retour -> les RETOURS sont toujours visibles
+    seen, deals, i, j = set(), [], 0, 0
+    while len(deals) < MAX_DEALS and (i < len(q_a) or j < len(q_r)):
+        if i < len(q_a):
+            x = q_a[i]; i += 1
+            sig = (x["o"], x["d"], x["month"])
+            if sig not in seen:
+                seen.add(sig); deals.append(x)
         if len(deals) >= MAX_DEALS:
             break
+        if j < len(q_r):
+            x = q_r[j]; j += 1
+            sig = (x["o"], x["d"], x["month"])
+            if sig not in seen:
+                seen.add(sig); deals.append(x)
 
     out = {"updated": today_iso, "deals": deals}
     with open("deals.json", "w", encoding="utf-8") as f:
