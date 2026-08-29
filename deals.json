@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-28",
+  "updated": "2026-08-29",
   "deals": [
     {
       "o": "LYS",
@@ -125,10 +125,10 @@
       "d": "BRU",
       "city": "Bruxelles",
       "price": 30,
-      "depart": "2026-10-16",
+      "depart": "2026-10-01",
       "ret": "",
       "when": "Oct · aller simple · direct",
-      "link": "https://www.aviasales.com/search/TNG1610BRU1?t=FR17921295001792147200000175TNGCRL_84c07b711d2c97c0c23c749c9afe80e4_2857&search_date=22082026&expected_price_uuid=01a0275d-e619-8040-60e7-024f16861fa8&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sM6GdWBz1PbzPwyK8J3DTA&expected_price_source=share&expected_price_currency=eur&expected_price=30&marker=704469",
+      "link": "https://www.aviasales.com/search/TNG0110BRU1?t=FR17908542001790871900000175TNGCRL_cb8648f79b9f5bcdccf3c29d8c141cb2_3003&search_date=28082026&expected_price_uuid=01a04641-f45c-8040-25a7-ac0279ddb282&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=C9VgluqD6motXWIvAesoTw&expected_price_source=share&expected_price_currency=eur&expected_price=30&marker=704469",
       "month": "2026-10",
       "active": false,
       "promo": false,
