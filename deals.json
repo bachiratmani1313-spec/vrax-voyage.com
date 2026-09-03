@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-02",
+  "updated": "2026-09-03",
   "deals": [
     {
       "o": "LIL",
@@ -189,21 +189,21 @@
       "stops": 0
     },
     {
-      "o": "FEZ",
-      "d": "ORY",
-      "city": "Paris",
-      "price": 39,
-      "depart": "2026-10-01",
+      "o": "OUD",
+      "d": "CRL",
+      "city": "Charleroi",
+      "price": 100,
+      "depart": "2026-09-21",
       "ret": "",
-      "when": "Oct · aller simple · direct",
-      "link": "https://www.aviasales.com/search/FEZ0110ORY1?t=TO17908401001790857800000175FEZORY_b944b40d6959be8669ab16a3d977f5f7_3923&search_date=01092026&expected_price_uuid=01a05c8d-5f12-8040-a971-8b40d5eb3059&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ea0Xw5B8Zm9RD-wVONt5KA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=39&marker=704469",
-      "month": "2026-10",
+      "when": "Sep · aller simple · 2 escales",
+      "link": "https://www.aviasales.com/search/OUD2109CRL1?t=FR17900184001790075100000825OUDMRSTSFCRL_fbd71231c6275330b47c5b7b53d90e57_10114&search_date=03092026&expected_price_uuid=01a064b9-dd2d-8040-ab08-43529294265d&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=H794KuacznANLhIdJVhG8g&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=100&marker=704469",
+      "month": "2026-09",
       "active": true,
       "promo": true,
-      "baseline": 106,
-      "discount": 63,
+      "baseline": 311,
+      "discount": 68,
       "dir": "retour",
-      "stops": 0
+      "stops": 2
     },
     {
       "o": "MRS",
@@ -223,19 +223,19 @@
       "stops": 0
     },
     {
-      "o": "DJE",
-      "d": "BRU",
-      "city": "Bruxelles",
-      "price": 72,
-      "depart": "2026-09-15",
+      "o": "FEZ",
+      "d": "ORY",
+      "city": "Paris",
+      "price": 39,
+      "depart": "2026-10-01",
       "ret": "",
-      "when": "Sep · aller simple · direct",
-      "link": "https://www.aviasales.com/search/DJE1509BRU1?t=BJ17894781001789493100000190DJEBRU_8ffe953c28266c4b9f7d2ee6ae35b3f8_7281&search_date=02092026&expected_price_uuid=01a06196-a771-8040-a430-ff7f7a7532f4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4B_yFV4n-HS1nI1YwU_WKg&expected_price_source=share&expected_price_currency=eur&expected_price=72&marker=704469",
-      "month": "2026-09",
+      "when": "Oct · aller simple · direct",
+      "link": "https://www.aviasales.com/search/FEZ0110ORY1?t=TO17908401001790857800000175FEZORY_b944b40d6959be8669ab16a3d977f5f7_3923&search_date=01092026&expected_price_uuid=01a05c8d-5f12-8040-a971-8b40d5eb3059&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ea0Xw5B8Zm9RD-wVONt5KA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=39&marker=704469",
+      "month": "2026-10",
       "active": true,
       "promo": true,
-      "baseline": 143,
-      "discount": 50,
+      "baseline": 106,
+      "discount": 63,
       "dir": "retour",
       "stops": 0
     },
@@ -257,21 +257,21 @@
       "stops": 0
     },
     {
-      "o": "FEZ",
-      "d": "CDG",
-      "city": "Paris",
-      "price": 74,
-      "depart": "2026-10-01",
+      "o": "DJE",
+      "d": "BRU",
+      "city": "Bruxelles",
+      "price": 72,
+      "depart": "2026-09-15",
       "ret": "",
-      "when": "Oct · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/FEZ0110CDG1?t=U217908536001790948400001460FEZRAKCDG_622cced6d25eef18fe265d40b10b1221_7444&search_date=01092026&expected_price_uuid=01a05c8d-5f12-8040-a971-8b40d5eb3059&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rhnu6eE-qPZs0XYVopH7Ig&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=74&marker=704469",
-      "month": "2026-10",
+      "when": "Sep · aller simple · direct",
+      "link": "https://www.aviasales.com/search/DJE1509BRU1?t=BJ17894781001789493100000190DJEBRU_8ffe953c28266c4b9f7d2ee6ae35b3f8_7281&search_date=02092026&expected_price_uuid=01a06196-a771-8040-a430-ff7f7a7532f4&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=4B_yFV4n-HS1nI1YwU_WKg&expected_price_source=share&expected_price_currency=eur&expected_price=72&marker=704469",
+      "month": "2026-09",
       "active": true,
       "promo": true,
-      "baseline": 130,
-      "discount": 43,
+      "baseline": 143,
+      "discount": 50,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     }
   ]
 }
