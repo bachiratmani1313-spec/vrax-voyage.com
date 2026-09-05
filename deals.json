@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-04",
+  "updated": "2026-09-05",
   "deals": [
     {
       "o": "LIL",
@@ -26,7 +26,7 @@
       "depart": "2026-09-29",
       "ret": "",
       "when": "Sep · aller simple · direct",
-      "link": "https://www.aviasales.com/search/CZL2909ORY1?t=TO17906976001790710200000150CZLORY_38ec6c6179d4a3656207ed1daf652b84_4131&search_date=03092026&expected_price_uuid=01a067d6-8888-8040-a20e-75d83380be19&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ztT5wj8n_Dj4xuimt5I2Bw&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=41&marker=704469",
+      "link": "https://www.aviasales.com/search/CZL2909ORY1?t=TO17906976001790710200000150CZLORY_38ec6c6179d4a3656207ed1daf652b84_4087&search_date=04092026&expected_price_uuid=01a06e2a-a8b8-8040-29bd-ad86cec09c16&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=ztT5wj8n_Dj4xuimt5I2Bw&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=41&marker=704469",
       "month": "2026-09",
       "active": true,
       "promo": true,
