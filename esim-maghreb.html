@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Hello Travelpayouts -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>eSIM au Maghreb (Maroc, Algérie, Tunisie) : internet dès l'arrivée — Vrax Voyage</title>
+<meta name="description" content="Comment utiliser une eSIM pour avoir internet dès l'arrivée au Maghreb, sans roaming. Guide simple, étape par étape."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<style>
+:root{--ink:#0E1A2B;--ink-2:#16273C;--paper:#FAF7F2;--white:#fff;--amber:#EE7B33;--amber-soft:#FBE7D4;--teal:#168A7C;--text:#14202E;--muted:#5E6B7A;--line:rgba(20,32,46,.10);--shadow:0 18px 50px -18px rgba(14,26,43,.35);--r:18px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Inter",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{width:min(820px,92vw);margin-inline:auto}
+a{color:var(--teal);text-decoration:none}
+.mono{font-family:"Space Mono",monospace}
+h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;width:min(1120px,92vw);margin-inline:auto}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:20px}
+.brand .dot{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--amber);color:#fff;font-size:18px;transform:rotate(-8deg)}
+.nav-links{display:flex;gap:24px;color:#cdd6e2;font-size:14px;font-weight:500}
+.nav-links a{color:#cdd6e2}.nav-links a:hover{color:#fff}
+@media(max-width:680px){.nav-links{display:none}}
+.menu-btn{display:none;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);color:#fff;font-size:20px;padding:8px 13px;border-radius:10px;cursor:pointer}
+@media(max-width:680px){.menu-btn{display:block}}
+.menu-panel{display:none;flex-direction:column;background:var(--ink-2)}
+.menu-panel.open{display:flex}
+.menu-panel a{color:#dbe4ef;font-size:16px;font-weight:600;padding:15px 6vw;border-bottom:1px solid rgba(255,255,255,.06)}
+.article{padding:36px 0 56px}
+.crumb{font-family:"Space Mono";font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:12px}
+.crumb a{color:var(--amber)}
+.article h1{font-size:clamp(26px,5vw,40px);margin-bottom:14px}
+.lead{font-size:18px;color:var(--muted);margin-bottom:24px}
+.article h2{font-size:clamp(20px,3.4vw,26px);margin:32px 0 12px}
+.article h3{font-size:18px;margin:20px 0 6px}
+.article p{margin:0 0 14px}
+.article ul,.article ol{margin:0 0 16px 22px}
+.article li{margin:6px 0}
+.tip{background:var(--amber-soft);border:1px solid rgba(238,123,51,.25);border-radius:14px;padding:14px 16px;margin:20px 0;color:#8a4415}
+.tip b{color:#7a3a10}
+.gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
+.gcard{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);color:var(--text)}
+.gcard .ic{font-size:26px}
+.gcard h3{margin:8px 0 4px;color:var(--ink)}
+.gcard p{color:var(--muted);font-size:14px;margin:0}
+.related{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
+.related a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;color:var(--text);font-weight:600;margin-top:10px}
+footer{background:var(--ink);color:#c7d2df;padding:32px 0;margin-top:24px}
+footer .brand{margin-bottom:12px}
+.foot-links{display:flex;gap:18px;flex-wrap:wrap}
+.foot-links a{color:#c7d2df;font-size:14px}
+.foot-bot{display:flex;flex-wrap:wrap;gap:8px;justify-content:space-between;font-size:13px;color:#8fa0b3;margin-top:16px;border-top:1px solid rgba(255,255,255,.08);padding-top:14px}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="index.html"><span class="dot">✈</span> Vrax Voyage</a>
+    <nav class="nav-links">
+      <a href="index.html#recherche">Vols</a>
+      <a href="index.html#bons-plans">Bons plans</a>
+      <a href="paires-ete.html">☀️ Paires Été</a>
+      <a href="guides.html">📖 Guides</a>
+      <a href="boutique.html">🛍️ Boutique</a>
+    </nav>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+  </div>
+  <div class="menu-panel" id="menuPanel">
+    <a href="index.html#recherche">✈ Vols</a>
+    <a href="index.html#bons-plans">🔥 Bons plans</a>
+    <a href="paires-ete.html">☀️ Paires Été</a>
+    <a href="guides.html">📖 Guides</a>
+    <a href="boutique.html">🛍️ Boutique</a>
+  </div>
+</header>
+<main class="article"><div class="wrap">
+  <div class="crumb"><a href="guides.html">Guides</a> › eSIM au Maghreb</div>
+  <h1>eSIM au Maghreb : rester connecté sans se ruiner</h1>
+  <p class="lead">Internet dès l'arrivée au Maroc, en Algérie ou en Tunisie, sans changer de carte SIM et sans payer le roaming.</p>
+  <h2>Qu'est-ce qu'une eSIM ?</h2>
+  <p>Une eSIM est une carte SIM entièrement numérique, déjà intégrée à votre téléphone. Au lieu d'insérer une carte physique, vous téléchargez un forfait de données directement sur l'appareil. Vous gardez votre numéro habituel et vous ajoutez en plus un forfait internet pour votre destination.</p>
+  <h2>Pourquoi une eSIM plutôt que le roaming ou une SIM locale ?</h2>
+  <ul>
+    <li><b>Moins cher que l'itinérance</b> : utiliser les données d'un opérateur européen au Maghreb peut coûter très cher. Une eSIM locale revient souvent bien moins cher.</li>
+    <li><b>Prête avant le départ</b> : plus besoin de chercher un vendeur de cartes SIM à l'aéroport ni de faire la queue à l'arrivée.</li>
+    <li><b>Aucune manipulation</b> : rien à insérer ni à perdre. Tout se fait depuis les réglages du téléphone.</li>
+  </ul>
+  <h2>Comment ça marche, étape par étape</h2>
+  <ol>
+    <li>Vérifiez que votre téléphone est compatible eSIM (voir plus bas).</li>
+    <li>Choisissez un forfait pour votre pays de destination et la durée de votre séjour.</li>
+    <li>Installez l'eSIM en scannant un QR code, idéalement <b>avant de partir</b>, tant que vous avez le wifi.</li>
+    <li>À l'arrivée, activez les données de l'eSIM : vous êtes connecté immédiatement.</li>
+  </ol>
+  <div class="tip"><b>Conseil :</b> installez l'eSIM chez vous en wifi, mais n'activez le forfait qu'à l'arrivée pour ne pas entamer vos jours de validité trop tôt.</div>
+  <h2>Vérifier que votre téléphone est compatible</h2>
+  <p>La plupart des smartphones récents gèrent l'eSIM. Pour vérifier rapidement : ouvrez les réglages de votre téléphone et cherchez, dans la partie réseau ou carte SIM, une option du type « Ajouter une eSIM » ou « Ajouter un forfait mobile ». Si elle existe, votre appareil est compatible.</p>
+  <h2>Notre recommandation</h2>
+  <p>Nous préparons une sélection eSIM au meilleur rapport prix/couverture pour le Maroc, l'Algérie et la Tunisie, afin que vous puissiez commander en deux minutes avant votre départ.</p>
+  <div class="tip"><b>Bientôt disponible :</b> notre bon plan eSIM Maghreb sera ajouté ici très prochainement. En attendant, préparez votre vol avec nos autres guides.</div>
+  <!-- EMPLACEMENT LIEN/WIDGET AFFILIE eSIM (Airalo) - marker Travelpayouts 499802 - a inserer ici -->
+  <div class="related">
+    <a href="guide-preparer-vol-maghreb.html">🧳 Préparer son vol vers le Maghreb</a>
+    <a href="guide-hotel-appartement-maghreb.html">🏨 Hôtel ou appartement : bien réserver</a>
+    <a href="index.html#recherche">✈ Trouver mon vol au meilleur prix</a>
+  </div>
+</div></main>
+<footer>
+  <div class="wrap">
+    <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
+    <div class="foot-links">
+      <a href="index.html#recherche">Vols</a>
+      <a href="guides.html">Guides</a>
+      <a href="boutique.html">Boutique</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span>
+      <span class="mono">Guides voyage Maghreb</span>
+    </div>
+  </div>
+</footer>
+</body></html>
