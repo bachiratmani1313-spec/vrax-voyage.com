@@ -178,10 +178,10 @@
     <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
     <nav class="nav-links">
       <a href="#recherche">Vols</a>
+      <a href="#hebergement">🏨 Hébergement</a>
       <a href="#bons-plans">Bons plans</a>
       <a href="paires-ete.html">☀️ Paires Été</a>
       <a href="guides.html">📖 Guides</a>
-      <a href="#videos">Vidéos</a>
       <a href="#services">Services</a>
       <a href="boutique.html">🛍️ Boutique</a>
     </nav>
@@ -189,10 +189,10 @@
   </div>
   <div class="menu-panel" id="menuPanel">
     <a href="#recherche">✈ Vols</a>
+    <a href="#hebergement">🏨 Hébergement</a>
     <a href="#bons-plans">🔥 Bons plans</a>
     <a href="paires-ete.html">☀️ Paires Été</a>
     <a href="guides.html">📖 Guides</a>
-    <a href="#videos">🎬 Vidéos</a>
     <a href="#services">🛡️ Services</a>
     <a href="boutique.html">🛍️ Boutique</a>
   </div>
@@ -265,38 +265,49 @@
 </section>
 
 <!-- Les bons plans en vidéo -->
-<section class="block" id="videos" style="padding-top:10px">
+
+<!-- Services -->
+<section class="block" id="hebergement" style="padding-top:10px">
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eye">// En vidéo</div>
-        <h2>Les bons plans en vidéo</h2>
+        <div class="eye">// Où dormir</div>
+        <h2>Hôtels &amp; appartements au Maghreb</h2>
       </div>
-      <p>Chaque jour, nos meilleures offres en quelques secondes. Abonne-toi pour ne rien rater ! 🎬</p>
+      <p>Comparez plusieurs plateformes et gardez le meilleur prix — ou celle où vous avez la meilleure expérience. Les appartements sont inclus : idéal pour partir à plusieurs et cuisiner sur place. 🏠</p>
     </div>
-    <div id="ytwrap" style="border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#000;aspect-ratio:16/9;display:none">
-      <iframe id="ytframe" width="100%" height="100%" style="display:block;border:0"
-        title="Vrax Voyage — bons plans en vidéo"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <style>
+      .hb-lab{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 0 8px}
+      .hb-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+      .hb{display:inline-block;background:#fff;border:1px solid var(--line);color:var(--ink);font-family:'Space Grotesk',sans-serif;font-weight:700;padding:11px 16px;border-radius:12px;text-decoration:none;font-size:15px;box-shadow:var(--shadow)}
+      .hb:hover{border-color:var(--teal)}
+      .hb.city{background:var(--teal);color:#fff;border:0}
+      .hb.apt{background:var(--amber);color:#fff;border:0}
+    </style>
+    <div class="hb-lab">Comparer sur plusieurs sites</div>
+    <div class="hb-row">
+      <a class="hb" href="https://www.booking.com/" target="_blank" rel="sponsored noopener">Booking.com</a>
+      <a class="hb apt" href="https://www.vrbo.com/" target="_blank" rel="sponsored noopener">🏠 Vrbo — Appartements</a>
+      <a class="hb" href="https://www.expedia.com/" target="_blank" rel="sponsored noopener">Expedia</a>
+      <a class="hb" href="https://www.hotels.com/" target="_blank" rel="sponsored noopener">Hotels.com</a>
+      <a class="hb" href="https://www.agoda.com/" target="_blank" rel="sponsored noopener">Agoda</a>
+      <a class="hb" href="https://www.kayak.com/hotels" target="_blank" rel="sponsored noopener">KAYAK</a>
     </div>
-    <script>
-    (function(){
-      fetch('latest.json?v='+Date.now()).then(function(r){return r.ok?r.json():null;}).then(function(d){
-        if(d&&d.id){
-          document.getElementById('ytframe').src='https://www.youtube.com/embed/'+d.id+'?playsinline=1';
-          document.getElementById('ytwrap').style.display='block';
-        }
-      }).catch(function(){});
-    })();
-    </script>
-    <div style="text-align:center;margin-top:14px">
-      <a class="btn amber" href="https://www.youtube.com/@VraxVoyage" target="_blank" rel="noopener">S'abonner sur YouTube →</a>
+    <div class="hb-lab">Recherche rapide par ville</div>
+    <div class="hb-row">
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Marrakech" target="_blank" rel="sponsored noopener">Marrakech</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Casablanca" target="_blank" rel="sponsored noopener">Casablanca</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Agadir" target="_blank" rel="sponsored noopener">Agadir</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Tanger" target="_blank" rel="sponsored noopener">Tanger</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Nador" target="_blank" rel="sponsored noopener">Nador</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Alger" target="_blank" rel="sponsored noopener">Alger</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Oran" target="_blank" rel="sponsored noopener">Oran</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Tunis" target="_blank" rel="sponsored noopener">Tunis</a>
     </div>
+    <div><a href="guide-hotel-appartement-maghreb.html" style="color:var(--teal);font-weight:700">Nos conseils pour bien choisir hôtel ou appartement →</a></div>
   </div>
 </section>
 
-<!-- Services -->
 <section class="block" id="services" style="padding-top:10px">
   <div class="wrap">
     <div class="head">
@@ -445,5 +456,16 @@
 <div style="text-align:center;padding:14px 10px;font-size:.85rem;opacity:.8">
 <a href="/politique-confidentialite.html" style="color:inherit">Politique de confidentialit&eacute;</a> &middot; <a href="/mentions-legales.html" style="color:inherit">Mentions l&eacute;gales</a>
 </div>
+<script>
+  (function (s, t, a, y, twenty, two) {
+    s.Stay22 = s.Stay22 || {};
+    s.Stay22.params = { lmaID: '6a9f198a10fb99ee3eca08a2' };
+    twenty = t.createElement(a);
+    two = t.getElementsByTagName(a)[0];
+    twenty.async = 1;
+    twenty.src = y;
+    two.parentNode.insertBefore(twenty, two);
+  })(window, document, 'script', 'https://scripts.stay22.com/letmeallez.js');
+</script>
 </body>
 </html>
