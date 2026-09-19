@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <!-- Hello Travelpayouts -->
 <meta charset="UTF-8" />
@@ -7,19 +7,42 @@
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Vrax Voyage" />
-<meta property="og:title" content="Vrax Voyage — Le vol le moins cher vers le Maghreb, en quelques secondes" />
-<meta property="og:description" content="Comparateur de vols France/Belgique vers le Maroc, l'Algérie et la Tunisie. Bons plans détectés automatiquement et paires été malines." />
+<meta property="og:locale" content="ar_AR" />
+<meta property="og:locale:alternate" content="fr_FR" />
+<meta property="og:title" content="Vrax Voyage — أرخص تذكرة طيران، في ثوانٍ" />
+<meta property="og:description" content="مقارن رحلات الطيران من فرنسا وبلجيكا نحو المغرب والجزائر وتونس والعالم. أفضل الأسعار تلقائيًا وعروض مختارة." />
 <meta property="og:url" content="https://vrax-voyage.com/" />
 <meta property="og:image" content="https://vrax-voyage.com/images/paires-og.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://vrax-voyage.com/images/paires-og.jpg" />
-<title>Vrax Voyage — Le vol le moins cher, en quelques secondes</title>
-<meta name="description" content="Comparez les vols Belgique ↔ Maghreb et au-delà. Résultats en français, bons plans en temps réel." />
+<title>Vrax Voyage — أرخص تذكرة طيران وعروض السفر</title>
+<meta name="description" content="قارن رحلات الطيران بلجيكا ↔ المغرب العربي وأبعد. نتائج بالعربية وعروض في الوقت الحقيقي. / Comparez les vols Belgique ↔ Maghreb." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+<script>
+  function applyLang(l){
+    var h=document.documentElement;
+    h.setAttribute('lang',l);
+    h.setAttribute('dir', l==='ar'?'rtl':'ltr');
+    try{localStorage.setItem('vraxLang',l)}catch(e){}
+    var b=document.getElementById('langBtn');
+    if(b) b.textContent=(l==='ar'?'FR':'العربية');
+    if(window.renderDealsCurrent) window.renderDealsCurrent();
+  }
+  function toggleLang(){
+    var cur=document.documentElement.getAttribute('lang')||'ar';
+    applyLang(cur==='ar'?'fr':'ar');
+  }
+  (function(){var l='ar';try{l=localStorage.getItem('vraxLang')||'ar'}catch(e){};applyLang(l);})();
+  document.addEventListener('DOMContentLoaded',function(){
+    var b=document.getElementById('langBtn');
+    if(b) b.textContent=(document.documentElement.getAttribute('lang')==='ar'?'FR':'العربية');
+  });
+</script>
 <style>
   :root{
     --ink:#0E1A2B; --ink-2:#16273C; --ink-3:#1E3650;
@@ -37,6 +60,20 @@
   a{color:inherit;text-decoration:none}
   .mono{font-family:"Space Mono",monospace}
   h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.05;letter-spacing:-.02em}
+
+  /* ---------- i18n bilingue AR/FR ---------- */
+  .ar{display:none}
+  html[lang="ar"] .ar{display:inline}
+  html[lang="ar"] .fr{display:none}
+  html[lang="ar"] body,html[lang="ar"] *{font-family:'Tajawal',system-ui,sans-serif !important}
+  html[lang="ar"] h1{letter-spacing:0}
+  .langbtn{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);color:#fff;font-weight:700;font-size:13px;padding:8px 15px;border-radius:100px;cursor:pointer;white-space:nowrap}
+  .langbtn:hover{background:rgba(255,255,255,.18)}
+  .nav-right{display:flex;align-items:center;gap:14px}
+  /* Corrections RTL ciblées */
+  html[dir="rtl"] .promo-badge{right:auto;left:10px}
+  html[dir="rtl"] .card.dark .tagline{right:auto;left:-10px}
+  html[dir="rtl"] .deal .when{text-align:left}
 
   /* ---------- Header ---------- */
   header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
@@ -63,7 +100,7 @@
   .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:"Space Mono";font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9fb2c6;border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:100px}
   .eyebrow b{color:var(--amber);font-weight:700}
   .hero h1{font-size:clamp(34px,6vw,60px);font-weight:700;margin:22px 0 14px;max-width:14ch}
-  .hero h1 span{color:var(--amber)}
+  .hero h1 .hl{color:var(--amber)}
   .hero p.sub{color:#bccadb;font-size:clamp(15px,2vw,18px);max-width:46ch}
   .hero-inner{position:relative;z-index:2}
 
@@ -159,7 +196,7 @@
 <!-- White Label Travelpayouts (wl_id=18677) -->
 <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1">
   (function () {
-    window.TPWL_CONFIGURATION = { ...window.TPWL_CONFIGURATION, resultsURL: "https://vrax-voyage.com/resultats.html" };
+    window.TPWL_CONFIGURATION = { ...window.TPWL_CONFIGURATION, resultsURL: "https://vrax-voyage.com/resultats.html", locale: "ar" };
     var script = document.createElement("script");
     script.async = 1;
     script.type = "module";
@@ -176,37 +213,40 @@
 <header>
   <div class="wrap nav">
     <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
-    <nav class="nav-links">
-      <a href="#recherche">Vols</a>
-      <a href="#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="#hebergement">🏨 Hébergement</a>
-      <a href="guides.html">📖 Guides</a>
-      <a href="#services">Services</a>
-      <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+        <a href="#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+        <a href="#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+        <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+        <a href="#services"><span class="fr">Services</span><span class="ar">الخدمات</span></a>
+        <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+        <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
+      </nav>
+      <button id="langBtn" class="langbtn" onclick="toggleLang()">FR</button>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    </div>
   </div>
   <div class="menu-panel" id="menuPanel">
-    <a href="#recherche">✈ Vols</a>
-    <a href="#vol-hotel">✈️ Vol + Hôtel</a>
-    <a href="#hebergement">🏨 Hébergement</a>
-    <a href="guides.html">📖 Guides</a>
-    <a href="#services">🛡️ Services</a>
-    <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
+    <a href="#recherche">✈ <span class="fr">Vols</span><span class="ar">الطيران</span></a>
+    <a href="#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+    <a href="#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+    <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+    <a href="#services">🛡️ <span class="fr">Services</span><span class="ar">الخدمات</span></a>
+    <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+    <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap hero-inner">
-    <span class="eyebrow"><b>FRANCE</b> · <b>BELGIQUE</b> ✈ <b>MAGHREB</b></span>
-    <h1>Le vol le moins cher, <span>en quelques secondes.</span></h1>
-    <p class="sub">On compare des centaines de compagnies pour vous. Résultats en français, prix clairs, réservation chez les meilleurs partenaires.</p>
+    <span class="eyebrow"><b>FRANCE</b> · <b>BELGIQUE</b> ✈ <b><span class="fr">MAGHREB</span><span class="ar">المغرب العربي</span></b></span>
+    <h1><span class="fr">Le vol le moins cher, <span class="hl">en quelques secondes.</span></span><span class="ar">أرخص تذكرة طيران، <span class="hl">في ثوانٍ.</span></span></h1>
+    <p class="sub"><span class="fr">On compare des centaines de compagnies pour vous. Résultats en français, prix clairs, réservation chez les meilleurs partenaires.</span><span class="ar">نقارن لك مئات شركات الطيران. نتائج واضحة، أسعار شفافة، وحجز لدى أفضل الشركاء.</span></p>
 
     <!-- Recherche White Label — résultats affichés directement sur le site -->
     <div class="searchpanel">
-      <div class="sp-head">✈ Recherchez votre vol — résultats en français, en direct</div>
+      <div class="sp-head">✈ <span class="fr">Recherchez votre vol — résultats en direct</span><span class="ar">ابحث عن رحلتك — نتائج فورية ومباشرة</span></div>
       <div id="tpwl-search"></div>
     </div>
   </div>
@@ -218,10 +258,10 @@
 <!-- Les résultats s'affichent sur resultats.html (accueil toujours vierge) -->
 
 <div class="wrap trust">
-  <span><b class="mono">250&nbsp;000+</b> vols comparés</span>
-  <span><b>0 €</b> de frais ajoutés</span>
-  <span>Résultats <b>en français</b></span>
-  <span><b>France</b> &amp; <b>Belgique</b> ↔ <b>Maghreb</b></span>
+  <span class="fr"><b class="mono">250&nbsp;000+</b> vols comparés</span><span class="ar"><b class="mono">+250,000</b> رحلة مقارنة</span>
+  <span class="fr"><b>0 €</b> de frais ajoutés</span><span class="ar"><b>0 €</b> رسوم إضافية</span>
+  <span class="fr">Résultats <b>en français</b></span><span class="ar">نتائج <b>بالعربية</b></span>
+  <span class="fr"><b>France</b> &amp; <b>Belgique</b> ↔ <b>Maghreb</b></span><span class="ar"><b>فرنسا</b> و<b>بلجيكا</b> ↔ <b>المغرب العربي</b></span>
 </div>
 
 <!-- Bons plans -->
@@ -229,10 +269,10 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eye">// Bons plans du moment</div>
-        <h2>Les meilleurs prix repérés cette semaine</h2>
+        <div class="eye">// <span class="fr">Bons plans du moment</span><span class="ar">أفضل العروض حاليًا</span></div>
+        <h2><span class="fr">Les meilleurs prix repérés cette semaine</span><span class="ar">أفضل الأسعار التي رصدناها هذا الأسبوع</span></h2>
       </div>
-      <p>Mis à jour automatiquement. Prix indicatifs aller-retour, à confirmer au clic.</p>
+      <p><span class="fr">Mis à jour automatiquement. Prix indicatifs aller-retour, à confirmer au clic.</span><span class="ar">يُحدَّث تلقائيًا. أسعار ذهاب وإياب تقريبية، تُؤكَّد عند النقر.</span></p>
     </div>
     <div class="deals" id="deals"></div>
   </div>
@@ -243,13 +283,13 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eye">// Radar des prix</div>
-        <h2>Explorez les prix sur la carte</h2>
+        <div class="eye">// <span class="fr">Radar des prix</span><span class="ar">رادار الأسعار</span></div>
+        <h2><span class="fr">Explorez les prix sur la carte</span><span class="ar">استكشف الأسعار على الخريطة</span></h2>
       </div>
-      <p>Touchez une destination pour voir son prix — parfait pour repérer (et partager) les bons plans soleil. ☀️</p>
+      <p><span class="fr">Touchez une destination pour voir son prix — parfait pour repérer (et partager) les bons plans soleil. ☀️</span><span class="ar">المس وجهة لعرض سعرها — مثالي لاكتشاف (ومشاركة) عروض الشمس. ☀️</span></p>
     </div>
     <div style="border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff">
-      <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.fr%2Fsearch&locale=fr&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23EE7B33&secondary=%23EE7B33&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
+      <script async src="https://tpemd.com/content?currency=eur&trs=499802&shmarker=704469.704469&lat=&lng=&powered_by=true&search_host=www.aviasales.fr%2Fsearch&locale=ar&origin=PAR&value_min=0&value_max=1000000&round_trip=true&only_direct=false&radius=1&draggable=true&disable_zoom=false&show_logo=false&scrollwheel=false&primary=%23EE7B33&secondary=%23EE7B33&light=%23ffffff&width=1100&height=500&zoom=2&promo_id=4054&campaign_id=100" charset="utf-8"></script>
     </div>
   </div>
 </section>
@@ -261,10 +301,10 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eye">// Où dormir</div>
-        <h2>Hôtels &amp; appartements — partout dans le monde</h2>
+        <div class="eye">// <span class="fr">Où dormir</span><span class="ar">أين تقيم</span></div>
+        <h2><span class="fr">Hôtels &amp; appartements — partout dans le monde</span><span class="ar">فنادق وشقق — في كل أنحاء العالم</span></h2>
       </div>
-      <p>Réservez votre logement pour <b>n'importe quelle destination</b> — Maghreb, Europe, Dubaï, Istanbul, Bali, Miami, Maldives… Comparez plusieurs plateformes et gardez le meilleur prix. Appartements inclus : idéal pour partir à plusieurs et cuisiner sur place. 🏠🌍</p>
+      <p><span class="fr">Réservez votre logement pour <b>n'importe quelle destination</b> — Maghreb, Europe, Dubaï, Istanbul, Bali, Miami, Maldives… Comparez plusieurs plateformes et gardez le meilleur prix. Appartements inclus : idéal pour partir à plusieurs et cuisiner sur place. 🏠🌍</span><span class="ar">احجز إقامتك في <b>أي وجهة</b> — المغرب العربي، أوروبا، دبي، إسطنبول، بالي، ميامي، المالديف… قارن بين عدة منصات واحصل على أفضل سعر. تشمل الشقق: مثالية للسفر الجماعي والطبخ في المكان. 🏠🌍</span></p>
     </div>
     <style>
       .hb-lab{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:6px 0 8px}
@@ -274,37 +314,37 @@
       .hb.city{background:var(--teal);color:#fff;border:0}
       .hb.apt{background:var(--amber);color:#fff;border:0}
     </style>
-    <div class="hb-lab">🔎 Rechercher un hôtel ou un appartement — directement ici</div>
+    <div class="hb-lab">🔎 <span class="fr">Rechercher un hôtel ou un appartement — directement ici</span><span class="ar">ابحث عن فندق أو شقة — مباشرة هنا</span></div>
     <div style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow);margin:8px 0 22px;border:1px solid var(--line)">
       <iframe id="stay22-widget" width="100%" height="460" src="https://www.stay22.com/embed/6a9fd7a110fb99ee3ecd442b" frameborder="0" style="display:block;border:0"></iframe>
     </div>
     <a id="vol-hotel" href="https://www.expedia.com/Vacation-Packages" target="_blank" rel="sponsored noopener" style="display:block;text-decoration:none;background:linear-gradient(135deg,var(--teal),var(--ink));border-radius:16px;padding:20px 22px;margin:6px 0 22px;box-shadow:var(--shadow)">
-      <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:clamp(18px,3.5vw,22px);color:#fff;margin-bottom:6px">✈️ + 🏨 Vol + Hôtel : réservez ensemble et économisez</div>
-      <div style="color:#e8f3f1;font-size:15px;margin-bottom:14px">Réservez votre billet d'avion ET votre hôtel en une seule fois — le prix combiné est souvent moins cher que séparément.</div>
-      <span style="display:inline-block;background:var(--amber);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;padding:12px 22px;border-radius:12px;font-size:16px">Voir les offres Vol + Hôtel →</span>
+      <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:clamp(18px,3.5vw,22px);color:#fff;margin-bottom:6px">✈️ + 🏨 <span class="fr">Vol + Hôtel : réservez ensemble et économisez</span><span class="ar">طيران + فندق: احجز معًا ووفّر</span></div>
+      <div style="color:#e8f3f1;font-size:15px;margin-bottom:14px"><span class="fr">Réservez votre billet d'avion ET votre hôtel en une seule fois — le prix combiné est souvent moins cher que séparément.</span><span class="ar">احجز تذكرة الطيران والفندق دفعة واحدة — غالبًا ما يكون السعر المجمّع أرخص من الحجز المنفصل.</span></div>
+      <span style="display:inline-block;background:var(--amber);color:#fff;font-family:'Space Grotesk',sans-serif;font-weight:700;padding:12px 22px;border-radius:12px;font-size:16px"><span class="fr">Voir les offres Vol + Hôtel →</span><span class="ar">عرض باقات طيران + فندق ←</span></span>
     </a>
-    <div class="hb-lab">Comparer sur plusieurs sites — toutes destinations</div>
+    <div class="hb-lab"><span class="fr">Comparer sur plusieurs sites — toutes destinations</span><span class="ar">قارن على عدة مواقع — كل الوجهات</span></div>
     <div class="hb-row">
       <a class="hb" href="https://www.booking.com/" target="_blank" rel="sponsored noopener">Booking.com</a>
-      <a class="hb apt" href="https://www.vrbo.com/" target="_blank" rel="sponsored noopener">🏠 Vrbo — Appartements</a>
+      <a class="hb apt" href="https://www.vrbo.com/" target="_blank" rel="sponsored noopener">🏠 <span class="fr">Vrbo — Appartements</span><span class="ar">Vrbo — شقق</span></a>
       <a class="hb" href="https://www.expedia.com/" target="_blank" rel="sponsored noopener">Expedia</a>
       <a class="hb" href="https://www.hotels.com/" target="_blank" rel="sponsored noopener">Hotels.com</a>
       <a class="hb" href="https://www.agoda.com/" target="_blank" rel="sponsored noopener">Agoda</a>
       <a class="hb" href="https://www.kayak.com/hotels" target="_blank" rel="sponsored noopener">KAYAK</a>
     </div>
-    <div class="hb-lab">Raccourcis populaires — Maghreb</div>
+    <div class="hb-lab"><span class="fr">Raccourcis populaires — Maghreb</span><span class="ar">وجهات شائعة — المغرب العربي</span></div>
     <div class="hb-row">
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Marrakech" target="_blank" rel="sponsored noopener">Marrakech</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Casablanca" target="_blank" rel="sponsored noopener">Casablanca</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Agadir" target="_blank" rel="sponsored noopener">Agadir</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Tanger" target="_blank" rel="sponsored noopener">Tanger</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Nador" target="_blank" rel="sponsored noopener">Nador</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Alger" target="_blank" rel="sponsored noopener">Alger</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Oran" target="_blank" rel="sponsored noopener">Oran</a>
-      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Tunis" target="_blank" rel="sponsored noopener">Tunis</a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Marrakech" target="_blank" rel="sponsored noopener"><span class="fr">Marrakech</span><span class="ar">مراكش</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Casablanca" target="_blank" rel="sponsored noopener"><span class="fr">Casablanca</span><span class="ar">الدار البيضاء</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Agadir" target="_blank" rel="sponsored noopener"><span class="fr">Agadir</span><span class="ar">أغادير</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Tanger" target="_blank" rel="sponsored noopener"><span class="fr">Tanger</span><span class="ar">طنجة</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Nador" target="_blank" rel="sponsored noopener"><span class="fr">Nador</span><span class="ar">الناظور</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Alger" target="_blank" rel="sponsored noopener"><span class="fr">Alger</span><span class="ar">الجزائر</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Oran" target="_blank" rel="sponsored noopener"><span class="fr">Oran</span><span class="ar">وهران</span></a>
+      <a class="hb city" href="https://www.booking.com/searchresults.html?ss=Tunis" target="_blank" rel="sponsored noopener"><span class="fr">Tunis</span><span class="ar">تونس</span></a>
     </div>
-    <p style="color:var(--muted);font-size:14px;margin:0 0 14px">🌍 Autre destination ? Cliquez un site ci-dessus (Booking, Expedia…) et cherchez où vous voulez dans le monde.</p>
-    <div><a href="guide-hotel-appartement-maghreb.html" style="color:var(--teal);font-weight:700">Nos conseils pour bien choisir hôtel ou appartement →</a></div>
+    <p style="color:var(--muted);font-size:14px;margin:0 0 14px"><span class="fr">🌍 Autre destination ? Cliquez un site ci-dessus (Booking, Expedia…) et cherchez où vous voulez dans le monde.</span><span class="ar">🌍 وجهة أخرى؟ انقر على أحد المواقع أعلاه (Booking، Expedia…) وابحث عن أي مكان في العالم.</span></p>
+    <div><a href="guide-hotel-appartement-maghreb.html" style="color:var(--teal);font-weight:700"><span class="fr">Nos conseils pour bien choisir hôtel ou appartement →</span><span class="ar">نصائحنا لاختيار الفندق أو الشقة ←</span></a></div>
   </div>
 </section>
 
@@ -312,58 +352,58 @@
   <div class="wrap">
     <div class="head">
       <div>
-        <div class="eye">// Pour voyager serein</div>
-        <h2>Tout pour votre voyage</h2>
+        <div class="eye">// <span class="fr">Pour voyager serein</span><span class="ar">لسفر مطمئن</span></div>
+        <h2><span class="fr">Tout pour votre voyage</span><span class="ar">كل ما تحتاجه لرحلتك</span></h2>
       </div>
     </div>
     <div class="svc">
       <div class="card dark reveal">
         <div class="ic">🛡️</div>
-        <h3>NordVPN — vos données protégées</h3>
-        <p>Utilisez le Wi-Fi des aéroports et hôtels en toute sécurité, et accédez à vos services où que vous soyez dans le monde.</p>
-        <a class="btn ghost" id="vpnBtn" href="https://nordvpn.sjv.io/qWZNgg" target="_blank" rel="noopener sponsored">Profiter de l'offre NordVPN →</a>
+        <h3><span class="fr">NordVPN — vos données protégées</span><span class="ar">NordVPN — بياناتك محمية</span></h3>
+        <p><span class="fr">Utilisez le Wi-Fi des aéroports et hôtels en toute sécurité, et accédez à vos services où que vous soyez dans le monde.</span><span class="ar">استخدم واي فاي المطارات والفنادق بأمان، وادخل إلى خدماتك أينما كنت في العالم.</span></p>
+        <a class="btn ghost" id="vpnBtn" href="https://nordvpn.sjv.io/qWZNgg" target="_blank" rel="noopener sponsored"><span class="fr">Profiter de l'offre NordVPN →</span><span class="ar">استفد من عرض NordVPN ←</span></a>
         <div class="tagline">VPN</div>
       </div>
       <div class="card light reveal">
         <div class="ic">🚖</div>
-        <h3>Transfert aéroport privé</h3>
-        <p>Réservez votre chauffeur à l'arrivée, prix fixe connu à l'avance, dans plus de 100 pays.</p>
-        <a class="btn amber" href="https://kiwitaxi.com/?marker=704469.704469" target="_blank" rel="noopener">Réserver un transfert →</a>
+        <h3><span class="fr">Transfert aéroport privé</span><span class="ar">نقل خاص من المطار</span></h3>
+        <p><span class="fr">Réservez votre chauffeur à l'arrivée, prix fixe connu à l'avance, dans plus de 100 pays.</span><span class="ar">احجز سائقك عند الوصول، بسعر ثابت معروف مسبقًا، في أكثر من 100 دولة.</span></p>
+        <a class="btn amber" href="https://kiwitaxi.com/?marker=704469.704469" target="_blank" rel="noopener"><span class="fr">Réserver un transfert →</span><span class="ar">احجز خدمة النقل ←</span></a>
       </div>
       <div class="card dark reveal">
         <div class="ic">📱</div>
-        <h3>eSIM — internet dès l'arrivée</h3>
-        <p>Data mobile pour le Maroc, l'Algérie, la Tunisie et 200+ pays. À installer avant le départ, sans changer de carte SIM.</p>
-        <a class="btn amber" href="https://airalo.tpx.gr/uVDKGfe8" target="_blank" rel="noopener sponsored">Voir les forfaits eSIM →</a>
+        <h3><span class="fr">eSIM — internet dès l'arrivée</span><span class="ar">eSIM — إنترنت فور الوصول</span></h3>
+        <p><span class="fr">Data mobile pour le Maroc, l'Algérie, la Tunisie et 200+ pays. À installer avant le départ, sans changer de carte SIM.</span><span class="ar">بيانات جوال للمغرب والجزائر وتونس و200+ دولة. تُثبَّت قبل السفر، دون تغيير شريحتك.</span></p>
+        <a class="btn amber" href="https://airalo.tpx.gr/uVDKGfe8" target="_blank" rel="noopener sponsored"><span class="fr">Voir les forfaits eSIM →</span><span class="ar">عرض باقات eSIM ←</span></a>
         <div class="tagline">eSIM</div>
       </div>
       <div class="card light reveal">
         <div class="ic">🚗</div>
-        <h3>Location de voiture</h3>
-        <p>Comparez les loueurs et réservez au meilleur prix, à récupérer dès l'aéroport à l'arrivée.</p>
-        <a class="btn amber" href="https://autoeurope.tpx.gr/7c3V00cW" target="_blank" rel="noopener sponsored">Comparer les prix →</a>
-        <div class="tagline">Voiture</div>
+        <h3><span class="fr">Location de voiture</span><span class="ar">تأجير سيارة</span></h3>
+        <p><span class="fr">Comparez les loueurs et réservez au meilleur prix, à récupérer dès l'aéroport à l'arrivée.</span><span class="ar">قارن شركات التأجير واحجز بأفضل سعر، لاستلامها فور وصولك إلى المطار.</span></p>
+        <a class="btn amber" href="https://autoeurope.tpx.gr/7c3V00cW" target="_blank" rel="noopener sponsored"><span class="fr">Comparer les prix →</span><span class="ar">قارن الأسعار ←</span></a>
+        <div class="tagline"><span class="fr">Voiture</span><span class="ar">سيارة</span></div>
       </div>
       <div class="card dark reveal">
         <div class="ic">🎟️</div>
-        <h3>Activités &amp; excursions</h3>
-        <p>Visites, excursions et billets d'attractions à réserver à l'avance, souvent moins cher que sur place.</p>
-        <a class="btn amber" href="https://klook.tpx.gr/6jWP8kk3" target="_blank" rel="noopener sponsored">Découvrir les activités →</a>
-        <div class="tagline">Activités</div>
+        <h3><span class="fr">Activités &amp; excursions</span><span class="ar">أنشطة ورحلات</span></h3>
+        <p><span class="fr">Visites, excursions et billets d'attractions à réserver à l'avance, souvent moins cher que sur place.</span><span class="ar">زيارات ورحلات وتذاكر معالم يمكن حجزها مسبقًا، وغالبًا أرخص من الحجز في المكان.</span></p>
+        <a class="btn amber" href="https://klook.tpx.gr/6jWP8kk3" target="_blank" rel="noopener sponsored"><span class="fr">Découvrir les activités →</span><span class="ar">اكتشف الأنشطة ←</span></a>
+        <div class="tagline"><span class="fr">Activités</span><span class="ar">أنشطة</span></div>
       </div>
       <div class="card light reveal">
         <div class="ic">✈️</div>
-        <h3>Vol retardé ou annulé ?</h3>
-        <p>Vérifiez vos droits : jusqu'à 600 € d'indemnisation par passager. AirHelp constitue et gère le dossier pour vous.</p>
-        <a class="btn amber" href="https://airhelp.tpx.gr/OLczRbKy" target="_blank" rel="noopener sponsored">Vérifier mon indemnisation →</a>
-        <div class="tagline">Indemnisation</div>
+        <h3><span class="fr">Vol retardé ou annulé ?</span><span class="ar">رحلة متأخرة أو ملغاة؟</span></h3>
+        <p><span class="fr">Vérifiez vos droits : jusqu'à 600 € d'indemnisation par passager. AirHelp constitue et gère le dossier pour vous.</span><span class="ar">تحقق من حقوقك: حتى 600 € تعويض لكل مسافر. تتولى AirHelp تجهيز الملف وإدارته نيابة عنك.</span></p>
+        <a class="btn amber" href="https://airhelp.tpx.gr/OLczRbKy" target="_blank" rel="noopener sponsored"><span class="fr">Vérifier mon indemnisation →</span><span class="ar">تحقّق من تعويضي ←</span></a>
+        <div class="tagline"><span class="fr">Indemnisation</span><span class="ar">تعويض</span></div>
       </div>
       <div class="card dark reveal">
         <div class="ic">🏨</div>
-        <h3>Hôtel ou appartement</h3>
-        <p>Comparez hôtels et appartements au Maghreb (idéal en groupe) et réservez au meilleur prix.</p>
-        <a class="btn amber" href="guide-hotel-appartement-maghreb.html#reserver">Rechercher un logement →</a>
-        <div class="tagline">Hébergement</div>
+        <h3><span class="fr">Hôtel ou appartement</span><span class="ar">فندق أو شقة</span></h3>
+        <p><span class="fr">Comparez hôtels et appartements au Maghreb (idéal en groupe) et réservez au meilleur prix.</span><span class="ar">قارن الفنادق والشقق في المغرب العربي (مثالي للمجموعات) واحجز بأفضل سعر.</span></p>
+        <a class="btn amber" href="guide-hotel-appartement-maghreb.html#reserver"><span class="fr">Rechercher un logement →</span><span class="ar">ابحث عن إقامة ←</span></a>
+        <div class="tagline"><span class="fr">Hébergement</span><span class="ar">إقامة</span></div>
       </div>
     </div>
   </div>
@@ -371,15 +411,15 @@
 
 <section style="background:var(--paper);padding:44px 0 8px">
   <div class="wrap">
-    <div style="font-family:'Space Mono';font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:8px">Guides voyage</div>
-    <h2 style="font-family:'Space Grotesk';font-size:clamp(22px,4vw,30px);color:var(--ink);letter-spacing:-.02em;margin-bottom:6px">Bien préparer son voyage au Maghreb</h2>
-    <p style="color:var(--muted);max-width:58ch;margin-bottom:20px">Nos guides pratiques : bagages &amp; documents, rester connecté avec une eSIM, et bien réserver son hébergement.</p>
+    <div style="font-family:'Space Mono';font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--amber);margin-bottom:8px"><span class="fr">Guides voyage</span><span class="ar">أدلة السفر</span></div>
+    <h2 style="font-family:'Space Grotesk';font-size:clamp(22px,4vw,30px);color:var(--ink);letter-spacing:-.02em;margin-bottom:6px"><span class="fr">Bien préparer son voyage au Maghreb</span><span class="ar">حضّر رحلتك إلى المغرب العربي جيدًا</span></h2>
+    <p style="color:var(--muted);max-width:58ch;margin-bottom:20px"><span class="fr">Nos guides pratiques : bagages &amp; documents, rester connecté avec une eSIM, et bien réserver son hébergement.</span><span class="ar">أدلتنا العملية: الأمتعة والوثائق، البقاء متصلًا عبر eSIM، وحسن حجز إقامتك.</span></p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
-      <a href="guide-preparer-vol-maghreb.html" style="display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);color:var(--text)"><div style="font-size:26px">🧳</div><div style="font-family:'Space Grotesk';font-weight:700;color:var(--ink);margin:8px 0 4px">Préparer son vol</div><div style="color:var(--muted);font-size:14px">Documents, bagages, aéroport</div></a>
-      <a href="esim-maghreb.html" style="display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);color:var(--text)"><div style="font-size:26px">📱</div><div style="font-family:'Space Grotesk';font-weight:700;color:var(--ink);margin:8px 0 4px">eSIM au Maghreb</div><div style="color:var(--muted);font-size:14px">Internet dès l'arrivée</div></a>
-      <a href="guide-hotel-appartement-maghreb.html" style="display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);color:var(--text)"><div style="font-size:26px">🏨</div><div style="font-family:'Space Grotesk';font-weight:700;color:var(--ink);margin:8px 0 4px">Hôtel ou appartement</div><div style="color:var(--muted);font-size:14px">Bien réserver son séjour</div></a>
+      <a href="guide-preparer-vol-maghreb.html" style="display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);color:var(--text)"><div style="font-size:26px">🧳</div><div style="font-family:'Space Grotesk';font-weight:700;color:var(--ink);margin:8px 0 4px"><span class="fr">Préparer son vol</span><span class="ar">تحضير رحلتك</span></div><div style="color:var(--muted);font-size:14px"><span class="fr">Documents, bagages, aéroport</span><span class="ar">الوثائق، الأمتعة، المطار</span></div></a>
+      <a href="esim-maghreb.html" style="display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);color:var(--text)"><div style="font-size:26px">📱</div><div style="font-family:'Space Grotesk';font-weight:700;color:var(--ink);margin:8px 0 4px"><span class="fr">eSIM au Maghreb</span><span class="ar">eSIM في المغرب العربي</span></div><div style="color:var(--muted);font-size:14px"><span class="fr">Internet dès l'arrivée</span><span class="ar">إنترنت فور الوصول</span></div></a>
+      <a href="guide-hotel-appartement-maghreb.html" style="display:block;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);color:var(--text)"><div style="font-size:26px">🏨</div><div style="font-family:'Space Grotesk';font-weight:700;color:var(--ink);margin:8px 0 4px"><span class="fr">Hôtel ou appartement</span><span class="ar">فندق أو شقة</span></div><div style="color:var(--muted);font-size:14px"><span class="fr">Bien réserver son séjour</span><span class="ar">أحسن حجز لإقامتك</span></div></a>
     </div>
-    <div style="margin-top:16px"><a href="guides.html" style="color:var(--teal);font-weight:700">Voir tous les guides →</a></div>
+    <div style="margin-top:16px"><a href="guides.html" style="color:var(--teal);font-weight:700"><span class="fr">Voir tous les guides →</span><span class="ar">عرض كل الأدلة ←</span></a></div>
   </div>
 </section>
 
@@ -388,15 +428,15 @@
     <div class="foot-top">
       <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
       <div class="foot-links">
-        <a href="#recherche">Vols</a>
-        <a href="#services">Services</a>
-        <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
+        <a href="#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+        <a href="#services"><span class="fr">Services</span><span class="ar">الخدمات</span></a>
+        <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+      <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
       </div>
     </div>
     <div class="foot-bot">
-      <span>© 2026 Vrax Voyage — Comparateur de vols & bons plans voyage.</span>
-      <span class="mono">résultats fournis par nos partenaires</span>
+      <span><span class="fr">© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span><span class="ar">© 2026 Vrax Voyage — مقارن رحلات الطيران وعروض السفر.</span></span>
+      <span class="mono"><span class="fr">résultats fournis par nos partenaires</span><span class="ar">النتائج مقدمة من شركائنا</span></span>
     </div>
   </div>
 </footer>
@@ -404,40 +444,47 @@
 <script>
   // --- Bons plans : vrais prix via /deals.json (repli sur exemples) ---
   const SAMPLE=[
-    {o:'BRU',d:'RAK',city:'Marrakech',price:49,when:'à venir · A/R'},
-    {o:'CRL',d:'ALG',city:'Alger',price:79,when:'à venir · A/R'},
-    {o:'CRL',d:'CZL',city:'Constantine',price:89,when:'à venir · A/R'},
-    {o:'BRU',d:'CMN',city:'Casablanca',price:55,when:'à venir · A/R'},
-    {o:'CRL',d:'TNG',city:'Tanger',price:39,when:'à venir · A/R'},
-    {o:'BRU',d:'NDR',city:'Nador',price:59,when:'à venir · A/R'},
-    {o:'CRL',d:'ORN',city:'Oran',price:95,when:'à venir · A/R'},
-    {o:'BRU',d:'TUN',city:'Tunis',price:89,when:'à venir · A/R'}
+    {o:'BRU',d:'RAK',city:'Marrakech',cityAr:'مراكش',price:49},
+    {o:'CRL',d:'ALG',city:'Alger',cityAr:'الجزائر',price:79},
+    {o:'CRL',d:'CZL',city:'Constantine',cityAr:'قسنطينة',price:89},
+    {o:'BRU',d:'CMN',city:'Casablanca',cityAr:'الدار البيضاء',price:55},
+    {o:'CRL',d:'TNG',city:'Tanger',cityAr:'طنجة',price:39},
+    {o:'BRU',d:'NDR',city:'Nador',cityAr:'الناظور',price:59},
+    {o:'CRL',d:'ORN',city:'Oran',cityAr:'وهران',price:95},
+    {o:'BRU',d:'TUN',city:'Tunis',cityAr:'تونس',price:89}
   ];
   const wrap=document.getElementById('deals');
   const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+  let lastList=SAMPLE;
   function renderDeals(list){
+    lastList=list;
+    const ar=(document.documentElement.getAttribute('lang')==='ar');
+    const L=ar?{to:'إلى',from:'من',see:'عرض ←',when:'قريبًا · ذهاب/إياب'}:{to:'vers',from:'dès',see:'Voir →',when:'à venir · A/R'};
     wrap.innerHTML='';
     list.forEach(x=>{
       const a=document.createElement('a');
       a.className='deal reveal'+(x.promo?' promo':'');
       a.href=x.link||('https://www.aviasales.com/search/'+x.o+x.d+'?marker=704469');
       a.target='_blank'; a.rel='noopener sponsored';
-      const badge=x.promo?`<div class="promo-badge">🔥 PROMO −${x.discount}%</div>`:'';
+      const cityName=ar?(x.cityAr||x.city):x.city;
+      const badge=x.promo?`<div class="promo-badge">🔥 ${ar?'تخفيض':'PROMO'} −${x.discount}%</div>`:'';
       const oldp=(x.promo&&x.baseline)?`<small class="old">${x.baseline}€</small> `:'';
+      const whenTxt=x.when||L.when;
       a.innerHTML=`
         ${badge}
         <div class="top"><div>
           <div class="route">${x.o} <span class="pl">✈</span> ${x.d}</div>
-          <div class="city">vers ${x.city}</div>
+          <div class="city">${L.to} ${cityName}</div>
         </div></div>
         <div class="perf"></div>
         <div class="bot">
-          <div class="price"><div class="lbl">dès</div><div class="val">${oldp}${x.price}<small>€</small></div></div>
-          <div class="when">${x.when||''}<div class="go">Voir →</div></div>
+          <div class="price"><div class="lbl">${L.from}</div><div class="val">${oldp}${x.price}<small>€</small></div></div>
+          <div class="when">${whenTxt}<div class="go">${L.see}</div></div>
         </div>`;
       wrap.appendChild(a); io.observe(a);
     });
   }
+  window.renderDealsCurrent=function(){ renderDeals(lastList); };
   fetch('/deals.json?t='+Date.now())
     .then(r=>r.ok?r.json():Promise.reject())
     .then(j=>renderDeals(j.deals&&j.deals.length?j.deals:SAMPLE))
@@ -454,7 +501,7 @@
   });
 </script>
 <div style="text-align:center;padding:14px 10px;font-size:.85rem;opacity:.8">
-<a href="/politique-confidentialite.html" style="color:inherit">Politique de confidentialit&eacute;</a> &middot; <a href="/mentions-legales.html" style="color:inherit">Mentions l&eacute;gales</a>
+<a href="/politique-confidentialite.html" style="color:inherit"><span class="fr">Politique de confidentialit&eacute;</span><span class="ar">سياسة الخصوصية</span></a> &middot; <a href="/mentions-legales.html" style="color:inherit"><span class="fr">Mentions l&eacute;gales</span><span class="ar">الإشعارات القانونية</span></a>
 </div>
 <script>
   (function (s, t, a, y, twenty, two) {
