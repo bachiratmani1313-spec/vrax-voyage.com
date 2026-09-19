@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <!-- Hello Travelpayouts -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Préparer son vol vers le Maghreb : bagages, documents, aéroport — Vrax Voyage</title>
-<meta name="description" content="Tout ce qu'il faut vérifier avant un vol vers le Maroc, l'Algérie ou la Tunisie : documents, franchise bagages et passage à l'aéroport."/>
+<title>تحضير رحلتك إلى المغرب العربي: الأمتعة، الوثائق، المطار — Vrax Voyage</title>
+<meta name="description" content="كل ما يجب التحقق منه قبل السفر إلى المغرب أو الجزائر أو تونس: الوثائق، وزن الأمتعة المسموح، والمرور بالمطار. / Préparer son vol vers le Maghreb."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<script>
+  function applyLang(l){var h=document.documentElement;h.setAttribute('lang',l);h.setAttribute('dir',l==='ar'?'rtl':'ltr');try{localStorage.setItem('vraxLang',l)}catch(e){}var b=document.getElementById('langBtn');if(b)b.textContent=(l==='ar'?'FR':'العربية');}
+  function toggleLang(){var cur=document.documentElement.getAttribute('lang')||'ar';applyLang(cur==='ar'?'fr':'ar');}
+  (function(){var l='ar';try{l=localStorage.getItem('vraxLang')||'ar'}catch(e){};applyLang(l);})();
+  document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('langBtn');if(b)b.textContent=(document.documentElement.getAttribute('lang')==='ar'?'FR':'العربية');});
+</script>
 <style>
 :root{--ink:#0E1A2B;--ink-2:#16273C;--paper:#FAF7F2;--white:#fff;--amber:#EE7B33;--amber-soft:#FBE7D4;--teal:#168A7C;--text:#14202E;--muted:#5E6B7A;--line:rgba(20,32,46,.10);--shadow:0 18px 50px -18px rgba(14,26,43,.35);--r:18px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -16,6 +23,12 @@ body{font-family:"Inter",system-ui,sans-serif;color:var(--text);background:var(-
 a{color:var(--teal);text-decoration:none}
 .mono{font-family:"Space Mono",monospace}
 h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+.ar{display:none}
+html[lang="ar"] .ar{display:inline}
+html[lang="ar"] .fr{display:none}
+html[lang="ar"] *{font-family:'Tajawal',system-ui,sans-serif !important}
+.langbtn{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);color:#fff;font-weight:700;font-size:13px;padding:8px 15px;border-radius:100px;cursor:pointer;white-space:nowrap}
+.nav-right{display:flex;align-items:center;gap:14px}
 header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;width:min(1120px,92vw);margin-inline:auto}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:20px}
@@ -37,14 +50,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-f
 .article h3{font-size:18px;margin:20px 0 6px}
 .article p{margin:0 0 14px}
 .article ul,.article ol{margin:0 0 16px 22px}
+html[dir="rtl"] .article ul,html[dir="rtl"] .article ol{margin:0 22px 16px 0}
 .article li{margin:6px 0}
 .tip{background:var(--amber-soft);border:1px solid rgba(238,123,51,.25);border-radius:14px;padding:14px 16px;margin:20px 0;color:#8a4415}
 .tip b{color:#7a3a10}
-.gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
-.gcard{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);color:var(--text)}
-.gcard .ic{font-size:26px}
-.gcard h3{margin:8px 0 4px;color:var(--ink)}
-.gcard p{color:var(--muted);font-size:14px;margin:0}
 .related{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
 .related a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;color:var(--text);font-weight:600;margin-top:10px}
 footer{background:var(--ink);color:#c7d2df;padding:32px 0;margin-top:24px}
@@ -58,79 +67,82 @@ footer .brand{margin-bottom:12px}
 <header>
   <div class="nav">
     <a class="brand" href="index.html"><span class="dot">✈</span> Vrax Voyage</a>
-    <nav class="nav-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="guides.html">📖 Guides</a>
-      <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+        <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+        <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+        <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+        <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+        <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
+      </nav>
+      <button id="langBtn" class="langbtn" onclick="toggleLang()">FR</button>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    </div>
   </div>
   <div class="menu-panel" id="menuPanel">
-    <a href="index.html#recherche">✈ Vols</a>
-    <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-    <a href="guides.html">📖 Guides</a>
-    <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
+    <a href="index.html#recherche">✈ <span class="fr">Vols</span><span class="ar">الطيران</span></a>
+    <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+    <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+    <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+    <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+    <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
   </div>
 </header>
 <main class="article"><div class="wrap">
-  <div class="crumb"><a href="guides.html">Guides</a> › Préparer son vol</div>
-  <h1>Préparer son vol vers le Maghreb</h1>
-  <p class="lead">Bagages, documents, aéroport : voici l'essentiel pour partir l'esprit tranquille vers le Maroc, l'Algérie ou la Tunisie.</p>
-  <h2>1. Les documents à vérifier avant de partir</h2>
-  <p>La première source de stress à l'aéroport, ce sont les papiers. Prenez quelques minutes, bien avant le départ, pour tout contrôler :</p>
+  <div class="crumb"><a href="guides.html"><span class="fr">Guides</span><span class="ar">أدلة السفر</span></a> › <span class="fr">Préparer son vol</span><span class="ar">تحضير رحلتك</span></div>
+  <h1><span class="fr">Préparer son vol vers le Maghreb</span><span class="ar">تحضير رحلتك إلى المغرب العربي</span></h1>
+  <p class="lead"><span class="fr">Bagages, documents, aéroport : voici l'essentiel pour partir l'esprit tranquille vers le Maroc, l'Algérie ou la Tunisie.</span><span class="ar">الأمتعة، الوثائق، المطار: إليك الأساسيات للسفر بذهن مطمئن إلى المغرب أو الجزائر أو تونس.</span></p>
+  <h2><span class="fr">1. Les documents à vérifier avant de partir</span><span class="ar">1. الوثائق التي يجب التحقق منها قبل السفر</span></h2>
+  <p><span class="fr">La première source de stress à l'aéroport, ce sont les papiers. Prenez quelques minutes, bien avant le départ, pour tout contrôler :</span><span class="ar">أول مصدر للتوتر في المطار هو الأوراق. خذ بضع دقائق، قبل السفر بوقت كافٍ، لمراجعة كل شيء:</span></p>
   <ul>
-    <li><b>Pièce d'identité valide</b> : vérifiez la date d'expiration de votre passeport ou de votre carte d'identité. Certains pays exigent une validité de plusieurs mois après la date de retour.</li>
-    <li><b>Formalités d'entrée</b> : selon votre nationalité, un visa ou une inscription consulaire peut être nécessaire. Renseignez-vous toujours auprès du consulat du pays de destination, car les règles évoluent.</li>
-    <li><b>Enfants qui voyagent</b> : prévoyez leurs documents d'identité et, le cas échéant, une autorisation de sortie du territoire.</li>
-    <li><b>Copies de secours</b> : gardez une photo de vos papiers sur votre téléphone et une copie papier dans un autre sac.</li>
+    <li><span class="fr"><b>Pièce d'identité valide</b> : vérifiez la date d'expiration de votre passeport ou de votre carte d'identité. Certains pays exigent une validité de plusieurs mois après la date de retour.</span><span class="ar"><b>وثيقة هوية سارية</b>: تحقق من تاريخ انتهاء جواز سفرك أو بطاقة هويتك. بعض الدول تشترط صلاحية عدة أشهر بعد تاريخ العودة.</span></li>
+    <li><span class="fr"><b>Formalités d'entrée</b> : selon votre nationalité, un visa ou une inscription consulaire peut être nécessaire. Renseignez-vous toujours auprès du consulat du pays de destination, car les règles évoluent.</span><span class="ar"><b>إجراءات الدخول</b>: حسب جنسيتك، قد تكون التأشيرة أو التسجيل القنصلي ضروريًا. استعلم دائمًا لدى قنصلية بلد الوجهة، فالقواعد تتغير.</span></li>
+    <li><span class="fr"><b>Enfants qui voyagent</b> : prévoyez leurs documents d'identité et, le cas échéant, une autorisation de sortie du territoire.</span><span class="ar"><b>سفر الأطفال</b>: جهّز وثائق هويتهم، وعند الاقتضاء إذنًا بالخروج من التراب الوطني.</span></li>
+    <li><span class="fr"><b>Copies de secours</b> : gardez une photo de vos papiers sur votre téléphone et une copie papier dans un autre sac.</span><span class="ar"><b>نسخ احتياطية</b>: احتفظ بصورة لأوراقك في هاتفك ونسخة ورقية في حقيبة أخرى.</span></li>
   </ul>
-  <div class="tip"><b>Bon réflexe :</b> les règles de visa et de séjour changent régulièrement. Vérifiez toujours les informations officielles du consulat avant de réserver.</div>
-  <h2>2. Bagages : éviter les frais et les mauvaises surprises</h2>
-  <p>Sur les vols vers le Maghreb, les frais de bagages sont la première cause de dépenses imprévues, surtout sur les compagnies à bas prix.</p>
+  <div class="tip"><span class="fr"><b>Bon réflexe :</b> les règles de visa et de séjour changent régulièrement. Vérifiez toujours les informations officielles du consulat avant de réserver.</span><span class="ar"><b>تصرّف حكيم:</b> قواعد التأشيرة والإقامة تتغير باستمرار. تحقق دائمًا من المعلومات الرسمية للقنصلية قبل الحجز.</span></div>
+  <h2><span class="fr">2. Bagages : éviter les frais et les mauvaises surprises</span><span class="ar">2. الأمتعة: تجنّب الرسوم والمفاجآت</span></h2>
+  <p><span class="fr">Sur les vols vers le Maghreb, les frais de bagages sont la première cause de dépenses imprévues, surtout sur les compagnies à bas prix.</span><span class="ar">في الرحلات نحو المغرب العربي، تُعدّ رسوم الأمتعة أول سبب للمصاريف غير المتوقعة، خاصة على شركات الطيران الاقتصادية.</span></p>
   <ul>
-    <li><b>Lisez la franchise bagages</b> de votre billet : le poids autorisé en soute et en cabine varie beaucoup d'une compagnie à l'autre.</li>
-    <li><b>Pesez vos valises chez vous</b> : un pèse-bagage coûte quelques euros et évite les suppléments au comptoir, souvent bien plus chers.</li>
-    <li><b>Liquides en cabine</b> : contenants de 100 ml maximum, regroupés dans un sac transparent.</li>
-    <li><b>Batteries et appareils</b> : les batteries externes voyagent en cabine, jamais en soute.</li>
-    <li><b>Cadeaux pour la famille</b> : répartissez-les et gardez les objets fragiles ou de valeur avec vous.</li>
+    <li><span class="fr"><b>Lisez la franchise bagages</b> de votre billet : le poids autorisé en soute et en cabine varie beaucoup d'une compagnie à l'autre.</span><span class="ar"><b>اقرأ حصة الأمتعة</b> المسموح بها في تذكرتك: الوزن المسموح في العنبر والمقصورة يختلف كثيرًا من شركة لأخرى.</span></li>
+    <li><span class="fr"><b>Pesez vos valises chez vous</b> : un pèse-bagage coûte quelques euros et évite les suppléments au comptoir, souvent bien plus chers.</span><span class="ar"><b>زِن حقائبك في المنزل</b>: ميزان أمتعة يكلّف بضعة يوروات ويجنّبك الرسوم الإضافية عند المكتب، وهي غالبًا أغلى بكثير.</span></li>
+    <li><span class="fr"><b>Liquides en cabine</b> : contenants de 100 ml maximum, regroupés dans un sac transparent.</span><span class="ar"><b>السوائل في المقصورة</b>: عبوات بحد أقصى 100 مل، مجمّعة في كيس شفاف.</span></li>
+    <li><span class="fr"><b>Batteries et appareils</b> : les batteries externes voyagent en cabine, jamais en soute.</span><span class="ar"><b>البطاريات والأجهزة</b>: بطاريات الشحن المتنقلة تُنقل في المقصورة، لا في العنبر أبدًا.</span></li>
+    <li><span class="fr"><b>Cadeaux pour la famille</b> : répartissez-les et gardez les objets fragiles ou de valeur avec vous.</span><span class="ar"><b>هدايا العائلة</b>: وزّعها واحتفظ بالأشياء الهشة أو الثمينة معك.</span></li>
   </ul>
-  <h2>3. À l'aéroport : arriver serein</h2>
-  <p>Les vols saisonniers vers le Maghreb, surtout l'été, sont souvent complets et les files d'attente longues.</p>
+  <h2><span class="fr">3. À l'aéroport : arriver serein</span><span class="ar">3. في المطار: الوصول بهدوء</span></h2>
+  <p><span class="fr">Les vols saisonniers vers le Maghreb, surtout l'été, sont souvent complets et les files d'attente longues.</span><span class="ar">الرحلات الموسمية نحو المغرب العربي، خاصة في الصيف، غالبًا ما تكون كاملة والطوابير طويلة.</span></p>
   <ul>
-    <li><b>Arrivez tôt</b> : comptez large, surtout en haute saison et avec des enfants.</li>
-    <li><b>Enregistrement en ligne</b> : faites-le dès son ouverture pour gagner du temps et choisir votre place.</li>
-    <li><b>Carte d'embarquement</b> : gardez-la sur le téléphone et en version papier, au cas où la batterie lâche.</li>
+    <li><span class="fr"><b>Arrivez tôt</b> : comptez large, surtout en haute saison et avec des enfants.</span><span class="ar"><b>احضر مبكرًا</b>: احسب وقتًا كافيًا، خاصة في موسم الذروة ومع الأطفال.</span></li>
+    <li><span class="fr"><b>Enregistrement en ligne</b> : faites-le dès son ouverture pour gagner du temps et choisir votre place.</span><span class="ar"><b>تسجيل الدخول عبر الإنترنت</b>: قم به فور فتحه لتوفير الوقت واختيار مقعدك.</span></li>
+    <li><span class="fr"><b>Carte d'embarquement</b> : gardez-la sur le téléphone et en version papier, au cas où la batterie lâche.</span><span class="ar"><b>بطاقة الصعود</b>: احتفظ بها في الهاتف وبنسخة ورقية، تحسبًا لنفاد البطارية.</span></li>
   </ul>
-  <h2>4. Argent et paiements sur place</h2>
-  <p>Prévoyez un peu de liquide pour l'arrivée (taxi, petites courses). Renseignez-vous sur les règles de change : certaines devises locales ne peuvent pas être achetées à l'avance ni sorties du pays. Prévenez aussi votre banque de votre voyage pour éviter le blocage de votre carte à l'étranger.</p>
-  <h2>5. Rester connecté dès l'arrivée</h2>
-  <p>Pour éviter les frais d'itinérance et avoir internet dès la sortie de l'avion, la solution la plus simple aujourd'hui est l'eSIM : vous l'installez avant le départ et vous êtes connecté à l'atterrissage.</p>
-  <p>➡️ <a href="esim-maghreb.html">Notre guide eSIM au Maghreb</a></p>
+  <h2><span class="fr">4. Argent et paiements sur place</span><span class="ar">4. المال والدفع في المكان</span></h2>
+  <p><span class="fr">Prévoyez un peu de liquide pour l'arrivée (taxi, petites courses). Renseignez-vous sur les règles de change : certaines devises locales ne peuvent pas être achetées à l'avance ni sorties du pays. Prévenez aussi votre banque de votre voyage pour éviter le blocage de votre carte à l'étranger.</span><span class="ar">جهّز بعض النقود عند الوصول (سيارة أجرة، مشتريات صغيرة). استعلم عن قواعد الصرف: بعض العملات المحلية لا يمكن شراؤها مسبقًا ولا إخراجها من البلد. أخبر بنكك أيضًا بسفرك لتجنّب حظر بطاقتك في الخارج.</span></p>
+  <h2><span class="fr">5. Rester connecté dès l'arrivée</span><span class="ar">5. ابقَ متصلًا فور الوصول</span></h2>
+  <p><span class="fr">Pour éviter les frais d'itinérance et avoir internet dès la sortie de l'avion, la solution la plus simple aujourd'hui est l'eSIM : vous l'installez avant le départ et vous êtes connecté à l'atterrissage.</span><span class="ar">لتجنّب رسوم التجوال والحصول على إنترنت فور نزولك من الطائرة، أبسط حل اليوم هو eSIM: تثبّتها قبل السفر وتكون متصلًا عند الهبوط.</span></p>
+  <p>➡️ <a href="esim-maghreb.html"><span class="fr">Notre guide eSIM au Maghreb</span><span class="ar">دليلنا حول eSIM في المغرب العربي</span></a></p>
   <div class="related">
-    <a href="esim-maghreb.html">📱 eSIM au Maghreb : internet dès l'arrivée</a>
-    <a href="guide-hotel-appartement-maghreb.html">🏨 Hôtel ou appartement : bien réserver</a>
-    <a href="index.html#recherche">✈ Trouver mon vol au meilleur prix</a>
+    <a href="esim-maghreb.html">📱 <span class="fr">eSIM au Maghreb : internet dès l'arrivée</span><span class="ar">eSIM في المغرب العربي: إنترنت فور الوصول</span></a>
+    <a href="guide-hotel-appartement-maghreb.html">🏨 <span class="fr">Hôtel ou appartement : bien réserver</span><span class="ar">فندق أو شقة: أحسن الحجز</span></a>
+    <a href="index.html#recherche">✈ <span class="fr">Trouver mon vol au meilleur prix</span><span class="ar">ابحث عن رحلتي بأفضل سعر</span></a>
   </div>
 </div></main>
 <footer>
   <div class="wrap">
     <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
     <div class="foot-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="guides.html">Guides</a>
-      <a href="boutique.html">Boutique</a>
-      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+      <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+      <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+      <a href="guides.html"><span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+      <a href="boutique.html"><span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+      <a href="mentions-legales.html"><span class="fr">Mentions légales</span><span class="ar">الإشعارات القانونية</span></a>
     </div>
     <div class="foot-bot">
-      <span>© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span>
-      <span class="mono">Guides voyage Maghreb</span>
+      <span><span class="fr">© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span><span class="ar">© 2026 Vrax Voyage — مقارن رحلات الطيران وعروض السفر.</span></span>
+      <span class="mono"><span class="fr">Guides voyage Maghreb</span><span class="ar">أدلة السفر إلى المغرب العربي</span></span>
     </div>
   </div>
 </footer>
