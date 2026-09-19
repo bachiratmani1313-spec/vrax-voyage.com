@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <!-- Hello Travelpayouts -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>eSIM au Maghreb (Maroc, Algérie, Tunisie) : internet dès l'arrivée — Vrax Voyage</title>
-<meta name="description" content="Comment utiliser une eSIM pour avoir internet dès l'arrivée au Maghreb, sans roaming. Guide simple, étape par étape."/>
+<title>eSIM في المغرب العربي (المغرب، الجزائر، تونس): إنترنت فور الوصول — Vrax Voyage</title>
+<meta name="description" content="كيف تستخدم eSIM للحصول على إنترنت فور وصولك إلى المغرب العربي، دون تجوال. دليل بسيط خطوة بخطوة. / eSIM au Maghreb, internet dès l'arrivée."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<script>
+  function applyLang(l){var h=document.documentElement;h.setAttribute('lang',l);h.setAttribute('dir',l==='ar'?'rtl':'ltr');try{localStorage.setItem('vraxLang',l)}catch(e){}var b=document.getElementById('langBtn');if(b)b.textContent=(l==='ar'?'FR':'العربية');}
+  function toggleLang(){var cur=document.documentElement.getAttribute('lang')||'ar';applyLang(cur==='ar'?'fr':'ar');}
+  (function(){var l='ar';try{l=localStorage.getItem('vraxLang')||'ar'}catch(e){};applyLang(l);})();
+  document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('langBtn');if(b)b.textContent=(document.documentElement.getAttribute('lang')==='ar'?'FR':'العربية');});
+</script>
 <style>
 :root{--ink:#0E1A2B;--ink-2:#16273C;--paper:#FAF7F2;--white:#fff;--amber:#EE7B33;--amber-soft:#FBE7D4;--teal:#168A7C;--text:#14202E;--muted:#5E6B7A;--line:rgba(20,32,46,.10);--shadow:0 18px 50px -18px rgba(14,26,43,.35);--r:18px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -16,6 +23,12 @@ body{font-family:"Inter",system-ui,sans-serif;color:var(--text);background:var(-
 a{color:var(--teal);text-decoration:none}
 .mono{font-family:"Space Mono",monospace}
 h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+.ar{display:none}
+html[lang="ar"] .ar{display:inline}
+html[lang="ar"] .fr{display:none}
+html[lang="ar"] *{font-family:'Tajawal',system-ui,sans-serif !important}
+.langbtn{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);color:#fff;font-weight:700;font-size:13px;padding:8px 15px;border-radius:100px;cursor:pointer;white-space:nowrap}
+.nav-right{display:flex;align-items:center;gap:14px}
 header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;width:min(1120px,92vw);margin-inline:auto}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:20px}
@@ -37,14 +50,10 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-f
 .article h3{font-size:18px;margin:20px 0 6px}
 .article p{margin:0 0 14px}
 .article ul,.article ol{margin:0 0 16px 22px}
+html[dir="rtl"] .article ul,html[dir="rtl"] .article ol{margin:0 22px 16px 0}
 .article li{margin:6px 0}
 .tip{background:var(--amber-soft);border:1px solid rgba(238,123,51,.25);border-radius:14px;padding:14px 16px;margin:20px 0;color:#8a4415}
 .tip b{color:#7a3a10}
-.gcards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-top:8px}
-.gcard{display:block;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:18px;box-shadow:var(--shadow);color:var(--text)}
-.gcard .ic{font-size:26px}
-.gcard h3{margin:8px 0 4px;color:var(--ink)}
-.gcard p{color:var(--muted);font-size:14px;margin:0}
 .related{margin-top:30px;padding-top:22px;border-top:1px solid var(--line)}
 .related a{display:block;background:#fff;border:1px solid var(--line);border-radius:12px;padding:13px 16px;color:var(--text);font-weight:600;margin-top:10px}
 footer{background:var(--ink);color:#c7d2df;padding:32px 0;margin-top:24px}
@@ -58,74 +67,77 @@ footer .brand{margin-bottom:12px}
 <header>
   <div class="nav">
     <a class="brand" href="index.html"><span class="dot">✈</span> Vrax Voyage</a>
-    <nav class="nav-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="guides.html">📖 Guides</a>
-      <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+        <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+        <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+        <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+        <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+        <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
+      </nav>
+      <button id="langBtn" class="langbtn" onclick="toggleLang()">FR</button>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    </div>
   </div>
   <div class="menu-panel" id="menuPanel">
-    <a href="index.html#recherche">✈ Vols</a>
-    <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-    <a href="guides.html">📖 Guides</a>
-    <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
+    <a href="index.html#recherche">✈ <span class="fr">Vols</span><span class="ar">الطيران</span></a>
+    <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+    <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+    <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+    <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+    <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
   </div>
 </header>
 <main class="article"><div class="wrap">
-  <div class="crumb"><a href="guides.html">Guides</a> › eSIM au Maghreb</div>
-  <h1>eSIM au Maghreb : rester connecté sans se ruiner</h1>
-  <p class="lead">Internet dès l'arrivée au Maroc, en Algérie ou en Tunisie, sans changer de carte SIM et sans payer le roaming.</p>
-  <h2>Qu'est-ce qu'une eSIM ?</h2>
-  <p>Une eSIM est une carte SIM entièrement numérique, déjà intégrée à votre téléphone. Au lieu d'insérer une carte physique, vous téléchargez un forfait de données directement sur l'appareil. Vous gardez votre numéro habituel et vous ajoutez en plus un forfait internet pour votre destination.</p>
-  <h2>Pourquoi une eSIM plutôt que le roaming ou une SIM locale ?</h2>
+  <div class="crumb"><a href="guides.html"><span class="fr">Guides</span><span class="ar">أدلة السفر</span></a> › <span class="fr">eSIM au Maghreb</span><span class="ar">eSIM في المغرب العربي</span></div>
+  <h1><span class="fr">eSIM au Maghreb : rester connecté sans se ruiner</span><span class="ar">eSIM في المغرب العربي: ابقَ متصلًا دون أن تدفع الكثير</span></h1>
+  <p class="lead"><span class="fr">Internet dès l'arrivée au Maroc, en Algérie ou en Tunisie, sans changer de carte SIM et sans payer le roaming.</span><span class="ar">إنترنت فور وصولك إلى المغرب أو الجزائر أو تونس، دون تغيير شريحتك ودون دفع رسوم التجوال.</span></p>
+  <h2><span class="fr">Qu'est-ce qu'une eSIM ?</span><span class="ar">ما هي eSIM؟</span></h2>
+  <p><span class="fr">Une eSIM est une carte SIM entièrement numérique, déjà intégrée à votre téléphone. Au lieu d'insérer une carte physique, vous téléchargez un forfait de données directement sur l'appareil. Vous gardez votre numéro habituel et vous ajoutez en plus un forfait internet pour votre destination.</span><span class="ar">eSIM هي شريحة SIM رقمية بالكامل، مدمجة مسبقًا في هاتفك. بدل إدخال شريحة فعلية، تُنزّل باقة بيانات مباشرة على الجهاز. تحتفظ برقمك المعتاد وتضيف إليه باقة إنترنت لوجهتك.</span></p>
+  <h2><span class="fr">Pourquoi une eSIM plutôt que le roaming ou une SIM locale ?</span><span class="ar">لماذا eSIM بدل التجوال أو شريحة محلية؟</span></h2>
   <ul>
-    <li><b>Moins cher que l'itinérance</b> : utiliser les données d'un opérateur européen au Maghreb peut coûter très cher. Une eSIM locale revient souvent bien moins cher.</li>
-    <li><b>Prête avant le départ</b> : plus besoin de chercher un vendeur de cartes SIM à l'aéroport ni de faire la queue à l'arrivée.</li>
-    <li><b>Aucune manipulation</b> : rien à insérer ni à perdre. Tout se fait depuis les réglages du téléphone.</li>
+    <li><span class="fr"><b>Moins cher que l'itinérance</b> : utiliser les données d'un opérateur européen au Maghreb peut coûter très cher. Une eSIM locale revient souvent bien moins cher.</span><span class="ar"><b>أرخص من التجوال</b>: استخدام بيانات مشغّل أوروبي في المغرب العربي قد يكون مكلفًا جدًا. غالبًا ما تكون eSIM المحلية أرخص بكثير.</span></li>
+    <li><span class="fr"><b>Prête avant le départ</b> : plus besoin de chercher un vendeur de cartes SIM à l'aéroport ni de faire la queue à l'arrivée.</span><span class="ar"><b>جاهزة قبل السفر</b>: لا حاجة للبحث عن بائع شرائح في المطار ولا للوقوف في الطابور عند الوصول.</span></li>
+    <li><span class="fr"><b>Aucune manipulation</b> : rien à insérer ni à perdre. Tout se fait depuis les réglages du téléphone.</span><span class="ar"><b>دون أي تعقيد</b>: لا شيء لإدخاله أو فقدانه. كل شيء يتم من إعدادات الهاتف.</span></li>
   </ul>
-  <h2>Comment ça marche, étape par étape</h2>
+  <h2><span class="fr">Comment ça marche, étape par étape</span><span class="ar">كيف تعمل، خطوة بخطوة</span></h2>
   <ol>
-    <li>Vérifiez que votre téléphone est compatible eSIM (voir plus bas).</li>
-    <li>Choisissez un forfait pour votre pays de destination et la durée de votre séjour.</li>
-    <li>Installez l'eSIM en scannant un QR code, idéalement <b>avant de partir</b>, tant que vous avez le wifi.</li>
-    <li>À l'arrivée, activez les données de l'eSIM : vous êtes connecté immédiatement.</li>
+    <li><span class="fr">Vérifiez que votre téléphone est compatible eSIM (voir plus bas).</span><span class="ar">تأكد أن هاتفك متوافق مع eSIM (انظر أدناه).</span></li>
+    <li><span class="fr">Choisissez un forfait pour votre pays de destination et la durée de votre séjour.</span><span class="ar">اختر باقة لبلد وجهتك ولمدة إقامتك.</span></li>
+    <li><span class="fr">Installez l'eSIM en scannant un QR code, idéalement <b>avant de partir</b>, tant que vous avez le wifi.</span><span class="ar">ثبّت eSIM بمسح رمز QR، ويُفضّل <b>قبل السفر</b> ما دام لديك واي فاي.</span></li>
+    <li><span class="fr">À l'arrivée, activez les données de l'eSIM : vous êtes connecté immédiatement.</span><span class="ar">عند الوصول، فعّل بيانات eSIM: تكون متصلًا على الفور.</span></li>
   </ol>
-  <div class="tip"><b>Conseil :</b> installez l'eSIM chez vous en wifi, mais n'activez le forfait qu'à l'arrivée pour ne pas entamer vos jours de validité trop tôt.</div>
-  <h2>Vérifier que votre téléphone est compatible</h2>
-  <p>La plupart des smartphones récents gèrent l'eSIM. Pour vérifier rapidement : ouvrez les réglages de votre téléphone et cherchez, dans la partie réseau ou carte SIM, une option du type « Ajouter une eSIM » ou « Ajouter un forfait mobile ». Si elle existe, votre appareil est compatible.</p>
-  <h2>Notre recommandation</h2>
-  <p>Nous recommandons <b>Airalo</b>, le plus grand fournisseur d'eSIM au monde : des forfaits data pour le Maroc, l'Algérie, la Tunisie et plus de 200 pays. Vous installez l'eSIM avant le départ et vous êtes connecté dès l'arrivée.</p>
+  <div class="tip"><span class="fr"><b>Conseil :</b> installez l'eSIM chez vous en wifi, mais n'activez le forfait qu'à l'arrivée pour ne pas entamer vos jours de validité trop tôt.</span><span class="ar"><b>نصيحة:</b> ثبّت eSIM في منزلك عبر الواي فاي، لكن لا تفعّل الباقة إلا عند الوصول حتى لا تستهلك أيام صلاحيتها مبكرًا.</span></div>
+  <h2><span class="fr">Vérifier que votre téléphone est compatible</span><span class="ar">تأكد من توافق هاتفك</span></h2>
+  <p><span class="fr">La plupart des smartphones récents gèrent l'eSIM. Pour vérifier rapidement : ouvrez les réglages de votre téléphone et cherchez, dans la partie réseau ou carte SIM, une option du type « Ajouter une eSIM » ou « Ajouter un forfait mobile ». Si elle existe, votre appareil est compatible.</span><span class="ar">معظم الهواتف الذكية الحديثة تدعم eSIM. للتحقق بسرعة: افتح إعدادات هاتفك وابحث في قسم الشبكة أو الشريحة عن خيار مثل «إضافة eSIM» أو «إضافة باقة جوال». إن وُجد، فجهازك متوافق.</span></p>
+  <h2><span class="fr">Notre recommandation</span><span class="ar">توصيتنا</span></h2>
+  <p><span class="fr">Nous recommandons <b>Airalo</b>, le plus grand fournisseur d'eSIM au monde : des forfaits data pour le Maroc, l'Algérie, la Tunisie et plus de 200 pays. Vous installez l'eSIM avant le départ et vous êtes connecté dès l'arrivée.</span><span class="ar">نوصي بـ <b>Airalo</b>، أكبر مزوّد eSIM في العالم: باقات بيانات للمغرب والجزائر وتونس وأكثر من 200 دولة. تثبّت eSIM قبل السفر وتكون متصلًا فور الوصول.</span></p>
   <div style="background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow);margin:20px 0">
-    <div style="font-family:'Space Grotesk';font-weight:700;font-size:20px;color:var(--ink);margin-bottom:6px">📱 Notre bon plan eSIM : Airalo</div>
-    <p style="color:var(--muted);margin-bottom:16px">Forfaits pour 200+ pays, dont tout le Maghreb. Installation en quelques minutes, prix clairs, sans engagement.</p>
-    <a href="https://airalo.tpx.gr/uVDKGfe8" target="_blank" rel="sponsored noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px;padding:14px 24px;border-radius:12px">Voir les forfaits eSIM →</a>
+    <div style="font-family:'Space Grotesk';font-weight:700;font-size:20px;color:var(--ink);margin-bottom:6px">📱 <span class="fr">Notre bon plan eSIM : Airalo</span><span class="ar">عرضنا المميز لـ eSIM: Airalo</span></div>
+    <p style="color:var(--muted);margin-bottom:16px"><span class="fr">Forfaits pour 200+ pays, dont tout le Maghreb. Installation en quelques minutes, prix clairs, sans engagement.</span><span class="ar">باقات لأكثر من 200 دولة، منها كل المغرب العربي. التثبيت في دقائق، أسعار واضحة، دون التزام.</span></p>
+    <a href="https://airalo.tpx.gr/uVDKGfe8" target="_blank" rel="sponsored noopener" style="display:inline-flex;align-items:center;gap:8px;background:var(--amber);color:#fff;font-family:'Space Grotesk';font-weight:700;font-size:16px;padding:14px 24px;border-radius:12px"><span class="fr">Voir les forfaits eSIM →</span><span class="ar">عرض باقات eSIM ←</span></a>
   </div>
   <div class="related">
-    <a href="guide-preparer-vol-maghreb.html">🧳 Préparer son vol vers le Maghreb</a>
-    <a href="guide-hotel-appartement-maghreb.html">🏨 Hôtel ou appartement : bien réserver</a>
-    <a href="index.html#recherche">✈ Trouver mon vol au meilleur prix</a>
+    <a href="guide-preparer-vol-maghreb.html">🧳 <span class="fr">Préparer son vol vers le Maghreb</span><span class="ar">تحضير رحلتك إلى المغرب العربي</span></a>
+    <a href="guide-hotel-appartement-maghreb.html">🏨 <span class="fr">Hôtel ou appartement : bien réserver</span><span class="ar">فندق أو شقة: أحسن الحجز</span></a>
+    <a href="index.html#recherche">✈ <span class="fr">Trouver mon vol au meilleur prix</span><span class="ar">ابحث عن رحلتي بأفضل سعر</span></a>
   </div>
 </div></main>
 <footer>
   <div class="wrap">
     <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
     <div class="foot-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="guides.html">Guides</a>
-      <a href="boutique.html">Boutique</a>
-      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+      <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+      <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+      <a href="guides.html"><span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+      <a href="boutique.html"><span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+      <a href="mentions-legales.html"><span class="fr">Mentions légales</span><span class="ar">الإشعارات القانونية</span></a>
     </div>
     <div class="foot-bot">
-      <span>© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span>
-      <span class="mono">Guides voyage Maghreb</span>
+      <span><span class="fr">© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span><span class="ar">© 2026 Vrax Voyage — مقارن رحلات الطيران وعروض السفر.</span></span>
+      <span class="mono"><span class="fr">Guides voyage Maghreb</span><span class="ar">أدلة السفر إلى المغرب العربي</span></span>
     </div>
   </div>
 </footer>
