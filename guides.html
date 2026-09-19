@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <!-- Hello Travelpayouts -->
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Guides voyage Maghreb — Vrax Voyage</title>
-<meta name="description" content="Guides pratiques pour voyager vers le Maroc, l'Algérie et la Tunisie : bagages, documents, eSIM et hébergement."/>
+<title>أدلة السفر إلى المغرب العربي — Vrax Voyage</title>
+<meta name="description" content="أدلة عملية للسفر إلى المغرب والجزائر وتونس: الأمتعة، الوثائق، eSIM والإقامة. / Guides pratiques pour voyager vers le Maghreb."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet"/>
+<script>
+  function applyLang(l){var h=document.documentElement;h.setAttribute('lang',l);h.setAttribute('dir',l==='ar'?'rtl':'ltr');try{localStorage.setItem('vraxLang',l)}catch(e){}var b=document.getElementById('langBtn');if(b)b.textContent=(l==='ar'?'FR':'العربية');}
+  function toggleLang(){var cur=document.documentElement.getAttribute('lang')||'ar';applyLang(cur==='ar'?'fr':'ar');}
+  (function(){var l='ar';try{l=localStorage.getItem('vraxLang')||'ar'}catch(e){};applyLang(l);})();
+  document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('langBtn');if(b)b.textContent=(document.documentElement.getAttribute('lang')==='ar'?'FR':'العربية');});
+</script>
 <style>
 :root{--ink:#0E1A2B;--ink-2:#16273C;--paper:#FAF7F2;--white:#fff;--amber:#EE7B33;--amber-soft:#FBE7D4;--teal:#168A7C;--text:#14202E;--muted:#5E6B7A;--line:rgba(20,32,46,.10);--shadow:0 18px 50px -18px rgba(14,26,43,.35);--r:18px}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -16,6 +23,13 @@ body{font-family:"Inter",system-ui,sans-serif;color:var(--text);background:var(-
 a{color:var(--teal);text-decoration:none}
 .mono{font-family:"Space Mono",monospace}
 h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.14;letter-spacing:-.02em;color:var(--ink)}
+/* i18n */
+.ar{display:none}
+html[lang="ar"] .ar{display:inline}
+html[lang="ar"] .fr{display:none}
+html[lang="ar"] *{font-family:'Tajawal',system-ui,sans-serif !important}
+.langbtn{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);color:#fff;font-weight:700;font-size:13px;padding:8px 15px;border-radius:100px;cursor:pointer;white-space:nowrap}
+.nav-right{display:flex;align-items:center;gap:14px}
 header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
 .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;width:min(1120px,92vw);margin-inline:auto}
 .brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:20px}
@@ -37,6 +51,7 @@ header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.92);backdrop-f
 .article h3{font-size:18px;margin:20px 0 6px}
 .article p{margin:0 0 14px}
 .article ul,.article ol{margin:0 0 16px 22px}
+html[dir="rtl"] .article ul,html[dir="rtl"] .article ol{margin:0 22px 16px 0}
 .article li{margin:6px 0}
 .tip{background:var(--amber-soft);border:1px solid rgba(238,123,51,.25);border-radius:14px;padding:14px 16px;margin:20px 0;color:#8a4415}
 .tip b{color:#7a3a10}
@@ -58,50 +73,53 @@ footer .brand{margin-bottom:12px}
 <header>
   <div class="nav">
     <a class="brand" href="index.html"><span class="dot">✈</span> Vrax Voyage</a>
-    <nav class="nav-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="guides.html">📖 Guides</a>
-      <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+        <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+        <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+        <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+        <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+        <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
+      </nav>
+      <button id="langBtn" class="langbtn" onclick="toggleLang()">FR</button>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    </div>
   </div>
   <div class="menu-panel" id="menuPanel">
-    <a href="index.html#recherche">✈ Vols</a>
-    <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-    <a href="guides.html">📖 Guides</a>
-    <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
+    <a href="index.html#recherche">✈ <span class="fr">Vols</span><span class="ar">الطيران</span></a>
+    <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+    <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+    <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+    <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+    <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
   </div>
 </header>
 <main class="article"><div class="wrap">
-  <div class="crumb"><a href="index.html">Accueil</a> › Guides</div>
-  <h1>Guides voyage</h1>
-  <p class="lead">Des conseils clairs et pratiques pour préparer votre voyage vers le Maroc, l'Algérie et la Tunisie — du billet d'avion jusqu'à l'arrivée sur place.</p>
+  <div class="crumb"><a href="index.html"><span class="fr">Accueil</span><span class="ar">الرئيسية</span></a> › <span class="fr">Guides</span><span class="ar">أدلة السفر</span></div>
+  <h1><span class="fr">Guides voyage</span><span class="ar">أدلة السفر</span></h1>
+  <p class="lead"><span class="fr">Des conseils clairs et pratiques pour préparer votre voyage vers le Maroc, l'Algérie et la Tunisie — du billet d'avion jusqu'à l'arrivée sur place.</span><span class="ar">نصائح واضحة وعملية لتحضير رحلتك إلى المغرب والجزائر وتونس — من تذكرة الطيران حتى الوصول إلى هناك.</span></p>
   <div class="gcards">
-    <a class="gcard" href="guide-preparer-vol-maghreb.html"><div class="ic">🧳</div><h3>Préparer son vol vers le Maghreb</h3><p>Documents, bagages et passage à l'aéroport, sans mauvaise surprise.</p></a>
-    <a class="gcard" href="esim-maghreb.html"><div class="ic">📱</div><h3>eSIM au Maghreb</h3><p>Avoir internet dès l'arrivée, sans payer le roaming.</p></a>
-    <a class="gcard" href="guide-hotel-appartement-maghreb.html"><div class="ic">🏨</div><h3>Hôtel ou appartement</h3><p>Bien choisir et bien réserver son hébergement sur place.</p></a>
+    <a class="gcard" href="guide-preparer-vol-maghreb.html"><div class="ic">🧳</div><h3><span class="fr">Préparer son vol vers le Maghreb</span><span class="ar">تحضير رحلتك إلى المغرب العربي</span></h3><p><span class="fr">Documents, bagages et passage à l'aéroport, sans mauvaise surprise.</span><span class="ar">الوثائق والأمتعة والمرور بالمطار، دون مفاجآت سيئة.</span></p></a>
+    <a class="gcard" href="esim-maghreb.html"><div class="ic">📱</div><h3><span class="fr">eSIM au Maghreb</span><span class="ar">eSIM في المغرب العربي</span></h3><p><span class="fr">Avoir internet dès l'arrivée, sans payer le roaming.</span><span class="ar">احصل على إنترنت فور الوصول، دون دفع رسوم التجوال.</span></p></a>
+    <a class="gcard" href="guide-hotel-appartement-maghreb.html"><div class="ic">🏨</div><h3><span class="fr">Hôtel ou appartement</span><span class="ar">فندق أو شقة</span></h3><p><span class="fr">Bien choisir et bien réserver son hébergement sur place.</span><span class="ar">أحسن اختيار وحجز إقامتك هناك.</span></p></a>
   </div>
-  <div class="tip">Astuce : combinez un <a href="index.html#recherche">vol au meilleur prix</a> avec un <a href="index.html#hebergement">hébergement au meilleur prix</a> pour un séjour au pays sans exploser le budget.</div>
+  <div class="tip"><span class="fr">Astuce : combinez un <a href="index.html#recherche">vol au meilleur prix</a> avec un <a href="index.html#hebergement">hébergement au meilleur prix</a> pour un séjour au pays sans exploser le budget.</span><span class="ar">نصيحة: اجمع بين <a href="index.html#recherche">رحلة بأفضل سعر</a> و<a href="index.html#hebergement">إقامة بأفضل سعر</a> لقضاء عطلة في البلد دون تجاوز ميزانيتك.</span></div>
 </div></main>
 <footer>
   <div class="wrap">
     <div class="brand"><span class="dot">✈</span> Vrax Voyage</div>
     <div class="foot-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="guides.html">Guides</a>
-      <a href="boutique.html">Boutique</a>
-      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+      <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+      <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+      <a href="guides.html"><span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+      <a href="boutique.html"><span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+      <a href="mentions-legales.html"><span class="fr">Mentions légales</span><span class="ar">الإشعارات القانونية</span></a>
     </div>
     <div class="foot-bot">
-      <span>© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span>
-      <span class="mono">Guides voyage Maghreb</span>
+      <span><span class="fr">© 2026 Vrax Voyage — Comparateur de vols &amp; bons plans voyage.</span><span class="ar">© 2026 Vrax Voyage — مقارن رحلات الطيران وعروض السفر.</span></span>
+      <span class="mono"><span class="fr">Guides voyage Maghreb</span><span class="ar">أدلة السفر إلى المغرب العربي</span></span>
     </div>
   </div>
 </footer>
