@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <!-- Hello Travelpayouts -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Politique de Confidentialité — Vrax Voyage</title>
-<meta name="description" content="Politique de confidentialité de Vrax Voyage : cookies, publicité Google AdSense, liens affiliés Amazon et droits RGPD.">
+<title>سياسة الخصوصية — Vrax Voyage</title>
+<meta name="description" content="سياسة الخصوصية لـ Vrax Voyage: ملفات تعريف الارتباط، إعلانات Google AdSense، روابط أمازون وحقوق GDPR. / Politique de confidentialité Vrax Voyage.">
 <link rel="canonical" href="https://vrax-voyage.com/politique-confidentialite.html">
 <meta name="robots" content="index, follow">
 <meta name="google-adsense-account" content="ca-pub-3581867427943716">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3581867427943716" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<script>
+  function applyLang(l){var h=document.documentElement;h.setAttribute('lang',l);h.setAttribute('dir',l==='ar'?'rtl':'ltr');try{localStorage.setItem('vraxLang',l)}catch(e){}var b=document.getElementById('langBtn');if(b)b.textContent=(l==='ar'?'FR':'العربية');}
+  function toggleLang(){var cur=document.documentElement.getAttribute('lang')||'ar';applyLang(cur==='ar'?'fr':'ar');}
+  (function(){var l='ar';try{l=localStorage.getItem('vraxLang')||'ar'}catch(e){};applyLang(l);})();
+  document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('langBtn');if(b)b.textContent=(document.documentElement.getAttribute('lang')==='ar'?'FR':'العربية');});
+</script>
 <style>:root{--bg:#F4FAFD;--ink:#12303F;--accent:#0E7FA8;--line:#CFE6F0;--soft:#5B7C8A}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.75;font-size:1.03rem}
+.ar{display:none}
+html[lang="ar"] .ar{display:inline}
+html[lang="ar"] .fr{display:none}
+html[lang="ar"] body,html[lang="ar"] *{font-family:'Tajawal',system-ui,sans-serif !important}
 .wrap{max-width:760px;margin:0 auto;padding:0 22px}
 header.l{border-bottom:1px solid var(--line);padding:16px 0}
 header.l .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .brand{font-family:'Archivo',sans-serif;font-size:1.2rem;color:var(--accent);text-decoration:none}
 nav a{color:var(--soft);text-decoration:none;margin-left:14px;font-size:.9rem}
+html[dir="rtl"] nav a{margin-left:0;margin-right:14px}
 nav a:hover{color:var(--accent)}
+.langbtn{background:var(--accent);color:#fff;border:0;font-weight:700;font-size:.82rem;padding:6px 13px;border-radius:100px;cursor:pointer;margin-inline-start:14px}
 h1{font-family:'Archivo',sans-serif;font-size:clamp(1.7rem,4.5vw,2.4rem);margin:42px 0 6px}
 .sub{color:var(--soft);margin-bottom:10px}
 main section{padding:24px 0;border-top:1px solid var(--line)}
 main section:first-of-type{border-top:none}
 h2{font-family:'Archivo',sans-serif;color:var(--accent);font-size:1.35rem;margin-bottom:10px}
 h3{font-size:1.02rem;margin:16px 0 4px}
-p{margin-bottom:12px}ul{margin:0 0 12px 22px}li{margin-bottom:5px}
+p{margin-bottom:12px}ul{margin:0 0 12px 22px}
+html[dir="rtl"] ul{margin:0 22px 12px 0}
+li{margin-bottom:5px}
 a{color:var(--accent)}
 footer.l{border-top:1px solid var(--line);margin-top:40px;padding:22px 0;color:var(--soft);font-size:.88rem;text-align:center}
 </style>
@@ -36,48 +51,48 @@ footer.l{border-top:1px solid var(--line);margin-top:40px;padding:22px 0;color:v
 <body>
 <header class="l"><div class="wrap">
 <a class="brand" href="/">Vrax Voyage</a>
-<nav><a href="/">Accueil</a><a href="/politique-confidentialite.html">Confidentialité</a><a href="/mentions-legales.html">Mentions légales</a></nav>
+<nav><a href="/"><span class="fr">Accueil</span><span class="ar">الرئيسية</span></a><a href="/politique-confidentialite.html"><span class="fr">Confidentialité</span><span class="ar">الخصوصية</span></a><a href="/mentions-legales.html"><span class="fr">Mentions légales</span><span class="ar">الإشعارات القانونية</span></a><button id="langBtn" class="langbtn" onclick="toggleLang()">FR</button></nav>
 </div></header>
 <div class="wrap">
 
-<h1>Politique de Confidentialité</h1>
-<p class="sub">Protection de vos données personnelles (RGPD)</p>
+<h1><span class="fr">Politique de Confidentialité</span><span class="ar">سياسة الخصوصية</span></h1>
+<p class="sub"><span class="fr">Protection de vos données personnelles (RGPD)</span><span class="ar">حماية بياناتك الشخصية (GDPR)</span></p>
 <main>
 <section>
-<p>Vrax Voyage (vrax-voyage.com) est un site de bons plans voyage : deals de vols et sélections pour la diaspora. Cette politique explique quelles données sont traitées lors de votre visite et quels sont vos droits.</p>
+<p><span class="fr">Vrax Voyage (vrax-voyage.com) est un site de bons plans voyage : deals de vols et sélections pour la diaspora. Cette politique explique quelles données sont traitées lors de votre visite et quels sont vos droits.</span><span class="ar">Vrax Voyage (vrax-voyage.com) هو موقع لعروض السفر: صفقات طيران واختيارات للجالية. توضّح هذه السياسة البيانات التي تُعالَج أثناء زيارتك وما هي حقوقك.</span></p>
 </section>
 <section>
-<h2>1. Données collectées</h2>
-<p>Ce site ne demande ni compte, ni inscription. Nous ne collectons pas directement de données personnelles identifiables (nom, email, téléphone, adresse).</p>
-<p>Comme tout site web, des données techniques anonymes peuvent être traitées par nos prestataires (hébergeur, services de mesure ou de publicité) : type de navigateur, pages consultées, données de connexion abrégées.</p>
+<h2><span class="fr">1. Données collectées</span><span class="ar">1. البيانات المجمَّعة</span></h2>
+<p><span class="fr">Ce site ne demande ni compte, ni inscription. Nous ne collectons pas directement de données personnelles identifiables (nom, email, téléphone, adresse).</span><span class="ar">لا يطلب هذا الموقع حسابًا ولا تسجيلًا. نحن لا نجمع مباشرة بيانات شخصية تعريفية (اسم، بريد إلكتروني، هاتف، عنوان).</span></p>
+<p><span class="fr">Comme tout site web, des données techniques anonymes peuvent être traitées par nos prestataires (hébergeur, services de mesure ou de publicité) : type de navigateur, pages consultées, données de connexion abrégées.</span><span class="ar">كأي موقع، قد تُعالَج بيانات تقنية مجهولة من قِبل مزوّدينا (المستضيف، خدمات القياس أو الإعلان): نوع المتصفح، الصفحات المزارة، بيانات اتصال مختصرة.</span></p>
 </section>
 <section>
-<h2>2. Cookies et publicité</h2>
-<p>Ce site peut afficher des annonces via <strong>Google AdSense</strong>. Google et ses partenaires utilisent des cookies publicitaires afin de diffuser des annonces, y compris des annonces personnalisées en fonction de vos visites sur ce site et d'autres sites.</p>
+<h2><span class="fr">2. Cookies et publicité</span><span class="ar">2. ملفات تعريف الارتباط والإعلان</span></h2>
+<p><span class="fr">Ce site peut afficher des annonces via <strong>Google AdSense</strong>. Google et ses partenaires utilisent des cookies publicitaires afin de diffuser des annonces, y compris des annonces personnalisées en fonction de vos visites sur ce site et d'autres sites.</span><span class="ar">قد يعرض هذا الموقع إعلانات عبر <strong>Google AdSense</strong>. تستخدم Google وشركاؤها ملفات تعريف ارتباط إعلانية لعرض الإعلانات، بما فيها إعلانات مخصصة بناءً على زياراتك لهذا الموقع ومواقع أخرى.</span></p>
 <ul>
-<li>Vous pouvez désactiver la personnalisation des annonces dans les <a href="https://adssettings.google.com" rel="noopener">Paramètres des annonces Google</a>.</li>
-<li>Pour en savoir plus : <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Comment Google utilise les informations</a>.</li>
+<li><span class="fr">Vous pouvez désactiver la personnalisation des annonces dans les <a href="https://adssettings.google.com" rel="noopener">Paramètres des annonces Google</a>.</span><span class="ar">يمكنك تعطيل تخصيص الإعلانات من <a href="https://adssettings.google.com" rel="noopener">إعدادات إعلانات Google</a>.</span></li>
+<li><span class="fr">Pour en savoir plus : <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Comment Google utilise les informations</a>.</span><span class="ar">لمعرفة المزيد: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">كيف تستخدم Google المعلومات</a>.</span></li>
 </ul>
-<p>Conformément à la réglementation européenne, votre consentement est demandé avant tout dépôt de cookie publicitaire.</p>
+<p><span class="fr">Conformément à la réglementation européenne, votre consentement est demandé avant tout dépôt de cookie publicitaire.</span><span class="ar">وفقًا للتشريع الأوروبي، يُطلب موافقتك قبل وضع أي ملف تعريف ارتباط إعلاني.</span></p>
 </section>
 <section>
-<h2>Liens d'affiliation Amazon</h2>
-<p><strong>En tant que Partenaire Amazon, l'éditeur de ce site réalise un bénéfice sur les achats remplissant les conditions requises.</strong></p>
-<p>Certains liens de ce site sont des liens d'affiliation vers Amazon : si vous effectuez un achat après avoir cliqué sur l'un de ces liens, une commission peut être versée à l'éditeur, sans aucun coût supplémentaire pour vous. Les prix et la disponibilité des produits restent ceux affichés sur Amazon au moment de votre visite.</p>
+<h2><span class="fr">Liens d'affiliation Amazon</span><span class="ar">روابط الشراكة مع أمازون</span></h2>
+<p><span class="fr"><strong>En tant que Partenaire Amazon, l'éditeur de ce site réalise un bénéfice sur les achats remplissant les conditions requises.</strong></span><span class="ar"><strong>بصفته شريكًا لأمازون، يحقق ناشر هذا الموقع ربحًا من المشتريات المؤهلة.</strong></span></p>
+<p><span class="fr">Certains liens de ce site sont des liens d'affiliation vers Amazon : si vous effectuez un achat après avoir cliqué sur l'un de ces liens, une commission peut être versée à l'éditeur, sans aucun coût supplémentaire pour vous. Les prix et la disponibilité des produits restent ceux affichés sur Amazon au moment de votre visite.</span><span class="ar">بعض روابط هذا الموقع هي روابط شراكة مع أمازون: إذا اشتريت بعد النقر على أحدها، قد تُدفع عمولة للناشر، دون أي تكلفة إضافية عليك. تبقى الأسعار وتوفر المنتجات كما هي معروضة على أمازون وقت زيارتك.</span></p>
 </section>
 <section>
-<h2>4. Vos droits (RGPD)</h2>
-<p>Vous disposez des droits d'accès, de rectification, d'effacement, d'opposition et de portabilité concernant vos données. Comme ce site ne stocke pratiquement aucune donnée personnelle, la plupart de ces droits sont automatiquement respectés. Vous pouvez également refuser les cookies publicitaires à tout moment.</p>
+<h2><span class="fr">4. Vos droits (RGPD)</span><span class="ar">4. حقوقك (GDPR)</span></h2>
+<p><span class="fr">Vous disposez des droits d'accès, de rectification, d'effacement, d'opposition et de portabilité concernant vos données. Comme ce site ne stocke pratiquement aucune donnée personnelle, la plupart de ces droits sont automatiquement respectés. Vous pouvez également refuser les cookies publicitaires à tout moment.</span><span class="ar">لك حقوق الوصول والتصحيح والمحو والاعتراض ونقل البيانات المتعلقة ببياناتك. بما أن هذا الموقع لا يخزّن تقريبًا أي بيانات شخصية، فإن معظم هذه الحقوق محترمة تلقائيًا. يمكنك أيضًا رفض ملفات تعريف الارتباط الإعلانية في أي وقت.</span></p>
 </section>
 <section>
-<h2>5. Contact et modifications</h2>
-<p>Pour toute question concernant cette politique, vous pouvez contacter l'éditeur du site (voir les <a href="/mentions-legales.html">Mentions légales</a>). Cette politique peut être mise à jour à tout moment ; la version en ligne fait foi.</p>
+<h2><span class="fr">5. Contact et modifications</span><span class="ar">5. التواصل والتعديلات</span></h2>
+<p><span class="fr">Pour toute question concernant cette politique, vous pouvez contacter l'éditeur du site (voir les <a href="/mentions-legales.html">Mentions légales</a>). Cette politique peut être mise à jour à tout moment ; la version en ligne fait foi.</span><span class="ar">لأي سؤال حول هذه السياسة، يمكنك التواصل مع ناشر الموقع (انظر <a href="/mentions-legales.html">الإشعارات القانونية</a>). قد تُحدَّث هذه السياسة في أي وقت؛ والنسخة المنشورة على الإنترنت هي المعتمدة.</span></p>
 </section>
 </main>
 </div>
 <footer class="l"><div class="wrap">
 <p>Vrax Voyage — vrax-voyage.com</p>
-<p><a href="/politique-confidentialite.html">Politique de confidentialité</a> · <a href="/mentions-legales.html">Mentions légales</a></p>
+<p><a href="/politique-confidentialite.html"><span class="fr">Politique de confidentialité</span><span class="ar">سياسة الخصوصية</span></a> · <a href="/mentions-legales.html"><span class="fr">Mentions légales</span><span class="ar">الإشعارات القانونية</span></a></p>
 </div></footer>
 </body>
 </html>
