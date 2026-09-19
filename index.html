@@ -316,7 +316,7 @@
     </style>
     <div class="hb-lab">🔎 <span class="fr">Rechercher un hôtel ou un appartement — directement ici</span><span class="ar">ابحث عن فندق أو شقة — مباشرة هنا</span></div>
     <div style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow);margin:8px 0 22px;border:1px solid var(--line)">
-      <iframe id="stay22-widget" width="100%" height="460" src="https://www.stay22.com/embed/6a9fd7a110fb99ee3ecd442b" frameborder="0" style="display:block;border:0"></iframe>
+      <iframe id="stay22-widget" width="100%" height="460" src="https://www.stay22.com/embed/6a9fd7a110fb99ee3ecd442b?lang=ar" frameborder="0" style="display:block;border:0"></iframe>
     </div>
     <a id="vol-hotel" href="https://www.expedia.com/Vacation-Packages" target="_blank" rel="sponsored noopener" style="display:block;text-decoration:none;background:linear-gradient(135deg,var(--teal),var(--ink));border-radius:16px;padding:20px 22px;margin:6px 0 22px;box-shadow:var(--shadow)">
       <div style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:clamp(18px,3.5vw,22px);color:#fff;margin-bottom:6px">✈️ + 🏨 <span class="fr">Vol + Hôtel : réservez ensemble et économisez</span><span class="ar">طيران + فندق: احجز معًا ووفّر</span></div>
@@ -455,6 +455,18 @@
   ];
   const wrap=document.getElementById('deals');
   const io=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}}),{threshold:.12});
+  const CITY_AR={'Paris':'باريس','Fès':'فاس','Fes':'فاس','Fez':'فاس','Tanger':'طنجة','Agadir':'أغادير','Oran':'وهران','Marseille':'مرسيليا','Tunis':'تونس','Bruxelles':'بروكسل','Lyon':'ليون','Marrakech':'مراكش','Casablanca':'الدار البيضاء','Toulouse':'تولوز','Alger':'الجزائر','Nador':'الناظور','Constantine':'قسنطينة','Lille':'ليل','Nice':'نيس','Nantes':'نانت','Bordeaux':'بوردو','Rabat':'الرباط','Oujda':'وجدة','Monastir':'المنستير','Djerba':'جربة','Sfax':'صفاقس','Bejaia':'بجاية','Setif':'سطيف','Annaba':'عنابة'};
+  const MON_AR={'Jan':'يناير','Janv':'يناير','Fév':'فبراير','Fev':'فبراير','Févr':'فبراير','Mar':'مارس','Mars':'مارس','Avr':'أبريل','Mai':'مايو','Juin':'يونيو','Juil':'يوليو','Aoû':'أغسطس','Aout':'أغسطس','Août':'أغسطس','Sep':'سبتمبر','Sept':'سبتمبر','Oct':'أكتوبر','Nov':'نوفمبر','Déc':'ديسمبر','Dec':'ديسمبر'};
+  function trCity(c){return CITY_AR[c]||c;}
+  function trWhen(w){if(!w)return '';return w.split('·').map(function(part){
+    var t=part.trim();var low=t.toLowerCase();
+    if(MON_AR[t])return MON_AR[t];
+    if(low==='a/r'||low==='aller-retour')return 'ذهاب/إياب';
+    if(low==='aller simple'||low==='aller')return 'ذهاب فقط';
+    if(low==='direct')return 'مباشر';
+    if(low.indexOf('escale')>-1)return t.replace(/escale/i,'توقف');
+    return t;
+  }).join(' · ');}
   let lastList=SAMPLE;
   function renderDeals(list){
     lastList=list;
@@ -466,10 +478,10 @@
       a.className='deal reveal'+(x.promo?' promo':'');
       a.href=x.link||('https://www.aviasales.com/search/'+x.o+x.d+'?marker=704469');
       a.target='_blank'; a.rel='noopener sponsored';
-      const cityName=ar?(x.cityAr||x.city):x.city;
+      const cityName=ar?trCity(x.cityAr||x.city):x.city;
       const badge=x.promo?`<div class="promo-badge">🔥 ${ar?'تخفيض':'PROMO'} −${x.discount}%</div>`:'';
       const oldp=(x.promo&&x.baseline)?`<small class="old">${x.baseline}€</small> `:'';
-      const whenTxt=x.when||L.when;
+      const whenTxt=ar?(trWhen(x.when)||L.when):(x.when||L.when);
       a.innerHTML=`
         ${badge}
         <div class="top"><div>
