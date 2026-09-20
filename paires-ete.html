@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="ar" dir="rtl">
 <head>
 <!-- Hello Travelpayouts -->
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Paires Été 2026 — Aller + Retour malins vers le Maghreb | Vrax Voyage</title>
-<meta name="description" content="Départ en été, retour ~1 mois plus tard : nos paires d'allers simples pré-calculées vers le Maroc, l'Algérie et la Tunisie, mises à jour chaque jour." />
+<title>ذهاب + إياب — أفضل تركيبات الرحلات نحو المغرب العربي | Vrax Voyage</title>
+<meta name="description" content="تذكرتا ذهاب منفصلتان غالبًا أرخص من ذهاب وإياب: تركيبات محسوبة يوميًا نحو المغرب والجزائر وتونس. / Aller + Retour malins vers le Maghreb." />
 <link rel="canonical" href="https://vrax-voyage.com/paires-ete.html" />
-<meta property="og:title" content="Paires Été 2026 — Vols malins Europe ↔ Maghreb" />
-<meta property="og:description" content="Aller en été, retour ~1 mois plus tard. Paires d'allers simples pré-calculées, mises à jour chaque jour." />
+<meta property="og:title" content="Aller + Retour — Vols malins Europe ↔ Maghreb | Vrax Voyage" />
+<meta property="og:description" content="Deux allers simples valent souvent mieux qu'un aller-retour. Combinaisons recalculées chaque jour." />
 <meta property="og:url" content="https://vrax-voyage.com/paires-ete.html" />
 <meta property="og:type" content="website" />
 <meta property="og:image" content="https://vrax-voyage.com/images/vrax-og.jpg" />
@@ -19,16 +19,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+<script>
+  function applyLang(l){var h=document.documentElement;h.setAttribute('lang',l);h.setAttribute('dir',l==='ar'?'rtl':'ltr');try{localStorage.setItem('vraxLang',l)}catch(e){}var b=document.getElementById('langBtn');if(b)b.textContent=(l==='ar'?'FR':'العربية');if(window.renderCurrent)window.renderCurrent();}
+  function toggleLang(){var cur=document.documentElement.getAttribute('lang')||'ar';applyLang(cur==='ar'?'fr':'ar');}
+  (function(){var l='ar';try{l=localStorage.getItem('vraxLang')||'ar'}catch(e){};applyLang(l);})();
+  document.addEventListener('DOMContentLoaded',function(){var b=document.getElementById('langBtn');if(b)b.textContent=(document.documentElement.getAttribute('lang')==='ar'?'FR':'العربية');});
+</script>
 <style>
-  :root{
-    --ink:#0E1A2B; --ink-2:#16273C; --ink-3:#1E3650;
-    --paper:#FAF7F2; --white:#FFFFFF;
-    --amber:#EE7B33; --amber-soft:#FBE7D4;
-    --teal:#168A7C;
-    --text:#14202E; --muted:#5E6B7A; --line:rgba(20,32,46,.10);
-    --shadow:0 18px 50px -18px rgba(14,26,43,.35);
-    --r:18px;
-  }
+  :root{--ink:#0E1A2B;--ink-2:#16273C;--ink-3:#1E3650;--paper:#FAF7F2;--white:#FFFFFF;--amber:#EE7B33;--amber-soft:#FBE7D4;--teal:#168A7C;--text:#14202E;--muted:#5E6B7A;--line:rgba(20,32,46,.10);--shadow:0 18px 50px -18px rgba(14,26,43,.35);--r:18px}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:"Inter",system-ui,sans-serif;color:var(--text);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
@@ -36,13 +35,17 @@
   a{color:inherit;text-decoration:none}
   .mono{font-family:"Space Mono",monospace}
   h1,h2,h3{font-family:"Space Grotesk",sans-serif;line-height:1.05;letter-spacing:-.02em}
-
-  /* ---------- Header (identique à l'accueil) ---------- */
+  .ar{display:none}
+  html[lang="ar"] .ar{display:inline}
+  html[lang="ar"] .fr{display:none}
+  html[lang="ar"] *{font-family:'Tajawal',system-ui,sans-serif !important}
+  .langbtn{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.24);color:#fff;font-weight:700;font-size:13px;padding:8px 15px;border-radius:100px;cursor:pointer;white-space:nowrap}
+  .nav-right{display:flex;align-items:center;gap:14px}
   header{position:sticky;top:0;z-index:50;background:rgba(14,26,43,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
   .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
   .brand{display:flex;align-items:center;gap:10px;color:#fff;font-family:"Space Grotesk";font-weight:700;font-size:20px;letter-spacing:-.01em}
   .brand .dot{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--amber);color:#fff;font-size:18px;transform:rotate(-8deg)}
-  .nav-links{display:flex;gap:26px;color:#cdd6e2;font-size:14px;font-weight:500}
+  .nav-links{display:flex;gap:22px;color:#cdd6e2;font-size:14px;font-weight:500}
   .nav-links a:hover{color:#fff}
   .nav-links a.on{color:var(--amber)}
   @media(max-width:680px){.nav-links{display:none}}
@@ -51,32 +54,21 @@
   .menu-panel{display:none;flex-direction:column;background:var(--ink-2);border-top:1px solid rgba(255,255,255,.08)}
   .menu-panel.open{display:flex}
   .menu-panel a{color:#dbe4ef;font-size:16px;font-weight:600;padding:15px 6vw;border-bottom:1px solid rgba(255,255,255,.06)}
-  .menu-panel a:active{background:rgba(255,255,255,.06)}
-
-  /* ---------- Hero ---------- */
-  .hero{position:relative;background:
-      radial-gradient(1100px 500px at 80% -10%, rgba(238,123,51,.18), transparent 60%),
-      radial-gradient(900px 500px at 0% 0%, rgba(22,138,124,.16), transparent 55%),
-      var(--ink);
-    color:#fff;padding:56px 0 72px;overflow:hidden}
+  .hero{position:relative;background:radial-gradient(1100px 500px at 80% -10%, rgba(238,123,51,.18), transparent 60%),radial-gradient(900px 500px at 0% 0%, rgba(22,138,124,.16), transparent 55%),var(--ink);color:#fff;padding:56px 0 72px;overflow:hidden}
   .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px);background-size:100% 38px;opacity:.5;pointer-events:none}
   .hero-inner{position:relative;z-index:2}
   .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:"Space Mono";font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#9fb2c6;border:1px solid rgba(255,255,255,.16);padding:7px 13px;border-radius:100px}
   .eyebrow b{color:var(--amber);font-weight:700}
   .hero h1{font-size:clamp(30px,5.4vw,52px);font-weight:700;margin:20px 0 12px;max-width:18ch}
-  .hero h1 span{color:var(--amber)}
+  .hero h1 .hl{color:var(--amber)}
   .hero p.sub{color:#bccadb;font-size:clamp(15px,2vw,18px);max-width:52ch}
   .updated{margin-top:16px;font-family:"Space Mono";font-size:12px;color:#9fb2c6}
-
-  /* ---------- Onglets communautés ---------- */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;padding:26px 0 10px}
   .tabs{display:flex;gap:10px;flex-wrap:wrap;margin:-26px auto 8px;position:relative;z-index:5}
   .tab{flex:1;min-width:100px;background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);padding:14px 10px;text-align:center;font-family:"Space Grotesk";font-weight:700;font-size:16px;cursor:pointer;transition:.2s}
   .tab .f{font-size:22px;display:block;margin-bottom:2px}
   .tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
   .tab:not(.on):hover{transform:translateY(-2px)}
-
-  /* ---------- Cartes paires ---------- */
-  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;padding:26px 0 10px}
   .pair{background:var(--white);border:1px solid var(--line);border-radius:var(--r);box-shadow:0 10px 30px -14px rgba(14,26,43,.22);overflow:hidden;display:flex;flex-direction:column}
   .pair.hero-pick{border:2px solid var(--amber)}
   .pair-top{display:flex;align-items:center;justify-content:space-between;padding:16px 18px;border-bottom:1px dashed var(--line)}
@@ -84,6 +76,7 @@
   .route small{display:block;font-family:"Inter";font-weight:500;font-size:12px;color:var(--muted)}
   .total{font-family:"Space Mono";font-weight:700;font-size:20px;color:var(--amber);white-space:nowrap}
   .total small{display:block;font-size:10px;color:var(--muted);font-weight:400;text-align:right}
+  html[dir="rtl"] .total small{text-align:left}
   .badge-hero{display:inline-block;background:var(--amber-soft);color:#B4530F;font-size:11px;font-weight:700;border-radius:100px;padding:3px 10px;margin-bottom:6px}
   .segs{display:flex;flex-direction:column}
   .seg{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 18px;border-bottom:1px solid var(--line)}
@@ -94,55 +87,18 @@
   .seg a.go{background:var(--ink);color:#fff;font-size:12px;font-weight:600;padding:8px 14px;border-radius:10px;white-space:nowrap;transition:.2s}
   .seg a.go:hover{background:var(--amber)}
   .gap{padding:10px 18px;background:#F4F7F5;font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:8px}
-  .gap .share{margin-left:auto;background:var(--teal);color:#fff;border:none;border-radius:10px;padding:7px 13px;font-size:12px;font-weight:600;cursor:pointer;font-family:"Inter"}
-  .gap .share:active{transform:scale(.96)}
+  .gap .share{margin-inline-start:auto;background:var(--teal);color:#fff;border:none;border-radius:10px;padding:7px 13px;font-size:12px;font-weight:600;cursor:pointer;font-family:"Inter"}
   .gap b{color:var(--teal)}
-
-  /* ---------- Explication ---------- */
   .explain{background:var(--white);border:1px solid var(--line);border-radius:var(--r);padding:26px;margin:34px 0}
   .explain h2{font-size:22px;margin-bottom:10px}
   .explain p{color:var(--muted);font-size:15px;margin-bottom:10px}
   .explain p:last-child{margin-bottom:0}
   .explain b{color:var(--text)}
-
   .empty{padding:60px 20px;text-align:center;color:var(--muted)}
   .note{font-size:12.5px;color:var(--muted);padding:6px 0 40px}
-
   footer{background:var(--ink);color:#9fb2c6;text-align:center;padding:34px 20px;font-size:13px}
   footer a{color:#cdd6e2;font-weight:600}
 </style>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "FAQPage",
- "mainEntity": [
-  {
-   "@type": "Question",
-   "name": "Pourquoi combiner deux allers simples plutôt qu'un aller-retour vers le Maghreb ?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Pour un séjour long (3 à 6 semaines, le rythme des familles de la diaspora), deux allers simples sont souvent moins chers qu'un aller-retour aux dates fixes, et beaucoup plus souples : on peut décaler le retour sans frais de modification sur tout le voyage."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Les prix des paires été sont-ils à jour ?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Oui, un robot compare chaque jour les allers Europe → Maghreb et les retours Maghreb → Europe le mois suivant, et n'affiche que les meilleures combinaisons pour le Maroc, l'Algérie et la Tunisie."
-   }
-  },
-  {
-   "@type": "Question",
-   "name": "Comment réserver une paire été ?",
-   "acceptedAnswer": {
-    "@type": "Answer",
-    "text": "Chaque paire correspond à deux réservations séparées : un billet aller et un billet retour, réservés chacun chez nos partenaires via les boutons de la page."
-   }
-  }
- ]
-}
-</script>
 <script data-cmp-ab="2">(function(){var s=document.createElement("script");s.async=1;s.setAttribute("data-cmp-ab","2");s.src='https://tpembars.com/NDk5ODAy.js?t=499802';document.head.appendChild(s);})();</script>
 </head>
 <body>
@@ -150,41 +106,47 @@
 <header>
   <div class="wrap nav">
     <a class="brand" href="index.html"><span class="dot">✈</span> Vrax Voyage</a>
-    <nav class="nav-links">
-      <a href="index.html#recherche">Vols</a>
-      <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-      <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="index.html#recherche"><span class="fr">Vols</span><span class="ar">الطيران</span></a>
+        <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+        <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+        <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+        <a href="paires-ete.html" class="on">✈️ <span class="fr">Aller + Retour</span><span class="ar">ذهاب + إياب</span></a>
+        <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+        <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
+      </nav>
+      <button id="langBtn" class="langbtn" onclick="toggleLang()">FR</button>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menuPanel').classList.toggle('open')">☰</button>
+    </div>
   </div>
   <div class="menu-panel" id="menuPanel">
-    <a href="index.html#recherche">✈ Vols</a>
-    <a href="index.html#hebergement">🏨 Hébergement</a>
-      <a href="index.html#vol-hotel">✈️ Vol + Hôtel</a>
-    <a href="boutique.html">🛍️ Boutique</a>
-      <a href="contact.html">Contact</a>
+    <a href="index.html#recherche">✈ <span class="fr">Vols</span><span class="ar">الطيران</span></a>
+    <a href="index.html#hebergement">🏨 <span class="fr">Hébergement</span><span class="ar">الإقامة</span></a>
+    <a href="index.html#vol-hotel">✈️ <span class="fr">Vol + Hôtel</span><span class="ar">طيران + فندق</span></a>
+    <a href="guides.html">📖 <span class="fr">Guides</span><span class="ar">أدلة السفر</span></a>
+    <a href="paires-ete.html">✈️ <span class="fr">Aller + Retour</span><span class="ar">ذهاب + إياب</span></a>
+    <a href="boutique.html">🛍️ <span class="fr">Boutique</span><span class="ar">المتجر</span></a>
+    <a href="contact.html"><span class="fr">Contact</span><span class="ar">تواصل معنا</span></a>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap hero-inner">
-    <span class="eyebrow"><b>ÉTÉ 2026</b> · ALLER + RETOUR ~1 MOIS PLUS TARD</span>
-    <h1>Partez cet été, <span>revenez un mois plus tard.</span></h1>
-    <p class="sub">Deux allers simples valent souvent mieux qu'un aller-retour : nos paires pré-calculées vers le Maroc, l'Algérie et la Tunisie sont recalculées chaque jour à partir des vrais prix.</p>
+    <span class="eyebrow"><b><span class="fr">ALLER + RETOUR</span><span class="ar">ذهاب + إياب</span></b> · <span class="fr">SÉJOUR MALIN</span><span class="ar">إقامة طويلة</span></span>
+    <h1><span class="fr">Partez, <span class="hl">revenez un mois plus tard.</span></span><span class="ar">سافر، <span class="hl">وعُد بعد شهر.</span></span></h1>
+    <p class="sub"><span class="fr">Deux allers simples valent souvent mieux qu'un aller-retour : nos combinaisons vers le Maroc, l'Algérie et la Tunisie sont recalculées chaque jour à partir des vrais prix.</span><span class="ar">غالبًا ما تكون تذكرتا ذهاب منفصلتان أفضل من تذكرة ذهاب وإياب: نحسب لك يوميًا أفضل التركيبات نحو المغرب والجزائر وتونس انطلاقًا من الأسعار الحقيقية.</span></p>
     <div class="updated" id="updated"></div>
   </div>
 </section>
 
-<!-- Bandeau chaîne WhatsApp -->
 <section style="background:#0E1A2B;padding:0 0 4px">
   <div class="wrap">
     <a href="https://whatsapp.com/channel/0029Vb7Pp9x9Bb64TG0GCS2K" target="_blank" rel="noopener"
        style="display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;background:linear-gradient(135deg,#128C4B,#25D366);color:#fff;border-radius:16px;padding:14px 18px;font-weight:600;font-size:15px;box-shadow:0 12px 30px -12px rgba(18,140,75,.55);text-decoration:none">
       <span style="font-size:22px">📲</span>
-      <span>Chaque paire en or part vite — rejoins la chaîne WhatsApp <b>Les Pépites de Bachir</b></span>
-      <span style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:100px;padding:6px 16px;font-size:13px;white-space:nowrap">Rejoindre →</span>
+      <span><span class="fr">Les meilleures combinaisons partent vite — rejoins la chaîne WhatsApp <b>Les Pépites de Bachir</b></span><span class="ar">أفضل التركيبات تنفد بسرعة — انضم إلى قناة واتساب <b>Les Pépites de Bachir</b></span></span>
+      <span style="background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:100px;padding:6px 16px;font-size:13px;white-space:nowrap"><span class="fr">Rejoindre →</span><span class="ar">انضم ←</span></span>
     </a>
   </div>
 </section>
@@ -192,156 +154,128 @@
 <main class="wrap">
   <div class="tabs" id="tabs"></div>
   <div class="grid" id="grid"></div>
-  <p class="note">💡 Chaque paire = deux réservations séparées (un billet aller, un billet retour). Les prix évoluent en temps réel chez le transporteur : le prix affiché est celui relevé lors de la dernière mise à jour.</p>
+  <p class="note"><span class="fr">💡 Chaque combinaison = deux réservations séparées (un billet aller, un billet retour). Les prix évoluent en temps réel chez le transporteur : le prix affiché est celui relevé lors de la dernière mise à jour.</span><span class="ar">💡 كل تركيبة = حجزان منفصلان (تذكرة ذهاب وتذكرة إياب). تتغير الأسعار في الوقت الحقيقي لدى الناقل: السعر المعروض هو المسجّل عند آخر تحديث.</span></p>
 
   <div class="explain">
-    <h2>Pourquoi des paires d'allers simples ?</h2>
-    <p><b>Parce que c'est le vrai rythme des familles.</b> Départ en juillet ou en août, retour trois à six semaines plus tard : l'aller-retour classique aux dates fixes est rarement le moins cher pour ce type de séjour long.</p>
-    <p><b>Parce que c'est plus souple.</b> Deux billets séparés vous permettent de décaler le retour sans payer de frais de modification sur tout le voyage.</p>
-    <p><b>Parce qu'on fait le travail pour vous.</b> Notre robot compare chaque jour les allers Europe → Maghreb et les retours Maghreb → Europe le mois suivant, et n'affiche que les meilleures combinaisons par communauté.</p>
+    <h2><span class="fr">Pourquoi deux allers simples ?</span><span class="ar">لماذا تذكرتا ذهاب منفصلتان؟</span></h2>
+    <p><span class="fr"><b>Parce que c'est le vrai rythme des familles.</b> Un départ, puis un retour trois à six semaines plus tard : l'aller-retour classique aux dates fixes est rarement le moins cher pour ce type de séjour long.</span><span class="ar"><b>لأنه الإيقاع الحقيقي للعائلات.</b> مغادرة، ثم عودة بعد ثلاثة إلى ستة أسابيع: نادرًا ما تكون تذكرة الذهاب والإياب بتواريخ ثابتة هي الأرخص لهذا النوع من الإقامات الطويلة.</span></p>
+    <p><span class="fr"><b>Parce que c'est plus souple.</b> Deux billets séparés vous permettent de décaler le retour sans payer de frais de modification sur tout le voyage.</span><span class="ar"><b>لأنه أكثر مرونة.</b> تذكرتان منفصلتان تتيحان لك تأجيل العودة دون دفع رسوم تعديل على الرحلة كلها.</span></p>
+    <p><span class="fr"><b>Parce qu'on fait le travail pour vous.</b> Notre robot compare chaque jour les allers Europe → Maghreb et les retours Maghreb → Europe le mois suivant, et n'affiche que les meilleures combinaisons par pays.</span><span class="ar"><b>لأننا نقوم بالعمل نيابة عنك.</b> يقارن روبوتنا يوميًا رحلات الذهاب أوروبا ← المغرب العربي ورحلات العودة الشهر التالي، ولا يعرض إلا أفضل التركيبات حسب البلد.</span></p>
   </div>
 </main>
 
 <footer>
-  © 2026 Vrax Voyage — <a href="index.html">Accueil</a> · <a href="boutique.html">Boutique</a><br />
-  Les réservations s'effectuent chez nos partenaires. Vrax Voyage peut percevoir une commission, sans surcoût pour vous.
+  © 2026 Vrax Voyage — <a href="index.html"><span class="fr">Accueil</span><span class="ar">الرئيسية</span></a> · <a href="boutique.html"><span class="fr">Boutique</span><span class="ar">المتجر</span></a><br />
+  <span class="fr">Les réservations s'effectuent chez nos partenaires. Vrax Voyage peut percevoir une commission, sans surcoût pour vous.</span><span class="ar">تتم الحجوزات لدى شركائنا. قد يتلقى Vrax Voyage عمولة، دون أي تكلفة إضافية عليك.</span>
 </footer>
 
 <script>
   document.querySelectorAll('#menuPanel a').forEach(function(a){
-    a.addEventListener('click', function(){
-      document.getElementById('menuPanel').classList.remove('open');
-    });
+    a.addEventListener('click', function(){ document.getElementById('menuPanel').classList.remove('open'); });
   });
 
-  var DATA = null, CUR = null;
-
-  function euro(n){ return n + '€'; }
+  var DATA=null, CUR=null;
+  function isAr(){return document.documentElement.getAttribute('lang')==='ar';}
+  function euro(n){return n+'€';}
+  var COUNTRY_AR={'Maroc':'المغرب','Algérie':'الجزائر','Algerie':'الجزائر','Tunisie':'تونس'};
+  var CITY_AR={'Paris':'باريس','Toulouse':'تولوز','Lyon':'ليون','Marseille':'مرسيليا','Lille':'ليل','Nantes':'نانت','Nice':'نيس','Bordeaux':'بوردو','Bruxelles':'بروكسل','Charleroi':'شارلروا','Fès':'فاس','Fes':'فاس','Casablanca':'الدار البيضاء','Marrakech':'مراكش','Agadir':'أغادير','Tanger':'طنجة','Nador':'الناظور','Oujda':'وجدة','Rabat':'الرباط','Alger':'الجزائر','Oran':'وهران','Constantine':'قسنطينة','Tunis':'تونس','Monastir':'المنستير','Djerba':'جربة'};
+  var MONTH_AR={'janvier':'يناير','février':'فبراير','fevrier':'فبراير','mars':'مارس','avril':'أبريل','mai':'مايو','juin':'يونيو','juillet':'يوليو','août':'أغسطس','aout':'أغسطس','septembre':'سبتمبر','octobre':'أكتوبر','novembre':'نوفمبر','décembre':'ديسمبر','decembre':'ديسمبر'};
+  function trCity(c){return isAr()?(CITY_AR[c]||c):c;}
+  function trDate(s){ if(!isAr()||!s) return s; var out=s; for(var m in MONTH_AR){ out=out.replace(new RegExp(m,'gi'),MONTH_AR[m]); } return out; }
+  function trCountry(l){return isAr()?(COUNTRY_AR[l]||l):l;}
 
   function card(p, i){
-    var hero = p.hero ? '<span class="badge-hero">⭐ Coup de cœur</span>' : '';
+    var ar=isAr();
+    var L=ar?{tot:'ذهاب + إياب',aller:'ذهاب',retour:'إياب',book:'احجز',stay:'الإقامة هناك:',days:'يومًا',fav:'⭐ المفضّل',share:'📤 مشاركة'}
+             :{tot:'aller + retour',aller:'ALLER',retour:'RETOUR',book:'Réserver',stay:'Séjour sur place :',days:'jours',fav:'⭐ Coup de cœur',share:'📤 Partager'};
+    var hero = p.hero ? '<span class="badge-hero">'+L.fav+'</span>' : '';
+    var arrow = ar ? ' ← ' : ' → ';
     return '<article class="pair' + (p.hero ? ' hero-pick' : '') + '">' +
-      '<div class="pair-top"><div class="route">' + hero + p.o_city + ' → ' + p.city +
-      '<small>' + p.o + ' → ' + p.d + '</small></div>' +
-      '<div class="total">' + euro(p.total) + '<small>aller + retour</small></div></div>' +
+      '<div class="pair-top"><div class="route">' + hero + trCity(p.o_city) + arrow + trCity(p.city) +
+      '<small>' + p.o + arrow + p.d + '</small></div>' +
+      '<div class="total">' + euro(p.total) + '<small>' + L.tot + '</small></div></div>' +
       '<div class="segs">' +
-        '<div class="seg"><span class="lbl">ALLER</span><span class="dt">' + p.aller.date_fr + '</span>' +
+        '<div class="seg"><span class="lbl">' + L.aller + '</span><span class="dt">' + trDate(p.aller.date_fr) + '</span>' +
           '<span class="px">' + euro(p.aller.price) + '</span>' +
-          '<a class="go" href="' + p.aller.link + '" target="_blank" rel="nofollow sponsored noopener">Réserver</a></div>' +
-        '<div class="seg"><span class="lbl">RETOUR</span><span class="dt">' + p.retour.date_fr + '</span>' +
+          '<a class="go" href="' + p.aller.link + '" target="_blank" rel="nofollow sponsored noopener">' + L.book + '</a></div>' +
+        '<div class="seg"><span class="lbl">' + L.retour + '</span><span class="dt">' + trDate(p.retour.date_fr) + '</span>' +
           '<span class="px">' + euro(p.retour.price) + '</span>' +
-          '<a class="go" href="' + p.retour.link + '" target="_blank" rel="nofollow sponsored noopener">Réserver</a></div>' +
+          '<a class="go" href="' + p.retour.link + '" target="_blank" rel="nofollow sponsored noopener">' + L.book + '</a></div>' +
       '</div>' +
-      '<div class="gap">🗓️ Séjour sur place : <b>' + p.gap + ' jours</b>' +
-      '<button class="share" onclick="sharePair(' + i + ')">📤 Partager</button></div>' +
+      '<div class="gap">🗓️ ' + L.stay + ' <b>' + p.gap + ' ' + L.days + '</b>' +
+      '<button class="share" onclick="sharePair(' + i + ')">' + L.share + '</button></div>' +
     '</article>';
   }
 
   function drawPairCard(p){
-    var c = document.createElement('canvas'); c.width = 1080; c.height = 1080;
-    var x = c.getContext('2d');
-    // Fond encre + halos
-    x.fillStyle = '#0E1A2B'; x.fillRect(0, 0, 1080, 1080);
-    var g1 = x.createRadialGradient(900, 100, 0, 900, 100, 620);
-    g1.addColorStop(0, 'rgba(238,123,51,.28)'); g1.addColorStop(1, 'rgba(238,123,51,0)');
-    x.fillStyle = g1; x.fillRect(0, 0, 1080, 1080);
-    var g2 = x.createRadialGradient(80, 1020, 0, 80, 1020, 560);
-    g2.addColorStop(0, 'rgba(22,138,124,.25)'); g2.addColorStop(1, 'rgba(22,138,124,0)');
-    x.fillStyle = g2; x.fillRect(0, 0, 1080, 1080);
-    // Marque
-    x.fillStyle = '#EE7B33'; x.font = 'bold 46px "Space Grotesk", Arial, sans-serif';
-    x.fillText('\u2708 VRAX VOYAGE', 60, 96);
-    x.fillStyle = '#9fb2c6'; x.font = '30px "Space Mono", monospace';
-    x.fillText('PAIRES \u00C9T\u00C9 2026 \u00B7 ALLER + RETOUR', 60, 150);
-    // Route
-    x.fillStyle = '#ffffff'; x.font = 'bold 88px "Space Grotesk", Arial, sans-serif';
-    x.fillText(p.o_city, 60, 300);
-    x.fillStyle = '#EE7B33'; x.fillText('\u2192 ' + p.city, 60, 405);
-    x.fillStyle = '#9fb2c6'; x.font = '34px "Space Mono", monospace';
-    x.fillText(p.o + ' \u2192 ' + p.d, 62, 460);
-    // Segments
-    x.fillStyle = 'rgba(255,255,255,.07)';
-    x.fillRect(60, 505, 960, 108); x.fillRect(60, 630, 960, 108);
-    x.fillStyle = '#9fb2c6'; x.font = 'bold 26px "Space Mono", monospace';
-    x.fillText('ALLER', 90, 550); x.fillText('RETOUR', 90, 675);
-    x.fillStyle = '#ffffff'; x.font = 'bold 44px "Space Grotesk", Arial, sans-serif';
-    x.fillText(p.aller.date_fr, 90, 596); x.fillText(p.retour.date_fr, 90, 721);
-    x.fillStyle = '#EE7B33'; x.textAlign = 'right';
-    x.fillText(p.aller.price + '\u20AC', 990, 596); x.fillText(p.retour.price + '\u20AC', 990, 721);
-    x.textAlign = 'left';
-    // Total
-    x.fillStyle = '#EE7B33'; x.font = 'bold 150px "Space Grotesk", Arial, sans-serif';
-    x.fillText(p.total + '\u20AC', 60, 900);
-    x.fillStyle = '#ffffff'; x.font = '36px "Inter", Arial, sans-serif';
-    x.fillText('au total \u00B7 ' + p.gap + ' jours sur place', 60, 950);
-    // Bandeau urgence
-    x.fillStyle = '#EE7B33'; x.fillRect(0, 990, 1080, 90);
-    x.fillStyle = '#ffffff'; x.font = 'bold 32px "Inter", Arial, sans-serif';
-    x.fillText('\u26A1 Prix du jour \u2014 \u00E7a bouge chaque matin \u00B7 vrax-voyage.com/paires-ete.html', 40, 1046);
+    var c=document.createElement('canvas'); c.width=1080; c.height=1080; var x=c.getContext('2d');
+    x.fillStyle='#0E1A2B'; x.fillRect(0,0,1080,1080);
+    var g1=x.createRadialGradient(900,100,0,900,100,620); g1.addColorStop(0,'rgba(238,123,51,.28)'); g1.addColorStop(1,'rgba(238,123,51,0)'); x.fillStyle=g1; x.fillRect(0,0,1080,1080);
+    var g2=x.createRadialGradient(80,1020,0,80,1020,560); g2.addColorStop(0,'rgba(22,138,124,.25)'); g2.addColorStop(1,'rgba(22,138,124,0)'); x.fillStyle=g2; x.fillRect(0,0,1080,1080);
+    x.fillStyle='#EE7B33'; x.font='bold 46px "Space Grotesk", Arial, sans-serif'; x.fillText('\u2708 VRAX VOYAGE',60,96);
+    x.fillStyle='#9fb2c6'; x.font='30px "Space Mono", monospace'; x.fillText('ALLER + RETOUR \u00B7 S\u00C9JOUR MALIN',60,150);
+    x.fillStyle='#ffffff'; x.font='bold 88px "Space Grotesk", Arial, sans-serif'; x.fillText(p.o_city,60,300);
+    x.fillStyle='#EE7B33'; x.fillText('\u2192 '+p.city,60,405);
+    x.fillStyle='#9fb2c6'; x.font='34px "Space Mono", monospace'; x.fillText(p.o+' \u2192 '+p.d,62,460);
+    x.fillStyle='rgba(255,255,255,.07)'; x.fillRect(60,505,960,108); x.fillRect(60,630,960,108);
+    x.fillStyle='#9fb2c6'; x.font='bold 26px "Space Mono", monospace'; x.fillText('ALLER',90,550); x.fillText('RETOUR',90,675);
+    x.fillStyle='#ffffff'; x.font='bold 44px "Space Grotesk", Arial, sans-serif'; x.fillText(p.aller.date_fr,90,596); x.fillText(p.retour.date_fr,90,721);
+    x.fillStyle='#EE7B33'; x.textAlign='right'; x.fillText(p.aller.price+'\u20AC',990,596); x.fillText(p.retour.price+'\u20AC',990,721); x.textAlign='left';
+    x.fillStyle='#EE7B33'; x.font='bold 150px "Space Grotesk", Arial, sans-serif'; x.fillText(p.total+'\u20AC',60,900);
+    x.fillStyle='#ffffff'; x.font='36px "Inter", Arial, sans-serif'; x.fillText('au total \u00B7 '+p.gap+' jours sur place',60,950);
+    x.fillStyle='#EE7B33'; x.fillRect(0,990,1080,90);
+    x.fillStyle='#ffffff'; x.font='bold 32px "Inter", Arial, sans-serif'; x.fillText('\u26A1 Prix du jour \u00B7 vrax-voyage.com/paires-ete.html',40,1046);
     return c;
   }
 
   async function sharePair(i){
-    var p = (DATA && CUR) ? DATA.communities[CUR].pairs[i] : null;
-    if (!p) return;
-    var url = 'https://vrax-voyage.com/paires-ete.html';
-    var txt = '\u2708\uFE0F ' + p.o_city + ' \u2192 ' + p.city + ' : ' + euro(p.total) +
-      ' aller + retour (' + p.aller.date_fr + ' \u2192 ' + p.retour.date_fr + ', ' + p.gap +
-      ' jours sur place) \u26A1 Prix du jour \u2014 \u00E7a change chaque matin, fonce !\n\uD83D\uDC49 ' + url;
-    try {
-      var canvas = drawPairCard(p);
-      var blob = await new Promise(function(res){ canvas.toBlob(res, 'image/jpeg', 0.92); });
-      if (blob) {
-        var file = new File([blob], 'vrax-paire-ete.jpg', { type: 'image/jpeg' });
-        if (navigator.canShare && navigator.canShare({ files: [file] })) {
-          await navigator.share({ files: [file], text: txt });
-          return;
-        }
-      }
-    } catch (err) {}
-    try {
-      if (navigator.share) { await navigator.share({ title: 'Paires \u00C9t\u00E9 \u2014 Vrax Voyage', text: txt, url: url }); }
-      else { await navigator.clipboard.writeText(txt); alert('Lien copi\u00E9 ! Collez-le o\u00F9 vous voulez \uD83D\uDC4D'); }
-    } catch (err) {}
+    var p=(DATA&&CUR)?DATA.communities[CUR].pairs[i]:null; if(!p) return;
+    var ar=isAr(); var url='https://vrax-voyage.com/paires-ete.html';
+    var txt = ar
+      ? '\u2708\uFE0F '+p.o_city+' \u2192 '+p.city+' : '+euro(p.total)+' ذهاب + إياب ('+p.aller.date_fr+' \u2192 '+p.retour.date_fr+'\u060C '+p.gap+' يومًا هناك) \u26A1 سعر اليوم \u2014 يتغير كل صباح!\n\uD83D\uDC49 '+url
+      : '\u2708\uFE0F '+p.o_city+' \u2192 '+p.city+' : '+euro(p.total)+' aller + retour ('+p.aller.date_fr+' \u2192 '+p.retour.date_fr+', '+p.gap+' jours sur place) \u26A1 Prix du jour \u2014 \u00E7a change chaque matin, fonce !\n\uD83D\uDC49 '+url;
+    try{
+      var canvas=drawPairCard(p);
+      var blob=await new Promise(function(res){canvas.toBlob(res,'image/jpeg',0.92);});
+      if(blob){var file=new File([blob],'vrax-aller-retour.jpg',{type:'image/jpeg'});
+        if(navigator.canShare&&navigator.canShare({files:[file]})){await navigator.share({files:[file],text:txt});return;}}
+    }catch(err){}
+    try{ if(navigator.share){await navigator.share({title:'Aller + Retour \u2014 Vrax Voyage',text:txt,url:url});}
+      else{await navigator.clipboard.writeText(txt); alert(ar?'\u062A\u0645 \u0646\u0633\u062E \u0627\u0644\u0631\u0627\u0628\u0637!':'Lien copi\u00E9 !');}
+    }catch(err){}
   }
 
   function show(key){
-    CUR = key;
-    document.querySelectorAll('.tab').forEach(function(t){
-      t.classList.toggle('on', t.dataset.k === key);
-    });
-    var c = DATA.communities[key];
-    var g = document.getElementById('grid');
-    if (!c || !c.pairs || !c.pairs.length){
-      g.innerHTML = '<div class="empty">Les paires ' + (c ? c.label : '') + ' arrivent très vite — le robot met à jour les prix chaque jour. Revenez demain matin ☀️</div>';
+    CUR=key;
+    document.querySelectorAll('.tab').forEach(function(t){t.classList.toggle('on',t.dataset.k===key);});
+    var c=DATA.communities[key]; var g=document.getElementById('grid');
+    if(!c||!c.pairs||!c.pairs.length){
+      g.innerHTML='<div class="empty">'+(isAr()?'التركيبات قادمة قريبًا — يُحدّث الروبوت الأسعار كل يوم. عُد غدًا ☀️':'Les combinaisons arrivent très vite — le robot met à jour les prix chaque jour. Revenez demain matin ☀️')+'</div>';
       return;
     }
-    g.innerHTML = c.pairs.map(function(p, i){ return card(p, i); }).join('');
+    g.innerHTML=c.pairs.map(function(p,i){return card(p,i);}).join('');
   }
 
   function boot(d){
-    DATA = d;
-    if (d.updated){
-      document.getElementById('updated').textContent = 'Prix relevés le ' + d.updated.split('-').reverse().join('/') + '  ·  ⚡ Les prix bougent chaque matin — les meilleures paires partent vite';
+    DATA=d;
+    var upd=document.getElementById('updated');
+    if(d.updated){
+      var dt=d.updated.split('-').reverse().join('/');
+      upd.textContent=isAr()?('الأسعار مسجّلة يوم '+dt+'  ·  ⚡ تتغير كل صباح — أفضل التركيبات تنفد بسرعة'):('Prix relevés le '+dt+'  ·  ⚡ Les prix bougent chaque matin — les meilleures combinaisons partent vite');
     }
-    var tabs = document.getElementById('tabs');
-    var keys = Object.keys(d.communities || {});
-    tabs.innerHTML = keys.map(function(k){
-      var c = d.communities[k];
-      return '<button class="tab" data-k="' + k + '"><span class="f">' + c.flag + '</span>' + c.label + '</button>';
-    }).join('');
-    tabs.querySelectorAll('.tab').forEach(function(t){
-      t.addEventListener('click', function(){ show(t.dataset.k); });
-    });
-    if (keys.length) show(keys[0]);
+    var tabs=document.getElementById('tabs'); var keys=Object.keys(d.communities||{});
+    tabs.innerHTML=keys.map(function(k){var c=d.communities[k];return '<button class="tab" data-k="'+k+'"><span class="f">'+c.flag+'</span>'+trCountry(c.label)+'</button>';}).join('');
+    tabs.querySelectorAll('.tab').forEach(function(t){t.addEventListener('click',function(){show(t.dataset.k);});});
+    if(keys.length) show(CUR&&d.communities[CUR]?CUR:keys[0]);
   }
 
-  fetch('pairs.json?t=' + Date.now())
-    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+  window.renderCurrent=function(){ if(DATA) boot(DATA); };
+
+  fetch('pairs.json?t='+Date.now())
+    .then(function(r){if(!r.ok)throw 0;return r.json();})
     .then(boot)
     .catch(function(){
-      document.getElementById('grid').innerHTML =
-        '<div class="empty">Les premières paires de la saison sont en cours de calcul par notre robot.<br/>Revenez dans quelques heures ☀️</div>';
+      document.getElementById('grid').innerHTML='<div class="empty">'+(isAr()?'أفضل التركيبات قيد الحساب من طرف الروبوت. عُد بعد قليل ☀️':'Les meilleures combinaisons sont en cours de calcul par notre robot.<br/>Revenez dans quelques heures ☀️')+'</div>';
     });
 </script>
 </body>
