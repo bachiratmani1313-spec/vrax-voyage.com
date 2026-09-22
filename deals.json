@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "deals": [
     {
       "o": "LYS",
@@ -48,6 +48,40 @@
       "active": false,
       "promo": true,
       "baseline": 295,
+      "discount": 54,
+      "dir": "aller",
+      "stops": 0
+    },
+    {
+      "o": "ALG",
+      "d": "LYS",
+      "city": "Lyon",
+      "price": 36,
+      "depart": "2026-10-02",
+      "ret": "",
+      "when": "Oct · aller simple · direct",
+      "link": "https://www.aviasales.com/search/ALG0210LYS1?t=TO17909502001790960700000115ALGLYS_360d8836c8be2827a8a079d6fae1e96c_3434&search_date=22092026&expected_price_uuid=01a0c6af-2ffe-8030-6298-6fc39a0e04bd&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=o9jBsUXOUDNFxLLexpwt7Q&expected_price_source=share&expected_price_currency=eur&expected_price=36&marker=704469",
+      "month": "2026-10",
+      "active": true,
+      "promo": true,
+      "baseline": 83,
+      "discount": 57,
+      "dir": "retour",
+      "stops": 0
+    },
+    {
+      "o": "TLS",
+      "d": "TUN",
+      "city": "Tunis",
+      "price": 124,
+      "depart": "2026-12-10",
+      "ret": "2026-12-19",
+      "when": "Déc · A/R · direct",
+      "link": "https://www.aviasales.com/search/TLS1012TUN19121?t=BJ17969034001796910300000115TLSTUN17976645001797671700000120TUNTLS_c7de2bdd4df0b41e76a97099ec7b1076_11913&search_date=22092026&expected_price_uuid=01a0c6f2-4a74-8040-69bb-846dea5a7e30&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FpbZ6kLmUdAQcHc7Z6ySJQ&expected_price_source=share&expected_price_currency=eur&expected_price=124&marker=704469",
+      "month": "2026-12",
+      "active": false,
+      "promo": true,
+      "baseline": 272,
       "discount": 54,
       "dir": "aller",
       "stops": 0
@@ -236,40 +270,6 @@
       "promo": true,
       "baseline": 46,
       "discount": 28,
-      "dir": "retour",
-      "stops": 0
-    },
-    {
-      "o": "BRU",
-      "d": "OUD",
-      "city": "Oujda",
-      "price": 74,
-      "depart": "2026-11-25",
-      "ret": "2026-12-06",
-      "when": "Nov · A/R · direct",
-      "link": "https://www.aviasales.com/search/BRU2511OUD06121?t=FR17956194001795626600000180CRLOUD17965524001796567100000185OUDCRL_01005b8623b056d1e18c92b949d075c6_7160&search_date=21092026&expected_price_uuid=01a0c391-fc4a-8040-2529-ecc9c8779f09&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=GzkY6Qv8p-T7y6cNJPE7WA&expected_price_source=share&expected_price_currency=eur&expected_price=74&marker=704469",
-      "month": "2026-11",
-      "active": false,
-      "promo": true,
-      "baseline": 124,
-      "discount": 40,
-      "dir": "aller",
-      "stops": 0
-    },
-    {
-      "o": "FEZ",
-      "d": "ORY",
-      "city": "Paris",
-      "price": 54,
-      "depart": "2026-10-09",
-      "ret": "",
-      "when": "Oct · aller simple · direct",
-      "link": "https://www.aviasales.com/search/FEZ0910ORY1?t=T117915355001791553200000175FEZORY_8054c5a34da0d42b40d13f456b2997d0_5187&search_date=21092026&expected_price_uuid=01a0c4e6-ff52-8040-242f-fc7c12daaef9&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=3KZPYJn3mb6hGodIY4YNkA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=54&marker=704469",
-      "month": "2026-10",
-      "active": true,
-      "promo": true,
-      "baseline": 73,
-      "discount": 26,
       "dir": "retour",
       "stops": 0
     }
