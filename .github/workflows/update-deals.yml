@@ -2,7 +2,7 @@ name: Mise à jour des bons plans
 
 on:
   schedule:
-    - cron: '0 */6 * * *'     # toutes les 6 heures (4×/jour) → on attrape les promos vite
+    - cron: '0 */12 * * *'    # toutes les 12 heures (2×/jour) — réduit de moitié la consommation Actions
   workflow_dispatch:           # bouton manuel
 
 permissions:
