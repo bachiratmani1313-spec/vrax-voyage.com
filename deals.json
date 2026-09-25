@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-24",
+  "updated": "2026-09-25",
   "deals": [
     {
       "o": "LYS",
@@ -43,7 +43,7 @@
       "depart": "2026-12-08",
       "ret": "2026-12-16",
       "when": "Déc · A/R · direct",
-      "link": "https://www.aviasales.com/search/CDG0812ORN16121?t=AH17967549001796763600000145CDGORN17974326001797441900000155ORNCDG_a38ae8f1ac883ed75650e5ab5bc89080_12431&search_date=24092026&expected_price_uuid=01a0d3b0-4393-8030-ed70-e8f6edba6e5e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bLAV1mKNvu6aGwzSJ9bUcQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=129&marker=704469",
+      "link": "https://www.aviasales.com/search/CDG0812ORN16121?t=AH17967549001796763600000145CDGORN17974326001797441900000155ORNCDG_a38ae8f1ac883ed75650e5ab5bc89080_12431&search_date=24092026&expected_price_uuid=01a0d3b0-4393-8030-ed70-e8f6edba6e5e&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=bLAV1mKNvu6aGwzSJ9bUcQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=128&marker=704469",
       "month": "2026-12",
       "active": false,
       "promo": true,
@@ -257,21 +257,21 @@
       "stops": 0
     },
     {
-      "o": "RAK",
+      "o": "NDR",
       "d": "ORY",
       "city": "Paris",
-      "price": 30,
-      "depart": "2026-10-16",
+      "price": 82,
+      "depart": "2026-10-15",
       "ret": "",
-      "when": "Oct · aller simple · direct",
-      "link": "https://www.aviasales.com/search/RAK1610ORY1?t=VY17921406001792159500000195RAKORY_eee528c941b135ed5e9c8bd6fcd34fe7_2853&search_date=23092026&expected_price_uuid=01a0cc16-e8f6-8030-234a-7ce2c077ec15&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=jWkzH5av9T1GvwEYMlzbhQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=30&marker=704469",
+      "when": "Oct · aller simple · 2 escales",
+      "link": "https://www.aviasales.com/search/NDR1510ORY1?t=TO17920440001792170600001990NDRMADIBZORY_f8389b34eddb223be4b1436edcd8a62a_7903&search_date=24092026&expected_price_uuid=01a0d551-411f-8040-22d1-fe562497bf06&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=KGiwH4uKYXMeJP5ajrwTaA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=82&marker=704469",
       "month": "2026-10",
       "active": true,
       "promo": true,
-      "baseline": 44,
-      "discount": 32,
+      "baseline": 126,
+      "discount": 35,
       "dir": "retour",
-      "stops": 0
+      "stops": 2
     }
   ]
 }
