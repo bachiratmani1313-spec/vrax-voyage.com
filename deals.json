@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "deals": [
     {
       "o": "LYS",
@@ -56,16 +56,16 @@
       "o": "DJE",
       "d": "BRU",
       "city": "Bruxelles",
-      "price": 48,
+      "price": 49,
       "depart": "2026-10-03",
       "ret": "",
       "when": "Oct · aller simple · direct",
-      "link": "https://www.aviasales.com/search/DJE0310BRU1?t=BJ17910405001791055500000190DJEBRU_1cc75d38a3025b6e1126495732d0d920_4616&search_date=28092026&expected_price_uuid=01a0e813-88ce-8040-212c-4e9cfd8705ef&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FQvtYoQvBpymya196ys9Wg&expected_price_source=share&expected_price_currency=eur&expected_price=48&marker=704469",
+      "link": "https://www.aviasales.com/search/DJE0310BRU1?t=BJ17910405001791055500000190DJEBRU_1cc75d38a3025b6e1126495732d0d920_4707&search_date=28092026&expected_price_uuid=01a0e9e3-0ef7-8040-6a97-8ff129257ce2&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR1%7CTBC0&itinerary_key=FQvtYoQvBpymya196ys9Wg&expected_price_source=share&expected_price_currency=eur&expected_price=49&marker=704469",
       "month": "2026-10",
       "active": true,
       "promo": true,
       "baseline": 96,
-      "discount": 50,
+      "discount": 49,
       "dir": "retour",
       "stops": 0
     },
