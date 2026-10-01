@@ -1,5 +1,5 @@
 {
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "deals": [
     {
       "o": "LYS",
@@ -62,7 +62,7 @@
       "when": "Nov · aller simple · 1 escale",
       "link": "https://www.aviasales.com/search/FEZ2811CDG1?t=EC17958462001796041800003200FEZRAKCDG_aa9903f49f33fd60996310727a711d15_4855&search_date=28092026&expected_price_uuid=01a0e900-4205-8030-aad4-aa6a26d6d8ab&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=_dowuVvQ8MZ91jkoDweH3g&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=51&marker=704469",
       "month": "2026-11",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 93,
       "discount": 45,
@@ -130,7 +130,7 @@
       "when": "Nov · aller simple · direct",
       "link": "https://www.aviasales.com/search/RAK3011CRL1?t=FR17960472001796063700000215RAKCRL_b4a1b98bf16117938e4d34379f684167_5701&search_date=29092026&expected_price_uuid=01a0ec8e-ad11-8050-e66d-921426fc8fa1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=S05QuR52v8EGMLizo7GpqQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=59&marker=704469",
       "month": "2026-11",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 99,
       "discount": 40,
@@ -164,7 +164,7 @@
       "when": "Nov · aller simple · direct",
       "link": "https://www.aviasales.com/search/FEZ2711ORY1?t=TO17957820001795796400000180FEZORY_e2b8f252d7fb48fc452efbace14fcbd7_3362&search_date=28092026&expected_price_uuid=01a0e900-c1c6-8030-2e08-88ea6798a184&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=-fkVAXeZNPb6PLeQ_bH6bQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=35&marker=704469",
       "month": "2026-11",
-      "active": false,
+      "active": true,
       "promo": true,
       "baseline": 56,
       "discount": 38,
