@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-08",
+  "updated": "2026-10-09",
   "deals": [
     {
       "o": "LIL",
@@ -257,21 +257,21 @@
       "stops": 1
     },
     {
-      "o": "DJE",
-      "d": "LYS",
-      "city": "Lyon",
-      "price": 50,
-      "depart": "2026-11-05",
+      "o": "OUD",
+      "d": "CDG",
+      "city": "Paris",
+      "price": 87,
+      "depart": "2026-12-06",
       "ret": "",
-      "when": "Nov · aller simple · direct",
-      "link": "https://www.aviasales.com/search/DJE0511LYS1?t=TO17938782001793887200000150DJELYS_0d8ad7cdf79ed7002ef04de1729d43f6_4785&search_date=07102026&expected_price_uuid=01a1179b-f391-8030-6ffc-4c5f57eaddfd&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=on5iZrZh-of6noOqQ9VsRg&expected_price_source=share&expected_price_currency=eur&expected_price=50&marker=704469",
-      "month": "2026-11",
-      "active": true,
+      "when": "Déc · aller simple · 1 escale",
+      "link": "https://www.aviasales.com/search/OUD0612CDG1?t=U217965671001796646600001265OUDRAKCDG_2d9ae6f50e7a77f82be4539d6b8caf09_8355&search_date=07102026&expected_price_uuid=01a11797-45c2-8040-6cf2-7a5f71bdf38f&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=FoAHPteYI05iJj1_SGiqiw&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=87&marker=704469",
+      "month": "2026-12",
+      "active": false,
       "promo": true,
-      "baseline": 70,
-      "discount": 29,
+      "baseline": 114,
+      "discount": 24,
       "dir": "retour",
-      "stops": 0
+      "stops": 1
     }
   ]
 }
