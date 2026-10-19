@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-18",
+  "updated": "2026-10-19",
   "deals": [
     {
       "o": "MRS",
@@ -26,7 +26,7 @@
       "depart": "2026-12-19",
       "ret": "",
       "when": "Déc · aller simple · direct",
-      "link": "https://www.aviasales.com/search/OUD1912CDG1?t=5O17976738001797684000000110OUDCDG_ca7477147d231f1e48010be3dd61ea21_3309&search_date=18102026&expected_price_uuid=01a14f82-cfbd-8040-aa27-85375d6766ce&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=aCPGE8UO7eh_8I8QYJvQIQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=35&marker=704469",
+      "link": "https://www.aviasales.com/search/OUD1912CDG1?t=5O17976738001797684000000110OUDCDG_ca7477147d231f1e48010be3dd61ea21_3309&search_date=18102026&expected_price_uuid=01a14ff4-c596-8040-2109-142bc00c5533&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=aCPGE8UO7eh_8I8QYJvQIQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=35&marker=704469",
       "month": "2026-12",
       "active": false,
       "promo": true,
@@ -189,19 +189,19 @@
       "stops": 0
     },
     {
-      "o": "CMN",
-      "d": "LYS",
-      "city": "Lyon",
-      "price": 73,
-      "depart": "2026-11-19",
+      "o": "NDR",
+      "d": "ORY",
+      "city": "Paris",
+      "price": 65,
+      "depart": "2026-11-20",
       "ret": "",
       "when": "Nov · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/CMN1911LYS1?t=TP17951067001795169400000985CMNLISLYS_de0f91620df5f3d4bc880ff7356cbfe5_6883&search_date=16102026&expected_price_uuid=01a1432f-c4d2-8040-afcc-2c1e3dba704a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=gRaCgGNCL96K0oCGWToxQQ&expected_price_source=share&expected_price_currency=eur&expected_price=73&marker=704469",
+      "link": "https://www.aviasales.com/search/NDR2011ORY1?t=TO17952165001795301100001350NDRMADORY_994884606b241c1454a8b01d381c4403_6135&search_date=18102026&expected_price_uuid=01a14f7e-859d-8040-abb6-ff04e1ce1908&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=VbfZdHgJqI7-qrel5J68dQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=65&marker=704469",
       "month": "2026-11",
       "active": true,
       "promo": true,
-      "baseline": 120,
-      "discount": 39,
+      "baseline": 104,
+      "discount": 38,
       "dir": "retour",
       "stops": 1
     },
@@ -223,21 +223,21 @@
       "stops": 1
     },
     {
-      "o": "NDR",
+      "o": "RAK",
       "d": "ORY",
       "city": "Paris",
-      "price": 65,
-      "depart": "2026-11-20",
+      "price": 27,
+      "depart": "2027-01-12",
       "ret": "",
-      "when": "Nov · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/NDR2011ORY1?t=TO17952165001795301100001350NDRMADORY_994884606b241c1454a8b01d381c4403_6135&search_date=18102026&expected_price_uuid=01a14f7e-859d-8040-abb6-ff04e1ce1908&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=VbfZdHgJqI7-qrel5J68dQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=65&marker=704469",
-      "month": "2026-11",
-      "active": true,
+      "when": "Jan · aller simple · direct",
+      "link": "https://www.aviasales.com/search/RAK1201ORY1?t=TO17997321001799748000000205RAKORY_463939a9260dafbd0539913289970d3f_2570&search_date=13102026&expected_price_uuid=01a13766-3b01-8030-6f1c-1ca6bc7e123b&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=2ma_W9HwicH3ugAeHGLDug&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=27&marker=704469",
+      "month": "2027-01",
+      "active": false,
       "promo": true,
-      "baseline": 104,
-      "discount": 38,
+      "baseline": 42,
+      "discount": 36,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     },
     {
       "o": "TLS",
@@ -257,21 +257,21 @@
       "stops": 0
     },
     {
-      "o": "ORN",
+      "o": "ALG",
       "d": "CDG",
       "city": "Paris",
-      "price": 89,
-      "depart": "2026-10-18",
+      "price": 53,
+      "depart": "2026-11-12",
       "ret": "",
-      "when": "Oct · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/ORN1810CDG1?t=5O17923605001792411500000790ORNALGCDG_ad6412ef8a1322abbc3b398704c042f5_8351&search_date=12102026&expected_price_uuid=01a13054-cf95-8040-66bd-a116cbd50411&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=7fBqvsD0Rq0ioifGqr3g2w&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=89&marker=704469",
-      "month": "2026-10",
+      "when": "Nov · aller simple · direct",
+      "link": "https://www.aviasales.com/search/ALG1211CDG1?t=5O17945061001794515400000155ALGCDG_a6a68dedac16e5662fc5745ba143dbba_4964&search_date=18102026&expected_price_uuid=01a14f84-070b-8031-22b5-c580e7dc487d&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2w6H7lJqyvyIAiHrKrx7Zg&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=52&marker=704469",
+      "month": "2026-11",
       "active": true,
       "promo": true,
-      "baseline": 142,
-      "discount": 37,
+      "baseline": 81,
+      "discount": 35,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     }
   ]
 }
