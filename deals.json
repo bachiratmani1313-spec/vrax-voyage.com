@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "deals": [
     {
       "o": "LYS",
@@ -257,19 +257,19 @@
       "stops": 0
     },
     {
-      "o": "OUD",
-      "d": "BRU",
-      "city": "Bruxelles",
-      "price": 51,
-      "depart": "2026-11-25",
+      "o": "ALG",
+      "d": "ORY",
+      "city": "Paris",
+      "price": 32,
+      "depart": "2026-12-23",
       "ret": "",
-      "when": "Nov · aller simple · direct",
-      "link": "https://www.aviasales.com/search/OUD2511BRU1?t=FR17956281001795642800000185OUDCRL_7475369a4ebde0d493bf02864833b221_4683&search_date=22102026&expected_price_uuid=01a16495-dc5b-8040-ac38-89d45c07fe47&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=MwqJMIiHbdFN9eOEARNesA&expected_price_source=share&expected_price_currency=eur&expected_price=51&marker=704469",
-      "month": "2026-11",
-      "active": true,
+      "when": "Déc · aller simple · direct",
+      "link": "https://www.aviasales.com/search/ALG2312ORY1?t=TO17980569001798065900000150ALGORY_510617c49b2e596b86eb63fcb7ade707_2890&search_date=26102026&expected_price_uuid=01a17a2a-f296-8030-a97c-fe73dadbef65&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=nJAd0lj-H0utPqINxHQLHA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=32&marker=704469",
+      "month": "2026-12",
+      "active": false,
       "promo": true,
-      "baseline": 101,
-      "discount": 50,
+      "baseline": 66,
+      "discount": 52,
       "dir": "retour",
       "stops": 0
     }
