@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "deals": [
     {
       "o": "TLS",
@@ -223,19 +223,19 @@
       "stops": 0
     },
     {
-      "o": "TNG",
+      "o": "ORN",
       "d": "ORY",
       "city": "Paris",
-      "price": 62,
-      "depart": "2027-01-25",
+      "price": 78,
+      "depart": "2027-01-10",
       "ret": "",
       "when": "Jan · aller simple · direct",
-      "link": "https://www.aviasales.com/search/TNG2501ORY1?t=AT18008595001800873000000165TNGORY_c55e7a4ce7887954f0bc0411a1f49c83_5624&search_date=29102026&expected_price_uuid=01a188c7-816f-8040-61dd-28240c60557a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=5MLA3Yo6opIHLE3aaC4O4Q&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=62&marker=704469",
+      "link": "https://www.aviasales.com/search/ORN1001ORY1?t=TO17996082001799618100000165ORNORY_3e9cd036220207a881f4a8a8e22fc4ba_7125&search_date=03112026&expected_price_uuid=01a1a3c3-5664-8031-68bb-f5cbbade6837&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=uZMUQUIDKRGO6zrSx13txw&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=78&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
-      "baseline": 135,
-      "discount": 54,
+      "baseline": 193,
+      "discount": 60,
       "dir": "retour",
       "stops": 0
     },
@@ -257,19 +257,19 @@
       "stops": 0
     },
     {
-      "o": "RAK",
-      "d": "BRU",
-      "city": "Bruxelles",
-      "price": 48,
-      "depart": "2027-01-08",
+      "o": "TNG",
+      "d": "ORY",
+      "city": "Paris",
+      "price": 62,
+      "depart": "2027-01-25",
       "ret": "",
       "when": "Jan · aller simple · direct",
-      "link": "https://www.aviasales.com/search/RAK0801BRU1?t=FR17993880001799404500000215RAKCRL_640ce550c94622a525be4fac0af8dffa_4306&search_date=27102026&expected_price_uuid=01a17f12-562d-8040-a4b8-627afe8a3463&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=dDUaXIaKhCJHtmcrG25BKg&expected_price_source=share&expected_price_currency=eur&expected_price=48&marker=704469",
+      "link": "https://www.aviasales.com/search/TNG2501ORY1?t=AT18008595001800873000000165TNGORY_c55e7a4ce7887954f0bc0411a1f49c83_5624&search_date=29102026&expected_price_uuid=01a188c7-816f-8040-61dd-28240c60557a&static_fare_key=TY%7CP0%7CH1%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=5MLA3Yo6opIHLE3aaC4O4Q&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=62&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
-      "baseline": 102,
-      "discount": 53,
+      "baseline": 135,
+      "discount": 54,
       "dir": "retour",
       "stops": 0
     }
