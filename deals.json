@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "deals": [
     {
       "o": "BRU",
@@ -206,21 +206,21 @@
       "stops": 0
     },
     {
-      "o": "LYS",
-      "d": "ALG",
-      "city": "Alger",
-      "price": 164,
-      "depart": "2027-02-12",
-      "ret": "2027-02-15",
-      "when": "Fév · A/R · 3 escales",
-      "link": "https://www.aviasales.com/search/LYS1202ALG15021?t=TO18024174001802590200002880LYSVLCPMIBCNALG18027285001802735700000120ALGLYS_d6971af0d754905135846d02edd65603_14970&search_date=06112026&expected_price_uuid=01a1b179-6317-8040-2453-46e3bb73cc52&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rtFHrzC_hA5gz7uv1wmfGg&expected_price_source=share&expected_price_currency=eur&expected_price=164&marker=704469",
-      "month": "2027-02",
-      "active": false,
+      "o": "MRS",
+      "d": "CMN",
+      "city": "Casablanca",
+      "price": 169,
+      "depart": "2026-12-29",
+      "ret": "2027-01-10",
+      "when": "Déc · A/R · direct",
+      "link": "https://www.aviasales.com/search/MRS2912CMN10011?t=AT17985696001798575300000155MRSCMN17995962001799624100000405CMNLISMRS_11acf937cef1639ff8e8fdd91066c83a_15163&search_date=31102026&expected_price_uuid=01a19268-0334-8030-e587-260dc6a474b0&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=yEs_es3EIYvZdH2wMP1l4g&expected_price_source=share&expected_price_currency=eur&expected_price=169&marker=704469",
+      "month": "2026-12",
+      "active": true,
       "promo": true,
-      "baseline": 247,
-      "discount": 34,
+      "baseline": 266,
+      "discount": 36,
       "dir": "aller",
-      "stops": 3
+      "stops": 0
     },
     {
       "o": "AGA",
@@ -240,21 +240,21 @@
       "stops": 0
     },
     {
-      "o": "BRU",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 182,
-      "depart": "2026-12-26",
-      "ret": "2027-01-07",
-      "when": "Déc · A/R · direct",
-      "link": "https://www.aviasales.com/search/BRU2612NDR07011?t=AT17983008001798307700000175CRLNDR17993307001799345100000180NDRBRU_c874a4a27ecb25170f45615ab23b8dd4_16555&search_date=03112026&expected_price_uuid=01a19fcb-8836-8040-a1bc-0f8d27d3142b&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=2vSmnS2sxP81v_ztmc8C5g&expected_price_source=share&expected_price_currency=eur&expected_price=182&marker=704469",
-      "month": "2026-12",
-      "active": true,
+      "o": "LYS",
+      "d": "ALG",
+      "city": "Alger",
+      "price": 164,
+      "depart": "2027-02-12",
+      "ret": "2027-02-15",
+      "when": "Fév · A/R · 3 escales",
+      "link": "https://www.aviasales.com/search/LYS1202ALG15021?t=TO18024174001802590200002880LYSVLCPMIBCNALG18027285001802735700000120ALGLYS_d6971af0d754905135846d02edd65603_14970&search_date=06112026&expected_price_uuid=01a1b179-6317-8040-2453-46e3bb73cc52&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=rtFHrzC_hA5gz7uv1wmfGg&expected_price_source=share&expected_price_currency=eur&expected_price=164&marker=704469",
+      "month": "2027-02",
+      "active": false,
       "promo": true,
-      "baseline": 270,
-      "discount": 33,
+      "baseline": 247,
+      "discount": 34,
       "dir": "aller",
-      "stops": 0
+      "stops": 3
     },
     {
       "o": "ALG",
