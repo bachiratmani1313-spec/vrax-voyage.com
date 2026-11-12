@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "deals": [
     {
       "o": "BRU",
@@ -206,21 +206,21 @@
       "stops": 0
     },
     {
-      "o": "CRL",
-      "d": "NDR",
-      "city": "Nador",
-      "price": 132,
-      "depart": "2026-12-06",
-      "ret": "2026-12-08",
-      "when": "Déc · A/R · 2 escales",
-      "link": "https://www.aviasales.com/search/CRL0612NDR08121?t=FR17965479001796671500002120CRLTRNBCNNDR17967246001796738700000175NDRCRL_24da2cbd48b7ca5e34486ecb1d6ebd14_12201&search_date=09112026&expected_price_uuid=01a1c185-fbd0-8040-a857-732d3b28d038&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=KXqzPkonTTaPpHgQK-OsaQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=132&marker=704469",
-      "month": "2026-12",
-      "active": true,
+      "o": "TLS",
+      "d": "TNG",
+      "city": "Tanger",
+      "price": 46,
+      "depart": "2027-01-24",
+      "ret": "2027-01-31",
+      "when": "Jan · A/R · direct",
+      "link": "https://www.aviasales.com/search/TLS2401TNG31011?t=FR18008172001800820800000120TLSTNG18014100001801420500000115TNGTLS_e8945418dd471d38c593a1ee0d872d48_4201&search_date=07112026&expected_price_uuid=01a1b594-8792-8030-6180-b6b632ab589a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NHQhhHMIQnP4M-QwexByrQ&expected_price_source=share&expected_price_currency=eur&expected_price=46&marker=704469",
+      "month": "2027-01",
+      "active": false,
       "promo": true,
-      "baseline": 200,
-      "discount": 34,
+      "baseline": 68,
+      "discount": 32,
       "dir": "aller",
-      "stops": 2
+      "stops": 0
     },
     {
       "o": "ORN",
@@ -240,38 +240,38 @@
       "stops": 0
     },
     {
-      "o": "TLS",
-      "d": "TNG",
-      "city": "Tanger",
-      "price": 46,
-      "depart": "2027-01-24",
-      "ret": "2027-01-31",
-      "when": "Jan · A/R · direct",
-      "link": "https://www.aviasales.com/search/TLS2401TNG31011?t=FR18008172001800820800000120TLSTNG18014100001801420500000115TNGTLS_e8945418dd471d38c593a1ee0d872d48_4201&search_date=07112026&expected_price_uuid=01a1b594-8792-8030-6180-b6b632ab589a&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=NHQhhHMIQnP4M-QwexByrQ&expected_price_source=share&expected_price_currency=eur&expected_price=46&marker=704469",
-      "month": "2027-01",
-      "active": false,
+      "o": "BRU",
+      "d": "NDR",
+      "city": "Nador",
+      "price": 125,
+      "depart": "2026-12-06",
+      "ret": "2026-12-08",
+      "when": "Déc · A/R · direct",
+      "link": "https://www.aviasales.com/search/BRU0612NDR08121?t=3O17965548001796562000000180BRUNDR17967246001796738700000175NDRCRL_b7b638428239dc3fa8bb711412ea2708_11596&search_date=09112026&expected_price_uuid=01a1c185-fbd0-8040-a857-732d3b28d038&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=ZzmrHM8xoro-aue2mE55_w&expected_price_source=share&expected_price_currency=eur&expected_price=125&marker=704469",
+      "month": "2026-12",
+      "active": true,
       "promo": true,
-      "baseline": 68,
-      "discount": 32,
+      "baseline": 182,
+      "discount": 31,
       "dir": "aller",
       "stops": 0
     },
     {
-      "o": "CMN",
-      "d": "CRL",
-      "city": "Charleroi",
-      "price": 227,
-      "depart": "2027-01-01",
+      "o": "AGA",
+      "d": "ORY",
+      "city": "Paris",
+      "price": 56,
+      "depart": "2026-12-19",
       "ret": "",
-      "when": "Jan · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/CMN0101CRL1?t=FR17987970001798833900000555CMNSVQCRL_e6a7d06d23196459aa5c09ee2d5c0192_20840&search_date=04112026&expected_price_uuid=01a1a86d-22ff-8030-a198-1d5f102a6548&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=vw50z_U2hWCnWQl2Ult_gw&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=227&marker=704469",
-      "month": "2027-01",
-      "active": false,
+      "when": "Déc · aller simple · direct",
+      "link": "https://www.aviasales.com/search/AGA1912ORY1?t=TO17977029001797719700000220AGAORY_26c193a2241d1bda965f94428313c442_5196&search_date=10112026&expected_price_uuid=01a1c636-3621-8040-2ec7-051a409e7dad&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=Bn5W_ACPSOF8_cCKJz-wng&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469",
+      "month": "2026-12",
+      "active": true,
       "promo": true,
-      "baseline": 323,
+      "baseline": 80,
       "discount": 30,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     }
   ]
 }
