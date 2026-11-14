@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "deals": [
     {
       "o": "BRU",
@@ -73,11 +73,11 @@
       "o": "TLS",
       "d": "TUN",
       "city": "Tunis",
-      "price": 136,
+      "price": 137,
       "depart": "2026-12-04",
       "ret": "2026-12-06",
       "when": "Déc · A/R · direct",
-      "link": "https://www.aviasales.com/search/TLS0412TUN06121?t=TU17963802001796386800000110TLSTUN17965404001796547300000115TUNTLS_c0d61561a4b8139749bc554f4c6c6136_12417&search_date=12112026&expected_price_uuid=01a1cf7e-7f4d-8030-a39c-dc0fe12a6ce8&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=o8DtirzJhNtr_tCqD9Tdcw&expected_price_source=share&expected_price_currency=eur&expected_price=136&marker=704469",
+      "link": "https://www.aviasales.com/search/TLS0412TUN06121?t=TU17963802001796386800000110TLSTUN17965404001796547300000115TUNTLS_c0d61561a4b8139749bc554f4c6c6136_12582&search_date=12112026&expected_price_uuid=01a1cf7e-80a8-8030-a62c-c9cca8390c39&static_fare_key=TY%7CP1%7CH1%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=o8DtirzJhNtr_tCqD9Tdcw&expected_price_source=share&expected_price_currency=eur&expected_price=137&marker=704469",
       "month": "2026-12",
       "active": true,
       "promo": true,
