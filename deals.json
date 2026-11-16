@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "deals": [
     {
       "o": "TLS",
@@ -243,16 +243,16 @@
       "o": "CRL",
       "d": "ALG",
       "city": "Alger",
-      "price": 189,
-      "depart": "2026-12-01",
-      "ret": "2026-12-04",
+      "price": 176,
+      "depart": "2026-12-08",
+      "ret": "2026-12-10",
       "when": "Déc · A/R · 1 escale",
-      "link": "https://www.aviasales.com/search/CRL0112ALG04121?t=FR17961066001796160000000890CRLMRSALG17964183001796482200001065ALGMRSCRL_9c8af93b5289829b20d9f476436564fe_17299&search_date=14112026&expected_price_uuid=01a1dc15-d73b-8031-61dc-d9e703e0db9e&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=uFce9JSrbLZIjel9zsIE-Q&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=189&marker=704469",
+      "link": "https://www.aviasales.com/search/CRL0812ALG10121?t=FR17967114001796764800000890CRLMRSALG17969022001796973900001195ALGVLCBGYCRL_6a36676caa321ecfc891e5844399b8e2_16028&search_date=15112026&expected_price_uuid=01a1e0c8-6587-8040-6374-d0b8894c9fd3&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=kwrYhYhLTdJHw_CdED8zQQ&origin_airports=0&destination_airports=1&expected_price_source=share&expected_price_currency=eur&expected_price=176&marker=704469",
       "month": "2026-12",
       "active": true,
       "promo": true,
       "baseline": 302,
-      "discount": 37,
+      "discount": 42,
       "dir": "aller",
       "stops": 1
     },
