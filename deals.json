@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "deals": [
     {
       "o": "MRS",
@@ -19,21 +19,21 @@
       "stops": 0
     },
     {
-      "o": "ALG",
+      "o": "FEZ",
       "d": "CRL",
       "city": "Charleroi",
-      "price": 68,
-      "depart": "2027-01-22",
+      "price": 27,
+      "depart": "2027-01-19",
       "ret": "",
-      "when": "Jan · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/ALG2201CRL1?t=FR18006615001800703200000695ALGBCNCRL_d60f4c49e47bb63f891f9208ee570e44_6087&search_date=22112026&expected_price_uuid=01a2015b-aa98-8031-6038-9a4fc24971bc&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=H_2Da2ulvrosBobm6QXsGA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=68&marker=704469",
+      "when": "Jan · aller simple · direct",
+      "link": "https://www.aviasales.com/search/FEZ1901CRL1?t=FR18003456001800360900000195FEZCRL_40ad014e7897133ef9a5699b26ebc955_2447&search_date=22112026&expected_price_uuid=01a20500-4546-8031-23b0-98e2e6f70c7a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RZ4g_7v4aMv-9yK2FNr0fQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=27&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
-      "baseline": 259,
-      "discount": 74,
+      "baseline": 290,
+      "discount": 91,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     },
     {
       "o": "TLS",
@@ -56,18 +56,18 @@
       "o": "FEZ",
       "d": "BRU",
       "city": "Bruxelles",
-      "price": 77,
-      "depart": "2027-01-16",
+      "price": 27,
+      "depart": "2027-01-19",
       "ret": "",
-      "when": "Jan · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/FEZ1601BRU1?t=HV18000798001800136200000880FEZRAKBRU_e00f1af117282382f688aaaeebf55711_6901&search_date=19112026&expected_price_uuid=01a1f3a5-a718-8030-ad72-f0e3fdebdb9a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=7h0zuQcyILud8cGFN_OPNg&expected_price_source=share&expected_price_currency=eur&expected_price=77&marker=704469",
+      "when": "Jan · aller simple · direct",
+      "link": "https://www.aviasales.com/search/FEZ1901BRU1?t=FR18003456001800360900000195FEZCRL_40ad014e7897133ef9a5699b26ebc955_2447&search_date=22112026&expected_price_uuid=01a20500-4546-8031-23b0-98e2e6f70c7a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=RZ4g_7v4aMv-9yK2FNr0fQ&expected_price_source=share&expected_price_currency=eur&expected_price=27&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
       "baseline": 267,
-      "discount": 71,
+      "discount": 90,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     },
     {
       "o": "TLS",
@@ -121,19 +121,19 @@
       "stops": 0
     },
     {
-      "o": "FEZ",
+      "o": "ALG",
       "d": "CRL",
       "city": "Charleroi",
-      "price": 96,
-      "depart": "2027-01-16",
+      "price": 77,
+      "depart": "2027-01-22",
       "ret": "",
       "when": "Jan · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/FEZ1601CRL1?t=FR18000798001800137400000900FEZRAKCRL_dcf7e47777e62bb0998d99409968e64b_8597&search_date=19112026&expected_price_uuid=01a1f3a5-a718-8030-ad72-f0e3fdebdb9a&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=osKSm-7Va6QaKeLFlO9beQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=96&marker=704469",
+      "link": "https://www.aviasales.com/search/ALG2201CRL1?t=FR18006615001800703200000695ALGBCNCRL_d60f4c49e47bb63f891f9208ee570e44_6922&search_date=23112026&expected_price_uuid=01a2067d-3350-8030-a4ab-c4bd30f4fcb1&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=H_2Da2ulvrosBobm6QXsGA&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=77&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
-      "baseline": 290,
-      "discount": 67,
+      "baseline": 259,
+      "discount": 70,
       "dir": "retour",
       "stops": 1
     },
@@ -223,21 +223,21 @@
       "stops": 0
     },
     {
-      "o": "ALG",
-      "d": "BRU",
-      "city": "Bruxelles",
-      "price": 68,
-      "depart": "2027-01-22",
+      "o": "AGA",
+      "d": "CDG",
+      "city": "Paris",
+      "price": 26,
+      "depart": "2027-01-30",
       "ret": "",
-      "when": "Jan · aller simple · 1 escale",
-      "link": "https://www.aviasales.com/search/ALG2201BRU1?t=FR18006615001800703200000695ALGBCNCRL_d60f4c49e47bb63f891f9208ee570e44_6087&search_date=22112026&expected_price_uuid=01a2015b-aa98-8031-6038-9a4fc24971bc&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=H_2Da2ulvrosBobm6QXsGA&expected_price_source=share&expected_price_currency=eur&expected_price=68&marker=704469",
+      "when": "Jan · aller simple · direct",
+      "link": "https://www.aviasales.com/search/AGA3001CDG1?t=U218013011001801317900000220AGACDG_ab57da732cad17256397574138eea1b4_2345&search_date=19112026&expected_price_uuid=01a1f59c-1572-8040-2e67-9f9db9959a48&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=mBvk6haq53Rhw7xZq4frZQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=26&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
-      "baseline": 152,
-      "discount": 55,
+      "baseline": 55,
+      "discount": 53,
       "dir": "retour",
-      "stops": 1
+      "stops": 0
     },
     {
       "o": "LIL",
@@ -257,21 +257,21 @@
       "stops": 0
     },
     {
-      "o": "AGA",
-      "d": "CDG",
-      "city": "Paris",
-      "price": 26,
-      "depart": "2027-01-30",
+      "o": "ALG",
+      "d": "BRU",
+      "city": "Bruxelles",
+      "price": 73,
+      "depart": "2027-01-21",
       "ret": "",
-      "when": "Jan · aller simple · direct",
-      "link": "https://www.aviasales.com/search/AGA3001CDG1?t=U218013011001801317900000220AGACDG_ab57da732cad17256397574138eea1b4_2345&search_date=19112026&expected_price_uuid=01a1f59c-1572-8040-2e67-9f9db9959a48&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=mBvk6haq53Rhw7xZq4frZQ&destination_airports=0&expected_price_source=share&expected_price_currency=eur&expected_price=26&marker=704469",
+      "when": "Jan · aller simple · 1 escale",
+      "link": "https://www.aviasales.com/search/ALG2101BRU1?t=VY18005718001800609300000625ALGBCNBRU_1d298915459e13ce038ea3408024c630_6567&search_date=21112026&expected_price_uuid=01a1fe1c-26a0-8030-6471-23b07a7aa9df&static_fare_key=TY%7CP1%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=iWyNC4xKSlbDlTG7etngXA&expected_price_source=share&expected_price_currency=eur&expected_price=73&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
-      "baseline": 55,
-      "discount": 53,
+      "baseline": 152,
+      "discount": 52,
       "dir": "retour",
-      "stops": 0
+      "stops": 1
     }
   ]
 }
