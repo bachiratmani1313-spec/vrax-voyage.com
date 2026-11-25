@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-24",
+  "updated": "2026-11-25",
   "deals": [
     {
       "o": "MRS",
@@ -196,7 +196,7 @@
       "depart": "2027-01-16",
       "ret": "",
       "when": "Jan · aller simple · direct",
-      "link": "https://www.aviasales.com/search/ORN1601LYS1?t=TO18001134001800121500000135ORNLYS_c1fcecba9c5c0d1919e784b3c6cabd8b_5042&search_date=22112026&expected_price_uuid=01a200d1-df7c-8040-21c8-8394508cd2d6&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH0%7CR0%7CTBC0&itinerary_key=sjFYiym4v8xtE4sDczzbaQ&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469",
+      "link": "https://www.aviasales.com/search/ORN1601LYS1?t=TO18001134001800121500000135ORNLYS_c1fcecba9c5c0d1919e784b3c6cabd8b_5036&search_date=25112026&expected_price_uuid=01a210b7-10cb-8040-aff4-fec0d434869c&static_fare_key=TY%7CP0%7CH0%7CL0%7CCH1%7CR0%7CTBC0&itinerary_key=sjFYiym4v8xtE4sDczzbaQ&expected_price_source=share&expected_price_currency=eur&expected_price=56&marker=704469",
       "month": "2027-01",
       "active": false,
       "promo": true,
